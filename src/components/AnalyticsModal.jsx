@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React, { useState, useMemo } from 'react';
 
 const originLabels = {
   polish: 'Polish', czech: 'Czech', slovak: 'Slovak', austrian: 'Austrian', lebanese: 'Lebanese', american: 'American',
@@ -6,11 +6,15 @@ const originLabels = {
   spanish: 'Spanish', canadian: 'Canadian', mexican: 'Mexican', russian: 'Russian', ukrainian: 'Ukrainian', chinese: 'Chinese', generic: 'Other'
 };
 
-export default function AnalyticsModal({ show, onClose, indis }) {
-  if (!show) return null;
+export default function AnalyticsModal({ show, onClose, indis, nodes }) {
+  const [isFullData, setIsFullData] = useState(true);
+
+  const dataSource = useMemo(() => {
+    return isFullData ? Object.values(indis || {}) : (nodes || []);
+  }, [isFullData, indis, nodes]);
 
   const longevityData = useMemo(() => {
-    const peopleWithLifespan = Object.values(indis || {}).map(p => {
+    const peopleWithLifespan = dataSource.map(p => {
       if (!p.birth || !p.death) return null;
       // Extract 4 digit year from potentially messy GEDCOM date strings
       const bMatch = p.birth.match(/\d{4}/);
@@ -28,12 +32,12 @@ export default function AnalyticsModal({ show, onClose, indis }) {
     }).filter(Boolean);
 
     return peopleWithLifespan.sort((a, b) => b.age - a.age).slice(0, 5);
-  }, [indis]);
+  }, [dataSource]);
 
   const originsData = useMemo(() => {
     const counts = {};
     let total = 0;
-    Object.values(indis || {}).forEach(p => {
+    dataSource.forEach(p => {
       if (!p.isDummy && p.origin) {
         counts[p.origin] = (counts[p.origin] || 0) + 1;
         total++;
@@ -44,10 +48,10 @@ export default function AnalyticsModal({ show, onClose, indis }) {
         origin, label: originLabels[origin] || origin, count, percentage: Math.round((count / total) * 100)
       }))
       .sort((a, b) => b.count - a.count);
-  }, [indis]);
+  }, [dataSource]);
 
   const treeHealth = useMemo(() => {
-    const realPeople = Object.values(indis || {}).filter(p => !p.isDummy);
+    const realPeople = dataSource.filter(p => !p.isDummy);
     const total = realPeople.length;
     if (total === 0) return { total: 0, withBirthPct: 0, withPlacePct: 0, avgLifespan: 0 };
 
@@ -79,13 +83,13 @@ export default function AnalyticsModal({ show, onClose, indis }) {
       withPlacePct: Math.round((withPlace / total) * 100),
       avgLifespan: lifespanCount > 0 ? Math.round(totalLifespan / lifespanCount) : 0
     };
-  }, [indis]);
+  }, [dataSource]);
 
   const namesData = useMemo(() => {
     const firstNames = {};
     const lastNames = {};
 
-    Object.values(indis || {}).forEach(p => {
+    dataSource.forEach(p => {
       if (p.isDummy || !p.name) return;
       // Strip out parenthesis (often used for maiden names in GEDCOMs) and split
       const parts = p.name.replace(/[()]/g, '').trim().split(/\s+/);
@@ -107,7 +111,9 @@ export default function AnalyticsModal({ show, onClose, indis }) {
     const topFirst = Object.entries(firstNames).sort((a, b) => b[1] - a[1]).slice(0, 5);
     const topLast = Object.entries(lastNames).sort((a, b) => b[1] - a[1]).slice(0, 5);
     return { topFirst, topLast };
-  }, [indis]);
+  }, [dataSource]);
+
+  if (!show) return null;
 
   return (
     <div className="analytics-backdrop" onClick={onClose} onWheel={e => e.stopPropagation()}>
@@ -117,6 +123,22 @@ export default function AnalyticsModal({ show, onClose, indis }) {
           <button className="close-btn" onClick={onClose}>✕</button>
         </div>
         <div className="analytics-content">
+          
+          <div style={{ display: 'flex', background: 'var(--card-border)', padding: '4px', borderRadius: '6px', marginBottom: '20px' }}>
+            <button 
+              style={{ flex: 1, padding: '6px 12px', border: 'none', borderRadius: '4px', background: isFullData ? 'var(--card-bg)' : 'transparent', color: isFullData ? 'var(--ink)' : 'var(--ink-light)', fontWeight: isFullData ? 600 : 400, cursor: 'pointer', transition: 'all 0.2s', boxShadow: isFullData ? '0 2px 4px var(--shadow)' : 'none' }}
+              onClick={() => setIsFullData(true)}
+            >
+              Entire File Data
+            </button>
+            <button 
+              style={{ flex: 1, padding: '6px 12px', border: 'none', borderRadius: '4px', background: !isFullData ? 'var(--card-bg)' : 'transparent', color: !isFullData ? 'var(--ink)' : 'var(--ink-light)', fontWeight: !isFullData ? 600 : 400, cursor: 'pointer', transition: 'all 0.2s', boxShadow: !isFullData ? '0 2px 4px var(--shadow)' : 'none' }}
+              onClick={() => setIsFullData(false)}
+            >
+              Current Tree View
+            </button>
+          </div>
+
           <section className="analytics-section">
             <h3>🏥 Tree Health & Stats</h3>
             <ul className="stats-list">
