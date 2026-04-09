@@ -23,6 +23,8 @@ header p  { font-family:'Crimson Text',serif; font-style:italic; color:#c8b890; 
   background:rgba(200,153,42,.15); border:1px solid var(--gold); color:var(--gold);
   padding:5px 14px; border-radius:3px; font-family:'Crimson Text',serif; font-size:.9rem;
   cursor:pointer; transition:all .2s;
+  display: inline-flex; align-items: center; justify-content: center;
+  height: 32px; min-width: 32px; padding: 0 10px;
 }
 .btn:hover { background:rgba(200,153,42,.3); }
 .zoom-label { color:#c8b890; font-size:.85rem; min-width:45px; text-align:center; }
@@ -73,6 +75,15 @@ svg#connectors { position:absolute; top:0; left:0; pointer-events:none; overflow
 .origin-french   { background:#fff; color:#0055a4; border-left:5px solid #0055a4; border-right:5px solid #ef4135; font-weight:700; }
 .origin-swiss    { background:#d52b1e; color:#fff; border:1.5px solid #d52b1e; }
 .origin-irish    { background:#fff; color:#169b62; border-left:5px solid #169b62; border-right:5px solid #ff883e; font-weight:700; }
+.origin-english  { background:#012169; color:#fff; border-bottom:3px solid #C8102E; }
+.origin-scottish { background:#005EB8; color:#fff; border-bottom:3px solid #fff; }
+.origin-italian  { background:#009246; color:#fff; border-right:6px solid #CE2B37; }
+.origin-spanish  { background:#AA151B; color:#fff; border-top:3px solid #F1BF00; border-bottom:3px solid #F1BF00; }
+.origin-canadian { background:#FF0000; color:#fff; }
+.origin-mexican  { background:#006847; color:#fff; border-right:6px solid #CE1126; border-bottom:2px solid #C8992A; }
+.origin-russian  { background:#1C3578; color:#fff; border-top:3px solid #fff; border-bottom:3px solid #E4181C; }
+.origin-chinese  { background:#EE1C25; color:#FFFF00; }
+.origin-generic  { background:#8b8378; color:#fff; }
 .origin-note {
   display:block; font-size:.62rem; font-style:italic; color:#6b5a3e;
   margin-top:2px; letter-spacing:.01em;
@@ -92,12 +103,14 @@ svg#connectors { position:absolute; top:0; left:0; pointer-events:none; overflow
 .card.gen6 { border-color:#5a8a5a; background:linear-gradient(135deg,#f3faf3 0%,#eaf5ea 100%); }
 .card.gen6 .name { color:#2a4a2e; }
 .legend {
-  position:fixed; bottom:16px; right:16px; background:rgba(26,18,8,.85);
-  border:1px solid var(--gold); border-radius:4px; padding:10px 14px;
-  z-index:200; color:#c8b890; font-size:.78rem;
+  position:fixed; bottom:16px; right:16px; background:rgba(250, 246, 238, 0.95);
+  border:1px solid var(--card-border); border-radius:4px; padding:10px 14px;
+  z-index:200; color:var(--ink); font-size:.78rem;
+  box-shadow: 2px 3px 10px var(--shadow);
 }
-.legend h4 { font-family:'Playfair Display',serif; color:var(--gold); font-size:.82rem; margin-bottom:6px; }
+.legend h4 { font-family:'Playfair Display',serif; color:var(--accent); font-size:.85rem; margin-bottom:6px; font-weight:600; }
 .legend-row { display:flex; align-items:center; gap:8px; margin-bottom:3px; }
 .legend-line { width:24px; height:2px; }
 .legend-line.descent  { background:#7a3b1e; }
 .legend-line.marriage { border-top:2px dashed #1a6b8a; height:0; background:transparent; }
+.legend .origin-tag { width: 80px; text-align: center; }
