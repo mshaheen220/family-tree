@@ -9,8 +9,15 @@ Unlike static diagrams, this viewer allows you to "walk" through the family tree
 * **Dynamic Layout Engine:** Automatically handles pedigree collapse, multiple marriages, and half-siblings using a specialized Directed Acyclic Graph (DAG) algorithm.
 * **Interactive Traversal:** Click any person's card to re-center the universe on them and reveal their hidden ancestors/descendants.
 * **Smooth Camera Controls:** Drag to pan, scroll to zoom, and enjoy smooth CSS transitions when jumping between relatives.
-* **Nationality Badges:** Automatically assigns flag-inspired origin badges based on parsed birthplaces (e.g., Polish, Austrian, Lebanese).
+* **Nationality Badges:** Automatically assigns flag-inspired origin badges based on parsed birthplaces or deathplaces.
 * **Generational Banding:** Visually aligns relatives into strict horizontal generations.
+
+### 🌍 Supported Nationality Badges
+The application scans the location data in your GEDCOM file to automatically assign visual origin tags to each person's card. Currently supported regions include:
+* **North America:** American, Canadian, Mexican
+* **Europe:** Polish, Czech, Slovak, Austrian, German, French, Swiss, Irish, English, Scottish, Italian, Spanish, Russian
+* **Middle East & Asia:** Lebanese, Chinese
+* **Fallback:** Any unmapped location will gracefully fall back to a slate-colored "Other" badge.
 
 ---
 
