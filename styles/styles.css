@@ -151,6 +151,7 @@ svg#connectors { position:absolute; top:0; left:0; pointer-events:none; overflow
 .origin-canadian { background:#FF0000; color:#fff; }
 .origin-mexican  { background:#006847; color:#fff; border-right:6px solid #CE1126; border-bottom:2px solid #C8992A; }
 .origin-russian  { background:#1C3578; color:#fff; border-top:3px solid #fff; border-bottom:3px solid #E4181C; }
+.origin-ukrainian { background:#0057B7; color:#fff; border-bottom:5px solid #FFD500; }
 .origin-chinese  { background:#EE1C25; color:#FFFF00; }
 .origin-generic  { background:#8b8378; color:#fff; }
 .origin-note {

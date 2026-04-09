@@ -6,7 +6,7 @@ const originLabels = {
   german: 'German', french: 'French', swiss: 'Swiss', irish: 'Irish',
   english: 'English', scottish: 'Scottish', italian: 'Italian',
   spanish: 'Spanish', canadian: 'Canadian', mexican: 'Mexican',
-  russian: 'Russian', chinese: 'Chinese', generic: 'Other'
+  russian: 'Russian', ukrainian: 'Ukrainian', chinese: 'Chinese', generic: 'Other'
 };
 
 export default function Legend({ nodes }) {

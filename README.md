@@ -18,7 +18,7 @@ Unlike static diagrams, this viewer allows you to "walk" through the family tree
 ### 🌍 Supported Nationality Badges
 The application scans the location data in your GEDCOM file to automatically assign visual origin tags to each person's card. Currently supported regions include:
 * **North America:** American, Canadian, Mexican
-* **Europe:** Polish, Czech, Slovak, Austrian, German, French, Swiss, Irish, English, Scottish, Italian, Spanish, Russian
+* **Europe:** Polish, Czech, Slovak, Austrian, German, French, Swiss, Irish, English, Scottish, Italian, Spanish, Russian, Ukrainian
 * **Middle East & Asia:** Lebanese, Chinese
 * **Fallback:** Any unmapped location will gracefully fall back to a slate-colored "Other" badge.
 

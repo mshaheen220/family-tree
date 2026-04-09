@@ -240,7 +240,8 @@ export function parseGedcom(data, preferredRootId = null) {
       else if (pl.includes('spain') || pl.includes('españa') || pl.includes('madrid')) o = 'spanish';
       else if (pl.includes('canada') || pl.includes('ontario') || pl.includes('quebec') || pl.includes('nova scotia')) o = 'canadian';
       else if (pl.includes('mexico') || pl.includes('méxico')) o = 'mexican';
-      else if (pl.includes('russia') || pl.includes('ussr') || pl.includes('soviet') || pl.includes('kiev') || pl.includes('moscow')) o = 'russian';
+      else if (pl.includes('ukraine') || pl.includes('ukrainian') || pl.includes('kiev') || pl.includes('kyiv')) o = 'ukrainian';
+      else if (pl.includes('russia') || pl.includes('ussr') || pl.includes('soviet') || pl.includes('moscow')) o = 'russian';
       else if (pl.includes('china') || pl.includes('chinese') || pl.includes('beijing')) o = 'chinese';
       else o = 'generic'; // Fallback for unmapped locations
     }
