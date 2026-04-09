@@ -55,7 +55,7 @@ export function parseGedcom(data, preferredRootId = null) {
   }
 
   if (Object.keys(indis).length === 0) {
-    return { nodes: [], connectors: [], maxGen: 0, individuals: [], rootId: null, genBands: [], genLabels: [] };
+    return { nodes: [], connectors: [], maxGen: 0, individuals: [], rootId: null, genBands: [], genLabels: [], indis: {} };
   }
 
   // --- GLOBAL DATA CLEANUP ---
@@ -94,6 +94,37 @@ export function parseGedcom(data, preferredRootId = null) {
     }
   });
   // ---------------------------
+
+  // --- ORIGIN CALCULATION ---
+  Object.values(indis).forEach(i => {
+    if (i.isDummy) return;
+    let o = '';
+    const plStr = i.place || i.deathPlace || '';
+    const pl = plStr.toLowerCase();
+    if (pl) {
+      if (pl.includes('poland') || pl.includes('malopolskie')) o = 'polish';
+      else if (pl.includes('czech')) o = 'czech';
+      else if (pl.includes('slovakia')) o = 'slovak';
+      else if (pl.includes('austria')) o = 'austrian';
+      else if (pl.includes('lebanon')) o = 'lebanese';
+      else if (pl.includes('germany') || pl.includes('deutschland') || pl.includes('bayern') || pl.includes('baden')) o = 'german';
+      else if (pl.includes('france') || pl.includes('alsace') || pl.includes('bas-rhin') || pl.includes('moselle')) o = 'french';
+      else if (pl.includes('switzerland') || pl.includes('zürich') || pl.includes('zurich')) o = 'swiss';
+      else if (pl.includes('irish') || pl.includes('ireland')) o = 'irish';
+      else if (pl.includes('usa') || pl.match(/\busa?\b/) || pl.includes('united states') || pl.includes('america') || pl.includes('pennsylvania') || pl.match(/\bpa\b/) || pl.includes('virginia') || pl.match(/\bwv\b/) || pl.includes('carolina') || pl.includes('california') || pl.includes('new york') || pl.includes('ohio') || pl.includes('texas')) o = 'american';
+      else if (pl.includes('england') || pl.match(/\buk\b/) || pl.includes('united kingdom') || pl.includes('britain') || pl.includes('london')) o = 'english';
+      else if (pl.includes('scotland') || pl.includes('scottish')) o = 'scottish';
+      else if (pl.includes('italy') || pl.includes('italia') || pl.includes('sicily')) o = 'italian';
+      else if (pl.includes('spain') || pl.includes('españa') || pl.includes('madrid')) o = 'spanish';
+      else if (pl.includes('canada') || pl.includes('ontario') || pl.includes('quebec') || pl.includes('nova scotia')) o = 'canadian';
+      else if (pl.includes('mexico') || pl.includes('méxico')) o = 'mexican';
+      else if (pl.includes('ukraine') || pl.includes('ukrainian') || pl.includes('kiev') || pl.includes('kyiv')) o = 'ukrainian';
+      else if (pl.includes('russia') || pl.includes('ussr') || pl.includes('soviet') || pl.includes('moscow')) o = 'russian';
+      else if (pl.includes('china') || pl.includes('chinese') || pl.includes('beijing')) o = 'chinese';
+      else o = 'generic'; 
+    }
+    i.origin = o;
+  });
 
   // --- RELATIVES-TREE LAYOUT ALGORITHM ---
   const dedup = (arr) => {
@@ -197,7 +228,7 @@ export function parseGedcom(data, preferredRootId = null) {
   // Calculate the layout grid using ONLY the real, visible cards
   const realNodes = tree.nodes.filter(n => indis[n.id] && !indis[n.id].isDummy);
   if (realNodes.length === 0) {
-    return { nodes: [], connectors: [], maxGen: 0, individuals, rootId: validRootId, genBands: [], genLabels: [] };
+    return { nodes: [], connectors: [], maxGen: 0, individuals, rootId: validRootId, genBands: [], genLabels: [], indis };
   }
 
   const minTop = Math.min(...realNodes.map(n => n.top));
@@ -218,40 +249,12 @@ export function parseGedcom(data, preferredRootId = null) {
     const gen = Math.floor((rtn.top - minTop) / 2) + 1;
     if (gen > rtMaxGen) rtMaxGen = gen;
     
-    // Phase 5: Determine Origin based on Birthplace text
-    let o = '';
-    const plStr = i.place || i.deathPlace || '';
-    const pl = plStr.toLowerCase();
-    
-    if (pl) {
-      if (pl.includes('poland') || pl.includes('malopolskie')) o = 'polish';
-      else if (pl.includes('czech')) o = 'czech';
-      else if (pl.includes('slovakia')) o = 'slovak';
-      else if (pl.includes('austria')) o = 'austrian';
-      else if (pl.includes('lebanon')) o = 'lebanese';
-      else if (pl.includes('germany') || pl.includes('deutschland') || pl.includes('bayern') || pl.includes('baden')) o = 'german';
-      else if (pl.includes('france') || pl.includes('alsace') || pl.includes('bas-rhin') || pl.includes('moselle')) o = 'french';
-      else if (pl.includes('switzerland') || pl.includes('zürich') || pl.includes('zurich')) o = 'swiss';
-      else if (pl.includes('irish') || pl.includes('ireland')) o = 'irish';
-      else if (pl.includes('usa') || pl.match(/\busa?\b/) || pl.includes('united states') || pl.includes('america') || pl.includes('pennsylvania') || pl.match(/\bpa\b/) || pl.includes('virginia') || pl.match(/\bwv\b/) || pl.includes('carolina') || pl.includes('california') || pl.includes('new york') || pl.includes('ohio') || pl.includes('texas')) o = 'american';
-      else if (pl.includes('england') || pl.match(/\buk\b/) || pl.includes('united kingdom') || pl.includes('britain') || pl.includes('london')) o = 'english';
-      else if (pl.includes('scotland') || pl.includes('scottish')) o = 'scottish';
-      else if (pl.includes('italy') || pl.includes('italia') || pl.includes('sicily')) o = 'italian';
-      else if (pl.includes('spain') || pl.includes('españa') || pl.includes('madrid')) o = 'spanish';
-      else if (pl.includes('canada') || pl.includes('ontario') || pl.includes('quebec') || pl.includes('nova scotia')) o = 'canadian';
-      else if (pl.includes('mexico') || pl.includes('méxico')) o = 'mexican';
-      else if (pl.includes('ukraine') || pl.includes('ukrainian') || pl.includes('kiev') || pl.includes('kyiv')) o = 'ukrainian';
-      else if (pl.includes('russia') || pl.includes('ussr') || pl.includes('soviet') || pl.includes('moscow')) o = 'russian';
-      else if (pl.includes('china') || pl.includes('chinese') || pl.includes('beijing')) o = 'chinese';
-      else o = 'generic'; // Fallback for unmapped locations
-    }
-
     // relatives-tree nodes default to 2x2. Their center point is left + 1, top + 1.
     // We calculate the center pixel, then subtract half the card size to align it.
     const centerX = mapX(rtn.left + 1);
     const centerY = mapY(rtn.top + 1);
 
-    return { ...i, origin: o, x: centerX - CW / 2, y: centerY - 45, h: 90, gen };
+    return { ...i, x: centerX - CW / 2, y: centerY - 45, h: 90, gen };
   }).filter(Boolean);
 
   const dummyPoints = tree.nodes.filter(n => indis[n.id]?.isDummy).map(n => ({
@@ -307,5 +310,5 @@ export function parseGedcom(data, preferredRootId = null) {
     }
   }
 
-  return { nodes, connectors, maxGen: rtMaxGen, individuals, rootId: validRootId, genBands, genLabels };
+  return { nodes, connectors, maxGen: rtMaxGen, individuals, rootId: validRootId, genBands, genLabels, indis };
 }

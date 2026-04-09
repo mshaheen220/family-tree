@@ -5,6 +5,7 @@ import { parseGedcom, CW } from './src/components/gedcomParser.js';
 import PersonCard from './src/components/PersonCard.jsx';
 import Legend from './src/components/Legend.jsx';
 import Tooltip from './src/components/Tooltip.jsx';
+import AnalyticsModal from './src/components/AnalyticsModal.jsx';
 
 // Use the ?raw suffix to import the file as a string directly!
 import gedcomData from './data/tree.ged?raw';
@@ -17,10 +18,19 @@ export default function App() {
   const [currentGedcom, setCurrentGedcom] = useState(gedcomData);
   const [selectedRootId, setSelectedRootId] = useState(null);
   const [theme, setTheme] = useState('classic');
+  const [showAnalytics, setShowAnalytics] = useState(false);
+  const [searchTerm, setSearchTerm] = useState('');
   
   // Parse GEDCOM whenever the loaded file changes
-  const { nodes, connectors, maxGen, individuals, rootId, genBands, genLabels } = useMemo(() => parseGedcom(currentGedcom, selectedRootId), [currentGedcom, selectedRootId]);
+  const { nodes, connectors, maxGen, individuals, rootId, genBands, genLabels, indis } = useMemo(() => parseGedcom(currentGedcom, selectedRootId), [currentGedcom, selectedRootId]);
   const byId = useMemo(() => Object.fromEntries(nodes.map(n => [n.id, n])), [nodes]);
+
+  // Filter individuals based on search term
+  const filteredIndividuals = useMemo(() => {
+    if (!searchTerm) return individuals;
+    const lower = searchTerm.toLowerCase();
+    return individuals.filter(i => i.name.toLowerCase().includes(lower));
+  }, [individuals, searchTerm]);
 
   // Auto-center camera on the Root Person
   const handleResetView = () => {
@@ -124,16 +134,28 @@ export default function App() {
           <p>{maxGen} Generations of Ancestry</p>
         </div>
         <div className="controls">
-          <Tooltip text="Choose the root person to build the tree around">
-            <select 
-              value={rootId || ''} 
-              onChange={(e) => setSelectedRootId(e.target.value)}
-              style={{ padding: '5px 10px', borderRadius: '3px', border: '1px solid var(--gold)', background: 'rgba(200,153,42,.15)', color: 'var(--gold)', fontFamily: "'Crimson Text', serif", outline: 'none', cursor: 'pointer' }}
-            >
-              {individuals.map(ind => (
-                <option key={ind.id} value={ind.id} style={{ color: '#000' }}>{ind.name}</option>
-              ))}
-            </select>
+          <Tooltip text="Search and select the root person">
+            <div style={{ display: 'flex', alignItems: 'center', background: 'var(--btn-bg)', border: '1px solid var(--gold)', borderRadius: '3px', padding: '2px 5px', transition: 'all 0.2s' }}>
+              <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" strokeWidth="2" fill="none" style={{ color: 'var(--gold)' }}><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              <input 
+                className="search-input"
+                type="text" 
+                placeholder="Search..." 
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+              />
+              <div style={{ width: '1px', height: '16px', background: 'var(--gold)', opacity: 0.3, margin: '0 5px' }}></div>
+              <select 
+                value={rootId || ''} 
+                onChange={(e) => { setSelectedRootId(e.target.value); setSearchTerm(''); }}
+                style={{ padding: '3px 5px', border: 'none', background: 'transparent', color: 'var(--gold)', fontFamily: "'Crimson Text', serif", outline: 'none', cursor: 'pointer', maxWidth: '160px', textOverflow: 'ellipsis' }}
+              >
+                {filteredIndividuals.length === 0 && <option value="" disabled>No results...</option>}
+                {filteredIndividuals.map(ind => (
+                  <option key={ind.id} value={ind.id} style={{ color: '#000' }}>{ind.name}</option>
+                ))}
+              </select>
+            </div>
           </Tooltip>
           <Tooltip text="Select a visual color theme">
             <select 
@@ -158,6 +180,11 @@ export default function App() {
           <Tooltip text="Upload GEDCOM file">
             <button className="btn" onClick={() => fileInputRef.current?.click()}>
               <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+            </button>
+          </Tooltip>
+          <Tooltip text="Tree Analytics & Insights">
+            <button className="btn" onClick={() => setShowAnalytics(true)}>
+              <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
             </button>
           </Tooltip>
           <Tooltip text="Zoom Out">
@@ -238,6 +265,8 @@ export default function App() {
       ))}
 
       <Legend nodes={nodes} />
+      
+      <AnalyticsModal show={showAnalytics} onClose={() => setShowAnalytics(false)} indis={indis} />
     </div>
   );
 }
