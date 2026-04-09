@@ -1,0 +1,32 @@
+{
+  "name": "family-tree",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "relatives-tree": "^1.1.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "description": "",
+  "main": "split-gedcom.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mshaheen220/family-tree.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mshaheen220/family-tree/issues"
+  },
+  "homepage": "https://github.com/mshaheen220/family-tree#readme",
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.0.1",
+    "vite": "^8.0.7"
+  }
+}
