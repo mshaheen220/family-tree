@@ -1,8 +1,72 @@
-:root {
+:root, [data-theme="classic"] {
   --bg: #f5f0e8; --ink: #1a1208; --ink-light: #3d2e0f;
-  --accent: #7a3b1e; --accent2: #2a4a3e; --gold: #c8992a;
-  --line: #8b6a3a; --card-bg: #faf6ee; --card-border: #c8a96a;
-  --shadow: rgba(90,60,20,0.15);
+  --accent: #991B1B; --accent2: #166534; --gold: #FCD34D;
+  --line: #D6D3D1; --card-bg: #FFFFFF; --card-border: #E7E5E4;
+  --shadow: rgba(28,25,23,0.08); --shadow-selected: rgba(153,27,27,0.25);
+  --header-bg-1: #1C1917; --header-bg-2: #292524; --header-sub: #D6D3D1;
+  --marriage-line: #0284C7; --blood-line: #991B1B;
+  --legend-bg: rgba(250, 246, 238, 0.95);
+  --badge-bg: rgba(153,27,27,0.05); --badge-border: rgba(153,27,27,0.3);
+  --gen6-border: #166534; --gen6-bg-1: #F0FDF4; --gen6-bg-2: #DCFCE7; --gen6-text: #14532D;
+  --btn-bg: rgba(255,255,255,0.1); --btn-hover: rgba(255,255,255,0.2);
+  --label-bg: rgba(249,246,240,0.95); --label-border: #991B1B;
+  --band-line: rgba(28,25,23,0.15);
+}
+[data-theme="dark"] {
+  --bg: #0F172A; --ink: #F8FAFC; --ink-light: #94A3B8;
+  --accent: #38BDF8; --accent2: #34D399; --gold: #38BDF8;
+  --line: #334155; --card-bg: #1E293B; --card-border: #475569;
+  --shadow: rgba(0,0,0,0.5); --shadow-selected: rgba(56,189,248,0.3);
+  --header-bg-1: #020617; --header-bg-2: #0F172A; --header-sub: #94A3B8;
+  --marriage-line: #A78BFA; --blood-line: #38BDF8;
+  --legend-bg: rgba(30,41,59,0.95);
+  --badge-bg: rgba(56,189,248,0.1); --badge-border: rgba(56,189,248,0.4);
+  --gen6-border: #34D399; --gen6-bg-1: #064E3B; --gen6-bg-2: #065F46; --gen6-text: #A7F3D0;
+  --btn-bg: rgba(56,189,248,0.1); --btn-hover: rgba(56,189,248,0.2);
+  --label-bg: rgba(15,23,42,0.95); --label-border: #38BDF8;
+  --band-line: rgba(248,250,252,0.1);
+}
+[data-theme="ocean"] {
+  --bg: #F0F9FF; --ink: #0C4A6E; --ink-light: #0284C7;
+  --accent: #0284C7; --accent2: #0D9488; --gold: #BAE6FD;
+  --line: #BAE6FD; --card-bg: #FFFFFF; --card-border: #E0F2FE;
+  --shadow: rgba(2,132,199,0.1); --shadow-selected: rgba(2,132,199,0.3);
+  --header-bg-1: #082F49; --header-bg-2: #0C4A6E; --header-sub: #7DD3FC;
+  --marriage-line: #7C3AED; --blood-line: #0284C7;
+  --legend-bg: rgba(255, 255, 255, 0.95);
+  --badge-bg: rgba(2,132,199,0.05); --badge-border: rgba(2,132,199,0.3);
+  --gen6-border: #0D9488; --gen6-bg-1: #F0FDFA; --gen6-bg-2: #CCFBF1; --gen6-text: #115E59;
+  --btn-bg: rgba(255,255,255,0.1); --btn-hover: rgba(255,255,255,0.2);
+  --label-bg: rgba(240,249,255,0.95); --label-border: #0284C7;
+  --band-line: rgba(2,132,199,0.15);
+}
+[data-theme="forest"] {
+  --bg: #F0FDF4; --ink: #064E3B; --ink-light: #166534;
+  --accent: #15803D; --accent2: #854D0E; --gold: #A7F3D0;
+  --line: #BBF7D0; --card-bg: #FFFFFF; --card-border: #DCFCE7;
+  --shadow: rgba(22,101,52,0.1); --shadow-selected: rgba(21,128,61,0.3);
+  --header-bg-1: #022C22; --header-bg-2: #064E3B; --header-sub: #6EE7B7;
+  --marriage-line: #0369A1; --blood-line: #15803D;
+  --legend-bg: rgba(245, 249, 244, 0.95);
+  --badge-bg: rgba(21,128,61,0.05); --badge-border: rgba(21,128,61,0.3);
+  --gen6-border: #854D0E; --gen6-bg-1: #FEFCE8; --gen6-bg-2: #FEF08A; --gen6-text: #713F12;
+  --btn-bg: rgba(255,255,255,0.1); --btn-hover: rgba(255,255,255,0.2);
+  --label-bg: rgba(240,253,244,0.95); --label-border: #15803D;
+  --band-line: rgba(22,101,52,0.15);
+}
+[data-theme="monochrome"] {
+  --bg: #F9FAFB; --ink: #000000; --ink-light: #4B5563;
+  --accent: #000000; --accent2: #4B5563; --gold: #FFFFFF;
+  --line: #D1D5DB; --card-bg: #FFFFFF; --card-border: #9CA3AF;
+  --shadow: rgba(0,0,0,0.1); --shadow-selected: rgba(0,0,0,0.5);
+  --header-bg-1: #000000; --header-bg-2: #1F2937; --header-sub: #D1D5DB;
+  --marriage-line: #6B7280; --blood-line: #000000;
+  --legend-bg: rgba(255, 255, 255, 0.95);
+  --badge-bg: rgba(0,0,0,0.05); --badge-border: rgba(0,0,0,0.3);
+  --gen6-border: #4B5563; --gen6-bg-1: #F3F4F6; --gen6-bg-2: #E5E7EB; --gen6-text: #111827;
+  --btn-bg: rgba(255,255,255,0.1); --btn-hover: rgba(255,255,255,0.2);
+  --label-bg: rgba(249,250,251,0.95); --label-border: #000000;
+  --band-line: rgba(0,0,0,0.15);
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: 'Crimson Text', Georgia, serif; background: var(--bg); color: var(--ink); min-height: 100vh; overflow: hidden; }
@@ -12,33 +76,33 @@ body::before {
 }
 header {
   position: fixed; top:0; left:0; right:0; z-index:100;
-  background: linear-gradient(180deg,var(--ink) 0%,var(--ink-light) 100%);
+  background: linear-gradient(180deg,var(--header-bg-1) 0%,var(--header-bg-2) 100%);
   padding: 14px 28px; display:flex; align-items:center; justify-content:space-between;
   border-bottom: 2px solid var(--gold); box-shadow: 0 2px 16px rgba(0,0,0,0.3);
 }
 header h1 { font-family:'Playfair Display',serif; font-size:1.4rem; color:var(--gold); letter-spacing:.04em; font-weight:600; }
-header p  { font-family:'Crimson Text',serif; font-style:italic; color:#c8b890; font-size:.95rem; }
+header p  { font-family:'Crimson Text',serif; font-style:italic; color:var(--header-sub); font-size:.95rem; }
 .controls { display:flex; gap:10px; align-items:center; }
 .btn {
-  background:rgba(200,153,42,.15); border:1px solid var(--gold); color:var(--gold);
+  background:var(--btn-bg); border:1px solid var(--gold); color:var(--gold);
   padding:5px 14px; border-radius:3px; font-family:'Crimson Text',serif; font-size:.9rem;
   cursor:pointer; transition:all .2s;
   display: inline-flex; align-items: center; justify-content: center;
   height: 32px; min-width: 32px; padding: 0 10px;
 }
-.btn:hover { background:rgba(200,153,42,.3); }
-.zoom-label { color:#c8b890; font-size:.85rem; min-width:45px; text-align:center; }
+.btn:hover { background:var(--btn-hover); }
+.zoom-label { color:var(--header-sub); font-size:.85rem; min-width:45px; text-align:center; }
 #canvas-wrap { position:fixed; top:62px; left:0; right:0; bottom:0; overflow:hidden; cursor:grab; }
 #canvas-wrap.grabbing { cursor:grabbing; }
 #canvas { position:absolute; transform-origin:0 0; will-change:transform; }
 svg#connectors { position:absolute; top:0; left:0; pointer-events:none; overflow:visible; }
 .gen-label {
   position:fixed; left:0; font-family:'Playfair Display',serif; font-size:.78rem; font-style:italic;
-  color:var(--accent); background:rgba(245,240,232,.92); border-right:2px solid rgba(200,153,42,.35);
+  color:var(--accent); background:var(--label-bg); border-right:2px solid var(--label-border);
   padding:3px 10px 3px 8px; white-space:nowrap; letter-spacing:.05em;
   z-index:90; pointer-events:none; border-radius:0 3px 3px 0;
 }
-.gen-band { position:absolute; left:0; right:0; border-top:1px dashed rgba(139,106,58,.2); }
+.gen-band { position:absolute; left:0; right:0; border-top:1px dashed var(--band-line); }
 .card {
   position:absolute; width:192px; background:var(--card-bg); border:1.5px solid var(--card-border);
   border-radius:4px; padding:9px 11px;
@@ -52,7 +116,7 @@ svg#connectors { position:absolute; top:0; left:0; pointer-events:none; overflow
 .card.selected {
   border-color: var(--accent);
   background-color: #fff;
-  box-shadow: 0 0 0 1px var(--accent), 2px 3px 12px rgba(122, 59, 30, 0.25);
+  box-shadow: 0 0 0 1px var(--accent), 2px 3px 12px var(--shadow-selected);
 }
 .card:hover { box-shadow:3px 5px 18px rgba(90,60,20,.25),inset 0 1px 0 rgba(255,255,255,.7); transform:translateY(-1px); z-index:50; }
 .card .name  { font-family:'Playfair Display',serif; font-size:.88rem; font-weight:600; color:var(--ink); line-height:1.25; margin-bottom:4px; }
@@ -91,19 +155,19 @@ svg#connectors { position:absolute; top:0; left:0; pointer-events:none; overflow
 
 /* Legend line colors updated */
 .legend-line.descent  { background:#7a3b1e; }
-.legend-line.marriage { border-top:2px dashed #1a6b8a; height:0; background:transparent; }
+.legend-line.marriage { border-top:2px dashed var(--marriage-line); height:0; background:transparent; }
 .sibling-badge {
-  margin-top:6px; background:rgba(122,59,30,.07); border:1px dashed rgba(122,59,30,.35);
+  margin-top:6px; background:var(--badge-bg); border:1px dashed var(--badge-border);
   border-radius:3px; padding:4px 7px; font-size:.69rem; color:var(--accent); line-height:1.5;
 }
 .sibling-badge strong {
   display:block; font-size:.65rem; text-transform:uppercase; letter-spacing:.06em;
-  color:var(--line); margin-bottom:1px; font-weight:600;
+  color:var(--ink-light); margin-bottom:1px; font-weight:600;
 }
-.card.gen6 { border-color:#5a8a5a; background:linear-gradient(135deg,#f3faf3 0%,#eaf5ea 100%); }
-.card.gen6 .name { color:#2a4a2e; }
+.card.gen6 { border-color:var(--gen6-border); background:linear-gradient(135deg,var(--gen6-bg-1) 0%,var(--gen6-bg-2) 100%); }
+.card.gen6 .name { color:var(--gen6-text); }
 .legend {
-  position:fixed; bottom:16px; right:16px; background:rgba(250, 246, 238, 0.95);
+  position:fixed; bottom:16px; right:16px; background:var(--legend-bg);
   border:1px solid var(--card-border); border-radius:4px; padding:10px 14px;
   z-index:200; color:var(--ink); font-size:.78rem;
   box-shadow: 2px 3px 10px var(--shadow);

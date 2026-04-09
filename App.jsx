@@ -15,6 +15,7 @@ export default function App() {
   const fileInputRef = useRef(null);
   const [currentGedcom, setCurrentGedcom] = useState(gedcomData);
   const [selectedRootId, setSelectedRootId] = useState(null);
+  const [theme, setTheme] = useState('classic');
   
   // Parse GEDCOM whenever the loaded file changes
   const { nodes, connectors, maxGen, individuals, rootId, genBands, genLabels } = useMemo(() => parseGedcom(currentGedcom, selectedRootId), [currentGedcom, selectedRootId]);
@@ -36,6 +37,11 @@ export default function App() {
   useEffect(() => {
     handleResetView();
   }, [rootId, currentGedcom, nodes]);
+
+  // Apply theme class to document body
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+  }, [theme]);
 
   // Specific Reset Handlers
   const handleRecenter = () => {
@@ -126,6 +132,17 @@ export default function App() {
               <option key={ind.id} value={ind.id} style={{ color: '#000' }}>{ind.name}</option>
             ))}
           </select>
+          <select 
+            value={theme} 
+            onChange={(e) => setTheme(e.target.value)}
+            style={{ padding: '5px 10px', borderRadius: '3px', border: '1px solid var(--gold)', background: 'var(--btn-bg)', color: 'var(--gold)', fontFamily: "'Crimson Text', serif", outline: 'none', cursor: 'pointer' }}
+          >
+            <option value="classic" style={{ color: '#000' }}>Classic Theme</option>
+            <option value="dark" style={{ color: '#000' }}>Dark Theme</option>
+            <option value="ocean" style={{ color: '#000' }}>Ocean Theme</option>
+            <option value="forest" style={{ color: '#000' }}>Forest Theme</option>
+            <option value="monochrome" style={{ color: '#000' }}>Monochrome Theme</option>
+          </select>
           <input
             type="file"
             accept=".ged"
@@ -165,7 +182,7 @@ export default function App() {
             <polyline 
               key={c.id} 
               points={c.path} 
-              stroke={c.isMarriage ? "#1a6b8a" : "#7a3b1e"} 
+              stroke={c.isMarriage ? "var(--marriage-line)" : "var(--blood-line)"} 
               strokeWidth="2" 
               fill="none" 
               strokeLinejoin="round" 
