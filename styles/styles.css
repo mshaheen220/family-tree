@@ -11,6 +11,7 @@
   --btn-bg: rgba(255,255,255,0.1); --btn-hover: rgba(255,255,255,0.2);
   --label-bg: rgba(249,246,240,0.95); --label-border: #991B1B;
   --band-line: rgba(28,25,23,0.15);
+  --tooltip-bg: #FFFFFF; --tooltip-text: #1C1917;
 }
 [data-theme="dark"] {
   --bg: #0F172A; --ink: #F8FAFC; --ink-light: #94A3B8;
@@ -25,6 +26,7 @@
   --btn-bg: rgba(56,189,248,0.1); --btn-hover: rgba(56,189,248,0.2);
   --label-bg: rgba(15,23,42,0.95); --label-border: #38BDF8;
   --band-line: rgba(248,250,252,0.1);
+  --tooltip-bg: #F8FAFC; --tooltip-text: #0F172A;
 }
 [data-theme="ocean"] {
   --bg: #F0F9FF; --ink: #0C4A6E; --ink-light: #0284C7;
@@ -39,6 +41,7 @@
   --btn-bg: rgba(255,255,255,0.1); --btn-hover: rgba(255,255,255,0.2);
   --label-bg: rgba(240,249,255,0.95); --label-border: #0284C7;
   --band-line: rgba(2,132,199,0.15);
+  --tooltip-bg: #FFFFFF; --tooltip-text: #0C4A6E;
 }
 [data-theme="forest"] {
   --bg: #F0FDF4; --ink: #064E3B; --ink-light: #166534;
@@ -53,6 +56,7 @@
   --btn-bg: rgba(255,255,255,0.1); --btn-hover: rgba(255,255,255,0.2);
   --label-bg: rgba(240,253,244,0.95); --label-border: #15803D;
   --band-line: rgba(22,101,52,0.15);
+  --tooltip-bg: #FFFFFF; --tooltip-text: #064E3B;
 }
 [data-theme="monochrome"] {
   --bg: #F9FAFB; --ink: #000000; --ink-light: #4B5563;
@@ -67,6 +71,7 @@
   --btn-bg: rgba(255,255,255,0.1); --btn-hover: rgba(255,255,255,0.2);
   --label-bg: rgba(249,250,251,0.95); --label-border: #000000;
   --band-line: rgba(0,0,0,0.15);
+  --tooltip-bg: #FFFFFF; --tooltip-text: #000000;
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: 'Crimson Text', Georgia, serif; background: var(--bg); color: var(--ink); min-height: 100vh; overflow: hidden; }
@@ -115,7 +120,7 @@ svg#connectors { position:absolute; top:0; left:0; pointer-events:none; overflow
 }
 .card.selected {
   border-color: var(--accent);
-  background-color: #fff;
+  background-color: var(--card-bg);
   box-shadow: 0 0 0 1px var(--accent), 2px 3px 12px var(--shadow-selected);
 }
 .card:hover { box-shadow:3px 5px 18px rgba(90,60,20,.25),inset 0 1px 0 rgba(255,255,255,.7); transform:translateY(-1px); z-index:50; }
@@ -164,6 +169,21 @@ svg#connectors { position:absolute; top:0; left:0; pointer-events:none; overflow
   display:block; font-size:.65rem; text-transform:uppercase; letter-spacing:.06em;
   color:var(--ink-light); margin-bottom:1px; font-weight:600;
 }
+
+/* Tooltip styles */
+.tooltip-popup {
+  background: var(--tooltip-bg);
+  color: var(--tooltip-text);
+  border: 1px solid var(--card-border);
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  font-family: 'Crimson Text', serif;
+  font-size: 0.875rem;
+  white-space: nowrap;
+  pointer-events: none;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.3);
+}
+
 .card.gen6 { border-color:var(--gen6-border); background:linear-gradient(135deg,var(--gen6-bg-1) 0%,var(--gen6-bg-2) 100%); }
 .card.gen6 .name { color:var(--gen6-text); }
 .legend {

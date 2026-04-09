@@ -30,7 +30,7 @@ export default function Legend({ nodes }) {
       
       {uniqueOrigins.length > 0 && (
         <>
-          <div style={{ marginTop: '8px', borderTop: '1px solid var(--card-border)', paddingTop: '7px', fontSize: '.72rem', color: 'var(--line)', letterSpacing: '.04em', textTransform: 'uppercase', marginBottom: '4px', fontWeight: 600 }}>
+          <div style={{ marginTop: '8px', borderTop: '1px solid var(--card-border)', paddingTop: '7px', fontSize: '.72rem', color: 'var(--ink-light)', letterSpacing: '.04em', textTransform: 'uppercase', marginBottom: '4px', fontWeight: 600 }}>
             Nationality
           </div>
           {uniqueOrigins.map(origin => (

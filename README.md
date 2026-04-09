@@ -4,11 +4,14 @@ A browser-based, interactive family tree viewer built with React. This applicati
 
 Unlike static diagrams, this viewer allows you to "walk" through the family tree by clicking on any relative to instantly recalculate the grid and bring their extended ancestry into view.
 
+> **Note on Mobile Support:** This application is purposely not optimized for mobile phones. The expansive and intricate nature of these family tree layouts requires a larger display (desktop or tablet) to truly do the data justice!
+
 ## ✨ Features
 * **Direct GEDCOM Parsing:** Upload any `.ged` file directly in the browser—no server or database required.
 * **Dynamic Layout Engine:** Automatically handles pedigree collapse, multiple marriages, and half-siblings using a specialized Directed Acyclic Graph (DAG) algorithm.
 * **Interactive Traversal:** Click any person's card to re-center the universe on them and reveal their hidden ancestors/descendants.
 * **Smooth Camera Controls:** Drag to pan, scroll to zoom, and enjoy smooth CSS transitions when jumping between relatives.
+* **Custom Themes:** Switch between 5 mathematically balanced, high-contrast color themes (Classic, Dark, Ocean, Forest, Monochrome) to suit your preference.
 * **Nationality Badges:** Automatically assigns flag-inspired origin badges based on parsed birthplaces or deathplaces.
 * **Generational Banding:** Visually aligns relatives into strict horizontal generations.
 
