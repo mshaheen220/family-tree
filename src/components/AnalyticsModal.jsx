@@ -275,7 +275,7 @@ export default function AnalyticsModal({ show, onClose, indis, nodes, fams }) {
       <div className="analytics-modal" onClick={e => e.stopPropagation()}>
         <div className="analytics-header">
           <h2>Tree Analytics</h2>
-          <button className="close-btn" onClick={onClose}>✕</button>
+          <button className="close-btn" aria-label="Close" onClick={onClose}>✕</button>
         </div>
         <div className="analytics-content">
           

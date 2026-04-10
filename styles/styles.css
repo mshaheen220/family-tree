@@ -157,7 +157,7 @@ svg#connectors { position:absolute; top:0; left:0; pointer-events:none; overflow
 .origin-german   { background:#dd0000; color:#fff; border-top:3px solid #000; border-bottom:3px solid #ffcc00; }
 .origin-french   { background:#fff; color:#0055a4; border-left:5px solid #0055a4; border-right:5px solid #ef4135; font-weight:700; }
 .origin-swiss    { background:#d52b1e; color:#fff; border:1.5px solid #d52b1e; }
-.origin-irish    { background:#fff; color:#169b62; border-left:5px solid #169b62; border-right:5px solid #ff883e; font-weight:700; }
+.origin-irish    { background:#fff; color:#0a5c36; border-left:5px solid #169b62; border-right:5px solid #ff883e; font-weight:700; }
 .origin-english  { background:#012169; color:#fff; border-bottom:3px solid #C8102E; }
 .origin-scottish { background:#005EB8; color:#fff; border-bottom:3px solid #fff; }
 .origin-italian  { background:#009246; color:#fff; border-right:6px solid #CE2B37; }
@@ -238,7 +238,7 @@ svg#connectors { position:absolute; top:0; left:0; pointer-events:none; overflow
   z-index:200; color:var(--ink); font-size:.78rem;
   box-shadow: 2px 3px 10px var(--shadow);
 }
-.legend h4 { font-family:'Playfair Display',serif; color:var(--accent); font-size:.85rem; margin-bottom:6px; font-weight:600; }
+.legend h2 { font-family:'Playfair Display',serif; color:var(--accent); font-size:.85rem; margin-bottom:6px; font-weight:600; }
 .legend-row { display:flex; align-items:center; gap:8px; margin-bottom:3px; }
 .legend-line { width:24px; height:2px; }
 .legend-line.descent  { background:#7a3b1e; }

@@ -24,7 +24,7 @@ export default function Legend({ nodes }) {
 
   return (
     <div className="legend">
-      <h4>Legend</h4>
+      <h2>Legend</h2>
       <div className="legend-row"><div className="legend-line descent"></div><span>Descent</span></div>
       <div className="legend-row"><div className="legend-line marriage"></div><span>Marriage / Union</span></div>
       
