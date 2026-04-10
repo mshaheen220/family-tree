@@ -178,16 +178,30 @@ export default function App() {
                 className="search-input"
                 type="text" 
                 placeholder="Search..." 
+                title="Type a name, then hit Enter"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' && filteredIndividuals.length > 0) {
+                    setSelectedRootId(filteredIndividuals[0].id);
+                    setSearchTerm('');
+                    e.target.blur(); // Drops focus so the dropdown hides
+                  }
+                }}
               />
               <div style={{ width: '1px', height: '16px', background: 'var(--gold)', opacity: 0.3, margin: '0 5px' }}></div>
               <select 
-                value={rootId || ''} 
-                onChange={(e) => { setSelectedRootId(e.target.value); setSearchTerm(''); }}
+                value={searchTerm ? 'search_prompt' : (rootId || '')} 
+                onChange={(e) => { 
+                  if (e.target.value !== 'search_prompt') {
+                    setSelectedRootId(e.target.value); 
+                    setSearchTerm(''); 
+                  }
+                }}
                 style={{ padding: '3px 5px', border: 'none', background: 'transparent', color: 'var(--gold)', fontFamily: "'Crimson Text', serif", outline: 'none', cursor: 'pointer', maxWidth: '160px', textOverflow: 'ellipsis' }}
               >
-                {filteredIndividuals.length === 0 && <option value="" disabled>No results...</option>}
+                {searchTerm && filteredIndividuals.length > 0 && <option value="search_prompt" disabled>Select from {filteredIndividuals.length} result(s)...</option>}
+                {filteredIndividuals.length === 0 && <option value="search_prompt" disabled>No results...</option>}
                 {filteredIndividuals.map(ind => (
                   <option key={ind.id} value={ind.id} style={{ color: '#000' }}>{ind.name}</option>
                 ))}
