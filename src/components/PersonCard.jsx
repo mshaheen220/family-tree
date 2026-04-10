@@ -1,13 +1,5 @@
 import React from 'react';
-
-const originLabels = {
-  polish: 'Poland', czech: 'Czech Republic', slovak: 'Slovakia',
-  austrian: 'Austria', lebanese: 'Lebanon', american: 'America',
-  german: 'Germany', french: 'France', swiss: 'Switzerland', irish: 'Ireland',
-  english: 'England', scottish: 'Scotland', italian: 'Italy',
-  spanish: 'Spain', canadian: 'Canada', mexican: 'Mexico',
-  russian: 'Russia', ukrainian: 'Ukraine', chinese: 'Chinese', generic: 'Other'
-};
+import { originLabels } from '../utils/constants.js';
 
 export default function PersonCard({ person, isRoot, isDimmed, onClick, onMouseEnter, onMouseLeave }) {
   return (

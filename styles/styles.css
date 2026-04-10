@@ -7,7 +7,6 @@
   --marriage-line: #0284C7; --blood-line: #991B1B;
   --legend-bg: rgba(250, 246, 238, 0.95);
   --badge-bg: rgba(153,27,27,0.05); --badge-border: rgba(153,27,27,0.3);
-  --gen6-border: #166534; --gen6-bg-1: #F0FDF4; --gen6-bg-2: #DCFCE7; --gen6-text: #14532D;
   --btn-bg: rgba(255,255,255,0.1); --btn-hover: rgba(255,255,255,0.2);
   --label-bg: rgba(249,246,240,0.95); --label-border: #991B1B;
   --band-line: rgba(28,25,23,0.15);
@@ -22,7 +21,6 @@
   --marriage-line: #A78BFA; --blood-line: #38BDF8;
   --legend-bg: rgba(30,41,59,0.95);
   --badge-bg: rgba(56,189,248,0.1); --badge-border: rgba(56,189,248,0.4);
-  --gen6-border: #34D399; --gen6-bg-1: #064E3B; --gen6-bg-2: #065F46; --gen6-text: #A7F3D0;
   --btn-bg: rgba(56,189,248,0.1); --btn-hover: rgba(56,189,248,0.2);
   --label-bg: rgba(15,23,42,0.95); --label-border: #38BDF8;
   --band-line: rgba(248,250,252,0.1);
@@ -37,7 +35,6 @@
   --marriage-line: #7C3AED; --blood-line: #0284C7;
   --legend-bg: rgba(255, 255, 255, 0.95);
   --badge-bg: rgba(2,132,199,0.05); --badge-border: rgba(2,132,199,0.3);
-  --gen6-border: #0D9488; --gen6-bg-1: #F0FDFA; --gen6-bg-2: #CCFBF1; --gen6-text: #115E59;
   --btn-bg: rgba(255,255,255,0.1); --btn-hover: rgba(255,255,255,0.2);
   --label-bg: rgba(240,249,255,0.95); --label-border: #0284C7;
   --band-line: rgba(2,132,199,0.15);
@@ -52,7 +49,6 @@
   --marriage-line: #0369A1; --blood-line: #15803D;
   --legend-bg: rgba(245, 249, 244, 0.95);
   --badge-bg: rgba(21,128,61,0.05); --badge-border: rgba(21,128,61,0.3);
-  --gen6-border: #854D0E; --gen6-bg-1: #FEFCE8; --gen6-bg-2: #FEF08A; --gen6-text: #713F12;
   --btn-bg: rgba(255,255,255,0.1); --btn-hover: rgba(255,255,255,0.2);
   --label-bg: rgba(240,253,244,0.95); --label-border: #15803D;
   --band-line: rgba(22,101,52,0.15);
@@ -67,7 +63,6 @@
   --marriage-line: #6B7280; --blood-line: #000000;
   --legend-bg: rgba(255, 255, 255, 0.95);
   --badge-bg: rgba(0,0,0,0.05); --badge-border: rgba(0,0,0,0.3);
-  --gen6-border: #4B5563; --gen6-bg-1: #F3F4F6; --gen6-bg-2: #E5E7EB; --gen6-text: #111827;
   --btn-bg: rgba(255,255,255,0.1); --btn-hover: rgba(255,255,255,0.2);
   --label-bg: rgba(249,250,251,0.95); --label-border: #000000;
   --band-line: rgba(0,0,0,0.15);
@@ -176,14 +171,6 @@ svg#connectors { position:absolute; top:0; left:0; pointer-events:none; overflow
 /* Legend line colors updated */
 .legend-line.descent  { background:#7a3b1e; }
 .legend-line.marriage { border-top:2px dashed var(--marriage-line); height:0; background:transparent; }
-.sibling-badge {
-  margin-top:6px; background:var(--badge-bg); border:1px dashed var(--badge-border);
-  border-radius:3px; padding:4px 7px; font-size:.69rem; color:var(--accent); line-height:1.5;
-}
-.sibling-badge strong {
-  display:block; font-size:.65rem; text-transform:uppercase; letter-spacing:.06em;
-  color:var(--ink-light); margin-bottom:1px; font-weight:600;
-}
 
 /* Tooltip styles */
 .tooltip-popup {
@@ -225,13 +212,6 @@ svg#connectors { position:absolute; top:0; left:0; pointer-events:none; overflow
 .stats-list { list-style: none; padding: 0; margin: 0; }
 .stats-list li { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--card-border); }
 .stats-list li:last-child { border-bottom: none; }
-
-.origins-list { display: flex; flex-direction: column; gap: 10px; }
-.origin-stat-label { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; font-size: 0.9rem; font-weight: 600; color: var(--ink-light); }
-.origin-stat-bar-bg { width: 100%; height: 8px; background: var(--card-border); border-radius: 4px; overflow: hidden; }
-
-.card.gen6 { border-color:var(--gen6-border); background:linear-gradient(135deg,var(--gen6-bg-1) 0%,var(--gen6-bg-2) 100%); }
-.card.gen6 .name { color:var(--gen6-text); }
 .legend {
   position:fixed; bottom:16px; right:16px; background:var(--legend-bg);
   border:1px solid var(--card-border); border-radius:4px; padding:10px 14px;

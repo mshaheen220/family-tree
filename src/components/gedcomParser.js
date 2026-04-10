@@ -1,6 +1,6 @@
 import calcTree from 'relatives-tree';
 
-export const CW = 192, RH = 285, PX = 80, PY = 80;
+export const CW = 192, PX = 80, PY = 80;
 
 export function parseGedcom(data, preferredRootId = null) {
   const lines = data.split(/\r?\n/);
