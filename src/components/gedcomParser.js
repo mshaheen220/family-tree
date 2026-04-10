@@ -55,7 +55,7 @@ export function parseGedcom(data, preferredRootId = null) {
   }
 
   if (Object.keys(indis).length === 0) {
-    return { nodes: [], connectors: [], maxGen: 0, individuals: [], rootId: null, genBands: [], genLabels: [], indis: {} };
+    return { nodes: [], connectors: [], maxGen: 0, individuals: [], rootId: null, genBands: [], genLabels: [], indis: {}, fams: {} };
   }
 
   // --- GLOBAL DATA CLEANUP ---
@@ -221,14 +221,14 @@ export function parseGedcom(data, preferredRootId = null) {
       }
     }
     if (!fallbackSuccess) {
-      return { nodes: [], connectors: [], maxGen: 0, individuals, rootId: validRootId, genBands: [], genLabels: [] };
+      return { nodes: [], connectors: [], maxGen: 0, individuals, rootId: validRootId, genBands: [], genLabels: [], indis, fams };
     }
   }
 
   // Calculate the layout grid using ONLY the real, visible cards
   const realNodes = tree.nodes.filter(n => indis[n.id] && !indis[n.id].isDummy);
   if (realNodes.length === 0) {
-    return { nodes: [], connectors: [], maxGen: 0, individuals, rootId: validRootId, genBands: [], genLabels: [], indis };
+    return { nodes: [], connectors: [], maxGen: 0, individuals, rootId: validRootId, genBands: [], genLabels: [], indis, fams };
   }
 
   const minTop = Math.min(...realNodes.map(n => n.top));
@@ -334,5 +334,5 @@ export function parseGedcom(data, preferredRootId = null) {
     }
   }
 
-  return { nodes, connectors, maxGen: rtMaxGen, individuals, rootId: validRootId, genBands, genLabels, indis };
+  return { nodes, connectors, maxGen: rtMaxGen, individuals, rootId: validRootId, genBands, genLabels, indis, fams };
 }

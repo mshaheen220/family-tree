@@ -22,7 +22,7 @@ export default function App() {
   const [searchTerm, setSearchTerm] = useState('');
   
   // Parse GEDCOM whenever the loaded file changes
-  const { nodes, connectors, maxGen, individuals, rootId, genBands, genLabels, indis } = useMemo(() => parseGedcom(currentGedcom, selectedRootId), [currentGedcom, selectedRootId]);
+  const { nodes, connectors, maxGen, individuals, rootId, genBands, genLabels, indis, fams } = useMemo(() => parseGedcom(currentGedcom, selectedRootId), [currentGedcom, selectedRootId]);
   const byId = useMemo(() => Object.fromEntries(nodes.map(n => [n.id, n])), [nodes]);
 
   // Filter individuals based on search term
@@ -266,7 +266,7 @@ export default function App() {
 
       <Legend nodes={nodes} />
       
-      <AnalyticsModal show={showAnalytics} onClose={() => setShowAnalytics(false)} indis={indis} nodes={nodes} />
+      <AnalyticsModal show={showAnalytics} onClose={() => setShowAnalytics(false)} indis={indis} nodes={nodes} fams={fams} />
     </div>
   );
 }
