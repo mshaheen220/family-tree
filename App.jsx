@@ -168,7 +168,7 @@ export default function App() {
       <header>
         <div>
           <h1>Family Tree</h1>
-          <p>{maxGen} Generations of Ancestry</p>
+          <p>{maxGen} Generations of Ancestry {byId[rootId]?.name ? `for ${byId[rootId].name}` : ''}</p>
         </div>
         <div className="controls">
           <Tooltip text="Search and select the root person">
