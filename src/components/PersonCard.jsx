@@ -9,11 +9,13 @@ const originLabels = {
   russian: 'Russian', ukrainian: 'Ukrainian', chinese: 'Chinese', generic: 'Other'
 };
 
-export default function PersonCard({ person, isRoot, onClick }) {
+export default function PersonCard({ person, isRoot, isDimmed, onClick, onMouseEnter, onMouseLeave }) {
   return (
     <div 
-      className={`card ${isRoot ? 'selected' : ''}`} 
+      className={`card ${isRoot ? 'selected' : ''} ${isDimmed ? 'dimmed' : ''}`} 
       style={{ left: person.x, top: person.y }}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
       onClick={(e) => {
         e.stopPropagation();
         onClick();

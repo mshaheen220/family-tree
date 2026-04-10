@@ -20,6 +20,7 @@ export default function App() {
   const [theme, setTheme] = useState('classic');
   const [showAnalytics, setShowAnalytics] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
+  const [hoveredNodeId, setHoveredNodeId] = useState(null);
   
   // Parse GEDCOM whenever the loaded file changes
   const { nodes, connectors, maxGen, individuals, rootId, genBands, genLabels, indis, fams } = useMemo(() => parseGedcom(currentGedcom, selectedRootId), [currentGedcom, selectedRootId]);
@@ -31,6 +32,42 @@ export default function App() {
     const lower = searchTerm.toLowerCase();
     return individuals.filter(i => i.name.toLowerCase().includes(lower));
   }, [individuals, searchTerm]);
+
+  // Trace lineage for hover highlighting
+  const highlightedIds = useMemo(() => {
+    if (!hoveredNodeId) return null;
+    const highlight = new Set([hoveredNodeId]);
+
+    // Trace ancestors (up the tree)
+    const upQueue = [hoveredNodeId];
+    while (upQueue.length > 0) {
+      const curr = indis[upQueue.shift()];
+      if (curr && curr.famc && curr.famc.length > 0) {
+        const fam = fams[curr.famc[0]];
+        if (fam) {
+          if (fam.husb) { highlight.add(fam.husb); upQueue.push(fam.husb); }
+          if (fam.wife) { highlight.add(fam.wife); upQueue.push(fam.wife); }
+        }
+      }
+    }
+
+    // Trace descendants and spouses (down the tree)
+    const downQueue = [hoveredNodeId];
+    while (downQueue.length > 0) {
+      const curr = indis[downQueue.shift()];
+      if (curr && curr.fams) {
+        curr.fams.forEach(fId => {
+          const fam = fams[fId];
+          if (fam) {
+            if (fam.husb) highlight.add(fam.husb);
+            if (fam.wife) highlight.add(fam.wife);
+            fam.chil.forEach(cId => { highlight.add(cId); downQueue.push(cId); });
+          }
+        });
+      }
+    }
+    return highlight;
+  }, [hoveredNodeId, indis, fams]);
 
   // Auto-center camera on the Root Person
   const handleResetView = () => {
@@ -221,7 +258,7 @@ export default function App() {
           transition: isDragging ? 'none' : 'transform 0.4s ease-out'
         }}
       >
-        <svg id="connectors" width={maxX} height={maxY} style={{ position: 'absolute', top: 0, left: 0, pointerEvents: 'none', overflow: 'visible' }}>
+        <svg id="connectors" width={maxX} height={maxY} style={{ position: 'absolute', top: 0, left: 0, pointerEvents: 'none', overflow: 'visible', opacity: highlightedIds ? 0.35 : 1, transition: 'opacity 0.2s' }}>
           {connectors?.map(c => (
             <polyline 
               key={c.id} 
@@ -248,6 +285,9 @@ export default function App() {
             key={p.id} 
             person={p} 
             isRoot={p.id === rootId} 
+            isDimmed={highlightedIds && !highlightedIds.has(p.id)}
+            onMouseEnter={() => setHoveredNodeId(p.id)}
+            onMouseLeave={() => setHoveredNodeId(null)}
             onClick={() => setSelectedRootId(p.id)} 
           />
         ))}
