@@ -73,7 +73,7 @@ export default function App() {
   const handleResetView = () => {
     const rootNode = nodes.find(n => n.id === rootId);
     if (rootNode) {
-      const targetScale = 0.55; // Zoom in nicely on the subject
+      const targetScale = 0.75; // Zoom in nicely on the subject
       const tx = (window.innerWidth / 2) - (rootNode.x + CW / 2) * targetScale;
       const ty = (window.innerHeight / 2) - (rootNode.y + 45) * targetScale; // 45 is half of card height
       setView({ scale: targetScale, tx, ty });
