@@ -241,6 +241,8 @@ export function parseGedcom(data, preferredRootId = null) {
   const mapX = (val) => (val - minLeft) * X_UNIT + PX;
   const mapY = (val) => (val - minTop) * Y_UNIT + PY;
 
+  const renderedIds = new Set(realNodes.map(n => n.id));
+
   // Map Relatives-Tree coordinates to our nodes
   const nodes = realNodes.map(rtn => {
     const i = indis[rtn.id];
@@ -254,7 +256,29 @@ export function parseGedcom(data, preferredRootId = null) {
     const centerX = mapX(rtn.left + 1);
     const centerY = mapY(rtn.top + 1);
 
-    return { ...i, x: centerX - CW / 2, y: centerY - 45, h: 90, gen };
+    // Check if the person has parents, children, or spouses in the GEDCOM that aren't on the canvas
+    let hasHiddenRelations = false;
+
+    if (i.famc.length > 0) {
+      const fam = fams[i.famc[0]];
+      if (fam) {
+        if (fam.husb && indis[fam.husb] && !indis[fam.husb].isDummy && !renderedIds.has(fam.husb)) hasHiddenRelations = true;
+        if (fam.wife && indis[fam.wife] && !indis[fam.wife].isDummy && !renderedIds.has(fam.wife)) hasHiddenRelations = true;
+      }
+    }
+
+    i.fams.forEach(fId => {
+      const fam = fams[fId];
+      if (fam) {
+        const spouseId = fam.husb === i.id ? fam.wife : fam.husb;
+        if (spouseId && indis[spouseId] && !indis[spouseId].isDummy && !renderedIds.has(spouseId)) hasHiddenRelations = true;
+        fam.chil.forEach(cId => {
+          if (indis[cId] && !indis[cId].isDummy && !renderedIds.has(cId)) hasHiddenRelations = true;
+        });
+      }
+    });
+
+    return { ...i, x: centerX - CW / 2, y: centerY - 45, h: 90, gen, hasHiddenRelations };
   }).filter(Boolean);
 
   const dummyPoints = tree.nodes.filter(n => indis[n.id]?.isDummy).map(n => ({

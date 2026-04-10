@@ -127,6 +127,12 @@ svg#connectors { position:absolute; top:0; left:0; pointer-events:none; overflow
   box-shadow: 0 0 0 1px var(--accent), 2px 3px 12px var(--shadow-selected);
 }
 .card:hover { box-shadow:3px 5px 18px rgba(90,60,20,.25),inset 0 1px 0 rgba(255,255,255,.7); transform:translateY(-1px); z-index:50; }
+.hidden-indicator {
+  position: absolute; top: -8px; right: -8px; background: var(--accent); color: var(--card-bg);
+  width: 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 2px 4px var(--shadow); opacity: 0.85; transition: all 0.2s;
+}
+.card:hover .hidden-indicator { opacity: 1; transform: scale(1.1); }
 .card .name  { font-family:'Playfair Display',serif; font-size:.88rem; font-weight:600; color:var(--ink); line-height:1.25; margin-bottom:4px; }
 .card .dates { font-size:.78rem; color:var(--accent); line-height:1.4; font-style:italic; }
 .card .place { font-size:.74rem; color:var(--accent2); line-height:1.35; margin-top:2px; }
