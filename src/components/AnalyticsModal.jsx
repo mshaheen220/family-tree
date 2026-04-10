@@ -104,20 +104,18 @@ export default function AnalyticsModal({ show, onClose, indis, nodes, fams }) {
     const lastNames = {};
 
     dataSource.forEach(p => {
-      if (p.isDummy || !p.name) return;
-      // Strip out parenthesis (often used for maiden names in GEDCOMs) and split
-      const parts = p.name.replace(/[()]/g, '').trim().split(/\s+/);
+      if (p.isDummy) return;
       
-      if (parts.length > 0) {
-        const first = parts[0];
-        if (first && first.toLowerCase() !== 'unknown' && first.toLowerCase() !== 'private') {
+      if (p.given) {
+        const first = p.given.split(/\s+/)[0];
+        if (first && first.length > 1 && first.toLowerCase() !== 'unknown' && first.toLowerCase() !== 'private') {
           firstNames[first] = (firstNames[first] || 0) + 1;
         }
-        if (parts.length > 1) {
-          const last = parts[parts.length - 1];
-          if (last && !last.includes('?') && last.toLowerCase() !== 'unknown' && last.toLowerCase() !== 'private') {
-            lastNames[last] = (lastNames[last] || 0) + 1;
-          }
+      }
+      if (p.surname) {
+        const last = p.surname;
+        if (last && !last.includes('?') && last.toLowerCase() !== 'unknown' && last.toLowerCase() !== 'private') {
+          lastNames[last] = (lastNames[last] || 0) + 1;
         }
       }
     });
@@ -191,6 +189,85 @@ export default function AnalyticsModal({ show, onClose, indis, nodes, fams }) {
     };
   }, [dataSource, fams, indis, isFullData]);
 
+  const namesakesData = useMemo(() => {
+    const activeIds = new Set(dataSource.map(p => p.id));
+    
+    // Helper to extract only given names
+    const getGivenNames = (p) => {
+      if (!p || !p.given) return [];
+      return p.given.toLowerCase().split(/\s+/).filter(n => n.length > 2 && n !== 'nee');
+    };
+
+    const formatName = (name) => name ? name.replace(/\//g, '').trim() : 'Unknown';
+
+    const maximalChains = [];
+    let namesakesCount = 0;
+
+    dataSource.forEach(p => {
+      if (p.isDummy) return;
+      const pNames = getGivenNames(p);
+      
+      // 1. Count Direct Namesakes
+      let isNamesake = false;
+      if (p.famc.length > 0) {
+        const fam = fams[p.famc[0]];
+        if (fam) {
+          const dad = indis[fam.husb];
+          const mom = indis[fam.wife];
+          const parentNames = new Set([
+            ...(dad ? getGivenNames(dad) : []),
+            ...(mom ? getGivenNames(mom) : [])
+          ]);
+          if (pNames.some(n => parentNames.has(n))) isNamesake = true;
+        }
+      }
+      if (isNamesake) namesakesCount++;
+
+      // 2. Trace Longest Name Chains
+      pNames.forEach(nameStr => {
+        // Only start a chain if the parent DOESN'T have the name (so we only track from the originator)
+        let parentHasIt = false;
+        if (p.famc.length > 0) {
+          const fam = fams[p.famc[0]];
+          if (fam) {
+            const dad = indis[fam.husb];
+            const mom = indis[fam.wife];
+            if (dad && activeIds.has(dad.id) && getGivenNames(dad).includes(nameStr)) parentHasIt = true;
+            if (mom && activeIds.has(mom.id) && getGivenNames(mom).includes(nameStr)) parentHasIt = true;
+          }
+        }
+
+        if (!parentHasIt) {
+          const dfs = (currId, currentPath) => {
+            const currPerson = indis[currId];
+            let passedDown = false;
+            currPerson.fams.forEach(fId => {
+              const fam = fams[fId];
+              if (fam) {
+                fam.chil.forEach(cId => {
+                  if (activeIds.has(cId) && !indis[cId].isDummy) {
+                    if (getGivenNames(indis[cId]).includes(nameStr)) {
+                      passedDown = true;
+                      dfs(cId, [...currentPath, indis[cId]]);
+                    }
+                  }
+                });
+              }
+            });
+            if (!passedDown && currentPath.length > 1) {
+              maximalChains.push({ name: nameStr.charAt(0).toUpperCase() + nameStr.slice(1), path: currentPath.map(x => formatName(x.name)) });
+            }
+          };
+          dfs(p.id, [p]);
+        }
+      });
+    });
+
+    // Sort by length of the chain (longest first)
+    maximalChains.sort((a, b) => b.path.length - a.path.length || a.name.localeCompare(b.name));
+    return { namesakesCount, topChains: maximalChains.slice(0, 5) };
+  }, [dataSource, fams, indis]);
+
   if (!show) return null;
 
   return (
@@ -202,7 +279,7 @@ export default function AnalyticsModal({ show, onClose, indis, nodes, fams }) {
         </div>
         <div className="analytics-content">
           
-          <div style={{ display: 'flex', background: 'var(--card-border)', padding: '4px', borderRadius: '6px', marginBottom: '20px' }}>
+          <div style={{ display: 'flex', background: 'var(--card-border)', padding: '4px', borderRadius: '6px', margin: '0 25px 20px 25px' }}>
             <button 
               style={{ flex: 1, padding: '6px 12px', border: 'none', borderRadius: '4px', background: isFullData ? 'var(--card-bg)' : 'transparent', color: isFullData ? 'var(--ink)' : 'var(--ink-light)', fontWeight: isFullData ? 600 : 400, cursor: 'pointer', transition: 'all 0.2s', boxShadow: isFullData ? '0 2px 4px var(--shadow)' : 'none' }}
               onClick={() => setIsFullData(true)}
@@ -224,6 +301,29 @@ export default function AnalyticsModal({ show, onClose, indis, nodes, fams }) {
               <li><strong>Average Family Size</strong> <span>{familyDynamics.averageSize} children</span></li>
               <li><strong>Generational Gap</strong> <span>{familyDynamics.averageGap} years (avg age of parents)</span></li>
             </ul>
+          </section>
+
+          <section className="analytics-section">
+            <h3>🔗 Namesakes & Lineage</h3>
+            <ul className="stats-list">
+              <li><strong>Direct Namesakes</strong> <span>{namesakesData.namesakesCount} relatives share a name with a parent</span></li>
+            </ul>
+            {namesakesData.topChains.length > 0 && (
+              <div style={{ marginTop: '15px' }}>
+                <h4 style={{ fontSize: '0.95rem', color: 'var(--ink-light)', marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Longest Passed-Down Names</h4>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                  {namesakesData.topChains.map((chain, i) => (
+                    <div key={i} style={{ background: 'var(--badge-bg)', padding: '10px 12px', borderRadius: '6px', border: '1px solid var(--badge-border)' }}>
+                      <strong style={{ color: 'var(--accent)', fontSize: '1.05rem' }}>"{chain.name}"</strong> 
+                      <span style={{ fontSize: '0.85rem', color: 'var(--ink-light)', marginLeft: '6px' }}>({chain.path.length} generations)</span>
+                      <div style={{ marginTop: '4px', fontSize: '0.9rem', color: 'var(--ink)', lineHeight: '1.4' }}>
+                        {chain.path.join(' → ')}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
           </section>
 
           <section className="analytics-section">

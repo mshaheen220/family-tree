@@ -15,7 +15,7 @@ export function parseGedcom(data, preferredRootId = null) {
     const matchFam = line.match(/^0 (@[A-Z0-9_]+@) FAM/);
 
     if (matchIndi) {
-      current = { id: matchIndi[1], type: 'INDI', name: '', birth: '', death: '', place: '', deathPlace: '', famc: [], fams: [] };
+      current = { id: matchIndi[1], type: 'INDI', name: '', given: '', surname: '', birth: '', death: '', place: '', deathPlace: '', famc: [], fams: [] };
       indis[current.id] = current;
       parsingTag = null;
     } else if (matchFam) {
@@ -31,7 +31,12 @@ export function parseGedcom(data, preferredRootId = null) {
       if (current.type === 'INDI') {
         if (lvl === '1') {
           parsingTag = tag;
-          if (tag === 'NAME') current.name = val.replace(/\//g, '').trim();
+          if (tag === 'NAME') {
+            current.name = val.replace(/\//g, '').trim();
+            const surMatch = val.match(/\/(.*?)\//);
+            current.surname = surMatch ? surMatch[1].trim() : '';
+            current.given = val.replace(/\/(.*?)\//g, '').replace(/[()"]/g, '').trim();
+          }
           if (tag === 'SEX') current.sex = val;
           if (tag === 'FAMC') current.famc.push(val);
           if (tag === 'FAMS') current.fams.push(val);
