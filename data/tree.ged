@@ -13,7 +13,7 @@
 4 CONT Lehi, UT  84043
 4 CONT USA
 1 DATE 10 Apr 2026
-2 TIME 18:28:43
+2 TIME 21:16:12
 1 GEDC
 2 VERS 5.5.1
 2 FORM LINEAGE-LINKED
@@ -3664,24 +3664,24 @@
 1 FAMC @F8@
 1 FAMS @F59@
 1 BIRT
-2 DATE 1894
+2 DATE 18 Mar 1887
 2 PLAC Ukraine
 1 DEAT
-2 DATE 1976
-2 PLAC Westmoreland County, PA
+2 DATE 12 Apr 1964
+2 PLAC Export, Westmoreland, Pennsylvania, USA
 0 @I412771175899@ INDI
-1 NAME Julia (aka Eva) /Pylpzak/
-2 GIVN Julia (aka Eva)
+1 NAME Eva Julia /Pylpzak/
+2 GIVN Eva Julia
 2 SURN Pylpzak
 1 SEX F
 1 FAMC @F20@
 1 FAMS @F59@
 1 BIRT
-2 DATE 1903
-2 PLAC Ukraine
+2 DATE 4 Aug 1889
+2 PLAC Poland
 1 DEAT
-2 DATE Jul 1989
-2 PLAC Westmoreland County, PA
+2 DATE 16 Nov 1969
+2 PLAC Jeannette, Westmoreland, Pennsylvania, USA
 0 @I412771176237@ INDI
 1 NAME Abraham /Shaheen/
 2 GIVN Abraham
@@ -3845,23 +3845,41 @@
 1 DEAT
 2 DATE 2008
 0 @I412771177387@ INDI
-1 NAME Nick /Behun/
-2 GIVN Nick
+1 NAME Nicholas /Behun/
+2 GIVN Nicholas
 2 SURN Behun
 1 SEX M
 1 FAMC @F59@
+1 BIRT
+2 DATE 13 Sep 1909
+2 PLAC salem township, Westmoreland County, Pennsylvania, USA
+1 DEAT
+2 DATE Apr 1982
+2 PLAC Delmont, Westmoreland, Pennsylvania, USA
 0 @I412771177413@ INDI
 1 NAME John /Behun/
 2 GIVN John
 2 SURN Behun
 1 SEX M
 1 FAMC @F59@
+1 BIRT
+2 DATE 10 Feb 1912
+2 PLAC Etna, Allegheny, Pennsylvania, USA
+1 DEAT
+2 DATE 6 Nov 1997
+2 PLAC Delmont, Westmoreland, Pennsylvania, USA
 0 @I412771177419@ INDI
-1 NAME Joseph /Behun/
-2 GIVN Joseph
+1 NAME Joseph Andrew /Behun/
+2 GIVN Joseph Andrew
 2 SURN Behun
 1 SEX M
 1 FAMC @F59@
+1 BIRT
+2 DATE 18 Mar 1919
+2 PLAC Westmoreland County, Pennsylvania, USA
+1 DEAT
+2 DATE 15 Dec 1995
+2 PLAC Export, Westmoreland, Pennsylvania, USA
 0 @I412771177446@ INDI
 1 NAME Mary /Behun/
 2 GIVN Mary
@@ -3869,11 +3887,17 @@
 1 SEX F
 1 FAMC @F59@
 0 @I412771177456@ INDI
-1 NAME Ann /Behun/
-2 GIVN Ann
+1 NAME Anna Louise /Behun/
+2 GIVN Anna Louise
 2 SURN Behun
 1 SEX F
 1 FAMC @F59@
+1 BIRT
+2 DATE 26 Jul 1914
+2 PLAC Etna, Allegheny, Pennsylvania, USA
+1 DEAT
+2 DATE 22 Apr 1993
+2 PLAC Export, Westmoreland, Pennsylvania, USA
 0 @I412771177561@ INDI
 1 NAME Helen /Behun/
 2 GIVN Helen
@@ -3980,7 +4004,6 @@
 1 SEX M
 1 FAMS @F20@
 1 BIRT
-2 DATE 1875
 2 PLAC Austria
 0 @I412771182400@ INDI
 1 NAME Anna //
@@ -3988,7 +4011,6 @@
 1 SEX F
 1 FAMS @F20@
 1 BIRT
-2 DATE 1880
 2 PLAC Austria
 0 @I412771182534@ INDI
 1 NAME Jan /Mihalik/
@@ -4483,12 +4505,12 @@
 0 @F59@ FAM
 1 HUSB @I412771175855@
 1 WIFE @I412771175899@
-1 CHIL @I412771172650@
 1 CHIL @I412771177387@
 1 CHIL @I412771177413@
-1 CHIL @I412771177419@
-1 CHIL @I412771177446@
 1 CHIL @I412771177456@
+1 CHIL @I412771177419@
+1 CHIL @I412771172650@
+1 CHIL @I412771177446@
 1 CHIL @I412771177561@
 0 @F60@ FAM
 1 HUSB @I412076081426@
@@ -4540,7 +4562,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:48.369
-1 _USER hMSFtbQJ4TF71DaH/zVqhqz8cq2W2CoZdgKo8LNTKbQjZf0EKhf4a7yHVTwmqz8qiushGN0rPdpkIbYkKFWMXA==
+1 _USER 79F8DREIqCDlVFPJqB1SBFOx/7JnPeffe6D3CzKXl+VX74T7gCgEGw7q+KOjebAwjyytveVL4sjjG69h7EQ80Q==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -4559,7 +4581,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription>The Shaheen Fa
 2 CONC mily shown in the picture taken in front of 633 Third St sometime between 1910 and 1912</transcription><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-07 16:23:16.366
-1 _USER XfSRLEJI6NSKGUBbH92nf6nuPX+AYudxkiNL/bTHqnZLKjd1YacF/hDhahS/peZY82KEeSp8KEWy0mk2nCLqqQ==
+1 _USER ae4TU/Chuxol+tFaxnffpmQxR5rXafFZErZGO8b/OQ5v0c7e28Tx+aFmcZrK6G33fgvxy1p8/C5ulkE+fNEx6Q==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -4578,13 +4600,13 @@
 1 PLAC Pittsburgh, PA
 1 _META <metadataxml><cemetery /><transcription /></metadataxml>
 1 _CREA 2018-11-24 18:02:22.632
-1 _USER grNQAr0Av0JChjb5UwhrzVOg7IF2Em9PvIB54iuMPKt39gDoyVNDRSPGyclWVuooB9+3engmblTN5iSPh4ZsRw==
+1 _USER EHOiPUkn7/u252vCA13Ht9M/doKkmJjOB886sXi0MNw/hdK+w6aRIVDziJbVFbH1uPqOMUOCoKSDgANqh5osXA==
 2 _ENCR 1
 1 _CLON
 2 _TID 32576842
 2 _PID 18803225037
 2 _OID e96153fd-1b96-48eb-8472-c08d3ef4d531
-2 _USER WK7UkPQzEfr3/LfbiCjMEnvzs0Ugo1WjSbgU+nQoOhypFVl3gydNvC5hHC/jEfWFN8j/Fpa+1fYb9mukSmx4+w==
+2 _USER +NmmcQ2Ru6BrWs91QzMXRyh+HtewRcU3qWv0EXuHHOIsET9ms3QICap3NXt0NkLp3188GlPxprlwop1QvGFs6Q==
 3 _ENCR 1
 2 _DATE 2014-05-16 14:42:16.000
 1 _ORIG u
@@ -4603,13 +4625,13 @@
 1 DATE 30 Jan 1892
 1 _META <metadataxml><cemetery /><transcription /></metadataxml>
 1 _CREA 2020-09-08 23:48:44.000
-1 _USER KQ9y5r6OVx+VN+h+ooO1CPnAkMH/qJklX4ekgR8o0zrP/F3QjnxbuPzMc5IHcHkTFCRF9UUKOxx/kh7yoKnlcg==
+1 _USER COGx22cN7p2l2gQW/6L2wUXDZSSK90Y/BAi4ddNmeUr5bmVpyGU2Zdf0OlGqGH5nGR8Ei/ujsgCNbdP3xswsgQ==
 2 _ENCR 1
 1 _CLON
 2 _TID 32576842
 2 _PID 18805104788
 2 _OID 4e70aaa8-9140-48b3-b0ec-ba54eb9572df
-2 _USER DDqYokuBrjZplGxG5YP1CDk8EuRDA2AwzZ67qrN7zDzAGqkfUui/9J83tzKHTWqS3JVDhLGA/zzWjlGyxBU14A==
+2 _USER QaTtfg90iEqDHoaRqhIM6v/IfTZOzmqJdhvWTmycY8W8sln3nyuOYAybHi05PWV8lmaZnaN9kprmMh6Fm4+VGw==
 3 _ENCR 1
 2 _DATE 2012-05-28 08:25:24.000
 1 _ORIG u
@@ -4629,13 +4651,13 @@
 1 _DSCR The beautiful Anna Margaret Soulier Bleacher
 1 _META <metadataxml><cemetery /><transcription /></metadataxml>
 1 _CREA 2018-12-28 03:44:17.068
-1 _USER nJmid13Q8xFCK2B4w32W64ITcUZ+Ur3+q544LBhhg+/AabWZLU4viCtjCyq6Aefp8V3vbshqQog4EnP0Dx4Ikw==
+1 _USER +7z8Q87rDumdmQJ+tHtRMLVXA0L48BQ9+r2YnlyHqEeG5PGluhRY22YMFDajZcIXaO8P/F5Szrj5m3LNFRbULw==
 2 _ENCR 1
 1 _CLON
 2 _TID 73547650
 2 _PID 30276120670
 2 _OID c3c90eeb-a3b2-4132-99b7-fcbb4e672439
-2 _USER Kt7ooScr6aeWKKW89lsea6nDkrVDJSiduY3sCcgbd+GHZGLzTsfQ/zm+sDN4a+2yOxrbt2UkKiVrVecG2mfZ3A==
+2 _USER GjuyWWBOJP9Utv7zdeDHUzIMvsd+n4/j6MI48r7ot6OHv359Jq91/ePrMEc5dXWyi3l6pRqjNQEMTZEHPYcYgA==
 3 _ENCR 1
 2 _DATE 2015-06-02 19:40:17.000
 1 _ORIG u
@@ -4655,13 +4677,13 @@
 1 PLAC Herman, Pennsylvania
 1 _META <metadataxml><cemetery>St. Mary's Cemetery, </cemetery><transcription /><personas><persona><pname>Lorenz Bleichner</pname><bdate>1819</bdate><bplace /><ddate>1909</ddate><dplace /></persona></personas></metadataxml>
 1 _CREA 2021-01-22 22:24:17.000
-1 _USER T3Xlng+nAxviuecImk3Pt8cQuc85C+41boNmcqZpY0h60VGIK/sEU0yNYYPq5flnlKHYsIGZxzm8cfyBFk3vMQ==
+1 _USER nbn20ByyWmEemej2pIvn4oF8moyw9/RnaSyvs2vAwibQ+WivoebZWcdlripnKhGKmd8bb+ywJiZe/qYUxasd5Q==
 2 _ENCR 1
 1 _CLON
 2 _TID 27424369
 2 _PID 13623062747
 2 _OID ddbb8541-8b14-4cc8-96be-14b40cf46bf2
-2 _USER oULf2y7DCAvFrOzKDPwu9VvWAHg99Eim1o1vZeOmmBYj3e3dkcHZwIMm2MzNw4x4Ql9xUbiqcEZVVMXqn2oTSQ==
+2 _USER ZVHXsOh+ezkH0/T33OJ2t+16MIMxhI9arYG/4Z0W6TTUG2YhZK2V+oVncJYSR7lLyPc1s3EyyeeJrzLPVTIAJA==
 3 _ENCR 1
 2 _DATE 2013-03-24 22:26:04.000
 1 _ORIG u
@@ -4682,7 +4704,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:27:14.889
-1 _USER Z112pI1hSze+2YJc3d7wR7DyPAI/+CulpwbZljkRo5P4jqWQxiLsk1yaDQLzMQEV6nFVYsXBUH93SvMNq8mQsg==
+1 _USER mXk1k3F8mAAyYFDQeKGm98twGj6G1VrY8xuqOkXGlVhjhha6kcdkmvYek/vxrezcxzU575EoLctKRJDlPoCFKA==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -4700,7 +4722,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:49.237
-1 _USER c8rU4HKwakKRvn0NhJRgCsQLkfXvjbKmIK3dpCYiQGLBQXQWMHcBXK2eBPpzEhd/+BCKkO0iGp0bo7fLNeHklA==
+1 _USER xUkcacKguOiDXOCtuppcGB9FMbPNX+tzCg6KJXKe4xZR4qaXiXKlTkr1u7hiAJmIRipiJVtBwfPoDfgFkMu6Sg==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -4715,13 +4737,13 @@
 2 TITL 1860 United States Federal Census
 1 _OID 359a9d7a-d5af-40f4-9676-5e50c4cc5a95
 1 _CREA 2021-01-22 21:28:23.000
-1 _USER E8e2S8EowaODs5kyBSVHqiI5Af+6wdg+6WWtRH1pA21Y41KrB3ID4awr9FxRAYO+2a9WDkIJI/OdIIMBDBG8Sw==
+1 _USER eegBPgPsQ5rLjrEInH5tctL/93HrZKAsqEaUdj0mIHfMDfGF5Afn+aBht2pA/awWDt4OIBpafFhcrUjryLKd0w==
 2 _ENCR 1
 1 _CLON
 2 _TID 77593603
 2 _PID 36372113929
 2 _OID df3bb29c-38c8-436d-9b99-b3c6171a8250
-2 _USER Uf8Gz7IO7FiHaiGJCz2wu7zG4SPIPzKGScGdTXdLZV3MSDyhVfTtpmla8eoeadxXODBGAQCH/MyOs/oCCyoJhQ==
+2 _USER rarAiGmZcRS1vIvWJZlRZt60x+A2UjgrwP2YXLTB0KZxeWZxMB4Jz0UhjNvtSSsQdfPXIRt5Yu4KS+159J3xJw==
 3 _ENCR 1
 2 _DATE 2015-02-20 00:07:34.000
 1 _ORIG u
@@ -4740,7 +4762,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:48.208
-1 _USER b9RXB6l9vty3XQ30ccGiiczMPvRdkKoAu2b/dXttYNAyP/Q991ejcMgd8FstkWn9oQcMsZ788WjJjAdUZG/Zag==
+1 _USER pYsDOm3PLEZ66svqWL6CC0cIqVq4pi9KucrP6aPBN8TriJP20fa0d6Paps6xF6urpOiyxzMHtXvozA7zCXrk8A==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -4758,7 +4780,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:48.264
-1 _USER azcVT99GQSFfY+YrmXzNcvHitRbEMpZ2H+avqUAUcDA4nriBBgw9oA+2xx0hUy4r6PZbHi26XT/JFhAmkFZliQ==
+1 _USER +9Y7XTp4Pyu/gyHrohu8KH+xRFxc003sn21i6u0n6evMXcDMuabD+7yvAGLRHKeawW+UfsID6VAaG2wziO9Q3A==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -4778,7 +4800,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:47:01.278
-1 _USER DG/mEvZgqGjDQ48ys5cOGYhv3fRxgYUMkzqmWh0hHvD18litakVzuC6ZSb6MnkQPjUh37aenL+W2kGVf515/vw==
+1 _USER 03srUa17ovtANnwQzPg1zJiTZADjNmBp8s4ZslW1SVkAuH28CP1I4Dl2oB86KsyBaFpUNeGbd5o7MnezPQPEEA==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL Y
@@ -4794,13 +4816,13 @@
 1 _OID 4cfc43ca-1cc4-4824-aa3c-cbccbab2bb4c
 1 DATE 6/5/2014 11:27:41 PM
 1 _CREA 2018-12-28 04:36:47.568
-1 _USER w2JgJ6cy8NtERSg+zt7QkLsCqlagf3/4uWq+vKLI2wZgV4pAqzr9Ncup1KXtn6CBisGO0DRPqmASYsRFYl4wYA==
+1 _USER pN8D7rFs2h+pG18+UIi353YW1Tikdhc5qO6rTwQwNbv08WUkq8jboj3SGmz2NSd4524NxzzMq8WxJ7mTpY48jg==
 2 _ENCR 1
 1 _CLON
 2 _TID 43572778
 2 _PID 13922357760
 2 _OID f82aebce-71e5-4391-afe2-3a57d3e6dbf1
-2 _USER 6yh0o8/HUUJ2xkgx9xaYmr/Wn8H88cUV5elmAGMt5sxTXVeeh7hLfc/8E40ddXC3qHBfWf7AAGR4IAAfnQaInw==
+2 _USER YmG3uSQTxkMhti5aceAwQBO3tGnU7U14K7R4xdGnp3gUEvYqvj0ZmHH4MDuUpzycHNNY4X42TqkKk+BYPoD+Ww==
 3 _ENCR 1
 2 _DATE 2014-06-06 04:29:42.000
 1 _ORIG u
@@ -4819,13 +4841,13 @@
 1 DATE 18 Jun 1947, Wed
 1 PLAC Pittsburgh, Pennsylvania
 1 _CREA 2021-01-28 00:16:36.000
-1 _USER DhR9MJDCm/5XkNFu8P4ibHSBk/OewxsQM7ym6BekE3EWgM1/o+MXqgMTDTBOT3LdJ5D2PB10eUPDggQUgV9jeg==
+1 _USER yO2Ys58x9jZrPk9RIKsNPHkdiZJQL9A9LjxLG01ple3mlwgkte1Tr1d0vyxOjqbOmcdk5aoD86zSDe7Vc5axdw==
 2 _ENCR 1
 1 _CLON
 2 _TID 10045005
 2 _PID 210024685462
 2 _OID 5bbbf67c-3d42-45d3-92e2-c5d9f1c99a73
-2 _USER UXkBOCwq6/3q7bH22E54pKPQVwbB70apChSP38z0gEgRo2dr9l11N9YLGpfC7EgQRx67eMeAYP6OpqmttKLWSQ==
+2 _USER 2PEhajwifk0HJim5xgjUAVxSm7C+TELIiCGSA8z9PFa30mfYEBlpkOwiBXDX4QUBA6Pbd2obdgK2fuAQuYAC0w==
 3 _ENCR 1
 2 _DATE 2016-08-17 01:59:49.000
 1 _ORIG newspapers
@@ -4845,13 +4867,13 @@
 1 DATE 25 Mar 2018
 1 PLAC Pittsburgh, Allegheny, Pennsylvania, USA
 1 _CREA 2018-12-28 03:42:06.864
-1 _USER JBD0ZGUq35HVZw4Jl514U0no8kl1Y5oqjnU8cSB9pdvnp2CcD6dmXR2Rz0LtYsra4OWWIGqXaOnwM8l22ypd5w==
+1 _USER oAaVnx+PykX3xbNJa2/M+7ajRMRIxY01AwYM5mdXMnJWlknXMBk+nH/2kOGO5VCfox+2jb8pFTN+Ax0hVg26kw==
 2 _ENCR 1
 1 _CLON
 2 _TID 32576842
 2 _PID 18803225037
 2 _OID ef8c7fed-cd8a-4d9f-a184-4c6033b74ae4
-2 _USER RSR0Pz/cLuIXlnBRkahIUxnbVlW9NojX9mUUwrWhffFm+higm7bWTacl+j7XsUWFBANGoxt3VCPQ1y62csCMLA==
+2 _USER rXqpyG8cvcs0FCvW5E+RRTpl/kEru5g//VynyN79rAX+sUdAZOltX/A7trBPZFoe+syGanAE4I+ri0MUh+48/Q==
 3 _ENCR 1
 2 _DATE 2018-03-26 02:00:41.000
 1 _ORIG u
@@ -4870,7 +4892,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:27:14.941
-1 _USER 8UBm1vxT8raNsFSw2UFEcS9aLztNMT5Yq9evKX9FVqwVaECBYh0U/4socgOTiipCZL9PBajyUOtvrAPeka4lxQ==
+1 _USER Gjdsgk6JdMmyK10/08UEErQLSqIKYAiuKuswuAQLvdyWMpWpCYatbx+VKhB2sE1wEFiZmSDgO3Dne/aVMvDReA==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -4888,7 +4910,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:50.105
-1 _USER wDT7WWYF1h3cy6a2amXQq1imhcmQxyyTyKgymi6iZBJJH86fMqWmesQylY5n/biOHT5BfpTKev9tzJwHtGS/wg==
+1 _USER v1EwGIvwWWfGB91F0vytvI2EDeBpNYNBcGKdlBiZ5WR3l0N2ZbSMmtoTgXGTIf1xhL20MTs9eRnL8t5WsdVHSw==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -4906,13 +4928,13 @@
 1 _DSCR Great Grandfather George J. Bleichner
 1 _META <metadataxml><cemetery /><transcription /></metadataxml>
 1 _CREA 2020-09-08 23:50:07.000
-1 _USER 7Ya59J1sBztsZyf+kP9tH99qXtxJtn4A5tysbXsaRMaanTLEW8kpsAoVT3rEa1vD32k+Jj5psPAS7r4IYHtcgQ==
+1 _USER rT1G0Untz0x6n4lGC9F3EZaLDs4I06Pllzj8NNQ1IbXgNA0nfJr+JKEPM8TVgihMhahMjrRcpyDLtvZXxtNbVg==
 2 _ENCR 1
 1 _CLON
 2 _TID 73547650
 2 _PID 30276120756
 2 _OID 3a619b2d-f24d-40ca-a9a8-98ae3ed09d13
-2 _USER xGF3N/WSz4z0LPtwe7HIC4GEpMSoNYiBuiwzG0AD3Znfwnx9s3MHZHKq0P1bIhhkOTe37i0Xti+QU9a2vsaT4A==
+2 _USER vglIhrHhRVVIMOIQZXre7m2s1k7piY+4YB4yMtmVzzFazKoVPgGnve/+slyxTGXvHeGmg6T2INZc0Cu/reWv9A==
 3 _ENCR 1
 2 _DATE 2015-06-10 02:14:23.000
 1 _ORIG u
@@ -4930,13 +4952,13 @@
 1 _OID 7fd9835b-88b9-48bb-9773-758fb373a8c9
 1 _META <metadataxml><cemetery /><transcription /></metadataxml>
 1 _CREA 2019-02-05 00:44:04.390
-1 _USER KA4+ZY7adFNCe7jzTzapLxZGx0Ef7ZqXM6fcN0bHYeSBpATPsBkRrgN3BnIyBELALIZ5OUW+KmM3VXxsmvMCnw==
+1 _USER SjRBRCPGjtBPr9slS2eMbA8mj9chzh8An92cCLsh+myWYiZhgeWv/cL/p0unP2ebpq8mua01mHfFE03/unm7mg==
 2 _ENCR 1
 1 _CLON
 2 _TID 3290666
 2 _PID -1625128717
 2 _OID 8062fd17-3221-49e5-b8e1-bff839e6c54c
-2 _USER 3JgobuydhMDDmj+Esx9hXYE6x+NbmjE6wSHtwRLqYeo1ih5E7VkG0wgh8ZDq4C88QB6AjLWcvlNdTx11smGbsw==
+2 _USER zbFUJdG3wB36f0tfKelIa6CvzQGqt3mEJwqbdOcoQcsJkcB+8NU0bntkbM3f97RtwZN8uWY6dFdA5ez/wx21PQ==
 3 _ENCR 1
 2 _DATE 2012-11-29 23:20:58.000
 1 _ORIG u
@@ -4957,7 +4979,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:27:14.698
-1 _USER 30Km76t2/YotHnFVHiUi90HbF+BPEq6uXw9JxPuvJZpDVNtCI1ID25H1JlFxjG9Wwv5HMqTfWqm4YLw5PmMVtg==
+1 _USER Qqm5IgK9pmbIYE8HCUNHWwUOLJDwbGZACDuCTDzVGSEYY/YzRrfkk+c7isd5YMtrkwY53pvcbKYBHqJDklAXLQ==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -4975,13 +4997,13 @@
 1 DATE 29 Apr 1921
 1 PLAC Pittsburgh, Pennsylvania
 1 _CREA 2021-01-28 00:42:59.000
-1 _USER 5x2QNzZQx4wqRhiGFUuOlF4ijpwBA5ITYNMR/RlQVxhywNszacROoWBtO2JHw0QjihhlvjcWf7I7Uuy223g2wA==
+1 _USER UfekYR9UqYsoT2TUgy60NXMvi7KN87GWwtNAVXa/TtVbQxi8OZk1FBi0FJIOGuO13p6FKTezpkdt+VvapM+UjA==
 2 _ENCR 1
 1 _CLON
 2 _TID 10045005
 2 _PID 210024683520
 2 _OID ed5c61b0-8369-4ea6-98a7-f56fe502e33d
-2 _USER 0Cnd1HuTpvfQ4VeycVOL02++EHeB0ayR+9ERkPw+C5jeDR88uyOHmpCdENiLunGg12ZCR+4Z9OgZ7F8vWTQkag==
+2 _USER 4iePoOnBDJ5kzSpYA7gbTKFmwhC3BCJO3v7y7o00x5asYNV0e0E+MvAUoJLcvJtBNA2GoqClR+N1eeezm77POw==
 3 _ENCR 1
 2 _DATE 2018-03-08 21:07:39.000
 1 _ORIG newspapers
@@ -4998,13 +5020,13 @@
 2 TITL William Joseph Wolbert
 1 _OID 8cfc6890-25a0-4d96-9838-21439f0a92bc
 1 _CREA 2021-01-21 18:46:39.000
-1 _USER IbreaqFC9Jf/5fQuIAe5upC6zuudUP/XmCKRqNi0FJhrHFz+8lX3A6TMISOVlkfbb2drPFtOLZeFzJFf+3LZtA==
+1 _USER 2NGaeJwAxJwBXLJrK3W8skZkfMbFAy45CNaJciqFxyRV1f4nhKE4rCGC9eKDgObWVhIGzRTHUyptIftT2ap+jA==
 2 _ENCR 1
 1 _CLON
 2 _TID 3748446
 2 _PID 242127434519
 2 _OID 10e85cc3-af86-4cdf-9ca2-de9340712d85
-2 _USER zcRLy1acdqW/q4xcabydlt7bsICPgo1hxR2RlimXWb7qcQbdghtYCcPOeNGivjYhuWeQahtimBTuUsKyPa8VyQ==
+2 _USER azWYgr6Wfoiiz7E170Hd3XlxWvzAR60usMKACIWrNjzC4DRNwzkzBmApXlXqJ+CB58IsWamFILmAWG+nYZEKXg==
 3 _ENCR 1
 2 _DATE 2019-09-13 12:28:18.000
 1 _ORIG u
@@ -5023,13 +5045,13 @@
 1 DATE 28 May 2015
 1 _META <metadataxml><cemetery /><transcription /></metadataxml>
 1 _CREA 2021-01-22 22:26:40.000
-1 _USER zWI8ZwwHdbsgxpd903S143D/p1UfkunPannRQS44n1DDHfcntFKd0tqWFpz4D5AGgH7uH+UWxfimJOzcih2Drw==
+1 _USER cn0l39kD8d/ormmlIuSE8k12+AuiM8B+SzhqIlHQXVI2FffBQkhnRYu7E1aDbIT6KQuvUSVyeLfc1qvAFmGIZg==
 2 _ENCR 1
 1 _CLON
 2 _TID 79060437
 2 _PID 44401676435
 2 _OID 9e1996b4-3d93-42af-ba2e-92ee997b3063
-2 _USER NNGgPXB6INCzzb1u6KV5VwO0VoxG7rckTEtaoJPD6DEiBOqHemANgTpudUSCgv30/12d0juobyH63XyW9oGOQw==
+2 _USER 0IhVsSbNsVv2c60+0LwYGoI116ixyATRGYb1cX0JNTW2/ckV4jfSUPUQt4t94tAhXpyn9b2KDetBBR2zyJ1Aog==
 3 _ENCR 1
 2 _DATE 2015-05-28 15:45:23.000
 1 _ORIG u
@@ -5049,7 +5071,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:27:14.946
-1 _USER 15CrO86oHpqIQIgH20Cp81LYArvV5Be7sgS9V33wyIp0LfGphYbY0xDtDEGZi96ckgs3S/wOSOqTc5azLP601w==
+1 _USER 67OgeDwLIu9mSnmYvFTmIYPMhkRwgzbrKlOwC90LXELpdseDXNphZixfA6C5QNMjKF/W04aI0pd5IBIL/iUc8g==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -5066,7 +5088,7 @@
 1 _OID 925938c8-cb36-48bd-ad08-e20836a24630
 1 _META <metadataxml></metadataxml>
 1 _CREA 2026-04-07 16:32:20.469
-1 _USER SKp+Tq2udYpNo606j8pZCseTAznkh/MRn5XfhOJQ0KAxtppAVqHhSmQuhu65vA1EUaXuLR5k0F6uaEfoi7r7mA==
+1 _USER 5AKlAkCrNQwZMMpQMmX43Mu/yeiunnmU1BBHQgsffux/ek5Rbl/ObUOBbM1WgOk59JFYvym4LYhOZ6YvlqQ+Ug==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL Y
@@ -5084,7 +5106,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:48.261
-1 _USER ziDMNkq8svU43CZAD02/Aj0equtLpxi5KmXmdr+ZGTHdvk734CAFykfrWCpOIEZzL31fxKipbv/NThw1P1tM7g==
+1 _USER zAjRi/tvzUXU1vLQWRRnbL5VYV+1na2sNt5H+fOaWTFyW3hDBB0z5hb754GYaBxrhW8iIiMdHjuyYWdL4bHIVQ==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -5099,13 +5121,13 @@
 2 TITL Ochs Family Crest
 1 _OID 99f9d6d6-1698-4342-aba1-9b6e4878e4a2
 1 _CREA 2020-09-08 23:12:13.000
-1 _USER KHEcXV/G1N83cRmTjFSMNXCF0GV28befCjLG8iHWsbogguk2ENI5ndB+BIb31GAQldDUzXthKq2e/ri+otg7nA==
+1 _USER YN92Juo51N4PikB/WTXScVa8m083CHT4LDMsnVtwF10qJ6yM5lINIcMEu5d+N3JEkqRzoYVlPWwUe5SSquZX2w==
 2 _ENCR 1
 1 _CLON
 2 _TID 46275268
 2 _PID 6509052774
 2 _OID 1b3ad3fd-814f-493e-9c28-c8a4fbc2f6ca
-2 _USER AFLb71HN9sTSoOF+cJMsVb9mUe4lT6ss6nU8ihL1ZYV7o9nnijsOG58gg3z0cgDYnVDiA5OFpLL4xIwor2gIcw==
+2 _USER 0VRUMQhyc2MEbDytWk8OGmqwrsoSj2e/ofkJRHE1GELk/PRGXrKeWbEFu+NItpEqBIiUU8el210P/AU9is1Wdw==
 3 _ENCR 1
 2 _DATE 2012-09-06 20:45:35.000
 1 _ORIG u
@@ -5122,13 +5144,13 @@
 1 _OID a49b27b5-5a01-4f48-8a89-de101bc4e1b4
 1 _META <metadataxml><cemetery /><transcription /></metadataxml>
 1 _CREA 2019-02-05 00:44:43.281
-1 _USER QsxJMWnwy43/xYtmpBAEDQJuwoHnPugzDr4kfKUPWHsc5uuktxIoRk8Akkj2hh8Mp7KxBFMYFICJkvgUWBltbQ==
+1 _USER dNnjy3wk6cqhQZ9WFeoUnGy2TcLzvDLQyReeZodkHnc64g8158R0Yb8Tt/D5ZZ9w+t7Wuoa3Vc+h5LhKetHPqg==
 2 _ENCR 1
 1 _CLON
 2 _TID 3290666
 2 _PID -1625127792
 2 _OID e01b48f8-dad7-42f6-8ff3-86a290ec3ba2
-2 _USER 6fFVDTadBmIhXodXDAf2CoBaDcXdcWq6a48Zg9gN3g4KNNplsDAhB6MPNs2+tsfrRe1JOvf56oUDW9DgnrzBTA==
+2 _USER gMjO59yAjGtBzTe35tsHWKn09zykf2zrLgtzo12IdBak2kjkteGKzfQ9N0OF4an8+BdUbYfaMGNa56KHVbg/EQ==
 3 _ENCR 1
 2 _DATE 2007-10-31 19:20:37.000
 1 _ORIG u
@@ -5145,13 +5167,13 @@
 1 _OID ba53c24a-d457-4b94-bb43-48928e487606
 1 DATE 1913
 1 _CREA 2018-11-24 17:41:52.512
-1 _USER q0jYqdNs5gtV2FjLDYthtcGaYNwZ8YGnuaJgdMZcKUKobXwwxgGXpFi4VVwSt/vHbkqdx+r5FSXzLMh9FXRVjg==
+1 _USER AuYJwKeAR+h05Lo6Ae/4982GEzUxzs3d4jI6Cov5b8ve2QFngI23/v9Mmgvkry9JrruqsA/379QHPRGZ3sxHdw==
 2 _ENCR 1
 1 _CLON
 2 _TID 10045005
 2 _PID 210024119499
 2 _OID 2ff2a489-0678-41fb-9194-6ef308db6c88
-2 _USER nV2TiJHRvJE6LzvBZtOSusa9Ol+SCLRiQLGV6SrLDlqpi7zZypwt4XCgKMU1Eq10affGVFTInFVHzd9byOhB6g==
+2 _USER k7oEfgTZ3cEiodHOyr604WvHr5FD78VE90kwzHAjX2KKJpZUhC3YoldyebB+LNaolOknj6AwAKEOf6xFQxwa5w==
 3 _ENCR 1
 2 _DATE 2016-08-17 01:22:47.000
 1 _ORIG u
@@ -5170,13 +5192,13 @@
 1 DATE 18 Jun 1947, Wed
 1 PLAC Pittsburgh, Pennsylvania
 1 _CREA 2021-01-22 18:54:37.000
-1 _USER QXzlZGsyB5xWJjQYx/h3Ani4QUX8nqjxQIcbIprsPhiOLSZq05E12AlTtQ3Zq8/UrI9X0dRBCh28p2qJfEussA==
+1 _USER vLLZrfzj6L5Ljj+ZDhV4abAYUzmTJpe/7haPdRt+OQLSoEuuggnB14O2aDwHqO6vcx7L5mE01oMIqp3Msj+d8A==
 2 _ENCR 1
 1 _CLON
 2 _TID 10045005
 2 _PID 210024682920
 2 _OID 5bbbf67c-3d42-45d3-92e2-c5d9f1c99a73
-2 _USER /SgxpWqQ0eLDWBe7N4Rc3/V7w7AgBgnqGQe8OckgJUFFMqKhl2BwZU59M056zUVqls3a0vs3FxqsWtxU1JptHg==
+2 _USER wuzB4T6OvFaYtpTxeoy4MIhdOTa1UTuzPeZvNUEipzzUMrew7Xw+/urkzSm+G39M2Ute0ivSRTuwRVvCgAqcsA==
 3 _ENCR 1
 2 _DATE 2016-08-17 01:59:49.000
 1 _ORIG newspapers
@@ -5197,7 +5219,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:27:14.734
-1 _USER HRAqb8FsK4odJgqchf9Fg2A8gbRhxFIa0MLymLQFxEPzQSZ9gjWlrX//j6VZmPXMyVBfVeVCV4D69IJcr1EJMA==
+1 _USER IU3kM2HV6dhroMue/ITY/2d8xQduC4QEXZ42Wypt9bUvbtXmQh7JAIB5fk52jiardUHGCmqTN5rrs7y2tm7VYw==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -5215,7 +5237,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:48.174
-1 _USER Kgk2t5G3dixp1ARNTL4AVvEJm7++tvTKagBa3nAE3c/ele+/PdQT20UyfIFET/LtMhpxCcj8YsHLW2ePuzAK3w==
+1 _USER 2fgXvwjXUeUr+SwDX0hRfTWgFT0LnimyNlmZHzZLfqLcmpBYG3bPAK4uMHVJwg68LPKdxeOUAMBmrNn0EVjwSA==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -5233,7 +5255,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:48.279
-1 _USER 4sNatHOGxdnZwdTjakOR+Uagc8JCTb6QsFgjl4pogjY5BSgMvssEi8XuP+kV6f/ZGfmkF6q8a9abrE340b4f6A==
+1 _USER 05CJJZcC7z/v7B5b0BC8mDMpP9p+kzBERtbt2oi3hvWGjlzpwTA6M+Lv0ENnl52kV7n0Mg/rQz6mA29sUIlr6w==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -5251,7 +5273,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:48.374
-1 _USER Uvz36IeMJVDsnLSVXqUMB/ZVOWBKTSB0ewqaVT+4aMeq+YOemBCCq+0gwM7607kg6s5DKw2JaWx4/Kz3dg9rzw==
+1 _USER 0ZY2O6GClwymQnXQoD8Rl9tDMSsNS+K9PcCRTO/p4pCJKw9KDux7pj29e3ksKfhlHZ6i1/7xPwpzAyS1fYbvog==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -5269,7 +5291,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:49.043
-1 _USER iv+Yvs0F91Ztgl+JPgcmCbJnMqoutGGkYOOBt0rRaZoqcayrdo2GAS4E9fcOGFriQqwQ+Cvst1iFX8k5KxSw6w==
+1 _USER 4U2RexehdwGCmll/jLHvLsPFYnTpKF92b7T0xn5n6XoX5rBb7oeEKlMnDyOmPXqnlSYWziuYPs3OFBSAYjj3bg==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -5286,10 +5308,10 @@
 1 _OID d4daa42c-b593-49f2-bf18-4620a847b2c2
 1 _META <metadataxml></metadataxml>
 1 _CREA 2026-04-07 16:36:06.641
-1 _USER 95nbu85D8Gj4GfVJVG2jf2RhAHhNji4KmZz9IDD3vZVo7JGRO0MEO9dUiP4vgqcuyKYn3mD4Chr6t3PYqpS7Tg==
+1 _USER yQ0aW2KYeIvjIC1lf0ky8y+ouerg7a/Uv53IWH5rjJuye+lTh53ZNTB2tsCD8Z0rVTw3cv8Lj0kFRw4k3GP6FQ==
 2 _ENCR 1
 1 _CLON
-2 _USER z51UVFw5TVk0Cbdbqkr++CSOnsHoDw38I6+HKIOKtAUGdiE2mJyNdVSITsdPhSJqUQwyWMab3Nbh8X6ZsbVbpA==
+2 _USER d04jgbJi5ySKoijFWjy7wRmCXgHk1JnILElKAtXbnmc9VjdwqPhdWy4pitfHhy9lCve2NPTCIr7CXsZLMb85jQ==
 3 _ENCR 1
 2 _DATE 2026-04-07 16:32:20.469
 1 _ORIG acom
@@ -5307,13 +5329,13 @@
 2 TITL Media0200
 1 _OID d54b2604-e558-4470-90f1-b589ef8c0bb4
 1 _CREA 2018-11-24 18:13:14.972
-1 _USER Nbn4/hbG/czdTShNLIQpOYRvcahOaWP75dvb9JgYwrodtFFYQ6WStGZxX7/BlJtMKXzBfCiTNFq03+9vZIW6ng==
+1 _USER ag4h6ecoKi4rM3O76C7ke92kGFY62h/nv1ZDGM2u6GGA8oVEdFDubFwO6h7xMcxNDAp0x7kMwOKeb/e0NwIbbg==
 2 _ENCR 1
 1 _CLON
 2 _TID 108278092
 2 _PID 360063857305
 2 _OID 3526f7d6-1b73-4d25-ae41-c83c67fdd807
-2 _USER 2UvdQzDA/kRaQ2C2HBHEw56K7Y0/TJSajTvajcVDY5DaLg/PwqglksHZm6BZVqmKqX2o5uq/AmgMTk3quqoXUw==
+2 _USER n6YoiVMLNjjhWYcv9L9vMWmyAThqRoScT1tV/t6yNFOeHLGs+z43oYNFh1zOE1jFpi8iYiPS2hqm1qr49QwIqQ==
 3 _ENCR 1
 2 _DATE 2017-02-04 00:29:35.000
 1 _ORIG u
@@ -5331,13 +5353,13 @@
 1 _OID e3f53e27-4f15-43b8-a96d-3286799652da
 1 _META <metadataxml><cemetery /><transcription /></metadataxml>
 1 _CREA 2018-11-24 17:59:35.348
-1 _USER 7vrn/yeEKY34NiQeVbjimczW9NqIbzL8kcVGpx6yC7pkCIaCcUgiYMh3h+XVXQzKpcZIMAnjP1M/iG8nlejPiw==
+1 _USER gbeQ8RtcBjundO9l4UFYNPCjo2xFJ8KYCDgHIiNkZJJjOOvpaJAG2nzOE+Ry/Guol7R/TAsrDTAsT7W86ft8sQ==
 2 _ENCR 1
 1 _CLON
 2 _TID 32576842
 2 _PID 18803225037
 2 _OID 3d181fb9-e6e8-4ebf-8ce2-c4d9bd6623e1
-2 _USER osOs1JTxlD/iX1EdhFOUqNTJbxRZ1rRYxkaWHX+wRIuhz2rv31fW9yMZojE3EeRvCMCSrGr8teWzW49nxCS9qg==
+2 _USER /2fHBOHqBCRJuJcMz78ZKRNpAPoOJb0T2UOyr0gTmF1muyes6T0v8CtfhZlEB+aiBKxCE8bYEU/qG0G2zzopvw==
 3 _ENCR 1
 2 _DATE 2012-04-04 20:13:07.000
 1 _ORIG u
@@ -5355,13 +5377,13 @@
 1 _OID e48c856a-0277-4a00-be6b-18ea3043b1a5
 1 PLAC St Joseph Lucinda PA
 1 _CREA 2021-01-22 19:17:46.000
-1 _USER mCqLSMdWmrp3SLOwVPy2XOsisc+RhhMjo/QR9AugO1K5IROJ9LLdakoNzH2JtZpAXKXOeoaf9kOjDSkS+55L3Q==
+1 _USER 4UQC4s3YDIjeJ516+Lwk7bD2XQmqxVDCd4OSWE6f3jf+swVTAvKlJiRMFbSQjo9get6Y42VoUyaCXvSAutNcog==
 2 _ENCR 1
 1 _CLON
 2 _TID 6065188
 2 _PID 304118361
 2 _OID aaa0b0e5-97f7-4e87-9d4a-911fe3ddd092
-2 _USER whRKCr84hsVZw/yvlnZ71fiykTsaeiJ+DIXhb9xmNNTylguyYEY+LHCx9qLZDhTU3ekLuBwZjcKiT8FW8aG9ug==
+2 _USER 75Zj72FF4eDfm1Yoa2bza9TzlFepAl/8pz9XgHGC9mk4Z6B0YLw90GoWQir1UFLWN0fmG35BrLuRuTWRkxYRZg==
 3 _ENCR 1
 2 _DATE 2017-01-14 06:52:59.000
 1 _ORIG u
@@ -5378,13 +5400,13 @@
 1 _OID e68acff8-003e-431e-a3bd-ef58e67cf7da
 1 DATE 6/5/2014 11:13:14 PM
 1 _CREA 2018-12-28 04:32:10.525
-1 _USER IoTnkzU2RyLTY1S2jS32e60LQJEhX9IjUETKdwru34xh0SLB30ntqp0cLbFaevuXmb3laWgZ1hLAv4+VBgeFaA==
+1 _USER ZOZeOW01mPHLe200Q5PrWrA74YxCXY0WSkGyMMhd0bWC0owb3iUZJq3K2uTI4XGuP4mz4s2pXoC3wcDPHzkCRw==
 2 _ENCR 1
 1 _CLON
 2 _TID 43572778
 2 _PID 13922357764
 2 _OID 3beb75a6-c243-434a-b58f-ea93f49b3a7f
-2 _USER GooTSqlVsVOyGWDKDEo3Z9yO8EdJNTlwDDiczAt7MCr0eB5i+j8Ax674ygH9zjxkzqK05gOC/ll/31QVReDZvw==
+2 _USER Sn/vHPpFUNpN1OIk59YymKWe2vZxH4srwdsaWdWmci78j6TG+iC4SC/dMiOcPRlOptzU+mTwAomqRtAmKM0dsw==
 3 _ENCR 1
 2 _DATE 2014-06-06 04:29:42.000
 1 _ORIG u
@@ -5403,7 +5425,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:48.090
-1 _USER YGExQs1ejiYJh63P19I3Sesef1r7/O1S8dgARTwqPrpopud8mB9fWzhxY+TBbUKZYPqPwOjGWn8+68lYoaHwZA==
+1 _USER qASvCF1aDep0CAq/QD0FGh19egc1gcq2uWnCiku4G1u243HCnu3/7L/CFhdFu/76IZ5Yuc/kl6yWRav6HGIbSA==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -5421,7 +5443,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:48.095
-1 _USER yucIApSmMzI7Jl6KySknt0QbPIBGhp8bWEucIRLVKL9rE5jn7pYVma41QtMGnjfP7pE0LANvcwTlinShpTA7qA==
+1 _USER IeyeaSgakaADUd97SnbQneEOjQJG+R90uVSqwVWVUASQb5db4iJMk08xvHOW4v3R8i7zenM5DX5apc3raQjDQQ==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -5439,7 +5461,7 @@
 1 _DSCR "U.S., School Yearbooks, 1880-2012"; School Name: Penn Township High School; Year: 1950
 1 _META <metadataxml><record_source_gid>1308024950:1265</record_source_gid></metadataxml>
 1 _CREA 2020-08-10 04:03:19.000
-1 _USER +RUKHSRvi26qeBbDAeXJZLnjY7Co3qn40uPqIGYptd0MSG53xfT6tZWT1JdZPs8gCmPJfd02QShRCmhfBlwL8g==
+1 _USER b/BSYttyvGItacApDngpKZkCbAVFT971TJyDjBE47y9r4JDOpAvF4YnSw173IsWLBblYHfXRVnGob9Tn6UjR6Q==
 2 _ENCR 1
 1 _ORIG u
 1 _ATL Y
@@ -5457,13 +5479,13 @@
 1 DATE 23 Oct 1929, Wed
 1 PLAC Pittsburgh, Pennsylvania
 1 _CREA 2018-12-08 21:51:28.895
-1 _USER uvRziPrnMy742A5XJKIYIwhd+bMkCQ9ZswUrGvruFeQim8UnZkODIQpI8qSMOJTq6qUkJ+qRZm1CkgpYg+qXiA==
+1 _USER foV4CzUYvrXpLRrPvHNZaGZAGr6OQuuvKbnH6FfDxiAWBIreW1WOyvfhHZEgEdefLd0JdueEClvZcMxv6EL/9Q==
 2 _ENCR 1
 1 _CLON
 2 _TID 10045005
 2 _PID 210024198232
 2 _OID e1f11d93-c3cc-4c1d-b326-9ef884a9aadb
-2 _USER 0sLuH5NHXki+1cDvAyGPgpbFWjzKWWi1n9vT5qWBptr0TVdIkebYLcAt+7VEEogyvFumm4lpL5g2DYpa4BCBQg==
+2 _USER GQ2lxcWt/r4Zk9zmz7yppGdpzvZyD3aO7+lGNly+9QDj69RvkPXZrVJGniZyaymir5qThluVZ5jegb0XaCGW1g==
 3 _ENCR 1
 2 _DATE 2016-08-14 01:12:21.000
 1 _ORIG newspapers
