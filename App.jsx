@@ -140,10 +140,6 @@ export default function App() {
     dragRef.current.isDragging = false;
     setIsDragging(false);
   };
-  const handleWheel = (e) => {
-    const delta = e.deltaY > 0 ? -0.06 : 0.06;
-    setView(prev => ({ ...prev, scale: Math.min(2, Math.max(0.1, prev.scale + delta)) }));
-  };
 
   // Build node data
   const originLabels = {
@@ -162,7 +158,6 @@ export default function App() {
       onMouseMove={handleMouseMove} 
       onMouseUp={handleMouseUp} 
       onMouseLeave={handleMouseUp}
-      onWheel={handleWheel}
       style={{ cursor: isDragging ? 'grabbing' : 'grab' }}
     >
       <header>
