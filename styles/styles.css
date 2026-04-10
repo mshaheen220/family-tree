@@ -201,7 +201,7 @@ svg#connectors { position:absolute; top:0; left:0; pointer-events:none; overflow
 
 /* Analytics Modal */
 .analytics-backdrop {
-  position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 1000;
+  position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 1000; cursor: default;
   display: flex; align-items: center; justify-content: center; backdrop-filter: blur(3px);
 }
 .analytics-modal {

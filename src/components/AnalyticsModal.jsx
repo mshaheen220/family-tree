@@ -13,7 +13,7 @@ const originColors = {
 };
 
 export default function AnalyticsModal({ show, onClose, indis, nodes, fams }) {
-  const [isFullData, setIsFullData] = useState(true);
+  const [isFullData, setIsFullData] = useState(false);
   const [hoveredOrigin, setHoveredOrigin] = useState(null);
 
   const dataSource = useMemo(() => {
@@ -294,6 +294,70 @@ export default function AnalyticsModal({ show, onClose, indis, nodes, fams }) {
             </button>
           </div>
 
+        <section className="analytics-section">
+          <h3>🌍 The Melting Pot</h3>
+          {originsData.length > 0 ? (
+            <div style={{ display: 'flex', alignItems: 'center', gap: '40px', marginTop: '20px' }}>
+              <div style={{ 
+                width: '160px', height: '160px', position: 'relative', flexShrink: 0
+              }}>
+                <svg viewBox="0 0 42 42" width="100%" height="100%" style={{ transform: 'rotate(-90deg)', overflow: 'visible', filter: 'drop-shadow(0 4px 10px var(--shadow))' }}>
+                  <circle cx="21" cy="21" r="15.915494309189533" fill="transparent" stroke="var(--card-border)" strokeWidth="6" />
+                  {originsData.map(o => (
+                    <circle
+                      key={o.origin}
+                      cx="21" cy="21" r="15.915494309189533"
+                      fill="transparent"
+                      stroke={originColors[o.origin] || originColors.generic}
+                      strokeWidth={hoveredOrigin === o.origin ? "8" : "6"}
+                      strokeDasharray={`${o.exactPct} ${100 - o.exactPct}`}
+                      strokeDashoffset={-o.offset}
+                      style={{ transition: 'stroke-width 0.2s, stroke 0.2s', cursor: 'pointer', outline: 'none' }}
+                      onMouseEnter={() => setHoveredOrigin(o.origin)}
+                      onMouseLeave={() => setHoveredOrigin(null)}
+                    />
+                  ))}
+                </svg>
+                
+                <div style={{ position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none', textAlign: 'center' }}>
+                  {hoveredOrigin ? (
+                    <>
+                      <span style={{ fontSize: '0.65rem', fontWeight: 600, color: 'var(--ink-light)', textTransform: 'uppercase', letterSpacing: '0.05em', padding: '0 10px', lineHeight: 1.2, marginBottom: '2px' }}>
+                        {originsData.find(o => o.origin === hoveredOrigin)?.label}
+                      </span>
+                      <strong style={{ fontSize: '1.4rem', color: 'var(--ink)', lineHeight: 1 }}>
+                        {originsData.find(o => o.origin === hoveredOrigin)?.percentage}%
+                      </strong>
+                    </>
+                  ) : (
+                    <span style={{ fontSize: '0.85rem', color: 'var(--ink-light)', fontStyle: 'italic', padding: '0 15px' }}>Hover to view</span>
+                  )}
+                </div>
+              </div>
+              
+              <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                {originsData.map(o => (
+                  <div 
+                    key={o.origin} 
+                    onMouseEnter={() => setHoveredOrigin(o.origin)}
+                    onMouseLeave={() => setHoveredOrigin(null)}
+                    style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontSize: '1rem', color: 'var(--ink)', cursor: 'pointer', opacity: hoveredOrigin && hoveredOrigin !== o.origin ? 0.3 : 1, transition: 'opacity 0.2s' }}
+                  >
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                      <div style={{ width: '16px', height: '16px', borderRadius: '4px', background: originColors[o.origin] || originColors.generic, transition: 'transform 0.2s', transform: hoveredOrigin === o.origin ? 'scale(1.2)' : 'scale(1)' }}></div>
+                      <strong style={{ transition: 'color 0.2s', color: hoveredOrigin === o.origin ? 'var(--accent)' : 'inherit' }}>{o.label}</strong>
+                    </div>
+                    <span>{o.percentage}% ({o.count})</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ) : (
+            <p style={{ color: 'var(--ink-light)', fontStyle: 'italic', marginTop: '10px' }}>No location data available in this view.</p>
+          )}
+        </section>
+
+
           <section className="analytics-section">
             <h3>👨‍👩‍👧‍👦 Family Size & Dynamics</h3>
             <ul className="stats-list">
@@ -301,6 +365,27 @@ export default function AnalyticsModal({ show, onClose, indis, nodes, fams }) {
               <li><strong>Average Family Size</strong> <span>{familyDynamics.averageSize} children</span></li>
               <li><strong>Generational Gap</strong> <span>{familyDynamics.averageGap} years (avg age of parents)</span></li>
             </ul>
+          </section>
+          <section className="analytics-section">
+            <h3>📛 Most Common Names</h3>
+            <div style={{ display: 'flex', gap: '20px' }}>
+              <div style={{ flex: 1 }}>
+                <h4 style={{ fontSize: '0.95rem', color: 'var(--ink-light)', marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>First Names</h4>
+                <ul className="stats-list">
+                  {namesData.topFirst.map(([name, count], i) => (
+                    <li key={i}><strong>{name}</strong> <span>{count}</span></li>
+                  ))}
+                </ul>
+              </div>
+              <div style={{ flex: 1 }}>
+                <h4 style={{ fontSize: '0.95rem', color: 'var(--ink-light)', marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Surnames</h4>
+                <ul className="stats-list">
+                  {namesData.topLast.map(([name, count], i) => (
+                    <li key={i}><strong>{name}</strong> <span>{count}</span></li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           </section>
 
           <section className="analytics-section">
@@ -327,38 +412,6 @@ export default function AnalyticsModal({ show, onClose, indis, nodes, fams }) {
           </section>
 
           <section className="analytics-section">
-            <h3>🏥 Tree Health & Stats</h3>
-            <ul className="stats-list">
-              <li><strong>Total Profiles</strong> <span>{treeHealth.total} relatives</span></li>
-              <li><strong>Average Lifespan</strong> <span>{treeHealth.avgLifespan} years</span></li>
-              <li><strong>Profiles with Birth Dates</strong> <span>{treeHealth.withBirthPct}%</span></li>
-              <li><strong>Profiles with Locations</strong> <span>{treeHealth.withPlacePct}%</span></li>
-            </ul>
-          </section>
-
-          <section className="analytics-section">
-            <h3>📛 Most Common Names</h3>
-            <div style={{ display: 'flex', gap: '20px' }}>
-              <div style={{ flex: 1 }}>
-                <h4 style={{ fontSize: '0.95rem', color: 'var(--ink-light)', marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>First Names</h4>
-                <ul className="stats-list">
-                  {namesData.topFirst.map(([name, count], i) => (
-                    <li key={i}><strong>{name}</strong> <span>{count}</span></li>
-                  ))}
-                </ul>
-              </div>
-              <div style={{ flex: 1 }}>
-                <h4 style={{ fontSize: '0.95rem', color: 'var(--ink-light)', marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Surnames</h4>
-                <ul className="stats-list">
-                  {namesData.topLast.map(([name, count], i) => (
-                    <li key={i}><strong>{name}</strong> <span>{count}</span></li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </section>
-
-          <section className="analytics-section">
             <h3>🏆 Longest Lived Relatives</h3>
             <ul className="stats-list">
               {longevityData.map((p, i) => (
@@ -369,69 +422,17 @@ export default function AnalyticsModal({ show, onClose, indis, nodes, fams }) {
               ))}
             </ul>
           </section>
-          
+
           <section className="analytics-section">
-            <h3>🌍 The Melting Pot</h3>
-            {originsData.length > 0 ? (
-              <div style={{ display: 'flex', alignItems: 'center', gap: '40px', marginTop: '20px' }}>
-                <div style={{ 
-                  width: '160px', height: '160px', position: 'relative', flexShrink: 0
-                }}>
-                  <svg viewBox="0 0 42 42" width="100%" height="100%" style={{ transform: 'rotate(-90deg)', overflow: 'visible', filter: 'drop-shadow(0 4px 10px var(--shadow))' }}>
-                    <circle cx="21" cy="21" r="15.915494309189533" fill="transparent" stroke="var(--card-border)" strokeWidth="6" />
-                    {originsData.map(o => (
-                      <circle
-                        key={o.origin}
-                        cx="21" cy="21" r="15.915494309189533"
-                        fill="transparent"
-                        stroke={originColors[o.origin] || originColors.generic}
-                        strokeWidth={hoveredOrigin === o.origin ? "8" : "6"}
-                        strokeDasharray={`${o.exactPct} ${100 - o.exactPct}`}
-                        strokeDashoffset={-o.offset}
-                        style={{ transition: 'stroke-width 0.2s, stroke 0.2s', cursor: 'pointer', outline: 'none' }}
-                        onMouseEnter={() => setHoveredOrigin(o.origin)}
-                        onMouseLeave={() => setHoveredOrigin(null)}
-                      />
-                    ))}
-                  </svg>
-                  
-                  <div style={{ position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none', textAlign: 'center' }}>
-                    {hoveredOrigin ? (
-                      <>
-                        <span style={{ fontSize: '0.65rem', fontWeight: 600, color: 'var(--ink-light)', textTransform: 'uppercase', letterSpacing: '0.05em', padding: '0 10px', lineHeight: 1.2, marginBottom: '2px' }}>
-                          {originsData.find(o => o.origin === hoveredOrigin)?.label}
-                        </span>
-                        <strong style={{ fontSize: '1.4rem', color: 'var(--ink)', lineHeight: 1 }}>
-                          {originsData.find(o => o.origin === hoveredOrigin)?.percentage}%
-                        </strong>
-                      </>
-                    ) : (
-                      <span style={{ fontSize: '0.85rem', color: 'var(--ink-light)', fontStyle: 'italic', padding: '0 15px' }}>Hover to view</span>
-                    )}
-                  </div>
-                </div>
-                
-                <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '10px' }}>
-                  {originsData.map(o => (
-                    <div 
-                      key={o.origin} 
-                      onMouseEnter={() => setHoveredOrigin(o.origin)}
-                      onMouseLeave={() => setHoveredOrigin(null)}
-                      style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontSize: '1rem', color: 'var(--ink)', cursor: 'pointer', opacity: hoveredOrigin && hoveredOrigin !== o.origin ? 0.3 : 1, transition: 'opacity 0.2s' }}
-                    >
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                        <div style={{ width: '16px', height: '16px', borderRadius: '4px', background: originColors[o.origin] || originColors.generic, transition: 'transform 0.2s', transform: hoveredOrigin === o.origin ? 'scale(1.2)' : 'scale(1)' }}></div>
-                        <strong style={{ transition: 'color 0.2s', color: hoveredOrigin === o.origin ? 'var(--accent)' : 'inherit' }}>{o.label}</strong>
-                      </div>
-                      <span>{o.percentage}% ({o.count})</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ) : (
-              <p style={{ color: 'var(--ink-light)', fontStyle: 'italic', marginTop: '10px' }}>No location data available in this view.</p>
-            )}
+            <h3>🏥 Tree Health & Stats</h3>
+            <ul className="stats-list">
+              <li><strong>Total Profiles</strong> <span>{treeHealth.total} relatives</span></li>
+              <li><strong>Average Lifespan</strong> <span>{treeHealth.avgLifespan} years</span></li>
+              <li><strong>Profiles with Birth Dates</strong> <span>{treeHealth.withBirthPct}%</span></li>
+              <li><strong>Profiles with Locations</strong> <span>{treeHealth.withPlacePct}%</span></li>
+            </ul>
           </section>
+          
         </div>
       </div>
     </div>
