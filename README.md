@@ -13,6 +13,10 @@ Unlike static diagrams, this viewer allows you to "walk" through the family tree
 * **Smooth Camera Controls:** Drag to pan, scroll to zoom, and enjoy smooth CSS transitions when jumping between relatives.
 * **Custom Themes:** Switch between 5 mathematically balanced, high-contrast color themes (Classic, Dark, Ocean, Forest, Monochrome) to suit your preference.
 * **Nationality Badges:** Automatically assigns flag-inspired origin badges based on parsed birthplaces or deathplaces.
+* **Tree Analytics & Insights:** A dedicated modal offering rich data analysis including Geographic "Melting Pot" donut charts, Longest Lived Relatives, Namesake Lineages, and Family Size dynamics.
+* **Interactive Branch Highlighting:** Hover over any relative's card to instantly illuminate their direct bloodlines and dim the rest of the canvas.
+* **Hidden Relatives Indicator:** A subtle `+` badge appears on edge cards to notify you when a person has extended family hidden from the current view.
+* **Smart Search:** Quickly find and jump to specific relatives in massive datasets using the integrated search-and-select dropdown.
 * **Generational Banding:** Visually aligns relatives into strict horizontal generations.
 
 ### 🌍 Supported Nationality Badges
@@ -35,9 +39,15 @@ The application scans the location data in your GEDCOM file to automatically ass
 To keep the screen from turning into a tangled spiderweb of overlapping lines, the tree only displays the direct bloodline of the currently selected "Root" person. 
 * To see the hidden ancestors of a spouse or distant cousin, **simply click their card!** 
 * The tree will instantly recalculate and the camera will smoothly glide to their newly expanded family branch.
+* You can **hover** your mouse over any card to instantly highlight that person's direct bloodline.
+* Look for the **`+` badge** in the corner of a card. This indicates the person has parents, spouses, or children not currently shown on screen. Click them to reveal those branches!
 * You can also use the **dropdown menu** in the top navigation bar to jump directly to any person in the file.
+* **Search:** Click into the search bar inside the dropdown menu to type a name, then press `Enter` to instantly snap the tree to that person.
 
-**3. Uploading Your Own Tree**
+**3. Tree Analytics**
+Click the **Analytics (Bar Chart)** icon in the header to view deep statistical insights about your family tree. You can toggle the modal to analyze either the *Entire File* or just the *Current Tree View*.
+
+**4. Uploading Your Own Tree**
 Click the **Upload .ged** button in the header to load your own family tree. You can export a `.ged` file from ancestry sites like Ancestry.com, FamilySearch, or MyHeritage. All data is processed locally in your browser and is never uploaded to a server.
 
 ---
@@ -73,6 +83,8 @@ Calculating family trees programmatically is notoriously difficult. This app inc
 * **Auto-Cropping & Centering:** The custom grid math perfectly maps the engine's 2x2 grid into custom CSS pixel dimensions, auto-crops phantom routing lines, and calculates SVG `<polyline>` corners for perfectly crisp, 90-degree orthogonal connectors.
 
 ### Project Structure
-* `App.jsx`: The core application. Contains the `parseGedcom` engine, layout calculator, and React UI.
+* `App.jsx`: The core application orchestrator. Manages state, camera controls, and the canvas.
+* `src/components/gedcomParser.js`: The heavy-lifting data parser, sanitization engine, and layout math calculator.
+* `src/components/PersonCard.jsx`, `Legend.jsx`, `AnalyticsModal.jsx`, `Tooltip.jsx`: Modular, reusable UI components.
 * `styles/styles.css`: All application styling, including the custom flag badges and card flexbox logic.
 * `data/tree.ged`: The raw text database loaded via Vite's `?raw` import feature.
