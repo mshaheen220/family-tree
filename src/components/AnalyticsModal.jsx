@@ -3,9 +3,9 @@ import DonutChart from './DonutChart.jsx';
 import SegmentedBarChart from './SegmentedBarChart.jsx';
 
 const originLabels = {
-  polish: 'Polish', czech: 'Czech', slovak: 'Slovak', austrian: 'Austrian', lebanese: 'Lebanese', american: 'Early American',
-  german: 'German', french: 'French', swiss: 'Swiss', irish: 'Irish', english: 'English', scottish: 'Scottish', italian: 'Italian',
-  spanish: 'Spanish', canadian: 'Canadian', mexican: 'Mexican', russian: 'Russian', ukrainian: 'Ukrainian', chinese: 'Chinese', generic: 'Other'
+  polish: 'Poland', czech: 'Czech Republic', slovak: 'Slovakia', austrian: 'Austria', lebanese: 'Lebanon', american: 'America',
+  german: 'Germany', french: 'France', swiss: 'Switzerland', irish: 'Ireland', english: 'England', scottish: 'Scotland', italian: 'Italy',
+  spanish: 'Spain', canadian: 'Canada', mexican: 'Mexico', russian: 'Russia', ukrainian: 'Ukraine', chinese: 'China', generic: 'Other'
 };
 
 const originColors = {

@@ -1,12 +1,12 @@
 import React from 'react';
 
 const originLabels = {
-  polish: 'Polish', czech: 'Czech', slovak: 'Slovak',
-  austrian: 'Austrian', lebanese: 'Lebanese', american: 'Early American',
-  german: 'German', french: 'French', swiss: 'Swiss', irish: 'Irish',
-  english: 'English', scottish: 'Scottish', italian: 'Italian',
-  spanish: 'Spanish', canadian: 'Canadian', mexican: 'Mexican',
-  russian: 'Russian', ukrainian: 'Ukrainian', chinese: 'Chinese', generic: 'Other'
+  polish: 'Poland', czech: 'Czech Republic', slovak: 'Slovakia',
+  austrian: 'Austria', lebanese: 'Lebanon', american: 'America',
+  german: 'Germany', french: 'France', swiss: 'Switzerland', irish: 'Ireland',
+  english: 'England', scottish: 'Scotland', italian: 'Italy',
+  spanish: 'Spain', canadian: 'Canada', mexican: 'Mexico',
+  russian: 'Russia', ukrainian: 'Ukraine', chinese: 'Chinese', generic: 'Other'
 };
 
 export default function PersonCard({ person, isRoot, isDimmed, onClick, onMouseEnter, onMouseLeave }) {
@@ -37,7 +37,7 @@ export default function PersonCard({ person, isRoot, isDimmed, onClick, onMouseE
       
       { person.origin === 'dual' ? (
         <div title="Geographic Origin (Birthplace / Residence)">
-          <span className="origin-tag origin-polish">Polish</span>
+          <span className="origin-tag origin-polish">Poland</span>
           <span className="origin-note">subject of Austro-Hungarian Empire</span>
         </div>
       ) : person.origin ? (

@@ -243,4 +243,4 @@ svg#connectors { position:absolute; top:0; left:0; pointer-events:none; overflow
 .legend-line { width:24px; height:2px; }
 .legend-line.descent  { background:#7a3b1e; }
 .legend-line.marriage { border-top:2px dashed #1a6b8a; height:0; background:transparent; }
-.legend .origin-tag { width: 80px; text-align: center; }
+.legend .origin-tag { width: 110px; text-align: center; }
