@@ -1,7 +1,9 @@
 import React, { useState, useMemo } from 'react';
+import DonutChart from './DonutChart.jsx';
+import SegmentedBarChart from './SegmentedBarChart.jsx';
 
 const originLabels = {
-  polish: 'Polish', czech: 'Czech', slovak: 'Slovak', austrian: 'Austrian', lebanese: 'Lebanese', american: 'American',
+  polish: 'Polish', czech: 'Czech', slovak: 'Slovak', austrian: 'Austrian', lebanese: 'Lebanese', american: 'Early American',
   german: 'German', french: 'French', swiss: 'Swiss', irish: 'Irish', english: 'English', scottish: 'Scottish', italian: 'Italian',
   spanish: 'Spanish', canadian: 'Canadian', mexican: 'Mexican', russian: 'Russian', ukrainian: 'Ukrainian', chinese: 'Chinese', generic: 'Other'
 };
@@ -12,9 +14,8 @@ const originColors = {
   spanish: '#f59e0b', canadian: '#f43f5e', mexican: '#059669', russian: '#4338ca', ukrainian: '#d946ef', chinese: '#b91c1c', generic: '#94a3b8'
 };
 
-export default function AnalyticsModal({ show, onClose, indis, nodes, fams }) {
+export default function AnalyticsModal({ show, onClose, indis, nodes, fams, rootId }) {
   const [isFullData, setIsFullData] = useState(false);
-  const [hoveredOrigin, setHoveredOrigin] = useState(null);
 
   const dataSource = useMemo(() => {
     return isFullData ? Object.values(indis || {}) : (nodes || []);
@@ -55,18 +56,29 @@ export default function AnalyticsModal({ show, onClose, indis, nodes, fams }) {
 
   const originsData = useMemo(() => {
     const counts = {};
-    let total = 0;
+    let totalScore = 0;
+    
     dataSource.forEach(p => {
-      if (!p.isDummy && p.origin) {
-        counts[p.origin] = (counts[p.origin] || 0) + 1;
-        total++;
+      if (!p.isDummy && p.heritage) {
+        Object.entries(p.heritage).forEach(([org, pct]) => {
+          if (org !== 'untraced' && pct > 0) {
+            counts[org] = (counts[org] || 0) + pct;
+            totalScore += pct;
+          }
+        });
       }
     });
+    
+    if (totalScore === 0) return [];
+
     const sorted = Object.entries(counts)
-      .map(([origin, count]) => ({
-        origin, label: originLabels[origin] || origin, count, percentage: Math.round((count / total) * 100), exactPct: (count / total) * 100
-      }))
-      .sort((a, b) => b.count - a.count);
+      .map(([origin, score]) => {
+        const exactPct = (score / totalScore) * 100;
+        return {
+          origin, label: originLabels[origin] || origin, percentage: exactPct < 1 ? '<1' : Math.round(exactPct), exactPct
+        };
+      })
+      .sort((a, b) => b.exactPct - a.exactPct);
       
     let cumulative = 0;
     return sorted.map(o => {
@@ -280,6 +292,51 @@ export default function AnalyticsModal({ show, onClose, indis, nodes, fams }) {
     return { namesakesCount, topChains: maximalChains.slice(0, 5) };
   }, [dataSource, fams, indis]);
 
+  const rootHeritageData = useMemo(() => {
+    const rootPerson = indis ? indis[rootId] : null;
+    if (!rootPerson || !rootPerson.heritage) return null;
+    
+    // Filter out the untraced noise to show only known immigrant heritage
+    let totalKnown = 0;
+    const knownOrigins = Object.entries(rootPerson.heritage).filter(([org, pct]) => org !== 'untraced' && pct > 0);
+    knownOrigins.forEach(([org, pct]) => totalKnown += pct);
+
+    if (totalKnown === 0) {
+      return { person: rootPerson, slices: [], desc: "Not enough historical immigrant data in the family tree to calculate a heritage breakdown." };
+    }
+
+    const sorted = knownOrigins
+      .map(([origin, pct]) => {
+        const exactPct = (pct / totalKnown) * 100; // Recalculate out of 100% known
+        return { origin, label: originLabels[origin] || origin, percentage: exactPct < 1 ? '<1' : Math.round(exactPct), exactPct };
+      })
+      .sort((a, b) => b.exactPct - a.exactPct);
+
+    let cumulative = 0;
+    const slices = sorted.map(o => {
+      const offset = cumulative;
+      cumulative += o.exactPct;
+      return { ...o, offset };
+    });
+
+    // Build a natural language summary
+    const primary = sorted.filter(o => o.exactPct >= 20).map(o => o.label);
+    const secondary = sorted.filter(o => o.exactPct > 0 && o.exactPct < 20).map(o => o.label);
+    let desc = '';
+    const formatList = (list) => list.length > 1 ? list.slice(0, -1).join(', ') + ' and ' + list[list.length - 1] : list[0];
+    const firstName = rootPerson.given ? rootPerson.given.split(/\s+/)[0] : rootPerson.name.split(' ')[0];
+
+    if (primary.length > 0) {
+      desc += `${firstName} is mostly ${formatList(primary)}`;
+      if (secondary.length > 0) desc += `, with ${formatList(secondary)} ancestry.`;
+      else desc += ` ancestry.`;
+    } else if (secondary.length > 0) {
+      desc += `${firstName} has ${formatList(secondary)} ancestry.`;
+    }
+
+    return { person: rootPerson, slices, desc };
+  }, [indis, rootId]);
+
   if (!show) return null;
 
   return (
@@ -291,81 +348,42 @@ export default function AnalyticsModal({ show, onClose, indis, nodes, fams }) {
         </div>
         <div className="analytics-content">
           
-          <div style={{ display: 'flex', background: 'var(--card-border)', padding: '4px', borderRadius: '6px', margin: '0 25px 20px 25px' }}>
-            <button 
-              style={{ flex: 1, padding: '6px 12px', border: 'none', borderRadius: '4px', background: isFullData ? 'var(--card-bg)' : 'transparent', color: isFullData ? 'var(--ink)' : 'var(--ink-light)', fontWeight: isFullData ? 600 : 400, cursor: 'pointer', transition: 'all 0.2s', boxShadow: isFullData ? '0 2px 4px var(--shadow)' : 'none' }}
-              onClick={() => setIsFullData(true)}
-            >
-              Entire File Data
-            </button>
-            <button 
-              style={{ flex: 1, padding: '6px 12px', border: 'none', borderRadius: '4px', background: !isFullData ? 'var(--card-bg)' : 'transparent', color: !isFullData ? 'var(--ink)' : 'var(--ink-light)', fontWeight: !isFullData ? 600 : 400, cursor: 'pointer', transition: 'all 0.2s', boxShadow: !isFullData ? '0 2px 4px var(--shadow)' : 'none' }}
-              onClick={() => setIsFullData(false)}
-            >
-              Current Tree View
-            </button>
-          </div>
+          {rootHeritageData && (
+            <section className="analytics-section">
+              <h3>🧬 {rootHeritageData.person.name}'s Heritage</h3>
+              {rootHeritageData.desc && <p style={{ marginBottom: '15px', color: 'var(--ink-light)', fontStyle: 'italic' }}>{rootHeritageData.desc}</p>}
+              
+              {rootHeritageData.slices.length > 0 && <SegmentedBarChart data={rootHeritageData.slices} colors={originColors} />}
+            </section>
+          )}
+
+          <section className="analytics-section" style={{ paddingBottom: '15px' }}>
+            <h3 style={{ borderBottom: 'none', marginBottom: '5px' }}>📊 Group Insights</h3>
+            <p style={{ fontSize: '0.95rem', color: 'var(--ink-light)', fontStyle: 'italic', marginBottom: '15px' }}>
+              The statistics below analyze multiple relatives. Select your dataset:
+            </p>
+            <div style={{ display: 'flex', background: 'var(--card-border)', padding: '4px', borderRadius: '6px' }}>
+              <button 
+                style={{ flex: 1, padding: '6px 12px', border: 'none', borderRadius: '4px', background: isFullData ? 'var(--card-bg)' : 'transparent', color: isFullData ? 'var(--ink)' : 'var(--ink-light)', fontWeight: isFullData ? 600 : 400, cursor: 'pointer', transition: 'all 0.2s', boxShadow: isFullData ? '0 2px 4px var(--shadow)' : 'none' }}
+                onClick={() => setIsFullData(true)}
+              >
+                Entire File Data
+              </button>
+              <button 
+                style={{ flex: 1, padding: '6px 12px', border: 'none', borderRadius: '4px', background: !isFullData ? 'var(--card-bg)' : 'transparent', color: !isFullData ? 'var(--ink)' : 'var(--ink-light)', fontWeight: !isFullData ? 600 : 400, cursor: 'pointer', transition: 'all 0.2s', boxShadow: !isFullData ? '0 2px 4px var(--shadow)' : 'none' }}
+                onClick={() => setIsFullData(false)}
+              >
+                Everyone on Canvas
+              </button>
+            </div>
+          </section>
 
         <section className="analytics-section">
           <h3>🌍 The Melting Pot</h3>
           {originsData.length > 0 ? (
-            <div style={{ display: 'flex', alignItems: 'center', gap: '40px', marginTop: '20px' }}>
-              <div style={{ 
-                width: '160px', height: '160px', position: 'relative', flexShrink: 0
-              }}>
-                <svg viewBox="0 0 42 42" width="100%" height="100%" style={{ transform: 'rotate(-90deg)', overflow: 'visible', filter: 'drop-shadow(0 4px 10px var(--shadow))' }}>
-                  <circle cx="21" cy="21" r="15.915494309189533" fill="transparent" stroke="var(--card-border)" strokeWidth="6" />
-                  {originsData.map(o => (
-                    <circle
-                      key={o.origin}
-                      cx="21" cy="21" r="15.915494309189533"
-                      fill="transparent"
-                      stroke={originColors[o.origin] || originColors.generic}
-                      strokeWidth={hoveredOrigin === o.origin ? "8" : "6"}
-                      strokeDasharray={`${o.exactPct} ${100 - o.exactPct}`}
-                      strokeDashoffset={-o.offset}
-                      style={{ transition: 'stroke-width 0.2s, stroke 0.2s', cursor: 'pointer', outline: 'none' }}
-                      onMouseEnter={() => setHoveredOrigin(o.origin)}
-                      onMouseLeave={() => setHoveredOrigin(null)}
-                    />
-                  ))}
-                </svg>
-                
-                <div style={{ position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none', textAlign: 'center' }}>
-                  {hoveredOrigin ? (
-                    <>
-                      <span style={{ fontSize: '0.65rem', fontWeight: 600, color: 'var(--ink-light)', textTransform: 'uppercase', letterSpacing: '0.05em', padding: '0 10px', lineHeight: 1.2, marginBottom: '2px' }}>
-                        {originsData.find(o => o.origin === hoveredOrigin)?.label}
-                      </span>
-                      <strong style={{ fontSize: '1.4rem', color: 'var(--ink)', lineHeight: 1 }}>
-                        {originsData.find(o => o.origin === hoveredOrigin)?.percentage}%
-                      </strong>
-                    </>
-                  ) : (
-                    <span style={{ fontSize: '0.85rem', color: 'var(--ink-light)', fontStyle: 'italic', padding: '0 15px' }}>Hover to view</span>
-                  )}
-                </div>
-              </div>
-              
-              <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '10px' }}>
-                {originsData.map(o => (
-                  <div 
-                    key={o.origin} 
-                    onMouseEnter={() => setHoveredOrigin(o.origin)}
-                    onMouseLeave={() => setHoveredOrigin(null)}
-                    style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontSize: '1rem', color: 'var(--ink)', cursor: 'pointer', opacity: hoveredOrigin && hoveredOrigin !== o.origin ? 0.3 : 1, transition: 'opacity 0.2s' }}
-                  >
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                      <div style={{ width: '16px', height: '16px', borderRadius: '4px', background: originColors[o.origin] || originColors.generic, transition: 'transform 0.2s', transform: hoveredOrigin === o.origin ? 'scale(1.2)' : 'scale(1)' }}></div>
-                      <strong style={{ transition: 'color 0.2s', color: hoveredOrigin === o.origin ? 'var(--accent)' : 'inherit' }}>{o.label}</strong>
-                    </div>
-                    <span>{o.percentage}% ({o.count})</span>
-                  </div>
-                ))}
-              </div>
-            </div>
+            <DonutChart data={originsData} colors={originColors} />
           ) : (
-            <p style={{ color: 'var(--ink-light)', fontStyle: 'italic', marginTop: '10px' }}>No location data available in this view.</p>
+            <p style={{ color: 'var(--ink-light)', fontStyle: 'italic', marginTop: '10px' }}>No historical immigrant data available in this view.</p>
           )}
         </section>
 

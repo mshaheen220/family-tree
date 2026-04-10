@@ -2,7 +2,7 @@ import React from 'react';
 
 const originLabels = {
   polish: 'Polish', czech: 'Czech', slovak: 'Slovak',
-  austrian: 'Austrian', lebanese: 'Lebanese', american: 'American',
+  austrian: 'Austrian', lebanese: 'Lebanese', american: 'Early American',
   german: 'German', french: 'French', swiss: 'Swiss', irish: 'Irish',
   english: 'English', scottish: 'Scottish', italian: 'Italian',
   spanish: 'Spanish', canadian: 'Canadian', mexican: 'Mexican',
@@ -31,7 +31,7 @@ export default function Legend({ nodes }) {
       {uniqueOrigins.length > 0 && (
         <>
           <div style={{ marginTop: '8px', borderTop: '1px solid var(--card-border)', paddingTop: '7px', fontSize: '.72rem', color: 'var(--ink-light)', letterSpacing: '.04em', textTransform: 'uppercase', marginBottom: '4px', fontWeight: 600 }}>
-            Nationality
+            Geographic Origin
           </div>
           {uniqueOrigins.map(origin => (
             <div className="legend-row" key={origin}>

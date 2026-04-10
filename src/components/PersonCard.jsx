@@ -2,7 +2,7 @@ import React from 'react';
 
 const originLabels = {
   polish: 'Polish', czech: 'Czech', slovak: 'Slovak',
-  austrian: 'Austrian', lebanese: 'Lebanese', american: 'American',
+  austrian: 'Austrian', lebanese: 'Lebanese', american: 'Early American',
   german: 'German', french: 'French', swiss: 'Swiss', irish: 'Irish',
   english: 'English', scottish: 'Scottish', italian: 'Italian',
   spanish: 'Spanish', canadian: 'Canadian', mexican: 'Mexican',
@@ -36,12 +36,12 @@ export default function PersonCard({ person, isRoot, isDimmed, onClick, onMouseE
       { (person.place || person.deathPlace) && <div className="place">{person.place || person.deathPlace}</div> }
       
       { person.origin === 'dual' ? (
-        <>
+        <div title="Geographic Origin (Birthplace / Residence)">
           <span className="origin-tag origin-polish">Polish</span>
           <span className="origin-note">subject of Austro-Hungarian Empire</span>
-        </>
+        </div>
       ) : person.origin ? (
-        <span className={`origin-tag origin-${person.origin}`}>{originLabels[person.origin] || person.origin}</span>
+        <span className={`origin-tag origin-${person.origin}`} title="Geographic Origin (Birthplace / Residence)">{originLabels[person.origin] || person.origin}</span>
       ) : null }
     </div>
   );

@@ -131,6 +131,65 @@ export function parseGedcom(data, preferredRootId = null) {
     i.origin = o;
   });
 
+  // --- HERITAGE CALCULATION ---
+  const getHeritage = (id, depth = 0) => {
+    if (depth > 50) return { untraced: 100 }; // Safety against loops
+    const person = indis[id];
+    if (!person) return { untraced: 100 };
+    if (person.heritage) return person.heritage; // Memoized return
+
+    let org = person.origin || 'untraced';
+    // Flag "New World" end-of-line ancestors as untraced so they don't mathematically dilute immigrant roots
+    if (org === 'american' || org === 'canadian' || org === 'generic') org = 'untraced';
+
+    if (person.famc.length === 0) {
+      // Founder: 100% of their own birthplace
+      const h = {};
+      h[org] = 100;
+      person.heritage = h;
+      return h;
+    }
+
+    const fam = fams[person.famc[0]];
+    const dadH = fam && fam.husb ? getHeritage(fam.husb, depth + 1) : { untraced: 100 };
+    const momH = fam && fam.wife ? getHeritage(fam.wife, depth + 1) : { untraced: 100 };
+
+    const combined = {};
+    for (const [o, pct] of Object.entries(dadH)) combined[o] = (combined[o] || 0) + (pct / 2);
+    for (const [o, pct] of Object.entries(momH)) combined[o] = (combined[o] || 0) + (pct / 2);
+
+    // --- SMART FOUNDER FALLBACK & BORDER SHIFT FIX ---
+    // If the parents' heritage is completely untraced, OR this person has a known immigrant origin
+    // that is completely missing from their parents' heritage (due to historical border shifts 
+    // like Austria -> Ukraine), we blend their own geographic origin in!
+    if (org !== 'untraced' && !combined[org]) {
+      if (combined.untraced === 100) {
+        const h = {};
+        h[org] = 100;
+        person.heritage = h;
+        return h;
+      } else {
+        // Blend their own distinct origin in to preserve the historical border shift/migration
+        const blended = {};
+        let total = 0;
+        for (const [o, pct] of Object.entries(combined)) {
+          if (o !== 'untraced') {
+            blended[o] = pct / 2;
+            total += pct / 2;
+          }
+        }
+        blended[org] = 100 - total; // Fill the remaining heritage with their distinct origin
+        person.heritage = blended;
+        return blended;
+      }
+    }
+
+    person.heritage = combined;
+    return combined;
+  };
+
+  Object.keys(indis).forEach(id => getHeritage(id));
+
   // --- RELATIVES-TREE LAYOUT ALGORITHM ---
   const dedup = (arr) => {
     const seen = new Set();

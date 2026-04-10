@@ -318,7 +318,7 @@ export default function App() {
 
       <Legend nodes={nodes} />
       
-      <AnalyticsModal show={showAnalytics} onClose={() => setShowAnalytics(false)} indis={indis} nodes={nodes} fams={fams} />
+      <AnalyticsModal show={showAnalytics} onClose={() => setShowAnalytics(false)} indis={indis} nodes={nodes} fams={fams} rootId={rootId} />
     </div>
   );
 }

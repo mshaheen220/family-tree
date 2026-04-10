@@ -13,7 +13,7 @@
 4 CONT Lehi, UT  84043
 4 CONT USA
 1 DATE 10 Apr 2026
-2 TIME 14:00:03
+2 TIME 18:28:43
 1 GEDC
 2 VERS 5.5.1
 2 FORM LINEAGE-LINKED
@@ -257,7 +257,7 @@
 2 _APID 1,61843::377553020
 1 SOUR @S1603543043@
 2 _APID 1,70050::18688084
-1 OBJE @O8@
+1 OBJE @O14@
 0 @I412054722977@ INDI
 1 NAME Esther /Bleichner/
 2 GIVN Esther
@@ -367,7 +367,7 @@
 2 _APID 1,62116::20759401
 1 SOUR @S1603543181@
 2 _APID 1,70497::203071
-1 OBJE @O19@
+1 OBJE @O30@
 0 @I412054723016@ INDI
 1 NAME Laurence /Bleichner/
 2 GIVN Laurence
@@ -405,7 +405,7 @@
 2 _APID 1,6482::25939699
 1 SOUR @S1582737838@
 2 _APID 1,7602::51561640
-1 OBJE @O26@
+1 OBJE @O44@
 2 _PRIM Y
 0 @I412054723056@ INDI
 1 NAME Esther /Fuchs/
@@ -520,10 +520,10 @@
 1 SOUR @S1598899878@
 2 PAGE Pennsylvania Historical and Museum Commission; Harrisburg, Pennsylvania; Pennsylvania County Marriages, 1852-1973; County: Allegheny; Year Range: 1892; Roll Number: 549761
 2 _APID 1,61324::86729
-1 OBJE @O18@
+1 OBJE @O29@
 2 _PRIM Y
-1 OBJE @O10@
-1 OBJE @O3@
+1 OBJE @O18@
+1 OBJE @O4@
 0 @I412054724162@ INDI
 1 NAME Jacob J /Fuchs/
 2 GIVN Jacob J
@@ -634,10 +634,10 @@
 2 _APID 1,7884::101865208
 1 SOUR @S1603901329@
 2 _APID 1,60484::2466851
-1 OBJE @O12@
+1 OBJE @O21@
 0 @I412054724445@ INDI
-1 NAME Gertrude /Fuchs/
-2 GIVN Gertrude
+1 NAME Gertrude Genevieve /Fuchs/
+2 GIVN Gertrude Genevieve
 2 SURN Fuchs
 2 SOUR @S1582737573@
 3 _APID 1,6224::51558384
@@ -655,8 +655,8 @@
 1 FAMC @F46@
 1 FAMS @F35@
 1 BIRT
-2 DATE Dec 1894
-2 PLAC Pennsylvania, USA
+2 DATE 28 Dec 1893
+2 PLAC Pittsburgh, Allegheny County, Pennsylvania, USA
 2 SOUR @S1582737573@
 3 _APID 1,6224::51558384
 2 SOUR @S1582737838@
@@ -682,7 +682,8 @@
 3 _APID 1,6224::51558384
 2 NOTE Marital Status: Married; Relation to Head: Wife
 1 DEAT
-2 PLAC Allegheny County, Pennsylvania, USA
+2 DATE 4 Jul 1988
+2 PLAC mc keesport, Allegheny County, Pennsylvania, USA
 1 SOUR @S1582737573@
 2 _APID 1,6224::51558384
 1 SOUR @S1582737838@
@@ -773,11 +774,11 @@
 1 SOUR @S1598899878@
 2 PAGE Pennsylvania Historical and Museum Commission; Harrisburg, Pennsylvania; Pennsylvania County Marriages, 1852-1973; County: Allegheny; Year Range: 1892; Roll Number: 549761
 2 _APID 1,61324::900086729
-1 OBJE @O22@
+1 OBJE @O38@
 2 _PRIM Y
-1 OBJE @O4@
-1 OBJE @O9@
-1 OBJE @O2@
+1 OBJE @O5@
+1 OBJE @O15@
+1 OBJE @O3@
 0 @I412054726073@ INDI
 1 NAME Samuel Earnest /Heasley/
 2 GIVN Samuel Earnest
@@ -863,7 +864,7 @@
 2 _APID 1,9279::116386125
 1 SOUR @S1580498962@
 2 _APID 1,60525::121307845
-1 OBJE @O21@
+1 OBJE @O37@
 2 _PRIM Y
 0 @I412054726931@ INDI
 1 NAME Catherine E /Yinger/
@@ -1080,7 +1081,7 @@
 3 _APID 1,60525::143235426
 1 SOUR @S1580498962@
 2 _APID 1,60525::143235426
-1 OBJE @O24@
+1 OBJE @O40@
 2 _PRIM Y
 0 @I412063905711@ INDI
 1 NAME Antoine /Soulier/
@@ -1106,7 +1107,7 @@
 3 _APID 1,60525::143235789
 1 SOUR @S1580498962@
 2 _APID 1,60525::143235789
-1 OBJE @O7@
+1 OBJE @O13@
 2 _PRIM Y
 0 @I412066424299@ INDI
 1 NAME Mary /Nieder/
@@ -1273,8 +1274,9 @@
 2 PAGE Year: 1940; Census Place: Penn, Westmoreland, Pennsylvania; Roll: m-t0627-03636; Page: 2A; Enumeration District: 65-175
 2 _APID 1,2442::19785268
 0 @I412066426158@ INDI
-1 NAME Ruth //
-2 GIVN Ruth
+1 NAME Ruth Evelyn /Heasley/
+2 GIVN Ruth Evelyn
+2 SURN Heasley
 2 SOUR @S1581627428@
 3 PAGE Year: 1940; Census Place: Penn, Westmoreland, Pennsylvania; Roll: m-t0627-03636; Page: 2A; Enumeration District: 65-175
 3 _APID 1,2442::19785270
@@ -1282,8 +1284,8 @@
 1 FAMC @F55@
 1 FAMS @F36@
 1 BIRT
-2 DATE abt 1907
-2 PLAC Pennsylvania
+2 DATE 8 Sep 1915
+2 PLAC Pennsylvania, USA
 2 SOUR @S1581627428@
 3 PAGE Year: 1940; Census Place: Penn, Westmoreland, Pennsylvania; Roll: m-t0627-03636; Page: 2A; Enumeration District: 65-175
 3 _APID 1,2442::19785270
@@ -1299,6 +1301,9 @@
 2 SOUR @S1581627428@
 3 PAGE Year: 1940; Census Place: Penn, Westmoreland, Pennsylvania; Roll: m-t0627-03636; Page: 2A; Enumeration District: 65-175
 3 _APID 1,2442::19785270
+1 DEAT
+2 DATE 16 Jan 2002
+2 PLAC Pennsylvania, USA
 1 SOUR @S1581627428@
 2 PAGE Year: 1940; Census Place: Penn, Westmoreland, Pennsylvania; Roll: m-t0627-03636; Page: 2A; Enumeration District: 65-175
 2 _APID 1,2442::19785270
@@ -1406,7 +1411,7 @@
 1 SOUR @S1581627428@
 2 PAGE Year: 1940; Census Place: Penn, Westmoreland, Pennsylvania; Roll: m-t0627-03636; Page: 2A; Enumeration District: 65-175
 2 _APID 1,2442::19785274
-1 OBJE @O25@
+1 OBJE @O43@
 2 _PRIM Y
 2 _CROP
 3 _LEFT 0
@@ -1487,10 +1492,13 @@
 1 SEX F
 1 FAMS @F24@
 1 BIRT
-2 DATE abt 1930
+2 DATE 6 Dec 1929
 2 SOUR @S1582737496@
 3 PAGE Virginia Department of Health; Richmond, Virginia; Virginia Marriages, 1936-2014; Roll: 101168236
 3 _APID 1,9279::27815536
+1 DEAT
+2 DATE 24 Jan 2024
+2 PLAC Manor, Allegheny County, Pennsylvania, USA
 1 SOUR @S1582737496@
 2 PAGE Virginia Department of Health; Richmond, Virginia; Virginia Marriages, 1936-2014; Roll: 101168236
 2 _APID 1,9279::27815536
@@ -1574,9 +1582,13 @@
 1 SEX M
 1 FAMS @F60@
 1 BIRT
-2 DATE abt 1921
+2 DATE 25 Aug 1920
+2 PLAC Manor, Westmoreland, Pennsylvania, USA
 2 SOUR @S1582737903@
 3 _APID 1,61381::3076176
+1 DEAT
+2 DATE 14 Mar 2000
+2 PLAC Solon, Cuyahoga, Ohio, USA
 1 SOUR @S1582737903@
 2 _APID 1,61381::3076176
 0 @I412076081767@ INDI
@@ -1586,7 +1598,11 @@
 1 SEX F
 1 FAMC @F13@
 1 BIRT
-2 DATE 1924
+2 DATE 13 Oct 1923
+2 PLAC Manor, Westmoreland, Pennsylvania, USA
+1 DEAT
+2 DATE 10 Jul 1998
+2 PLAC Manor, Westmoreland, Pennsylvania, USA
 0 @I412076082494@ INDI
 1 NAME Elizabeth /Altman/
 2 GIVN Elizabeth
@@ -2600,7 +2616,7 @@
 1 BIRT
 2 DATE 2/21/75
 2 PLAC Pittsburgh, Allegheny County, Pennsylvania, United States of America
-1 OBJE @O15@
+1 OBJE @O25@
 2 _PRIM Y
 2 _CROP
 3 _LEFT 0
@@ -2608,7 +2624,7 @@
 3 _WDTH 288
 3 _HGHT 288
 3 _TYPE primary
-1 OBJE @O20@
+1 OBJE @O36@
 2 _CROP
 3 _LEFT 103
 3 _TOP -29
@@ -2657,7 +2673,7 @@
 1 DEAT
 2 DATE 16 Oct 1960
 2 PLAC Harrison City, Westmoreland, Pennsylvania, USA
-1 OBJE @O11@
+1 OBJE @O19@
 2 _PRIM Y
 0 @I412077347651@ INDI
 1 NAME Pauline C F /Schmidt BAUER/
@@ -2693,7 +2709,7 @@
 1 SOUR @S1582847621@
 2 PAGE Year: 1881; Arrival: New York, New York; Microfilm Serial: M237, 1820-1897; Microfilm Roll: Roll 441; Line: 5; List Number: 1242
 2 _APID 1,7488::11468577
-1 OBJE @O17@
+1 OBJE @O28@
 2 _PRIM Y
 0 @I412077349355@ INDI
 1 NAME Felix /Ochsner/
@@ -2745,6 +2761,14 @@
 1 BIRT
 2 DATE 29 Nov 1950
 2 PLAC Latrobe, Westmoreland, Pennsylvania, USA
+1 OBJE @O12@
+2 _PRIM Y
+2 _CROP
+3 _LEFT 143
+3 _TOP 101
+3 _WDTH 83
+3 _HGHT 83
+3 _TYPE primary
 0 @I412217325254@ INDI
 1 NAME George /Bleichner/
 2 GIVN George
@@ -2957,9 +2981,9 @@
 3 _APID 1,5164::606403282
 1 SOUR @S1581408971@
 2 _APID 1,5164::606403282
-1 OBJE @O16@
+1 OBJE @O27@
 2 _PRIM Y
-1 OBJE @O23@
+1 OBJE @O39@
 0 @I412224920773@ INDI
 1 NAME Elizabeth /Schill/
 2 GIVN Elizabeth
@@ -2997,7 +3021,7 @@
 2 DATE 11 Sep 1938
 1 SOUR @S1582737838@
 2 _APID 1,7602::51883786
-1 OBJE @O13@
+1 OBJE @O22@
 0 @I412260088210@ INDI
 1 NAME Susanne A /Snyder/
 2 GIVN Susanne A
@@ -3032,7 +3056,7 @@
 3 _APID 1,5164::604814411
 1 SOUR @S1581408971@
 2 _APID 1,5164::604814411
-1 OBJE @O6@
+1 OBJE @O9@
 2 _PRIM Y
 0 @I412260106684@ INDI
 1 NAME Elizabeth /Schmidt/
@@ -3075,7 +3099,7 @@
 1 BURI
 2 DATE 14 Oct 1909
 2 PLAC St Marys Cemetery, Herman, Butler, Pennsylvania, USA
-1 OBJE @O5@
+1 OBJE @O6@
 2 _PRIM Y
 0 @I412260113593@ INDI
 1 NAME Mary /Ganter/
@@ -3089,7 +3113,7 @@
 1 DEAT
 2 DATE 1890
 2 PLAC Herman Station, Butler, Pennsylvania, USA
-1 OBJE @O14@
+1 OBJE @O23@
 2 _PRIM Y
 0 @I412260252734@ INDI
 1 NAME Lawrence /Lavelle/
@@ -3098,14 +3122,17 @@
 1 SEX M
 1 FAMS @F65@
 0 @I412261827213@ INDI
-1 NAME Arthur /Fuchs/
-2 GIVN Arthur
+1 NAME Arthur Charles /Fuchs/
+2 GIVN Arthur Charles
 2 SURN Fuchs
 1 SEX M
 1 FAMC @F46@
 1 BIRT
-2 DATE 1889
-2 PLAC Pittsburgh PA
+2 DATE 1 Jun 1888
+2 PLAC Pittsburgh, Allegheny, Pennsylvania, USA
+1 DEAT
+2 DATE 4 May 1943
+2 PLAC Oklahoma City, Oklahoma, Oklahoma, USA
 0 @I412261827484@ INDI
 1 NAME Alice /Fuchs/
 2 GIVN Alice
@@ -3415,11 +3442,17 @@
 1 DEAT
 2 DATE 1987
 0 @I412262485793@ INDI
-1 NAME Michael /Wolak/
-2 GIVN Michael
+1 NAME Michael Alexander /Wolak/
+2 GIVN Michael Alexander
 2 SURN Wolak
 1 SEX M
 1 FAMS @F35@
+1 BIRT
+2 DATE 1895
+2 PLAC Pennsylvania, USA
+1 DEAT
+2 DATE 1959
+2 PLAC Pennsylvania, USA
 0 @I412262485899@ INDI
 1 NAME Michael /Wolak/ Jr
 2 GIVN Michael
@@ -3550,18 +3583,56 @@
 1 DEAT
 2 DATE 8 Dec 2011
 2 PLAC Greensburg, Westmoreland, Pennsylvania, USA
+1 OBJE @O41@
+2 _PRIM Y
+2 _CROP
+3 _LEFT 61
+3 _TOP 128
+3 _WDTH 558
+3 _HGHT 558
+3 _TYPE primary
+1 OBJE @O17@
+1 OBJE @O8@
+1 OBJE @O35@
+1 OBJE @O34@
+1 OBJE @O1@
+1 OBJE @O33@
+1 OBJE @O11@
+1 OBJE @O26@
+1 OBJE @O10@
+1 OBJE @O32@
+1 OBJE @O42@
 0 @I412771173007@ INDI
+1 NAME Blanche /Dziadosz/
+2 GIVN Blanche
+2 SURN Dziadosz
 1 NAME Bernice /Dziadosz/
 2 GIVN Bernice
+2 SURN Dziadosz
+1 NAME Blanche /Dziadosz/
+2 GIVN Blanche
 2 SURN Dziadosz
 1 SEX F
 1 FAMC @F53@
 1 FAMS @F30@
 1 BIRT
 2 DATE 21 Jan 1918
-2 PLAC Pittsburgh PA
+2 PLAC Pittsburgh, Allegheny, Pennsylvania, USA
 1 DEAT
 2 DATE 6 Jan 2009
+2 PLAC Pittsburgh, Allegheny, Pennsylvania, USA
+1 OBJE @O16@
+2 _PRIM Y
+2 _CROP
+3 _LEFT 108
+3 _TOP 48
+3 _WDTH 838
+3 _HGHT 838
+3 _TYPE primary
+1 OBJE @O24@
+1 OBJE @O7@
+1 OBJE @O31@
+1 OBJE @O20@
 0 @I412771174434@ INDI
 1 NAME Abraham Elias /Shaheen/
 2 GIVN Abraham Elias
@@ -4459,6 +4530,24 @@
 1 FILE
 2 FORM jpg
 3 TYPE image
+3 _MTYPE portrait
+3 _STYPE jpeg
+3 _SIZE 25114
+3 _WDTH 334
+3 _HGHT 421
+2 TITL Mike Behun
+1 _OID 030b8565-657a-450d-bfe3-9044220942ce
+1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
+2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
+1 _CREA 2026-04-10 15:36:48.369
+1 _USER hMSFtbQJ4TF71DaH/zVqhqz8cq2W2CoZdgKo8LNTKbQjZf0EKhf4a7yHVTwmqz8qiushGN0rPdpkIbYkKFWMXA==
+2 _ENCR 1
+1 _ORIG acom
+1 _ATL N
+0 @O2@ OBJE
+1 FILE
+2 FORM jpg
+3 TYPE image
 3 _MTYPE newspaperarticle
 3 _STYPE jpeg
 3 _SIZE 223904
@@ -4470,11 +4559,11 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription>The Shaheen Fa
 2 CONC mily shown in the picture taken in front of 633 Third St sometime between 1910 and 1912</transcription><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-07 16:23:16.366
-1 _USER AxeLE9x2bN2UThO5Zrvd9MQClKpbkolqOP3ztdQYx95JGyMruRhEAZYASSmnGLisikgpeUM18aZGs0Q+/XKYtA==
+1 _USER XfSRLEJI6NSKGUBbH92nf6nuPX+AYudxkiNL/bTHqnZLKjd1YacF/hDhahS/peZY82KEeSp8KEWy0mk2nCLqqQ==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
-0 @O2@ OBJE
+0 @O3@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -4489,18 +4578,18 @@
 1 PLAC Pittsburgh, PA
 1 _META <metadataxml><cemetery /><transcription /></metadataxml>
 1 _CREA 2018-11-24 18:02:22.632
-1 _USER oTAYpm/SZJ6PbRK6jFpX7DIbpYq+85ERx2YYqUYZduvBGIs3Ka6RumtFMW4pkvuKJYJKKtstx/h04289fKXzOQ==
+1 _USER grNQAr0Av0JChjb5UwhrzVOg7IF2Em9PvIB54iuMPKt39gDoyVNDRSPGyclWVuooB9+3engmblTN5iSPh4ZsRw==
 2 _ENCR 1
 1 _CLON
 2 _TID 32576842
 2 _PID 18803225037
 2 _OID e96153fd-1b96-48eb-8472-c08d3ef4d531
-2 _USER geDSXQsugCj/h34pPI07LbtOIvfpqatGvRRbh70wOEyGh0YaOVWkgRoALcUnoTIdyPznMA3FgHUMzXEK2iYucA==
+2 _USER WK7UkPQzEfr3/LfbiCjMEnvzs0Ugo1WjSbgU+nQoOhypFVl3gydNvC5hHC/jEfWFN8j/Fpa+1fYb9mukSmx4+w==
 3 _ENCR 1
 2 _DATE 2014-05-16 14:42:16.000
 1 _ORIG u
 1 _ATL N
-0 @O3@ OBJE
+0 @O4@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -4514,18 +4603,18 @@
 1 DATE 30 Jan 1892
 1 _META <metadataxml><cemetery /><transcription /></metadataxml>
 1 _CREA 2020-09-08 23:48:44.000
-1 _USER 2/SvC7PqAXjDkzEtnZGFsFomYui6ElFMzrQsXaVRRpeXwYAPm7PhAzHAKGeJDTwGyYYnxImKUuIFcltTGAuT6g==
+1 _USER KQ9y5r6OVx+VN+h+ooO1CPnAkMH/qJklX4ekgR8o0zrP/F3QjnxbuPzMc5IHcHkTFCRF9UUKOxx/kh7yoKnlcg==
 2 _ENCR 1
 1 _CLON
 2 _TID 32576842
 2 _PID 18805104788
 2 _OID 4e70aaa8-9140-48b3-b0ec-ba54eb9572df
-2 _USER oQlP+cJgoGPshJPrDU+qsItabnGxxhy9HaN8LMXeEeaZjUa0WieUZdw82dDy5m3gG2cvCRD0xL+ZJYa98VBsQA==
+2 _USER DDqYokuBrjZplGxG5YP1CDk8EuRDA2AwzZ67qrN7zDzAGqkfUui/9J83tzKHTWqS3JVDhLGA/zzWjlGyxBU14A==
 3 _ENCR 1
 2 _DATE 2012-05-28 08:25:24.000
 1 _ORIG u
 1 _ATL N
-0 @O4@ OBJE
+0 @O5@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -4540,18 +4629,18 @@
 1 _DSCR The beautiful Anna Margaret Soulier Bleacher
 1 _META <metadataxml><cemetery /><transcription /></metadataxml>
 1 _CREA 2018-12-28 03:44:17.068
-1 _USER zLDgNd9aevYdhvlgI8H7XF++jSLN0vIJ7IHPmc/JBbsyjpi6ka1J1wKiwr36+tXzbrvaerLffSqo3HhskMFlzw==
+1 _USER nJmid13Q8xFCK2B4w32W64ITcUZ+Ur3+q544LBhhg+/AabWZLU4viCtjCyq6Aefp8V3vbshqQog4EnP0Dx4Ikw==
 2 _ENCR 1
 1 _CLON
 2 _TID 73547650
 2 _PID 30276120670
 2 _OID c3c90eeb-a3b2-4132-99b7-fcbb4e672439
-2 _USER 9YUAihCsc/oe8se65DoSqdu4BuKNqmJpBPxm4pKITeJYz8LOoVW1FJK+KwAW3lX7DGah+SSupP0arpscCMB3tQ==
+2 _USER Kt7ooScr6aeWKKW89lsea6nDkrVDJSiduY3sCcgbd+GHZGLzTsfQ/zm+sDN4a+2yOxrbt2UkKiVrVecG2mfZ3A==
 3 _ENCR 1
 2 _DATE 2015-06-02 19:40:17.000
 1 _ORIG u
 1 _ATL N
-0 @O5@ OBJE
+0 @O6@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -4566,18 +4655,56 @@
 1 PLAC Herman, Pennsylvania
 1 _META <metadataxml><cemetery>St. Mary's Cemetery, </cemetery><transcription /><personas><persona><pname>Lorenz Bleichner</pname><bdate>1819</bdate><bplace /><ddate>1909</ddate><dplace /></persona></personas></metadataxml>
 1 _CREA 2021-01-22 22:24:17.000
-1 _USER IW0KqNdDxW1LcCh710ZAmJSY4c8TjeYN3VipQ9AbIGRtzqnkFFnLcHQw2wtonS6sw8qS9y3SXkxgKp04bwUlww==
+1 _USER T3Xlng+nAxviuecImk3Pt8cQuc85C+41boNmcqZpY0h60VGIK/sEU0yNYYPq5flnlKHYsIGZxzm8cfyBFk3vMQ==
 2 _ENCR 1
 1 _CLON
 2 _TID 27424369
 2 _PID 13623062747
 2 _OID ddbb8541-8b14-4cc8-96be-14b40cf46bf2
-2 _USER WTKNBO28HZx7tYh0ndfrSqLF3Fqnqu4gyOX+0PUJexH1I72Lkz8oWu0nXV6JnwaSqKBY/rWOXZ7Y0626RdTwqw==
+2 _USER oULf2y7DCAvFrOzKDPwu9VvWAHg99Eim1o1vZeOmmBYj3e3dkcHZwIMm2MzNw4x4Ql9xUbiqcEZVVMXqn2oTSQ==
 3 _ENCR 1
 2 _DATE 2013-03-24 22:26:04.000
 1 _ORIG u
 1 _ATL N
-0 @O6@ OBJE
+0 @O7@ OBJE
+1 FILE
+2 FORM jpg
+3 TYPE image
+3 _MTYPE portrait
+3 _STYPE jpeg
+3 _SIZE 966821
+3 _WDTH 1526
+3 _HGHT 1923
+2 TITL Blanche & Les Shaheen
+1 _OID 2900b29f-142a-4ef9-a0bc-b7e92ff7ad9b
+1 DATE 29 Jul 1972
+1 _DSCR Blanche and Les at Eli & Rebecca's wedding 1972
+1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
+2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
+1 _CREA 2026-04-10 15:27:14.889
+1 _USER Z112pI1hSze+2YJc3d7wR7DyPAI/+CulpwbZljkRo5P4jqWQxiLsk1yaDQLzMQEV6nFVYsXBUH93SvMNq8mQsg==
+2 _ENCR 1
+1 _ORIG acom
+1 _ATL N
+0 @O8@ OBJE
+1 FILE
+2 FORM jpg
+3 TYPE image
+3 _MTYPE portrait
+3 _STYPE jpeg
+3 _SIZE 2881462
+3 _WDTH 3088
+3 _HGHT 2056
+2 TITL Mike & Kay Behun
+1 _OID 3071b3cf-2a4a-47ad-8afb-03ff1e51036d
+1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
+2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
+1 _CREA 2026-04-10 15:36:49.237
+1 _USER c8rU4HKwakKRvn0NhJRgCsQLkfXvjbKmIK3dpCYiQGLBQXQWMHcBXK2eBPpzEhd/+BCKkO0iGp0bo7fLNeHklA==
+2 _ENCR 1
+1 _ORIG acom
+1 _ATL N
+0 @O9@ OBJE
 1 FILE
 2 FORM
 3 TYPE image
@@ -4588,18 +4715,74 @@
 2 TITL 1860 United States Federal Census
 1 _OID 359a9d7a-d5af-40f4-9676-5e50c4cc5a95
 1 _CREA 2021-01-22 21:28:23.000
-1 _USER HNFMdnot7aStgrgINFS93d6XvgUK5ESJ35ntyfg/wYEsOFr5SyUnuK4Wn35YHFGuiuvu6/TRMlu83Wglfw/PjQ==
+1 _USER E8e2S8EowaODs5kyBSVHqiI5Af+6wdg+6WWtRH1pA21Y41KrB3ID4awr9FxRAYO+2a9WDkIJI/OdIIMBDBG8Sw==
 2 _ENCR 1
 1 _CLON
 2 _TID 77593603
 2 _PID 36372113929
 2 _OID df3bb29c-38c8-436d-9b99-b3c6171a8250
-2 _USER VD0US6Gff6Gs5M08IKNQASeCAsPvs2Ls+ne4vBm0RKAI/SQIBNWvysiNnnG2e5Vk7he6OXNQn6oxkpwAtWiBuQ==
+2 _USER Uf8Gz7IO7FiHaiGJCz2wu7zG4SPIPzKGScGdTXdLZV3MSDyhVfTtpmla8eoeadxXODBGAQCH/MyOs/oCCyoJhQ==
 3 _ENCR 1
 2 _DATE 2015-02-20 00:07:34.000
 1 _ORIG u
 1 _ATL N
-0 @O7@ OBJE
+0 @O10@ OBJE
+1 FILE
+2 FORM jpg
+3 TYPE image
+3 _MTYPE portrait
+3 _STYPE jpeg
+3 _SIZE 71273
+3 _WDTH 532
+3 _HGHT 536
+2 TITL Mike, Kay, & Rebecca
+1 _OID 3b404968-82d0-44fe-b6a3-c50be7b2c5f2
+1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
+2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
+1 _CREA 2026-04-10 15:36:48.208
+1 _USER b9RXB6l9vty3XQ30ccGiiczMPvRdkKoAu2b/dXttYNAyP/Q991ejcMgd8FstkWn9oQcMsZ788WjJjAdUZG/Zag==
+2 _ENCR 1
+1 _ORIG acom
+1 _ATL N
+0 @O11@ OBJE
+1 FILE
+2 FORM jpg
+3 TYPE image
+3 _MTYPE portrait
+3 _STYPE jpeg
+3 _SIZE 91168
+3 _WDTH 595
+3 _HGHT 873
+2 TITL Mike and Lucas
+1 _OID 3f3ee18a-c8bd-4a17-a798-b97d1e2d3ce3
+1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
+2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
+1 _CREA 2026-04-10 15:36:48.264
+1 _USER azcVT99GQSFfY+YrmXzNcvHitRbEMpZ2H+avqUAUcDA4nriBBgw9oA+2xx0hUy4r6PZbHi26XT/JFhAmkFZliQ==
+2 _ENCR 1
+1 _ORIG acom
+1 _ATL N
+0 @O12@ OBJE
+1 FILE
+2 FORM jpg
+3 TYPE image
+3 _MTYPE portrait
+3 _STYPE jpeg
+3 _SIZE 92891
+3 _WDTH 360
+3 _HGHT 540
+2 TITL Rebecca & Quinn
+1 _OID 401b11ab-ba26-4d9d-91fd-f1a7dfaf438d
+1 PLAC Pittsburgh, Allegheny, Pennsylvania, USA
+1 _DSCR at jill's wedding
+1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
+2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
+1 _CREA 2026-04-10 15:47:01.278
+1 _USER DG/mEvZgqGjDQ48ys5cOGYhv3fRxgYUMkzqmWh0hHvD18litakVzuC6ZSb6MnkQPjUh37aenL+W2kGVf515/vw==
+2 _ENCR 1
+1 _ORIG acom
+1 _ATL Y
+0 @O13@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -4611,18 +4794,18 @@
 1 _OID 4cfc43ca-1cc4-4824-aa3c-cbccbab2bb4c
 1 DATE 6/5/2014 11:27:41 PM
 1 _CREA 2018-12-28 04:36:47.568
-1 _USER HXNSjX3VM8KYUjyjISUB/k45nS5s8meatjuSjxj7eXC7ooY2AYiXZ9ndmdRRGuzrXuWyPYBtT31p1s++Qy03cA==
+1 _USER w2JgJ6cy8NtERSg+zt7QkLsCqlagf3/4uWq+vKLI2wZgV4pAqzr9Ncup1KXtn6CBisGO0DRPqmASYsRFYl4wYA==
 2 _ENCR 1
 1 _CLON
 2 _TID 43572778
 2 _PID 13922357760
 2 _OID f82aebce-71e5-4391-afe2-3a57d3e6dbf1
-2 _USER 61ZBGtmUPzKGtTXAstdyHByTj6n7SkZYK1tNX5aF3nZtF2dlL3ESmQVEjJY9sPNbrpk5Vck8kUs61kFzPabIqQ==
+2 _USER 6yh0o8/HUUJ2xkgx9xaYmr/Wn8H88cUV5elmAGMt5sxTXVeeh7hLfc/8E40ddXC3qHBfWf7AAGR4IAAfnQaInw==
 3 _ENCR 1
 2 _DATE 2014-06-06 04:29:42.000
 1 _ORIG u
 1 _ATL N
-0 @O8@ OBJE
+0 @O14@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -4636,19 +4819,19 @@
 1 DATE 18 Jun 1947, Wed
 1 PLAC Pittsburgh, Pennsylvania
 1 _CREA 2021-01-28 00:16:36.000
-1 _USER rfFU4d5x2ASKpFN9GF2lOcKOvxWAJveVrTP4dH7aPj7a3tmEWOxdVk4tk77ZerIu+EbLi1oIAhoAy7jflIymdg==
+1 _USER DhR9MJDCm/5XkNFu8P4ibHSBk/OewxsQM7ym6BekE3EWgM1/o+MXqgMTDTBOT3LdJ5D2PB10eUPDggQUgV9jeg==
 2 _ENCR 1
 1 _CLON
 2 _TID 10045005
 2 _PID 210024685462
 2 _OID 5bbbf67c-3d42-45d3-92e2-c5d9f1c99a73
-2 _USER f+/UZFc2jutI16V6Fq1sk0rrDLPWgPhjIglVZaiQjZXDJizA9mRsaOVgUOs9Ph+BOeKFCN/JyQhzMS0l0xmnaQ==
+2 _USER UXkBOCwq6/3q7bH22E54pKPQVwbB70apChSP38z0gEgRo2dr9l11N9YLGpfC7EgQRx67eMeAYP6OpqmttKLWSQ==
 3 _ENCR 1
 2 _DATE 2016-08-17 01:59:49.000
 1 _ORIG newspapers
 2 _URL https://www.newspapers.com/clip/6263966/?xid=637
 1 _ATL N
-0 @O9@ OBJE
+0 @O15@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -4662,18 +4845,54 @@
 1 DATE 25 Mar 2018
 1 PLAC Pittsburgh, Allegheny, Pennsylvania, USA
 1 _CREA 2018-12-28 03:42:06.864
-1 _USER gsY3nGwW5K+4c3XPm7GzvY4AvtWXBk+lCPfl41XUeMr6MLtPq63mk4CpcevIdvDoUr5xI2fDnhfSD2nrNof9GA==
+1 _USER JBD0ZGUq35HVZw4Jl514U0no8kl1Y5oqjnU8cSB9pdvnp2CcD6dmXR2Rz0LtYsra4OWWIGqXaOnwM8l22ypd5w==
 2 _ENCR 1
 1 _CLON
 2 _TID 32576842
 2 _PID 18803225037
 2 _OID ef8c7fed-cd8a-4d9f-a184-4c6033b74ae4
-2 _USER xTFH63UK8PYrRj0DID+8ODzgI04qcwbWlv4FIhSlJHslT/ESCfNzpAm6LNMgtPu3wGBVFUDJzQG5Iobp8zvZfA==
+2 _USER RSR0Pz/cLuIXlnBRkahIUxnbVlW9NojX9mUUwrWhffFm+higm7bWTacl+j7XsUWFBANGoxt3VCPQ1y62csCMLA==
 3 _ENCR 1
 2 _DATE 2018-03-26 02:00:41.000
 1 _ORIG u
 1 _ATL N
-0 @O10@ OBJE
+0 @O16@ OBJE
+1 FILE
+2 FORM jpg
+3 TYPE image
+3 _MTYPE portrait
+3 _STYPE jpeg
+3 _SIZE 177630
+3 _WDTH 1047
+3 _HGHT 1488
+2 TITL Blanche Shaheen
+1 _OID 73e7f67a-10ce-4792-92c3-c19481e5bb0f
+1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
+2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
+1 _CREA 2026-04-10 15:27:14.941
+1 _USER 8UBm1vxT8raNsFSw2UFEcS9aLztNMT5Yq9evKX9FVqwVaECBYh0U/4socgOTiipCZL9PBajyUOtvrAPeka4lxQ==
+2 _ENCR 1
+1 _ORIG acom
+1 _ATL N
+0 @O17@ OBJE
+1 FILE
+2 FORM jpg
+3 TYPE image
+3 _MTYPE portrait
+3 _STYPE gif
+3 _SIZE 6419702
+3 _WDTH 512
+3 _HGHT 512
+2 TITL Mike Behun Animated
+1 _OID 7eb22586-1457-4428-86fe-d8641a4582d0
+1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
+2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
+1 _CREA 2026-04-10 15:36:50.105
+1 _USER wDT7WWYF1h3cy6a2amXQq1imhcmQxyyTyKgymi6iZBJJH86fMqWmesQylY5n/biOHT5BfpTKev9tzJwHtGS/wg==
+2 _ENCR 1
+1 _ORIG acom
+1 _ATL N
+0 @O18@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -4687,18 +4906,18 @@
 1 _DSCR Great Grandfather George J. Bleichner
 1 _META <metadataxml><cemetery /><transcription /></metadataxml>
 1 _CREA 2020-09-08 23:50:07.000
-1 _USER XHhKyh9cS9GQ9JrnJMBzivGqTO4RrmEp4ag/2nzxxWKSRHYzlyGH6VoQY9rErZWyWzWR1WupNEgPiEri6E8GnQ==
+1 _USER 7Ya59J1sBztsZyf+kP9tH99qXtxJtn4A5tysbXsaRMaanTLEW8kpsAoVT3rEa1vD32k+Jj5psPAS7r4IYHtcgQ==
 2 _ENCR 1
 1 _CLON
 2 _TID 73547650
 2 _PID 30276120756
 2 _OID 3a619b2d-f24d-40ca-a9a8-98ae3ed09d13
-2 _USER 88mBWFBfQKi8l/6MqlZRMvsObU1lzQKw5HOmfIZuOrQizjOv34KdT07zFjc0neEIknY4LkG+KtBlcvFPmCjduQ==
+2 _USER xGF3N/WSz4z0LPtwe7HIC4GEpMSoNYiBuiwzG0AD3Znfwnx9s3MHZHKq0P1bIhhkOTe37i0Xti+QU9a2vsaT4A==
 3 _ENCR 1
 2 _DATE 2015-06-10 02:14:23.000
 1 _ORIG u
 1 _ATL N
-0 @O11@ OBJE
+0 @O19@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -4711,18 +4930,38 @@
 1 _OID 7fd9835b-88b9-48bb-9773-758fb373a8c9
 1 _META <metadataxml><cemetery /><transcription /></metadataxml>
 1 _CREA 2019-02-05 00:44:04.390
-1 _USER +Nh5427Dl0tNe0lXkzKXuX5oYZUMbTYKekFMU9X7iXYv5f1jBVZUKlQAnuUNorXMfkEUWS+hCPCOOoSqewjZ1Q==
+1 _USER KA4+ZY7adFNCe7jzTzapLxZGx0Ef7ZqXM6fcN0bHYeSBpATPsBkRrgN3BnIyBELALIZ5OUW+KmM3VXxsmvMCnw==
 2 _ENCR 1
 1 _CLON
 2 _TID 3290666
 2 _PID -1625128717
 2 _OID 8062fd17-3221-49e5-b8e1-bff839e6c54c
-2 _USER TpZbp+3yh/iX/6JkU2MZP9mCCWpoBXn3PXoEX9hgrsZSXPq33H8b0nC9Dyu/sCLjnNwlZcW7Ck+YCT9zjyGW5Q==
+2 _USER 3JgobuydhMDDmj+Esx9hXYE6x+NbmjE6wSHtwRLqYeo1ih5E7VkG0wgh8ZDq4C88QB6AjLWcvlNdTx11smGbsw==
 3 _ENCR 1
 2 _DATE 2012-11-29 23:20:58.000
 1 _ORIG u
 1 _ATL N
-0 @O12@ OBJE
+0 @O20@ OBJE
+1 FILE
+2 FORM jpg
+3 TYPE image
+3 _MTYPE portrait
+3 _STYPE jpeg
+3 _SIZE 33667
+3 _WDTH 600
+3 _HGHT 450
+2 TITL Grandma and Grandpap Shaheen
+1 _OID 82cc603b-f467-46dc-a8e8-b05975ae1b46
+1 PLAC Clairton, Allegheny, Pennsylvania, USA
+1 _DSCR Les & Blanche with young Michael & Jill
+1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
+2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
+1 _CREA 2026-04-10 15:27:14.698
+1 _USER 30Km76t2/YotHnFVHiUi90HbF+BPEq6uXw9JxPuvJZpDVNtCI1ID25H1JlFxjG9Wwv5HMqTfWqm4YLw5PmMVtg==
+2 _ENCR 1
+1 _ORIG acom
+1 _ATL N
+0 @O21@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -4736,19 +4975,19 @@
 1 DATE 29 Apr 1921
 1 PLAC Pittsburgh, Pennsylvania
 1 _CREA 2021-01-28 00:42:59.000
-1 _USER QJcgmXwPb1CLUFrdzcYpRYcqBX4howBAgtgbNPxsPwoM4anEAq+iy4rVcXtxZsMn+yxJ0BF3+ql+EzY+Z/POdQ==
+1 _USER 5x2QNzZQx4wqRhiGFUuOlF4ijpwBA5ITYNMR/RlQVxhywNszacROoWBtO2JHw0QjihhlvjcWf7I7Uuy223g2wA==
 2 _ENCR 1
 1 _CLON
 2 _TID 10045005
 2 _PID 210024683520
 2 _OID ed5c61b0-8369-4ea6-98a7-f56fe502e33d
-2 _USER L0wQ5WxS+ENRyVY9YqbUxfOz43zHmxLSHmYdcTW5/r+vQRTjZzLVJiFKdXHTcQTqMY+whvNjlt9FZr1+HAZXrg==
+2 _USER 0Cnd1HuTpvfQ4VeycVOL02++EHeB0ayR+9ERkPw+C5jeDR88uyOHmpCdENiLunGg12ZCR+4Z9OgZ7F8vWTQkag==
 3 _ENCR 1
 2 _DATE 2018-03-08 21:07:39.000
 1 _ORIG newspapers
 2 _URL https://www.newspapers.com/clip/18114128/the_pittsburgh_press/?xid=865
 1 _ATL N
-0 @O13@ OBJE
+0 @O22@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -4759,18 +4998,18 @@
 2 TITL William Joseph Wolbert
 1 _OID 8cfc6890-25a0-4d96-9838-21439f0a92bc
 1 _CREA 2021-01-21 18:46:39.000
-1 _USER ZVbU9exrtr5zYLKqZnRnmYKw/RsJ1e3DXU/CZsOauGMQDmGlEVbpQt7K0+1gfcVKrmO7GCLjiMf5snPeTKIytQ==
+1 _USER IbreaqFC9Jf/5fQuIAe5upC6zuudUP/XmCKRqNi0FJhrHFz+8lX3A6TMISOVlkfbb2drPFtOLZeFzJFf+3LZtA==
 2 _ENCR 1
 1 _CLON
 2 _TID 3748446
 2 _PID 242127434519
 2 _OID 10e85cc3-af86-4cdf-9ca2-de9340712d85
-2 _USER ijr2hF/eorOkHceUrNLNtx0cIbt1Uyjgy0Hc//HGu1i2JM/l8CTy3aIsn4vXs0UrSmzEso2F8aueOMJRD9K+bw==
+2 _USER zcRLy1acdqW/q4xcabydlt7bsICPgo1hxR2RlimXWb7qcQbdghtYCcPOeNGivjYhuWeQahtimBTuUsKyPa8VyQ==
 3 _ENCR 1
 2 _DATE 2019-09-13 12:28:18.000
 1 _ORIG u
 1 _ATL N
-0 @O14@ OBJE
+0 @O23@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -4784,18 +5023,37 @@
 1 DATE 28 May 2015
 1 _META <metadataxml><cemetery /><transcription /></metadataxml>
 1 _CREA 2021-01-22 22:26:40.000
-1 _USER YUrNyvTwqKFBoiFsRdZ2MlD3LgQIfJtM8UYlDpYxC8rH9N53P3VevNH7KT19aZQaemsEX8/avCgMJjlMPG2JVQ==
+1 _USER zWI8ZwwHdbsgxpd903S143D/p1UfkunPannRQS44n1DDHfcntFKd0tqWFpz4D5AGgH7uH+UWxfimJOzcih2Drw==
 2 _ENCR 1
 1 _CLON
 2 _TID 79060437
 2 _PID 44401676435
 2 _OID 9e1996b4-3d93-42af-ba2e-92ee997b3063
-2 _USER sAP0/gM4xVPgdmn6ewN0LBjibvNUD8v7znE8kVjRrFRQM/oP9GqACZ9NdfdsKoyow3yTDOneg0wGojsTHRylEA==
+2 _USER NNGgPXB6INCzzb1u6KV5VwO0VoxG7rckTEtaoJPD6DEiBOqHemANgTpudUSCgv30/12d0juobyH63XyW9oGOQw==
 3 _ENCR 1
 2 _DATE 2015-05-28 15:45:23.000
 1 _ORIG u
 1 _ATL N
-0 @O15@ OBJE
+0 @O24@ OBJE
+1 FILE
+2 FORM jpg
+3 TYPE image
+3 _STYPE jpeg
+3 _SIZE 247864
+3 _WDTH 2592
+3 _HGHT 1944
+2 TITL Grandma Shaheen w Michael and Jill
+1 _OID 8f0aa93e-7c3e-4f4c-822c-618ff5ece879
+1 DATE 1982
+1 PLAC Clairton, Allegheny, Pennsylvania, USA
+1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
+2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
+1 _CREA 2026-04-10 15:27:14.946
+1 _USER 15CrO86oHpqIQIgH20Cp81LYArvV5Be7sgS9V33wyIp0LfGphYbY0xDtDEGZi96ckgs3S/wOSOqTc5azLP601w==
+2 _ENCR 1
+1 _ORIG acom
+1 _ATL N
+0 @O25@ OBJE
 1 FILE
 2 FORM png
 3 TYPE image
@@ -4808,11 +5066,29 @@
 1 _OID 925938c8-cb36-48bd-ad08-e20836a24630
 1 _META <metadataxml></metadataxml>
 1 _CREA 2026-04-07 16:32:20.469
-1 _USER eQbarJKth4YT/OIFtx3f02F4mr4Bav7Im7XNfVR3uu1zZ3yipxs8jAprnyr1SC7nCZN4V//Dov74tm0UZKxsIg==
+1 _USER SKp+Tq2udYpNo606j8pZCseTAznkh/MRn5XfhOJQ0KAxtppAVqHhSmQuhu65vA1EUaXuLR5k0F6uaEfoi7r7mA==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL Y
-0 @O16@ OBJE
+0 @O26@ OBJE
+1 FILE
+2 FORM jpg
+3 TYPE image
+3 _MTYPE portrait
+3 _STYPE jpeg
+3 _SIZE 60227
+3 _WDTH 655
+3 _HGHT 514
+2 TITL Grandpap Behun & Jill
+1 _OID 92a10ad0-ef3e-41cc-852d-e4d3b3e14ffa
+1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
+2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
+1 _CREA 2026-04-10 15:36:48.261
+1 _USER ziDMNkq8svU43CZAD02/Aj0equtLpxi5KmXmdr+ZGTHdvk734CAFykfrWCpOIEZzL31fxKipbv/NThw1P1tM7g==
+2 _ENCR 1
+1 _ORIG acom
+1 _ATL N
+0 @O27@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -4823,18 +5099,18 @@
 2 TITL Ochs Family Crest
 1 _OID 99f9d6d6-1698-4342-aba1-9b6e4878e4a2
 1 _CREA 2020-09-08 23:12:13.000
-1 _USER fu7Vknnrfu0VRGsV8OSQtHDAGlBae0KE0BgmnjZBMmQbBF9bVH0AWcTNvOlI/CK+MJX1TRz0NZ60LbLb7rt7Jg==
+1 _USER KHEcXV/G1N83cRmTjFSMNXCF0GV28befCjLG8iHWsbogguk2ENI5ndB+BIb31GAQldDUzXthKq2e/ri+otg7nA==
 2 _ENCR 1
 1 _CLON
 2 _TID 46275268
 2 _PID 6509052774
 2 _OID 1b3ad3fd-814f-493e-9c28-c8a4fbc2f6ca
-2 _USER 45yIhuc/+4S8DDDUbWf7sWgAYi1+Y878riJVuwh0HLbqxNrQRcUpFg2Kid4Aq5au2MjadDqQ/+klPvL+Un1TJQ==
+2 _USER AFLb71HN9sTSoOF+cJMsVb9mUe4lT6ss6nU8ihL1ZYV7o9nnijsOG58gg3z0cgDYnVDiA5OFpLL4xIwor2gIcw==
 3 _ENCR 1
 2 _DATE 2012-09-06 20:45:35.000
 1 _ORIG u
 1 _ATL N
-0 @O17@ OBJE
+0 @O28@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -4846,18 +5122,18 @@
 1 _OID a49b27b5-5a01-4f48-8a89-de101bc4e1b4
 1 _META <metadataxml><cemetery /><transcription /></metadataxml>
 1 _CREA 2019-02-05 00:44:43.281
-1 _USER 3E9oWHUWkIQrsPZBgrbI9NG4pU+dZJsNv/nkkbj8kuRcjl3rSvIKsYrgofwoPaXdhugP/yEFK/UsSbpuluSWhA==
+1 _USER QsxJMWnwy43/xYtmpBAEDQJuwoHnPugzDr4kfKUPWHsc5uuktxIoRk8Akkj2hh8Mp7KxBFMYFICJkvgUWBltbQ==
 2 _ENCR 1
 1 _CLON
 2 _TID 3290666
 2 _PID -1625127792
 2 _OID e01b48f8-dad7-42f6-8ff3-86a290ec3ba2
-2 _USER e5B/4Fu1/SFeiubLy4HqL7f5eZwsZMvFAB+l479LO1JM3azZGTBXUzG4ajpPxq676Wg73CREAkoBZCyWrqLOPA==
+2 _USER 6fFVDTadBmIhXodXDAf2CoBaDcXdcWq6a48Zg9gN3g4KNNplsDAhB6MPNs2+tsfrRe1JOvf56oUDW9DgnrzBTA==
 3 _ENCR 1
 2 _DATE 2007-10-31 19:20:37.000
 1 _ORIG u
 1 _ATL N
-0 @O18@ OBJE
+0 @O29@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -4869,18 +5145,18 @@
 1 _OID ba53c24a-d457-4b94-bb43-48928e487606
 1 DATE 1913
 1 _CREA 2018-11-24 17:41:52.512
-1 _USER E6XQNJZ2S68zqRRiGbTWI4tPve7jbbE/4bCpX9J6cPh8fV2MSOzeD7BcRCKpInnfaDDZqnEoluwuLLAU4Vj9TA==
+1 _USER q0jYqdNs5gtV2FjLDYthtcGaYNwZ8YGnuaJgdMZcKUKobXwwxgGXpFi4VVwSt/vHbkqdx+r5FSXzLMh9FXRVjg==
 2 _ENCR 1
 1 _CLON
 2 _TID 10045005
 2 _PID 210024119499
 2 _OID 2ff2a489-0678-41fb-9194-6ef308db6c88
-2 _USER U1sxiKIQSdtumOgugqP015j3z+2cXs0KmKXXdfTAtobOA1qqcUy3s4nZO+GAM2Mx10UMCRj3FwgbfJ2tHPxoIQ==
+2 _USER nV2TiJHRvJE6LzvBZtOSusa9Ol+SCLRiQLGV6SrLDlqpi7zZypwt4XCgKMU1Eq10affGVFTInFVHzd9byOhB6g==
 3 _ENCR 1
 2 _DATE 2016-08-17 01:22:47.000
 1 _ORIG u
 1 _ATL N
-0 @O19@ OBJE
+0 @O30@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -4894,19 +5170,110 @@
 1 DATE 18 Jun 1947, Wed
 1 PLAC Pittsburgh, Pennsylvania
 1 _CREA 2021-01-22 18:54:37.000
-1 _USER G4nAmE0w4/8QiUZdGcQZ2/awQJKo73OIuCtMSxGdhd3VlgYzXYd+PXPPGNCqTjezAdnUx1uoEkwCs1Z17EUAoA==
+1 _USER QXzlZGsyB5xWJjQYx/h3Ani4QUX8nqjxQIcbIprsPhiOLSZq05E12AlTtQ3Zq8/UrI9X0dRBCh28p2qJfEussA==
 2 _ENCR 1
 1 _CLON
 2 _TID 10045005
 2 _PID 210024682920
 2 _OID 5bbbf67c-3d42-45d3-92e2-c5d9f1c99a73
-2 _USER AD3H8+tt2jM/wvsdsn1xP7MConjIUOqWkJf6ZS9AkcX9HtGwXc9Ps2Zhbe1wGm2TfuscjCLECFaAB4gCcyal2g==
+2 _USER /SgxpWqQ0eLDWBe7N4Rc3/V7w7AgBgnqGQe8OckgJUFFMqKhl2BwZU59M056zUVqls3a0vs3FxqsWtxU1JptHg==
 3 _ENCR 1
 2 _DATE 2016-08-17 01:59:49.000
 1 _ORIG newspapers
 2 _URL https://www.newspapers.com/clip/6263966/?xid=637
 1 _ATL N
-0 @O20@ OBJE
+0 @O31@ OBJE
+1 FILE
+2 FORM jpg
+3 TYPE image
+3 _MTYPE portrait
+3 _STYPE jpeg
+3 _SIZE 192007
+3 _WDTH 1318
+3 _HGHT 1030
+2 TITL Blanche Shaheen at her stove
+1 _OID bd62d6c6-df2d-4f17-86ae-b2fa0b5246c4
+1 PLAC Clairton, Allegheny, Pennsylvania, USA
+1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
+2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
+1 _CREA 2026-04-10 15:27:14.734
+1 _USER HRAqb8FsK4odJgqchf9Fg2A8gbRhxFIa0MLymLQFxEPzQSZ9gjWlrX//j6VZmPXMyVBfVeVCV4D69IJcr1EJMA==
+2 _ENCR 1
+1 _ORIG acom
+1 _ATL N
+0 @O32@ OBJE
+1 FILE
+2 FORM jpg
+3 TYPE image
+3 _MTYPE portrait
+3 _STYPE jpeg
+3 _SIZE 29443
+3 _WDTH 363
+3 _HGHT 400
+2 TITL Mike & Kay Behun
+1 _OID c80afe37-67aa-4379-824e-aa48b86869ee
+1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
+2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
+1 _CREA 2026-04-10 15:36:48.174
+1 _USER Kgk2t5G3dixp1ARNTL4AVvEJm7++tvTKagBa3nAE3c/ele+/PdQT20UyfIFET/LtMhpxCcj8YsHLW2ePuzAK3w==
+2 _ENCR 1
+1 _ORIG acom
+1 _ATL N
+0 @O33@ OBJE
+1 FILE
+2 FORM jpg
+3 TYPE image
+3 _MTYPE portrait
+3 _STYPE jpeg
+3 _SIZE 75295
+3 _WDTH 599
+3 _HGHT 889
+2 TITL Mike Behun
+1 _OID c91365d9-4426-4e28-a7d7-2cdd41528499
+1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
+2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
+1 _CREA 2026-04-10 15:36:48.279
+1 _USER 4sNatHOGxdnZwdTjakOR+Uagc8JCTb6QsFgjl4pogjY5BSgMvssEi8XuP+kV6f/ZGfmkF6q8a9abrE340b4f6A==
+2 _ENCR 1
+1 _ORIG acom
+1 _ATL N
+0 @O34@ OBJE
+1 FILE
+2 FORM jpg
+3 TYPE image
+3 _MTYPE portrait
+3 _STYPE jpeg
+3 _SIZE 4145
+3 _WDTH 263
+3 _HGHT 227
+2 TITL Mike Behun
+1 _OID d1a97f86-be46-46da-b7bd-a6e67e3bb789
+1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
+2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
+1 _CREA 2026-04-10 15:36:48.374
+1 _USER Uvz36IeMJVDsnLSVXqUMB/ZVOWBKTSB0ewqaVT+4aMeq+YOemBCCq+0gwM7607kg6s5DKw2JaWx4/Kz3dg9rzw==
+2 _ENCR 1
+1 _ORIG acom
+1 _ATL N
+0 @O35@ OBJE
+1 FILE
+2 FORM jpg
+3 TYPE image
+3 _MTYPE portrait
+3 _STYPE jpeg
+3 _SIZE 1970505
+3 _WDTH 1984
+3 _HGHT 1440
+2 TITL Mike Behun at work
+1 _OID d1bd3ab9-1d23-4fb0-95c5-e471f6379d69
+1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
+2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
+1 _CREA 2026-04-10 15:36:49.043
+1 _USER iv+Yvs0F91Ztgl+JPgcmCbJnMqoutGGkYOOBt0rRaZoqcayrdo2GAS4E9fcOGFriQqwQ+Cvst1iFX8k5KxSw6w==
+2 _ENCR 1
+1 _ORIG acom
+1 _ATL N
+0 @O36@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -4919,17 +5286,17 @@
 1 _OID d4daa42c-b593-49f2-bf18-4620a847b2c2
 1 _META <metadataxml></metadataxml>
 1 _CREA 2026-04-07 16:36:06.641
-1 _USER K0s92edpyzJ2PRJAK30H5g8D4jNYnKK6d3zi4RfNJDB4nNC7kwDgwOUcP+0fpeQoFYLWYUTnqU430r2NXrzjsA==
+1 _USER 95nbu85D8Gj4GfVJVG2jf2RhAHhNji4KmZz9IDD3vZVo7JGRO0MEO9dUiP4vgqcuyKYn3mD4Chr6t3PYqpS7Tg==
 2 _ENCR 1
 1 _CLON
-2 _USER BJuR60EtCp7z1L2wz9pDiZLb5fGH3k86Edrslcf56ZXBAJYejh2HdxnA3A+tMttrVuC0akfitOD6MXVll+04MQ==
+2 _USER z51UVFw5TVk0Cbdbqkr++CSOnsHoDw38I6+HKIOKtAUGdiE2mJyNdVSITsdPhSJqUQwyWMab3Nbh8X6ZsbVbpA==
 3 _ENCR 1
 2 _DATE 2026-04-07 16:32:20.469
 1 _ORIG acom
 1 _MSER
 2 _LKID d4daa42c-b593-49f2-bf18-4620a847b2c2
 1 _ATL Y
-0 @O21@ OBJE
+0 @O37@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -4940,18 +5307,18 @@
 2 TITL Media0200
 1 _OID d54b2604-e558-4470-90f1-b589ef8c0bb4
 1 _CREA 2018-11-24 18:13:14.972
-1 _USER 9Obc++SDnmm16JMv2eslPhBv91soo5eAWOq155WjnWn8J2Qy+dzP3zhEVHik9zophf4OCGFZSXUtubYLVbUwdg==
+1 _USER Nbn4/hbG/czdTShNLIQpOYRvcahOaWP75dvb9JgYwrodtFFYQ6WStGZxX7/BlJtMKXzBfCiTNFq03+9vZIW6ng==
 2 _ENCR 1
 1 _CLON
 2 _TID 108278092
 2 _PID 360063857305
 2 _OID 3526f7d6-1b73-4d25-ae41-c83c67fdd807
-2 _USER WxAKmHqvEDAfBWUiO9ZGtL7PS2puVabE/bsb8wWLRg2KGpwQ9S3lo993pHE8hMHEMhA9NZoK0R9yqz7O+epHKw==
+2 _USER 2UvdQzDA/kRaQ2C2HBHEw56K7Y0/TJSajTvajcVDY5DaLg/PwqglksHZm6BZVqmKqX2o5uq/AmgMTk3quqoXUw==
 3 _ENCR 1
 2 _DATE 2017-02-04 00:29:35.000
 1 _ORIG u
 1 _ATL N
-0 @O22@ OBJE
+0 @O38@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -4964,18 +5331,18 @@
 1 _OID e3f53e27-4f15-43b8-a96d-3286799652da
 1 _META <metadataxml><cemetery /><transcription /></metadataxml>
 1 _CREA 2018-11-24 17:59:35.348
-1 _USER s9LH9jpjMgxH/gyITa/2ladF6cO+zXaNiipkqVst2sRA+t7qBt5UUxrJOfF6/gQK8pGnIb7tfjXt073a25HDnQ==
+1 _USER 7vrn/yeEKY34NiQeVbjimczW9NqIbzL8kcVGpx6yC7pkCIaCcUgiYMh3h+XVXQzKpcZIMAnjP1M/iG8nlejPiw==
 2 _ENCR 1
 1 _CLON
 2 _TID 32576842
 2 _PID 18803225037
 2 _OID 3d181fb9-e6e8-4ebf-8ce2-c4d9bd6623e1
-2 _USER dkGksIuDYhqx/jEQ0xVjamHi1o5IP5218H0sHiHW4ye+Qggaq+OrFtFEqvU6vrl5Lhonj1vYb/+fbzg13fNrbg==
+2 _USER osOs1JTxlD/iX1EdhFOUqNTJbxRZ1rRYxkaWHX+wRIuhz2rv31fW9yMZojE3EeRvCMCSrGr8teWzW49nxCS9qg==
 3 _ENCR 1
 2 _DATE 2012-04-04 20:13:07.000
 1 _ORIG u
 1 _ATL N
-0 @O23@ OBJE
+0 @O39@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -4988,18 +5355,18 @@
 1 _OID e48c856a-0277-4a00-be6b-18ea3043b1a5
 1 PLAC St Joseph Lucinda PA
 1 _CREA 2021-01-22 19:17:46.000
-1 _USER nwwwUyrM9eJR0T5IvPBYCI9DhQS4Ge2cBIK0nwA4MgVn+M+ae17yTe0dwOiiAfSvKwY5obKRMP1Vc4v0C26vwA==
+1 _USER mCqLSMdWmrp3SLOwVPy2XOsisc+RhhMjo/QR9AugO1K5IROJ9LLdakoNzH2JtZpAXKXOeoaf9kOjDSkS+55L3Q==
 2 _ENCR 1
 1 _CLON
 2 _TID 6065188
 2 _PID 304118361
 2 _OID aaa0b0e5-97f7-4e87-9d4a-911fe3ddd092
-2 _USER AxmhGJjZg9t4IwQ7VGOX+GaAJ7fErElKvi1AKCwpidi0A+vbFyQzRUMpaOj1Cmd+hRwJxKIGW9j/C9yc5H4uTg==
+2 _USER whRKCr84hsVZw/yvlnZ71fiykTsaeiJ+DIXhb9xmNNTylguyYEY+LHCx9qLZDhTU3ekLuBwZjcKiT8FW8aG9ug==
 3 _ENCR 1
 2 _DATE 2017-01-14 06:52:59.000
 1 _ORIG u
 1 _ATL N
-0 @O24@ OBJE
+0 @O40@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -5011,18 +5378,54 @@
 1 _OID e68acff8-003e-431e-a3bd-ef58e67cf7da
 1 DATE 6/5/2014 11:13:14 PM
 1 _CREA 2018-12-28 04:32:10.525
-1 _USER Oek5PD6X/U7rh/XrJFSThF9sj2v1vXhyUSUcvqdWVejaoRvF72C/kwM8OX2oTwu3bjdm/Rv4aZJE4KKfCdClFg==
+1 _USER IoTnkzU2RyLTY1S2jS32e60LQJEhX9IjUETKdwru34xh0SLB30ntqp0cLbFaevuXmb3laWgZ1hLAv4+VBgeFaA==
 2 _ENCR 1
 1 _CLON
 2 _TID 43572778
 2 _PID 13922357764
 2 _OID 3beb75a6-c243-434a-b58f-ea93f49b3a7f
-2 _USER zpJRGqopRfKphhPwjYUbAAZnDZD94H2r5F9rUPrEJ2Tbh+00bgyqlfG6PTPOZpJvodlfISkTkbbEzNTMBXX4IA==
+2 _USER GooTSqlVsVOyGWDKDEo3Z9yO8EdJNTlwDDiczAt7MCr0eB5i+j8Ax674ygH9zjxkzqK05gOC/ll/31QVReDZvw==
 3 _ENCR 1
 2 _DATE 2014-06-06 04:29:42.000
 1 _ORIG u
 1 _ATL N
-0 @O25@ OBJE
+0 @O41@ OBJE
+1 FILE
+2 FORM jpg
+3 TYPE image
+3 _MTYPE portrait
+3 _STYPE jpeg
+3 _SIZE 26079
+3 _WDTH 698
+3 _HGHT 973
+2 TITL Mike Behun
+1 _OID e8d76f08-7567-4a8a-bfe9-09f3efeb822a
+1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
+2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
+1 _CREA 2026-04-10 15:36:48.090
+1 _USER YGExQs1ejiYJh63P19I3Sesef1r7/O1S8dgARTwqPrpopud8mB9fWzhxY+TBbUKZYPqPwOjGWn8+68lYoaHwZA==
+2 _ENCR 1
+1 _ORIG acom
+1 _ATL N
+0 @O42@ OBJE
+1 FILE
+2 FORM jpg
+3 TYPE image
+3 _MTYPE portrait
+3 _STYPE jpeg
+3 _SIZE 83220
+3 _WDTH 1050
+3 _HGHT 739
+2 TITL Mike & Kay Behun
+1 _OID eb925ff1-fa38-4494-a635-f05719d6f2bc
+1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
+2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
+1 _CREA 2026-04-10 15:36:48.095
+1 _USER yucIApSmMzI7Jl6KySknt0QbPIBGhp8bWEucIRLVKL9rE5jn7pYVma41QtMGnjfP7pE0LANvcwTlinShpTA7qA==
+2 _ENCR 1
+1 _ORIG acom
+1 _ATL N
+0 @O43@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -5036,11 +5439,11 @@
 1 _DSCR "U.S., School Yearbooks, 1880-2012"; School Name: Penn Township High School; Year: 1950
 1 _META <metadataxml><record_source_gid>1308024950:1265</record_source_gid></metadataxml>
 1 _CREA 2020-08-10 04:03:19.000
-1 _USER 1VHFwKiChuXV2Ic5rURY3b/GYCwA8cvPHYVpiFDntaZzzxlxMROeMsmoFn8HE0WRbBo/xDKW/pHaboMcmOF+Wg==
+1 _USER +RUKHSRvi26qeBbDAeXJZLnjY7Co3qn40uPqIGYptd0MSG53xfT6tZWT1JdZPs8gCmPJfd02QShRCmhfBlwL8g==
 2 _ENCR 1
 1 _ORIG u
 1 _ATL Y
-0 @O26@ OBJE
+0 @O44@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -5054,13 +5457,13 @@
 1 DATE 23 Oct 1929, Wed
 1 PLAC Pittsburgh, Pennsylvania
 1 _CREA 2018-12-08 21:51:28.895
-1 _USER shj4HmFqw8mHrSELpjhHd3u5DD1fkkHuwpSd5SyfW41QDtkfOm9nU6eKL2YAmiZlirYfbG1NbdvCY3lC9lOAkQ==
+1 _USER uvRziPrnMy742A5XJKIYIwhd+bMkCQ9ZswUrGvruFeQim8UnZkODIQpI8qSMOJTq6qUkJ+qRZm1CkgpYg+qXiA==
 2 _ENCR 1
 1 _CLON
 2 _TID 10045005
 2 _PID 210024198232
 2 _OID e1f11d93-c3cc-4c1d-b326-9ef884a9aadb
-2 _USER DyRijbntSzrWmY1zCUAmKvJDGjBvqCMiUEDxu0VSRdPWZByMVid2afliCe5eyKdAsil1N8aCSyrJe02Ddb+7MA==
+2 _USER 0sLuH5NHXki+1cDvAyGPgpbFWjzKWWi1n9vT5qWBptr0TVdIkebYLcAt+7VEEogyvFumm4lpL5g2DYpa4BCBQg==
 3 _ENCR 1
 2 _DATE 2016-08-14 01:12:21.000
 1 _ORIG newspapers
