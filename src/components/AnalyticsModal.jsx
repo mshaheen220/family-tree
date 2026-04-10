@@ -21,21 +21,33 @@ export default function AnalyticsModal({ show, onClose, indis, nodes, fams }) {
   }, [isFullData, indis, nodes]);
 
   const longevityData = useMemo(() => {
+    const currentYear = new Date().getFullYear();
     const peopleWithLifespan = dataSource.map(p => {
-      if (!p.birth || !p.death) return null;
+      if (!p.birth) return null;
       // Extract 4 digit year from potentially messy GEDCOM date strings
       const bMatch = p.birth.match(/\d{4}/);
-      const dMatch = p.death.match(/\d{4}/);
-      if (!bMatch || !dMatch) return null;
       
+      if (!bMatch) return null;
       const bYear = parseInt(bMatch[0], 10);
-      const dYear = parseInt(dMatch[0], 10);
+      
+      let dYear;
+      let isLiving = false;
+      if (p.death) {
+        const dMatch = p.death.match(/\d{4}/);
+        if (!dMatch) return null;
+        dYear = parseInt(dMatch[0], 10);
+      } else {
+        dYear = currentYear;
+        isLiving = true;
+      }
+
       const age = dYear - bYear;
       
-      // Filter out negative ages or crazy outliers from bad data entry
-      if (age < 0 || age > 120) return null; 
+      // Filter out negative ages or crazy outliers
+      // Also filter out "living" people over 110 (likely deceased but missing a death date)
+      if (age < 0 || age > 120 || (isLiving && age > 110)) return null; 
 
-      return { name: p.name, age, bYear, dYear };
+      return { name: p.name, age, bYear, dYear, isLiving };
     }).filter(Boolean);
 
     return peopleWithLifespan.sort((a, b) => b.age - a.age).slice(0, 5);
@@ -416,8 +428,11 @@ export default function AnalyticsModal({ show, onClose, indis, nodes, fams }) {
             <ul className="stats-list">
               {longevityData.map((p, i) => (
                 <li key={i}>
-                  <strong>{p.name}</strong> 
-                  <span>{p.age} years ({p.bYear} - {p.dYear})</span>
+                  <strong>
+                    {p.name}
+                    {p.isLiving && <span style={{ fontSize: '0.75rem', color: 'var(--accent2)', marginLeft: '6px', fontStyle: 'italic' }}>(Living)</span>}
+                  </strong> 
+                  <span>{p.age} years ({p.bYear} - {p.isLiving ? 'Present' : p.dYear})</span>
                 </li>
               ))}
             </ul>
