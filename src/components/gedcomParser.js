@@ -107,7 +107,8 @@ export function parseGedcom(data, preferredRootId = null) {
     const plStr = i.place || i.deathPlace || '';
     const pl = plStr.toLowerCase();
     if (pl) {
-      if (pl.includes('poland') || pl.includes('malopolskie')) o = 'polish';
+      if (pl.includes('rusyn') || pl.includes('ruthenia') || pl.includes('csircs') || pl.includes('carpatho')) o = 'rusyn';
+      else if (pl.includes('poland') || pl.includes('malopolskie')) o = 'polish';
       else if (pl.includes('czech')) o = 'czech';
       else if (pl.includes('slovakia')) o = 'slovak';
       else if (pl.includes('austria')) o = 'austrian';

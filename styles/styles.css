@@ -165,6 +165,7 @@ svg#connectors { position:absolute; top:0; left:0; pointer-events:none; overflow
 .origin-syrian   { background:#ce1126; color:#fff; border-bottom:3px solid #000; border-top:3px solid #007a3d; }
 .origin-hungarian { background:#ce2939; color:#fff; border-bottom:3px solid #477050; }
 .origin-turkish  { background:#e30a17; color:#fff; border-left:4px solid #fff; }
+.origin-rusyn    { background:#0033a0; color:#fff; border-bottom:3px solid #d52b1e; border-left:4px solid #fff; }
 .origin-generic  { background:#8b8378; color:#fff; }
 .origin-note {
   display:block; font-size:.62rem; font-style:italic; color:#6b5a3e;
