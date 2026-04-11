@@ -126,6 +126,9 @@ export function parseGedcom(data, preferredRootId = null) {
       else if (pl.includes('ukraine') || pl.includes('ukrainian') || pl.includes('kiev') || pl.includes('kyiv')) o = 'ukrainian';
       else if (pl.includes('russia') || pl.includes('ussr') || pl.includes('soviet') || pl.includes('moscow')) o = 'russian';
       else if (pl.includes('china') || pl.includes('chinese') || pl.includes('beijing')) o = 'chinese';
+      else if (pl.includes('syria') || pl.includes('syrian') || pl.includes('damascus')) o = 'syrian';
+      else if (pl.includes('hungary') || pl.includes('hungarian') || pl.includes('budapest')) o = 'hungarian';
+      else if (pl.includes('turkey') || pl.includes('turkiye') || pl.includes('turkish') || pl.includes('istanbul')) o = 'turkish';
       else o = 'generic'; 
     }
     i.origin = o;
