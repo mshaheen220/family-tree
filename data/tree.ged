@@ -12,8 +12,8 @@
 3 ADDR 1300 West Traverse Parkway
 4 CONT Lehi, UT  84043
 4 CONT USA
-1 DATE 10 Apr 2026
-2 TIME 21:16:12
+1 DATE 11 Apr 2026
+2 TIME 19:00:01
 1 GEDC
 2 VERS 5.5.1
 2 FORM LINEAGE-LINKED
@@ -37,9 +37,9 @@
 3 _APID 1,1788::177743618
 2 SOUR @S1603542783@
 3 _APID 1,62209::324209248
-1 FAMC @F21@
-1 FAMS @F52@
-1 FAMS @F29@
+1 FAMC @F22@
+1 FAMS @F56@
+1 FAMS @F31@
 1 BIRT
 2 DATE 15 Nov 1974
 2 PLAC New Castle, Lawrence, Pennsylvania, USA
@@ -84,8 +84,8 @@
 2 GIVN Bryce
 2 SURN Heasley
 1 SEX M
-1 FAMC @F50@
-1 FAMS @F21@
+1 FAMC @F54@
+1 FAMS @F22@
 1 BIRT
 2 DATE 13 Apr 48
 2 PLAC Westmoreland County, Pennsylvania, USA
@@ -94,8 +94,8 @@
 2 GIVN Brice
 2 SURN Heasley
 1 SEX M
-1 FAMC @F13@
-1 FAMS @F50@
+1 FAMC @F14@
+1 FAMS @F54@
 1 BIRT
 2 DATE 28 Dec 1921
 2 PLAC Manor, Pennsylvania, USA
@@ -113,8 +113,8 @@
 3 PAGE Publication Date: 17/ Jun/ 2009; Publication Place: Pittsburgh, Pennsylvania, USA; URL: http://www.pittsburghlive.com/x/pittsburghtrib/obituaries/?mode=view&amp;obit_id=173674
 3 _APID 1,7545::67095580
 1 SEX F
-1 FAMC @F36@
-1 FAMS @F50@
+1 FAMC @F40@
+1 FAMS @F54@
 1 BIRT
 2 DATE 22 Nov 1925
 2 PLAC Allegheny County, Pennsylvania, USA
@@ -150,8 +150,8 @@
 1 SEX F
 2 SOUR @S1603542947@
 3 _APID 1,61843::377859819
-1 FAMC @F32@
-1 FAMS @F21@
+1 FAMC @F36@
+1 FAMS @F22@
 1 BIRT
 2 DATE 25 Mar 1950
 2 PLAC Allegheny County, Pennsylvania, USA
@@ -189,8 +189,8 @@
 3 _APID 1,61843::377553020
 2 SOUR @S1603543043@
 3 _APID 1,70050::18688084
-1 FAMC @F41@
-1 FAMS @F32@
+1 FAMC @F45@
+1 FAMS @F36@
 1 BIRT
 2 DATE 15 Oct 1919
 2 PLAC Clarion County, Pennsylvania, USA
@@ -295,8 +295,8 @@
 3 _APID 1,62116::20759401
 2 SOUR @S1603543181@
 3 _APID 1,70497::203071
-1 FAMC @F62@
-1 FAMS @F32@
+1 FAMC @F66@
+1 FAMS @F36@
 1 BIRT
 2 DATE 1918
 2 PLAC Allegheny County, Pennsylvania, USA
@@ -382,7 +382,7 @@
 2 SOUR @S1582737838@
 3 _APID 1,7602::51561640
 1 FAMC @F6@
-1 FAMS @F62@
+1 FAMS @F66@
 1 BIRT
 2 DATE Jul 1897
 2 PLAC Allegheny County, Pennsylvania, USA
@@ -412,8 +412,8 @@
 2 GIVN Esther
 2 SURN Fuchs
 1 SEX F
-1 FAMC @F46@
-1 FAMS @F62@
+1 FAMC @F50@
+1 FAMS @F66@
 1 BIRT
 2 DATE 4 Dec 1891
 2 PLAC Allegheny County, Pennsylvania, United States of America
@@ -452,7 +452,7 @@
 3 _APID 1,7488::4011734928
 2 SOUR @S1582737838@
 3 _APID 1,7602::51561637
-1 FAMC @F49@
+1 FAMC @F53@
 1 FAMS @F6@
 1 BIRT
 2 DATE 23 Sep 1868
@@ -538,7 +538,7 @@
 2 SOUR @S1581408971@
 3 _APID 1,5164::4582319
 1 FAMC @F2@
-1 FAMS @F46@
+1 FAMS @F50@
 1 BIRT
 2 DATE 9 July 1861
 2 PLAC Pittsburgh, Pennsylvania
@@ -587,8 +587,8 @@
 3 _APID 1,7884::101865208
 2 SOUR @S1603901329@
 3 _APID 1,60484::2466851
-1 FAMC @F25@
-1 FAMS @F46@
+1 FAMC @F27@
+1 FAMS @F50@
 1 BIRT
 2 DATE abt 1869
 2 PLAC West Virginia
@@ -652,8 +652,8 @@
 3 _APID 1,7602::51402743
 2 SOUR @S1582848415@
 3 _APID 1,7884::101865212
-1 FAMC @F46@
-1 FAMS @F35@
+1 FAMC @F50@
+1 FAMS @F39@
 1 BIRT
 2 DATE 28 Dec 1893
 2 PLAC Pittsburgh, Allegheny County, Pennsylvania, USA
@@ -799,8 +799,8 @@
 2 SOUR @S1580498962@
 3 _APID 1,60525::121307845
 1 SEX M
-1 FAMC @F18@
-1 FAMS @F13@
+1 FAMC @F19@
+1 FAMS @F14@
 1 BIRT
 2 DATE 09 Oct 1890
 2 PLAC Pennsylvania
@@ -889,7 +889,7 @@
 3 _APID 1,61381::1503076176
 1 SEX F
 1 FAMC @F7@
-1 FAMS @F13@
+1 FAMS @F14@
 1 BIRT
 2 DATE 12 Oct 1892
 2 PLAC Pennsylvania
@@ -998,8 +998,8 @@
 3 PAGE Year: 1930; Census Place: Penn, Westmoreland, Pennsylvania; Page: 21B; Enumeration District: 0135; FHL microfilm: 2341892
 3 _APID 1,6224::56960422
 1 SEX M
-1 FAMC @F37@
-1 FAMS @F18@
+1 FAMC @F41@
+1 FAMS @F19@
 1 BIRT
 2 DATE 6 Nov 1847
 2 PLAC Grapeville, Westmoreland, Pennsylvania, USA
@@ -1046,7 +1046,7 @@
 3 PAGE Pennsylvania Historic and Museum Commission; Pennsylvania, USA; Pennsylvania, Death Certificates, 1906-1965; Certificate Number Range: 043001-046000
 3 _APID 1,5164::453880404
 1 SEX F
-1 FAMS @F18@
+1 FAMS @F19@
 1 BIRT
 2 DATE 1 Aug 1853
 2 PLAC Westmoreland, Pennsylvania, USA, 
@@ -1251,7 +1251,7 @@
 3 PAGE Year: 1940; Census Place: Penn, Westmoreland, Pennsylvania; Roll: m-t0627-03636; Page: 2A; Enumeration District: 65-175
 3 _APID 1,2442::19785268
 1 SEX M
-1 FAMS @F36@
+1 FAMS @F40@
 1 BIRT
 2 DATE abt 1906
 2 PLAC Pennsylvania
@@ -1274,18 +1274,18 @@
 2 PAGE Year: 1940; Census Place: Penn, Westmoreland, Pennsylvania; Roll: m-t0627-03636; Page: 2A; Enumeration District: 65-175
 2 _APID 1,2442::19785268
 0 @I412066426158@ INDI
-1 NAME Ruth Evelyn /Heasley/
-2 GIVN Ruth Evelyn
-2 SURN Heasley
+1 NAME Ruth /Bauer/
+2 GIVN Ruth
+2 SURN Bauer
 2 SOUR @S1581627428@
 3 PAGE Year: 1940; Census Place: Penn, Westmoreland, Pennsylvania; Roll: m-t0627-03636; Page: 2A; Enumeration District: 65-175
 3 _APID 1,2442::19785270
 1 SEX F
-1 FAMC @F55@
-1 FAMS @F36@
+1 FAMC @F59@
+1 FAMS @F40@
 1 BIRT
-2 DATE 8 Sep 1915
-2 PLAC Pennsylvania, USA
+2 DATE 4 Jan 1907
+2 PLAC Braddock, Allegheny, Pennsylvania, USA
 2 SOUR @S1581627428@
 3 PAGE Year: 1940; Census Place: Penn, Westmoreland, Pennsylvania; Roll: m-t0627-03636; Page: 2A; Enumeration District: 65-175
 3 _APID 1,2442::19785270
@@ -1302,8 +1302,8 @@
 3 PAGE Year: 1940; Census Place: Penn, Westmoreland, Pennsylvania; Roll: m-t0627-03636; Page: 2A; Enumeration District: 65-175
 3 _APID 1,2442::19785270
 1 DEAT
-2 DATE 16 Jan 2002
-2 PLAC Pennsylvania, USA
+2 DATE 16 Jun 2009
+2 PLAC Harrison City, Allegheny, Pennsylvania, USA
 1 SOUR @S1581627428@
 2 PAGE Year: 1940; Census Place: Penn, Westmoreland, Pennsylvania; Roll: m-t0627-03636; Page: 2A; Enumeration District: 65-175
 2 _APID 1,2442::19785270
@@ -1322,10 +1322,10 @@
 2 SOUR @S1580498962@
 3 _APID 1,60525::80361522
 1 SEX M
-1 FAMC @F36@
+1 FAMC @F40@
 1 BIRT
-2 DATE abt 1927
-2 PLAC Pennsylvania
+2 DATE 13 Jan 1927
+2 PLAC Greensburg, Westmoreland County, Pennsylvania, USA
 2 SOUR @S1581627428@
 3 PAGE Year: 1940; Census Place: Penn, Westmoreland, Pennsylvania; Roll: m-t0627-03636; Page: 2A; Enumeration District: 65-175
 3 _APID 1,2442::19785273
@@ -1351,6 +1351,7 @@
 3 _APID 1,2442::19785273
 1 DEAT
 2 DATE 23 November 2012
+2 PLAC Manor, Allegheny County, Pennsylvania, USA
 2 SOUR @S1580498962@
 3 _APID 1,60525::80361522
 1 BURI
@@ -1377,7 +1378,7 @@
 3 PAGE Year: 1940; Census Place: Penn, Westmoreland, Pennsylvania; Roll: m-t0627-03636; Page: 2A; Enumeration District: 65-175
 3 _APID 1,2442::19785274
 1 SEX F
-1 FAMC @F36@
+1 FAMC @F40@
 1 BIRT
 2 DATE abt 1935
 2 PLAC Pennsylvania
@@ -1455,8 +1456,8 @@
 3 PAGE Virginia Department of Health; Richmond, Virginia; Virginia Marriages, 1936-2014; Roll: 101168236
 3 _APID 1,9279::11386125
 1 SEX M
-1 FAMC @F13@
-1 FAMS @F24@
+1 FAMC @F14@
+1 FAMS @F26@
 1 BIRT
 2 DATE abt 1919
 2 PLAC Manor, Allegheny County, Pennsylvania, USA
@@ -1490,7 +1491,7 @@
 3 PAGE Virginia Department of Health; Richmond, Virginia; Virginia Marriages, 1936-2014; Roll: 101168236
 3 _APID 1,9279::27815536
 1 SEX F
-1 FAMS @F24@
+1 FAMS @F26@
 1 BIRT
 2 DATE 6 Dec 1929
 2 SOUR @S1582737496@
@@ -1503,8 +1504,8 @@
 2 PAGE Virginia Department of Health; Richmond, Virginia; Virginia Marriages, 1936-2014; Roll: 101168236
 2 _APID 1,9279::27815536
 0 @I412076079182@ INDI
-1 NAME Ruth E /Heasley/
-2 GIVN Ruth E
+1 NAME Ruth Evelyn /Heasley/
+2 GIVN Ruth Evelyn
 2 SURN Heasley
 2 SOUR @S1582737618@
 3 PAGE Year: 1920; Census Place: Penn, Westmoreland, Pennsylvania; Roll: T625_1664; Page: 9B; Enumeration District: 191
@@ -1512,10 +1513,10 @@
 2 SOUR @S1582737903@
 3 _APID 1,61381::903076176
 1 SEX F
-1 FAMC @F13@
-1 FAMS @F60@
+1 FAMC @F14@
+1 FAMS @F64@
 1 BIRT
-2 DATE abt 1916
+2 DATE 8 Sep 1915
 2 PLAC Pennsylvania
 2 SOUR @S1582737618@
 3 PAGE Year: 1920; Census Place: Penn, Westmoreland, Pennsylvania; Roll: T625_1664; Page: 9B; Enumeration District: 191
@@ -1529,6 +1530,9 @@
 3 PAGE Year: 1920; Census Place: Penn, Westmoreland, Pennsylvania; Roll: T625_1664; Page: 9B; Enumeration District: 191
 3 _APID 1,6061::34515630
 2 NOTE Relation to Head: Daughter; Residence Marital Status: Single
+1 DEAT
+2 DATE 16 Jan 2002
+2 PLAC Twinsburg Township, Summit, Monroe, Ohio, USA
 1 SOUR @S1582737618@
 2 PAGE Year: 1920; Census Place: Penn, Westmoreland, Pennsylvania; Roll: T625_1664; Page: 9B; Enumeration District: 191
 2 _APID 1,6061::34515630
@@ -1539,7 +1543,7 @@
 2 GIVN Unknown
 2 SURN Yinger
 1 SEX M
-1 FAMC @F64@
+1 FAMC @F68@
 1 FAMS @F7@
 1 DEAT
 2 DATE 1897
@@ -1580,7 +1584,7 @@
 2 SOUR @S1582737903@
 3 _APID 1,61381::3076176
 1 SEX M
-1 FAMS @F60@
+1 FAMS @F64@
 1 BIRT
 2 DATE 25 Aug 1920
 2 PLAC Manor, Westmoreland, Pennsylvania, USA
@@ -1596,7 +1600,7 @@
 2 GIVN Catherine
 2 SURN Heasley
 1 SEX F
-1 FAMC @F13@
+1 FAMC @F14@
 1 BIRT
 2 DATE 13 Oct 1923
 2 PLAC Manor, Westmoreland, Pennsylvania, USA
@@ -1608,7 +1612,7 @@
 2 GIVN Elizabeth
 2 SURN Altman
 1 SEX F
-1 FAMS @F37@
+1 FAMS @F41@
 1 BIRT
 2 DATE 2 Apr 1820
 2 PLAC Westmoreland, Pennsylvania, USA
@@ -1623,8 +1627,8 @@
 2 SOUR @S1580498962@
 3 _APID 1,60525::78672369
 1 SEX M
-1 FAMC @F48@
-1 FAMS @F37@
+1 FAMC @F52@
+1 FAMS @F41@
 1 BIRT
 2 DATE 1814
 2 SOUR @S1580498962@
@@ -1646,7 +1650,7 @@
 2 SOUR @S1580498962@
 3 _APID 1,60525::18604319
 1 SEX F
-1 FAMS @F48@
+1 FAMS @F52@
 1 BIRT
 2 DATE 14 February 1786
 2 PLAC Pennsylvania, United States of America
@@ -1670,8 +1674,8 @@
 2 SOUR @S1580498962@
 3 _APID 1,60525::18604314
 1 SEX M
-1 FAMC @F40@
-1 FAMS @F48@
+1 FAMC @F44@
+1 FAMS @F52@
 1 BIRT
 2 DATE 1785
 2 PLAC Westmoreland County, Pennsylvania, United States of America
@@ -1703,9 +1707,9 @@
 2 SOUR @S1580498962@
 3 _APID 1,60525::118215563
 1 SEX M
-1 FAMC @F38@
-1 FAMS @F40@
-1 FAMS @F39@
+1 FAMC @F42@
+1 FAMS @F44@
+1 FAMS @F43@
 1 BIRT
 2 DATE 27 October 1736
 2 PLAC Switzerland
@@ -1729,7 +1733,7 @@
 2 SURN Shotts
 2 SOUR @S1580498962@
 3 _APID 1,60525::49388924
-1 FAMC @F48@
+1 FAMC @F52@
 1 BIRT
 2 DATE 9 May 1809
 2 SOUR @S1580498962@
@@ -1749,7 +1753,7 @@
 2 GIVN Maria Barbara
 2 SURN (Heasley)
 1 SEX F
-1 FAMS @F40@
+1 FAMS @F44@
 1 BIRT
 2 DATE 18 Nov 1727
 2 PLAC Neunkirchen, Saar, Rheinland-Pfalz, Germany
@@ -1817,8 +1821,8 @@
 2 GIVN Elsbeth
 2 SURN OCHSNER
 1 SEX F
-1 FAMC @F26@
-1 FAMS @F38@
+1 FAMC @F28@
+1 FAMS @F42@
 1 BIRT
 2 DATE 9 January 1707
 2 PLAC Lindau, Zurich, Switzerland
@@ -1838,8 +1842,8 @@
 2 GIVN Joachim
 2 SURN Häussli
 1 SEX M
-1 FAMC @F27@
-1 FAMS @F38@
+1 FAMC @F29@
+1 FAMS @F42@
 1 BIRT
 2 DATE 15 Feb 1705
 2 PLAC Winterburg, Bad Kreuznach, Rheinland-Pfalz, Germany
@@ -1856,7 +1860,7 @@
 2 GIVN Elizabeth
 2 SURN Haussli, Heasley
 1 SEX F
-1 FAMC @F38@
+1 FAMC @F42@
 1 BIRT
 2 DATE 1739
 2 PLAC Winterburg, Switzerland
@@ -1870,7 +1874,7 @@
 2 GIVN Barbara
 2 SURN Haussli, Heasley
 1 SEX F
-1 FAMC @F38@
+1 FAMC @F42@
 1 BIRT
 2 DATE 28 May 1731
 2 PLAC Brütten Parish, Kt. Zürich, Switzerland
@@ -1885,7 +1889,7 @@
 2 GIVN Lenhard
 2 SURN Haussli, Heasley
 1 SEX M
-1 FAMC @F38@
+1 FAMC @F42@
 1 BIRT
 2 DATE 1746
 2 PLAC Whitehall, Northampton, Pennsylvania, United States
@@ -1900,7 +1904,7 @@
 2 GIVN Johann Jacob
 2 SURN Heasley
 1 SEX M
-1 FAMC @F38@
+1 FAMC @F42@
 1 BIRT
 2 DATE 21 FEB 1734
 2 PLAC Brutten, Switzerland
@@ -1918,7 +1922,7 @@
 2 GIVN Jacob
 2 SURN Haussli, Heisli, Heasley
 1 SEX M
-1 FAMC @F38@
+1 FAMC @F42@
 1 BIRT
 2 DATE About  1740
 2 PLAC Kt. Zurich or PA
@@ -1933,7 +1937,7 @@
 2 GIVN Magdalena
 2 SURN Haeussli, Haussli, Heisli, Heasley
 1 SEX F
-1 FAMC @F38@
+1 FAMC @F42@
 1 BIRT
 2 DATE 1725
 1 DEAT
@@ -1946,7 +1950,7 @@
 2 GIVN Anna Magdalena
 2 SURN Heasley
 1 SEX F
-1 FAMC @F38@
+1 FAMC @F42@
 1 BIRT
 2 DATE 20 Nov 1742
 2 PLAC Whitehall, Bucks, Pennsylvania, USA
@@ -1961,7 +1965,7 @@
 2 GIVN Magdelena
 2 SURN HEASLEY
 1 SEX F
-1 FAMC @F38@
+1 FAMC @F42@
 1 BIRT
 2 DATE 23 NOV 1742
 1 DEAT
@@ -1974,7 +1978,7 @@
 2 GIVN Maria Barbara
 2 SURN HEASLEY
 1 SEX F
-1 FAMC @F40@
+1 FAMC @F44@
 1 BIRT
 2 DATE 24 Dec 1769
 2 PLAC Northampton, Northampton, Pennsylvania, USA
@@ -1993,7 +1997,7 @@
 2 GIVN Catherine
 2 SURN Heasley
 1 SEX F
-1 FAMC @F40@
+1 FAMC @F44@
 1 BIRT
 2 DATE 28 Feb 1773
 2 PLAC , Northampton, Pennsylvania, USA
@@ -2019,7 +2023,7 @@
 2 GIVN Daniel
 2 SURN HEASLEY
 1 SEX M
-1 FAMC @F40@
+1 FAMC @F44@
 1 BIRT
 2 DATE 11 Jul 1779
 2 PLAC Hempfield, Westmoreland, Pennsylvania, United States
@@ -2039,7 +2043,7 @@
 2 GIVN Anna Maria
 2 SURN Heasley
 1 SEX F
-1 FAMC @F40@
+1 FAMC @F44@
 1 BIRT
 2 DATE 1787
 2 PLAC Westmoreland City, Westmoreland, Pennsylvania, United States
@@ -2062,7 +2066,7 @@
 2 GIVN Elizabeth
 2 SURN HEASLEY
 1 SEX F
-1 FAMC @F40@
+1 FAMC @F44@
 1 BIRT
 2 DATE 26 Nov 1776
 2 PLAC Northampton County, Pennsylvania, USA
@@ -2079,7 +2083,7 @@
 2 GIVN Maria Magdalena
 2 SURN HEASLEY
 1 SEX F
-1 FAMC @F40@
+1 FAMC @F44@
 1 BIRT
 2 DATE 1769
 2 PLAC , Lehigh Twsp, Northampton Co, Pennsylvania
@@ -2096,7 +2100,7 @@
 2 GIVN Susanna
 2 SURN HEASLEY
 1 SEX F
-1 FAMC @F40@
+1 FAMC @F44@
 1 BIRT
 2 DATE 1775
 2 PLAC Lehigh County, Pennsylvania, United States of America
@@ -2116,7 +2120,7 @@
 2 GIVN Henry
 2 SURN Heasley
 1 SEX M
-1 FAMC @F40@
+1 FAMC @F44@
 1 BIRT
 2 DATE 1780
 2 PLAC Hempfield, Westmoreland, Pennsylvania, United States
@@ -2136,7 +2140,7 @@
 2 GIVN Esther
 2 SURN Heasley
 1 SEX F
-1 FAMC @F40@
+1 FAMC @F44@
 1 BIRT
 2 DATE 17 Aug 1804
 2 PLAC , Hempfield Twsp, Westmoreland Co, Pennsylvania
@@ -2159,7 +2163,7 @@
 2 GIVN Simon
 2 SURN Heasley
 1 SEX M
-1 FAMC @F40@
+1 FAMC @F44@
 1 BIRT
 2 DATE 13 Aug 1794
 2 PLAC , Westmoreland, Pennsylvania, USA
@@ -2176,7 +2180,7 @@
 2 GIVN John Peter
 2 SURN Heasley
 1 SEX M
-1 FAMC @F40@
+1 FAMC @F44@
 1 BIRT
 2 DATE 11 Apr 1799
 2 PLAC , Hempfield Twsp, Westmoreland Co, Pennsylvania
@@ -2193,7 +2197,7 @@
 2 GIVN Johan George
 2 SURN Heasley
 1 SEX M
-1 FAMC @F40@
+1 FAMC @F44@
 1 BIRT
 2 DATE 14 Nov 1801
 2 PLAC , Hempfield Twsp, Westmoreland Co, Pennsylvania
@@ -2213,7 +2217,7 @@
 2 GIVN John
 2 SURN Heasley
 1 SEX M
-1 FAMC @F40@
+1 FAMC @F44@
 1 BIRT
 2 DATE 29 Mar 1792
 2 PLAC Hempfield Township, Westmoreland County, Pennsylvania
@@ -2231,7 +2235,7 @@
 2 GIVN Joseph
 2 SURN Heasley
 1 SEX M
-1 FAMC @F40@
+1 FAMC @F44@
 1 BIRT
 2 DATE 4 Oct 1789
 2 PLAC Westmoreland, Pennsylvania, United States
@@ -2247,7 +2251,7 @@
 2 GIVN Hanna Small
 2 SURN Heasley
 1 SEX F
-1 FAMC @F40@
+1 FAMC @F44@
 1 BIRT
 2 DATE 23 Dec 1795
 2 PLAC , Hempfield Twsp, Westmoreland Co, Pennsylvania
@@ -2266,7 +2270,7 @@
 2 GIVN Catherine Anna
 2 SURN UBER
 1 SEX F
-1 FAMS @F39@
+1 FAMS @F43@
 1 BIRT
 2 DATE 26 Apr 1769
 2 PLAC Westmoreland, Pennsylvania, United States
@@ -2283,7 +2287,7 @@
 2 GIVN Hannah
 2 SURN Heasley
 1 SEX F
-1 FAMC @F39@
+1 FAMC @F43@
 1 BIRT
 2 DATE 23 Dec 1795
 2 PLAC Westmoreland, Pennsylvania, United States
@@ -2298,7 +2302,7 @@
 2 GIVN Heinrich
 2 SURN Ochsner
 1 SEX M
-1 FAMS @F26@
+1 FAMS @F28@
 1 BIRT
 2 DATE 1 August 1675
 2 PLAC Wulflingen, Lindau Parish, Zurich Canton
@@ -2310,7 +2314,7 @@
 2 GIVN Anna Barbara 
 2 SURN Nusli
 1 SEX F
-1 FAMS @F26@
+1 FAMS @F28@
 1 BIRT
 2 DATE 14 Nov 1669
 2 PLAC Lindau, Kt Z Rich, Switzerland
@@ -2322,8 +2326,8 @@
 2 GIVN Ulrich
 2 SURN Haussli
 1 SEX M
-1 FAMC @F63@
-1 FAMS @F27@
+1 FAMC @F67@
+1 FAMS @F29@
 1 BIRT
 2 DATE 1676
 2 PLAC Brütten, Kt. Zürich, Switzerland
@@ -2341,14 +2345,14 @@
 2 GIVN Katarina
 2 SURN Meyer
 1 SEX F
-1 FAMS @F27@
+1 FAMS @F29@
 0 @I412076092162@ INDI
 1 NAME Felix /Haussli/
 2 GIVN Felix
 2 SURN Haussli
 1 SEX M
-1 FAMC @F19@
-1 FAMS @F63@
+1 FAMC @F20@
+1 FAMS @F67@
 1 BIRT
 2 DATE 15 Apr 1632
 2 PLAC Brütten,Kt. Zürich, Switzerland
@@ -2368,7 +2372,7 @@
 2 SURN Ochsner
 1 SEX F
 1 FAMC @F3@
-1 FAMS @F63@
+1 FAMS @F67@
 1 BIRT
 2 DATE 10 March 1633
 2 PLAC Zürich, Switzerland
@@ -2386,8 +2390,8 @@
 2 GIVN Johannes
 2 SURN Haussli
 1 SEX M
-1 FAMC @F17@
-1 FAMS @F19@
+1 FAMC @F18@
+1 FAMS @F20@
 1 BIRT
 2 DATE 1587
 2 PLAC Zürich, Switzerland
@@ -2406,8 +2410,8 @@
 2 GIVN Verena
 2 SURN MORF
 1 SEX F
-1 FAMC @F15@
-1 FAMS @F19@
+1 FAMC @F16@
+1 FAMS @F20@
 1 BIRT
 2 DATE 18 Mar 1593
 2 PLAC Nürensdorf, Zürich, Switzerland
@@ -2425,7 +2429,7 @@
 2 GIVN Jacob
 2 SURN HAUSSLI
 1 SEX M
-1 FAMC @F19@
+1 FAMC @F20@
 1 BIRT
 2 DATE 02 DEC 1638
 2 PLAC Brütten,Kt. Zürich, Switzerland
@@ -2439,7 +2443,7 @@
 2 GIVN Johannes
 2 SURN HAUSSLI
 1 SEX M
-1 FAMC @F19@
+1 FAMC @F20@
 1 BIRT
 2 DATE BEF 23 DEC 1627
 2 PLAC Brütten,Kt. Zürich, Switzerland
@@ -2452,7 +2456,7 @@
 2 GIVN Rudolph
 2 SURN HAUSSLI
 1 SEX M
-1 FAMC @F19@
+1 FAMC @F20@
 1 BIRT
 2 DATE BEF 25 JUN 1626
 2 PLAC Brütten,Kt. Zürich, Switzerland
@@ -2466,7 +2470,7 @@
 2 GIVN Anna
 2 SURN HAUSSLI
 1 SEX F
-1 FAMC @F63@
+1 FAMC @F67@
 1 BIRT
 2 DATE BEF 15 MAR 1674
 2 PLAC Brütten,Kt. Zürich, Switzerland
@@ -2480,7 +2484,7 @@
 2 GIVN Barbara
 2 SURN HAUSSLI
 1 SEX F
-1 FAMC @F63@
+1 FAMC @F67@
 1 BIRT
 2 DATE BEF 20 JAN 1667
 2 PLAC Brütten,Kt. Zürich, Switzerland
@@ -2491,7 +2495,7 @@
 2 GIVN Barbara
 2 SURN HAUSSLI
 1 SEX F
-1 FAMC @F63@
+1 FAMC @F67@
 1 BIRT
 2 DATE BEF 30 MAY 1659
 2 PLAC Brütten,Kt. Zürich, Switzerland
@@ -2502,7 +2506,7 @@
 2 GIVN Conrad
 2 SURN HAUSSLI
 1 SEX M
-1 FAMC @F63@
+1 FAMC @F67@
 1 BIRT
 2 DATE BEF 05 APR 1663
 2 PLAC Brütten,Kt. Zürich, Switzerland
@@ -2516,7 +2520,7 @@
 2 GIVN Elsbeth
 2 SURN HAUSSLI
 1 SEX F
-1 FAMC @F63@
+1 FAMC @F67@
 1 BIRT
 2 DATE BEF 22 OCT 1671
 2 PLAC Brütten,Kt. Zürich, Switzerland
@@ -2529,7 +2533,7 @@
 2 GIVN Johannes
 2 SURN HAUSSLI
 1 SEX M
-1 FAMC @F63@
+1 FAMC @F67@
 1 BIRT
 2 DATE BEF 12 DEC 1669
 2 PLAC Brütten,Kt. Zürich, Switzerland
@@ -2548,7 +2552,7 @@
 2 SOUR @S1582848106@
 3 _APID 1,61389::1990970
 1 SEX M
-1 FAMS @F17@
+1 FAMS @F18@
 1 BIRT
 2 DATE 1565
 2 PLAC Kt Zurich, Switzerland
@@ -2570,7 +2574,7 @@
 2 GIVN Johanna Barbara
 2 SURN Häußle
 1 SEX F
-1 FAMS @F17@
+1 FAMS @F18@
 1 BIRT
 2 DATE 1568
 1 DEAT
@@ -2580,8 +2584,8 @@
 2 GIVN Johannes Heinrich
 2 SURN MORF
 1 SEX M
-1 FAMC @F58@
-1 FAMS @F15@
+1 FAMC @F62@
+1 FAMS @F16@
 1 BIRT
 2 DATE Bef. 1557
 1 DEAT
@@ -2592,7 +2596,7 @@
 2 GIVN Verena Barbara
 2 SURN Ruff
 1 SEX F
-1 FAMS @F15@
+1 FAMS @F16@
 1 BIRT
 2 DATE 29 JUL 1576
 2 PLAC Hofen, Kr. Lörrach, Baden, Germany
@@ -2601,8 +2605,8 @@
 2 GIVN Kevin Mathew
 2 SURN Lavelle
 1 SEX M
-1 FAMC @F65@
-1 FAMS @F52@
+1 FAMC @F69@
+1 FAMS @F56@
 1 BIRT
 2 DATE 1/7/76
 2 PLAC Philadelphia, Philadelphia, Pennsylvania, USA
@@ -2611,8 +2615,8 @@
 2 GIVN Michael Leslie
 2 SURN Shaheen
 1 SEX M
-1 FAMC @F22@
-1 FAMS @F29@
+1 FAMC @F24@
+1 FAMS @F31@
 1 BIRT
 2 DATE 2/21/75
 2 PLAC Pittsburgh, Allegheny County, Pennsylvania, United States of America
@@ -2636,7 +2640,7 @@
 2 GIVN Ashlyn Marie
 2 SURN Lavelle
 1 SEX F
-1 FAMC @F52@
+1 FAMC @F56@
 1 BIRT
 2 DATE 9 Mar 2003
 2 PLAC New Castle, Lawrence, Pennsylvania, USA
@@ -2645,7 +2649,7 @@
 2 GIVN Kylie Marie
 2 SURN Lavelle
 1 SEX F
-1 FAMC @F52@
+1 FAMC @F56@
 1 BIRT
 2 DATE 12/25/2005
 2 PLAC New Castle, Lawrence, Pennsylvania, USA
@@ -2654,7 +2658,7 @@
 2 GIVN Anna
 2 SURN Moos
 1 SEX F
-1 FAMS @F58@
+1 FAMS @F62@
 1 BIRT
 2 DATE 1544
 2 PLAC Illnau, Zürich, Switzerland
@@ -2666,7 +2670,7 @@
 2 GIVN William Ernest
 2 SURN Bauer
 1 SEX M
-1 FAMS @F55@
+1 FAMS @F59@
 1 BIRT
 2 DATE 27 May 1874
 2 PLAC Glade Twp Warren, Pennsylvania
@@ -2683,7 +2687,7 @@
 3 PAGE Year: 1881; Arrival: New York, New York; Microfilm Serial: M237, 1820-1897; Microfilm Roll: Roll 441; Line: 5; List Number: 1242
 3 _APID 1,7488::11468577
 1 SEX F
-1 FAMS @F55@
+1 FAMS @F59@
 1 BIRT
 2 DATE 24 May 1875
 2 PLAC Flensburg, Schleswig-Holstein, Deutschland
@@ -2740,7 +2744,7 @@
 2 GIVN Meinrath
 2 SURN MORF
 1 SEX M
-1 FAMS @F58@
+1 FAMS @F62@
 1 BIRT
 2 DATE 1540
 1 DEAT
@@ -2750,14 +2754,14 @@
 2 GIVN Brice M
 2 SURN Yinger
 1 SEX M
-1 FAMS @F64@
+1 FAMS @F68@
 0 @I412217321395@ INDI
 1 NAME Rebecca Ann /Behun/
 2 GIVN Rebecca Ann
 2 SURN Behun
 1 SEX F
-1 FAMC @F34@
-1 FAMS @F22@
+1 FAMC @F38@
+1 FAMS @F24@
 1 BIRT
 2 DATE 29 Nov 1950
 2 PLAC Latrobe, Westmoreland, Pennsylvania, USA
@@ -2785,8 +2789,8 @@
 3 _APID 1,7667::1722346
 2 SOUR @S1580498962@
 3 _APID 1,60525::81812067
-1 FAMC @F44@
-1 FAMS @F49@
+1 FAMC @F48@
+1 FAMS @F53@
 1 BIRT
 2 DATE abt 1844
 2 PLAC Butler County, Pennsylvania
@@ -2824,7 +2828,7 @@
 3 PAGE Pennsylvania Historic and Museum Commission; Harrisburg, Pennsylvania; Pennsylvania (State). Death certificates, 1906–1967; Certificate Number Range: 090151-093150
 3 _APID 1,5164::753059593
 1 SEX F
-1 FAMS @F49@
+1 FAMS @F53@
 1 BIRT
 2 PLAC Pittsburgh, Pennsylvania
 2 SOUR @S1581408971@
@@ -2891,7 +2895,7 @@
 2 SOUR @S1603542947@
 3 _APID 1,61843::244258736
 1 FAMC @F11@
-1 FAMS @F41@
+1 FAMS @F45@
 1 BIRT
 2 DATE 11 Sep 1888
 2 PLAC Clarion, Pennsylvania, USA
@@ -2951,8 +2955,8 @@
 2 GIVN Clara M
 2 SURN Wolbert
 1 SEX F
-1 FAMC @F28@
-1 FAMS @F41@
+1 FAMC @F30@
+1 FAMS @F45@
 1 BIRT
 2 DATE Jul 1895
 2 PLAC Pennsylvania
@@ -2967,7 +2971,7 @@
 1 SEX M
 2 SOUR @S1581408971@
 3 _APID 1,5164::606403282
-1 FAMC @F47@
+1 FAMC @F51@
 1 FAMS @F11@
 1 BIRT
 2 DATE 19 NOV 1853
@@ -3005,7 +3009,7 @@
 1 SEX M
 2 SOUR @S1582737838@
 3 _APID 1,7602::51883786
-1 FAMS @F28@
+1 FAMS @F30@
 1 BIRT
 2 DATE 29 Apr 1867
 2 PLAC Leeper, Clarion, Pennsylvania, USA
@@ -3027,7 +3031,7 @@
 2 GIVN Susanne A
 2 SURN Snyder
 1 SEX F
-1 FAMS @F28@
+1 FAMS @F30@
 1 BIRT
 2 DATE 27 Feb 1866
 2 PLAC Leeper, Clarion, Pennsylvania, USA
@@ -3043,7 +3047,7 @@
 1 SEX M
 2 SOUR @S1581408971@
 3 _APID 1,5164::604814411
-1 FAMS @F47@
+1 FAMS @F51@
 1 BIRT
 2 DATE 4 Nov 1813
 2 PLAC Leidersbach, Miltenberg, Bayern, Germany
@@ -3067,7 +3071,7 @@
 1 SEX F
 2 SOUR @S1603319743@
 3 _APID 1,7163::2184595
-1 FAMS @F47@
+1 FAMS @F51@
 1 BIRT
 2 DATE 31 March 1816
 2 PLAC Bruckenau, Unterfranken, Bayern, Germany
@@ -3089,7 +3093,7 @@
 2 GIVN Lawrence\Lorentz
 2 SURN Bleichner
 1 SEX M
-1 FAMS @F44@
+1 FAMS @F48@
 1 BIRT
 2 DATE 16 Aug 1819
 2 PLAC Siewiller, Bas-Rhin, Alsace, France
@@ -3106,7 +3110,7 @@
 2 GIVN Mary
 2 SURN Ganter
 1 SEX F
-1 FAMS @F44@
+1 FAMS @F48@
 1 BIRT
 2 DATE 11/13/1818
 2 PLAC Memprechtshofen: Gamshurst, Bühl, Baden, Germany
@@ -3120,13 +3124,13 @@
 2 GIVN Lawrence
 2 SURN Lavelle
 1 SEX M
-1 FAMS @F65@
+1 FAMS @F69@
 0 @I412261827213@ INDI
 1 NAME Arthur Charles /Fuchs/
 2 GIVN Arthur Charles
 2 SURN Fuchs
 1 SEX M
-1 FAMC @F46@
+1 FAMC @F50@
 1 BIRT
 2 DATE 1 Jun 1888
 2 PLAC Pittsburgh, Allegheny, Pennsylvania, USA
@@ -3138,13 +3142,13 @@
 2 GIVN Alice
 2 SURN Fuchs
 1 SEX F
-1 FAMC @F46@
+1 FAMC @F50@
 0 @I412261827720@ INDI
 1 NAME Ruth /Fuchs/
 2 GIVN Ruth
 2 SURN Fuchs
 1 SEX F
-1 FAMC @F46@
+1 FAMC @F50@
 0 @I412261827938@ INDI
 1 NAME Jacob Melchiot /Fuchs/
 2 GIVN Jacob Melchiot
@@ -3172,8 +3176,8 @@
 3 _APID 1,7884::101865214
 2 SOUR @S1580498962@
 3 _APID 1,60525::70249657
-1 FAMC @F46@
-1 FAMS @F43@
+1 FAMC @F50@
+1 FAMS @F47@
 1 BIRT
 2 DATE 6 Jan 1898
 2 PLAC Pittsburgh, Pennsylvania
@@ -3232,25 +3236,25 @@
 2 GIVN Edward
 2 SURN Fuchs
 1 SEX M
-1 FAMC @F46@
+1 FAMC @F50@
 0 @I412261828195@ INDI
 1 NAME Leo /Fuchs/
 2 GIVN Leo
 2 SURN Fuchs
 1 SEX M
-1 FAMC @F46@
+1 FAMC @F50@
 0 @I412261828265@ INDI
 1 NAME Florence /Fuchs/
 2 GIVN Florence
 2 SURN Fuchs
 1 SEX F
-1 FAMC @F46@
+1 FAMC @F50@
 0 @I412261828307@ INDI
 1 NAME Anna /Fuchs/
 2 GIVN Anna
 2 SURN Fuchs
 1 SEX F
-1 FAMC @F46@
+1 FAMC @F50@
 0 @I412261830893@ INDI
 1 NAME Jacob /Fuchs/
 2 GIVN Jacob
@@ -3303,7 +3307,7 @@
 2 SOUR @S1582737903@
 3 _APID 1,61381::1503075651
 1 FAMC @F6@
-1 FAMS @F43@
+1 FAMS @F47@
 1 BIRT
 2 DATE 25 Mar 1900
 2 PLAC Pittsburgh, Allegheny, Pennsylvania, USA
@@ -3409,8 +3413,8 @@
 1 SEX F
 2 SOUR @S1582737903@
 3 _APID 1,61381::903075651
-1 FAMC @F43@
-1 FAMS @F45@
+1 FAMC @F47@
+1 FAMS @F49@
 1 BIRT
 2 DATE 1922
 2 PLAC Pittsburgh, Allegheny, Pennsylvania, USA
@@ -3426,7 +3430,7 @@
 2 GIVN Alexander
 2 SURN Meyers
 1 SEX M
-1 FAMS @F45@
+1 FAMS @F49@
 1 BIRT
 2 DATE 1913
 1 DEAT
@@ -3436,7 +3440,7 @@
 2 GIVN Jacob
 2 SURN Meyers
 1 SEX M
-1 FAMC @F45@
+1 FAMC @F49@
 1 BIRT
 2 DATE 1948
 1 DEAT
@@ -3446,7 +3450,7 @@
 2 GIVN Michael Alexander
 2 SURN Wolak
 1 SEX M
-1 FAMS @F35@
+1 FAMS @F39@
 1 BIRT
 2 DATE 1895
 2 PLAC Pennsylvania, USA
@@ -3459,13 +3463,13 @@
 2 SURN Wolak
 2 NSFX Jr
 1 SEX M
-1 FAMC @F35@
+1 FAMC @F39@
 0 @I412262485976@ INDI
 1 NAME Jane /Wolak/
 2 GIVN Jane
 2 SURN Wolak
 1 SEX F
-1 FAMC @F35@
+1 FAMC @F39@
 1 BIRT
 2 DATE 30 Oct 1926
 2 PLAC Pittsburgh, Allegheny, Pennsylvania, USA
@@ -3476,7 +3480,7 @@
 2 GIVN Elizabeth
 2 SURN Wolak
 1 SEX F
-1 FAMC @F35@
+1 FAMC @F39@
 1 BIRT
 2 DATE 30 Oct 1926
 2 PLAC Pittsburgh, Allegheny, Pennsylvania, USA
@@ -3488,13 +3492,13 @@
 2 GIVN John
 2 SURN Wolak
 1 SEX M
-1 FAMC @F35@
+1 FAMC @F39@
 0 @I412264271852@ INDI
 1 NAME Charlotte /Fuchs/
 2 GIVN Charlotte
 2 SURN Fuchs
 1 SEX F
-1 FAMC @F46@
+1 FAMC @F50@
 1 BIRT
 2 DATE 18 Apr 1908
 2 PLAC Pittsburgh, Allegheny, Pennsylvania, USA
@@ -3507,7 +3511,7 @@
 1 SEX F
 2 SOUR @S1603592808@
 3 _APID 1,2469::935437953
-1 FAMS @F25@
+1 FAMS @F27@
 1 BIRT
 2 DATE 06 May 1836
 2 PLAC Ireland
@@ -3533,7 +3537,7 @@
 2 SOUR @S1603592808@
 3 _APID 1,2469::1433159629
 1 SEX M
-1 FAMS @F25@
+1 FAMS @F27@
 1 BIRT
 2 DATE abt 1837
 2 PLAC Ireland
@@ -3554,8 +3558,8 @@
 2 GIVN Elias Leslie
 2 SURN Shaheen
 1 SEX M
-1 FAMC @F30@
-1 FAMS @F22@
+1 FAMC @F33@
+1 FAMS @F24@
 1 BIRT
 2 DATE 26 Feb 1949
 2 PLAC Clairton, Allegheny, Pennsylvania, USA
@@ -3565,7 +3569,7 @@
 2 SURN Sutyak
 1 SEX F
 1 FAMC @F9@
-1 FAMS @F34@
+1 FAMS @F38@
 1 BIRT
 2 DATE 5 May 1931
 2 PLAC Pennsylvania, USA
@@ -3575,8 +3579,8 @@
 2 SURN Behun
 2 NSFX Jr
 1 SEX M
-1 FAMC @F59@
-1 FAMS @F34@
+1 FAMC @F63@
+1 FAMS @F38@
 1 BIRT
 2 DATE 17 May 1927
 2 PLAC Westmoreland County, Pennsylvania, USA
@@ -3613,8 +3617,8 @@
 2 GIVN Blanche
 2 SURN Dziadosz
 1 SEX F
-1 FAMC @F53@
-1 FAMS @F30@
+1 FAMC @F57@
+1 FAMS @F33@
 1 BIRT
 2 DATE 21 Jan 1918
 2 PLAC Pittsburgh, Allegheny, Pennsylvania, USA
@@ -3638,8 +3642,8 @@
 2 GIVN Abraham Elias
 2 SURN Shaheen
 1 SEX M
-1 FAMC @F31@
-1 FAMS @F30@
+1 FAMC @F34@
+1 FAMS @F33@
 1 BIRT
 2 DATE 12 Mar 1912
 2 PLAC Clairton, Allegheny, Pennsylvania, USA
@@ -3651,8 +3655,8 @@
 2 GIVN Jill Marie
 2 SURN Shaheen
 1 SEX F
-1 FAMC @F22@
-1 FAMS @F56@
+1 FAMC @F24@
+1 FAMS @F60@
 1 BIRT
 2 DATE 9 Sep 1977
 2 PLAC Pittsburgh PA
@@ -3662,7 +3666,7 @@
 2 SURN Behun
 1 SEX M
 1 FAMC @F8@
-1 FAMS @F59@
+1 FAMS @F63@
 1 BIRT
 2 DATE 18 Mar 1887
 2 PLAC Ukraine
@@ -3674,8 +3678,8 @@
 2 GIVN Eva Julia
 2 SURN Pylpzak
 1 SEX F
-1 FAMC @F20@
-1 FAMS @F59@
+1 FAMC @F21@
+1 FAMS @F63@
 1 BIRT
 2 DATE 4 Aug 1889
 2 PLAC Poland
@@ -3688,7 +3692,7 @@
 2 SURN Shaheen
 1 SEX M
 1 FAMC @F5@
-1 FAMS @F31@
+1 FAMS @F34@
 1 BIRT
 2 DATE 1874
 2 PLAC Lebanon
@@ -3700,8 +3704,8 @@
 2 GIVN Mary
 2 SURN Nassar
 1 SEX F
-1 FAMC @F51@
-1 FAMS @F31@
+1 FAMC @F55@
+1 FAMS @F34@
 1 BIRT
 2 DATE 1880
 2 PLAC Lebanon
@@ -3713,8 +3717,8 @@
 2 GIVN John
 2 SURN Dziadosz
 1 SEX M
-1 FAMC @F54@
-1 FAMS @F53@
+1 FAMC @F58@
+1 FAMS @F57@
 1 BIRT
 2 DATE 1878
 2 PLAC Poland
@@ -3726,8 +3730,8 @@
 2 GIVN Mary
 2 SURN Sowa
 1 SEX F
-1 FAMC @F42@
-1 FAMS @F53@
+1 FAMC @F46@
+1 FAMS @F57@
 1 BIRT
 2 DATE 1884
 2 PLAC Poland
@@ -3735,11 +3739,11 @@
 2 DATE 1968
 2 PLAC Glassport, Allegheny, Pennsylvania, USA
 0 @I412771176534@ INDI
-1 NAME Anna /Mihalik/
-2 GIVN Anna
+1 NAME Anna Elizabeth /Mihalik/
+2 GIVN Anna Elizabeth
 2 SURN Mihalik
 1 SEX F
-1 FAMC @F57@
+1 FAMC @F61@
 1 FAMS @F9@
 1 BIRT
 2 DATE 13 Oct 1912
@@ -3752,19 +3756,21 @@
 2 GIVN George
 2 SURN Sutyak
 1 SEX M
-1 FAMC @F16@
+1 FAMC @F17@
 1 FAMS @F9@
 1 BIRT
-2 DATE 1910
+2 DATE 11 Dec 1909
+2 PLAC Pennsylvania, USA
 1 DEAT
 2 DATE 13 Aug 1990
+2 PLAC Pennsylvania, USA
 0 @I412771176999@ INDI
 1 NAME Peter /Sutyak/
 2 GIVN Peter
 2 SURN Sutyak
 1 SEX M
-1 FAMC @F61@
-1 FAMS @F16@
+1 FAMC @F65@
+1 FAMS @F17@
 1 BIRT
 2 DATE 1870
 2 PLAC Csircs, Malopolskie, Poland
@@ -3775,8 +3781,8 @@
 2 GIVN Maria
 2 SURN Kovalik
 1 SEX F
-1 FAMC @F33@
-1 FAMS @F16@
+1 FAMC @F37@
+1 FAMS @F17@
 1 BIRT
 2 DATE 1875
 2 PLAC Csircs, Malopolskie, Poland
@@ -3785,7 +3791,7 @@
 2 GIVN Donna
 2 SURN Behun
 1 SEX F
-1 FAMC @F34@
+1 FAMC @F38@
 1 BIRT
 2 DATE 13 May 1954
 2 PLAC Latrobe, Westmoreland, Pennsylvania, USA
@@ -3794,7 +3800,7 @@
 2 GIVN Michelle
 2 SURN Behun
 1 SEX F
-1 FAMC @F34@
+1 FAMC @F38@
 1 BIRT
 2 DATE 24 Jun 1959
 2 PLAC Latrobe, Westmoreland, Pennsylvania, USA
@@ -3803,8 +3809,8 @@
 2 GIVN Theresa
 2 SURN Dziadosz
 1 SEX F
-1 FAMC @F53@
-1 FAMS @F23@
+1 FAMC @F57@
+1 FAMS @F25@
 1 BIRT
 2 DATE 1929
 2 PLAC Glassport, Allegheny, Pennsylvania, USA
@@ -3815,8 +3821,8 @@
 2 GIVN Helen
 2 SURN Dziadosz
 1 SEX F
-1 FAMC @F53@
-1 FAMS @F14@
+1 FAMC @F57@
+1 FAMS @F15@
 1 BIRT
 2 DATE 1906
 1 DEAT
@@ -3826,7 +3832,7 @@
 2 GIVN Edward
 2 SURN Dziadosz
 1 SEX M
-1 FAMC @F53@
+1 FAMC @F57@
 1 BIRT
 2 DATE 1910
 2 PLAC Glassport, Allegheny, Pennsylvania, USA
@@ -3837,7 +3843,7 @@
 2 GIVN Clara
 2 SURN Dziadosz
 1 SEX F
-1 FAMC @F53@
+1 FAMC @F57@
 1 FAMS @F1@
 1 BIRT
 2 DATE 1920
@@ -3849,7 +3855,7 @@
 2 GIVN Nicholas
 2 SURN Behun
 1 SEX M
-1 FAMC @F59@
+1 FAMC @F63@
 1 BIRT
 2 DATE 13 Sep 1909
 2 PLAC salem township, Westmoreland County, Pennsylvania, USA
@@ -3861,7 +3867,7 @@
 2 GIVN John
 2 SURN Behun
 1 SEX M
-1 FAMC @F59@
+1 FAMC @F63@
 1 BIRT
 2 DATE 10 Feb 1912
 2 PLAC Etna, Allegheny, Pennsylvania, USA
@@ -3873,7 +3879,7 @@
 2 GIVN Joseph Andrew
 2 SURN Behun
 1 SEX M
-1 FAMC @F59@
+1 FAMC @F63@
 1 BIRT
 2 DATE 18 Mar 1919
 2 PLAC Westmoreland County, Pennsylvania, USA
@@ -3885,13 +3891,13 @@
 2 GIVN Mary
 2 SURN Behun
 1 SEX F
-1 FAMC @F59@
+1 FAMC @F63@
 0 @I412771177456@ INDI
 1 NAME Anna Louise /Behun/
 2 GIVN Anna Louise
 2 SURN Behun
 1 SEX F
-1 FAMC @F59@
+1 FAMC @F63@
 1 BIRT
 2 DATE 26 Jul 1914
 2 PLAC Etna, Allegheny, Pennsylvania, USA
@@ -3903,19 +3909,37 @@
 2 GIVN Helen
 2 SURN Behun
 1 SEX F
-1 FAMC @F59@
+1 FAMC @F63@
+1 FAMS @F13@
+1 BIRT
+2 DATE 12 Jul 1931
+2 PLAC Slickville, Westmoreland, Pennsylvania, USA
+1 DEAT
+2 DATE 8 Dec 2008
+2 PLAC Greensburg, Westmoreland, Pennsylvania, USA
 0 @I412771177712@ INDI
-1 NAME Ted /Sutyak/
-2 GIVN Ted
+1 NAME Theodore S /Sutyak/
+2 GIVN Theodore S
 2 SURN Sutyak
 1 SEX M
 1 FAMC @F9@
+1 BIRT
+2 DATE 1934
+1 DEAT
+2 DATE Apr 2013
+2 PLAC Cleveland, Cuyahoga, Ohio, USA
 0 @I412771177722@ INDI
-1 NAME Larry /Sutyak/
-2 GIVN Larry
+1 NAME George Larry /Sutyak/
+2 GIVN George Larry
 2 SURN Sutyak
 1 SEX M
 1 FAMC @F9@
+1 BIRT
+2 DATE 8 Aug 1948
+2 PLAC Latrobe, Westmoreland, Pennsylvania, USA
+1 DEAT
+2 DATE 19 Mar 2026
+2 PLAC Madison, Ohio, USA
 0 @I412771177733@ INDI
 1 NAME Jerry /Sutyak/
 2 GIVN Jerry
@@ -3934,12 +3958,20 @@
 2 SURN Sutyak
 1 SEX F
 1 FAMC @F9@
+1 FAMS @F32@
+1 BIRT
+2 DATE 03 sept 1932
+2 PLAC Conemaugh, Indiana, Pennsylvania, USA
+1 DEAT
+2 DATE 10 Apr 2013
+2 PLAC Conemaugh, Indiana, Pennsylvania, USA
 0 @I412771177774@ INDI
 1 NAME Patricia /Sutyak/
 2 GIVN Patricia
 2 SURN Sutyak
 1 SEX F
 1 FAMC @F9@
+1 FAMS @F35@
 0 @I412771179869@ INDI
 1 NAME Elias /Shaheen/
 2 GIVN Elias
@@ -3959,7 +3991,7 @@
 2 GIVN George
 2 SURN Nassar
 1 SEX M
-1 FAMS @F51@
+1 FAMS @F55@
 1 BIRT
 2 DATE 1850
 2 PLAC Lebanon
@@ -3967,19 +3999,13 @@
 1 NAME Victoria //
 2 GIVN Victoria
 1 SEX F
-1 FAMS @F51@
+1 FAMS @F55@
 0 @I412771181117@ INDI
 1 NAME Bonnie /Heasley/
 2 GIVN Bonnie
 2 SURN Heasley
 1 SEX F
-1 FAMC @F50@
-0 @I412771181204@ INDI
-1 NAME William /Fink/
-2 GIVN William
-2 SURN Fink
-1 SEX M
-1 FAMC @F36@
+1 FAMC @F54@
 0 @I412771182138@ INDI
 1 NAME Michael /Behun/
 2 GIVN Michael
@@ -4002,39 +4028,40 @@
 2 GIVN Wasyl
 2 SURN Pylpzak
 1 SEX M
-1 FAMS @F20@
+1 FAMS @F21@
 1 BIRT
 2 PLAC Austria
 0 @I412771182400@ INDI
 1 NAME Anna //
 2 GIVN Anna
 1 SEX F
-1 FAMS @F20@
+1 FAMS @F21@
 1 BIRT
 2 PLAC Austria
 0 @I412771182534@ INDI
-1 NAME Jan /Mihalik/
-2 GIVN Jan
+1 NAME John /Mihalik/
+2 GIVN John
 2 SURN Mihalik
 1 SEX M
-1 FAMS @F57@
+1 FAMS @F61@
 1 BIRT
 2 DATE 1882
-2 PLAC Czechoslovakia
+2 PLAC Slovakia
 0 @I412771182556@ INDI
-1 NAME Anna //
-2 GIVN Anna
+1 NAME Mary /Vira/
+2 GIVN Mary
+2 SURN Vira
 1 SEX F
-1 FAMS @F57@
+1 FAMS @F61@
 1 BIRT
-2 DATE 1888
-2 PLAC Czechoslovakia
+2 DATE 1884
+2 PLAC Slovakia
 0 @I412771182779@ INDI
 1 NAME Mateusz /Dziadosz/
 2 GIVN Mateusz
 2 SURN Dziadosz
 1 SEX M
-1 FAMS @F54@
+1 FAMS @F58@
 1 BIRT
 2 DATE 1845
 2 PLAC Poland
@@ -4042,7 +4069,7 @@
 1 NAME Katarzyna //
 2 GIVN Katarzyna
 1 SEX F
-1 FAMS @F54@
+1 FAMS @F58@
 1 BIRT
 2 DATE 1850
 2 PLAC Poland
@@ -4051,7 +4078,7 @@
 2 GIVN Wojciech
 2 SURN Sowa
 1 SEX M
-1 FAMS @F42@
+1 FAMS @F46@
 1 BIRT
 2 DATE 1855
 2 PLAC Poland
@@ -4059,7 +4086,7 @@
 1 NAME Marianna //
 2 GIVN Marianna
 1 SEX F
-1 FAMS @F42@
+1 FAMS @F46@
 1 BIRT
 2 DATE 1860
 2 PLAC Poland
@@ -4068,7 +4095,7 @@
 2 GIVN Peter
 2 SURN Sutyak
 1 SEX M
-1 FAMS @F61@
+1 FAMS @F65@
 1 BIRT
 2 DATE 1855
 2 PLAC Austria-Hungary
@@ -4076,7 +4103,7 @@
 1 NAME Anna //
 2 GIVN Anna
 1 SEX F
-1 FAMS @F61@
+1 FAMS @F65@
 1 BIRT
 2 DATE 1860
 2 PLAC Austria-Hungary
@@ -4085,7 +4112,7 @@
 2 GIVN Jan
 2 SURN Kovalik
 1 SEX M
-1 FAMS @F33@
+1 FAMS @F37@
 1 BIRT
 2 DATE 1858
 2 PLAC Austria-Hungary
@@ -4093,7 +4120,7 @@
 1 NAME Maria //
 2 GIVN Maria
 1 SEX F
-1 FAMS @F33@
+1 FAMS @F37@
 1 BIRT
 2 DATE 1862
 2 PLAC Austria-Hungary
@@ -4102,7 +4129,7 @@
 2 GIVN Bernice
 2 SURN Shaheen
 1 SEX F
-1 FAMC @F30@
+1 FAMC @F33@
 1 BIRT
 2 PLAC Clairton, Allegheny, Pennsylvania, USA
 1 DEAT
@@ -4112,7 +4139,7 @@
 2 GIVN Joseph
 2 SURN Smyczek
 1 SEX M
-1 FAMS @F14@
+1 FAMS @F15@
 0 @I412771198490@ INDI
 1 NAME Walter /Gardocki/
 2 GIVN Walter
@@ -4124,13 +4151,13 @@
 2 GIVN Vince
 2 SURN Rattay
 1 SEX M
-1 FAMS @F23@
+1 FAMS @F25@
 0 @I412771936584@ INDI
 1 NAME Quinn Michael /Clark/
 2 GIVN Quinn Michael
 2 SURN Clark
 1 SEX M
-1 FAMC @F56@
+1 FAMC @F60@
 1 BIRT
 2 DATE 26 Jun 2020
 2 PLAC Pittsburgh PA
@@ -4139,10 +4166,97 @@
 2 GIVN Gerald Bruce
 2 SURN Clark
 1 SEX M
-1 FAMS @F56@
+1 FAMS @F60@
 1 BIRT
 2 DATE 13 May 1986
 2 PLAC Weirton Heights, Hancock, West Virginia, USA
+0 @I412772293474@ INDI
+1 NAME Edward Pete /Pytlak/
+2 GIVN Edward Pete
+2 SURN Pytlak
+1 SEX M
+1 FAMC @F23@
+1 FAMS @F13@
+1 BIRT
+2 DATE 5 Aug 1923
+2 PLAC sewickley township, Pennsylvania, USA
+1 DEAT
+2 DATE 8 Mar 2004
+2 PLAC Pittsburgh, Allegheny, Pennsylvania, USA
+0 @I412772293744@ INDI
+1 NAME Peter P /Pytlak/
+2 GIVN Peter P
+2 SURN Pytlak
+1 SEX M
+1 FAMS @F23@
+1 BIRT
+2 DATE 1888
+1 DEAT
+2 DATE Jul 1966
+2 PLAC Jeannette, Westmoreland, Pennsylvania, USA
+0 @I412772294041@ INDI
+1 NAME Mary /Kolvich/
+2 GIVN Mary
+2 SURN Kolvich
+1 SEX F
+1 FAMS @F23@
+1 DEAT
+2 DATE 1929
+2 PLAC Pennsylvania, USA
+0 @I412772294182@ INDI
+1 NAME Brenda Lee /Pytlak/
+2 GIVN Brenda Lee
+2 SURN Pytlak
+1 SEX F
+1 FAMC @F13@
+1 BIRT
+2 DATE 18 Jul 1957
+2 PLAC Greensburg, Westmoreland, Pennsylvania, USA
+1 DEAT
+2 DATE 8 Dec 2015
+2 PLAC Export, Westmoreland, Pennsylvania, USA
+0 @I412772294935@ INDI
+1 NAME Anthony /Butekoff/
+2 GIVN Anthony
+2 SURN Butekoff
+1 SEX M
+1 FAMS @F32@
+0 @I412772295661@ INDI
+1 NAME Donald Ray /Whitehouse/
+2 GIVN Donald Ray
+2 SURN Whitehouse
+1 SEX M
+1 FAMS @F35@
+1 BIRT
+2 DATE 12 Jul 1936
+2 PLAC Flint, Genesee, Michigan, USA
+1 DEAT
+2 DATE 15 Feb 2025
+2 PLAC Greenville, Greenville, South Carolina, USA
+0 @I412772296075@ INDI
+1 NAME Sarah /Whitehouse/
+2 GIVN Sarah
+2 SURN Whitehouse
+1 SEX F
+1 FAMC @F35@
+0 @I412772296152@ INDI
+1 NAME Donald B /Whitehouse/
+2 GIVN Donald B
+2 SURN Whitehouse
+1 SEX M
+1 FAMC @F35@
+0 @I412772296177@ INDI
+1 NAME Steven G /Whitehouse/
+2 GIVN Steven G
+2 SURN Whitehouse
+1 SEX M
+1 FAMC @F35@
+0 @I412772296206@ INDI
+1 NAME Scott P /Whitehouse/
+2 GIVN Scott P
+2 SURN Whitehouse
+1 SEX M
+1 FAMC @F35@
 0 @F1@ FAM
 1 HUSB @I412771198490@
 1 WIFE @I412771177335@
@@ -4193,11 +4307,11 @@
 1 HUSB @I412771176558@
 1 WIFE @I412771176534@
 1 CHIL @I412771172515@
+1 CHIL @I412771177768@
 1 CHIL @I412771177712@
 1 CHIL @I412771177722@
 1 CHIL @I412771177733@
 1 CHIL @I412771177743@
-1 CHIL @I412771177768@
 1 CHIL @I412771177774@
 0 @F10@ FAM
 1 HUSB @I412063905711@
@@ -4219,6 +4333,10 @@
 1 CHIL @I412076089042@
 1 CHIL @I412076088951@
 0 @F13@ FAM
+1 HUSB @I412772293474@
+1 WIFE @I412771177561@
+1 CHIL @I412772294182@
+0 @F14@ FAM
 1 HUSB @I412054726073@
 1 WIFE @I412054726931@
 1 CHIL @I412076079182@
@@ -4228,26 +4346,26 @@
 1 MARR
 2 DATE 1914
 2 PLAC Ohio, West Virginia, United States
-0 @F14@ FAM
+0 @F15@ FAM
 1 HUSB @I412771193399@
 1 WIFE @I412771177306@
-0 @F15@ FAM
+0 @F16@ FAM
 1 HUSB @I412076093858@
 1 WIFE @I412076093910@
 1 CHIL @I412076092441@
-0 @F16@ FAM
+0 @F17@ FAM
 1 HUSB @I412771176999@
 1 WIFE @I412771177028@
 1 CHIL @I412771176558@
-0 @F17@ FAM
+0 @F18@ FAM
 1 HUSB @I412076093604@
 1 WIFE @I412076093643@
 1 CHIL @I412076092365@
-0 @F18@ FAM
+0 @F19@ FAM
 1 HUSB @I412054727948@
 1 WIFE @I412054728025@
 1 CHIL @I412054726073@
-0 @F19@ FAM
+0 @F20@ FAM
 1 HUSB @I412076092365@
 1 WIFE @I412076092441@
 1 CHIL @I412076093341@
@@ -4257,23 +4375,27 @@
 1 MARR
 2 DATE 25 OCT 1625
 2 PLAC Evangelisch -  Reformierte Kirche, Brütten,Kt. Zürich, Switzerland
-0 @F20@ FAM
+0 @F21@ FAM
 1 HUSB @I412771182338@
 1 WIFE @I412771182400@
 1 CHIL @I412771175899@
-0 @F21@ FAM
+0 @F22@ FAM
 1 HUSB @I412054722275@
 1 WIFE @I412054722826@
 1 CHIL @I412054722274@
-0 @F22@ FAM
+0 @F23@ FAM
+1 HUSB @I412772293744@
+1 WIFE @I412772294041@
+1 CHIL @I412772293474@
+0 @F24@ FAM
 1 HUSB @I412771172424@
 1 WIFE @I412217321395@
 1 CHIL @I412076094635@
 1 CHIL @I412771174611@
-0 @F23@ FAM
+0 @F25@ FAM
 1 HUSB @I412771198614@
 1 WIFE @I412771177291@
-0 @F24@ FAM
+0 @F26@ FAM
 1 HUSB @I412076078014@
 1 WIFE @I412076078175@
 1 MARR
@@ -4289,70 +4411,79 @@
 3 PAGE Virginia Department of Health; Richmond, Virginia; Virginia Marriages, 1936-2014; Roll: 101168236
 3 _HPID 1,9279::11386125
 3 _WPID 1,9279::27815536
-0 @F25@ FAM
+0 @F27@ FAM
 1 HUSB @I412308113575@
 1 WIFE @I412308112993@
 1 CHIL @I412054724344@
-0 @F26@ FAM
+0 @F28@ FAM
 1 HUSB @I412076091754@
 1 WIFE @I412076091825@
 1 CHIL @I412076089247@
-0 @F27@ FAM
+0 @F29@ FAM
 1 HUSB @I412076092005@
 1 WIFE @I412076092082@
 1 CHIL @I412076091482@
-0 @F28@ FAM
+0 @F30@ FAM
 1 HUSB @I412259669356@
 1 WIFE @I412260088210@
 1 CHIL @I412224918698@
-0 @F29@ FAM
+0 @F31@ FAM
 1 HUSB @I412076094635@
 1 WIFE @I412054722274@
 1 MARR
 2 DATE 6/13/2013
 2 PLAC Clarion County, Pennsylvania, USA
-0 @F30@ FAM
+0 @F32@ FAM
+1 HUSB @I412772294935@
+1 WIFE @I412771177768@
+0 @F33@ FAM
 1 HUSB @I412771174434@
 1 WIFE @I412771173007@
 1 CHIL @I412771172424@
 1 CHIL @I412771183372@
-0 @F31@ FAM
+0 @F34@ FAM
 1 HUSB @I412771176237@
 1 WIFE @I412771176371@
 1 CHIL @I412771174434@
-0 @F32@ FAM
+0 @F35@ FAM
+1 HUSB @I412772295661@
+1 WIFE @I412771177774@
+1 CHIL @I412772296075@
+1 CHIL @I412772296152@
+1 CHIL @I412772296177@
+1 CHIL @I412772296206@
+0 @F36@ FAM
 1 HUSB @I412054722914@
 1 WIFE @I412054722977@
 1 CHIL @I412054722826@
-0 @F33@ FAM
+0 @F37@ FAM
 1 HUSB @I412771183116@
 1 WIFE @I412771183145@
 1 CHIL @I412771177028@
-0 @F34@ FAM
+0 @F38@ FAM
 1 HUSB @I412771172650@
 1 WIFE @I412771172515@
 1 CHIL @I412217321395@
 1 CHIL @I412771177258@
 1 CHIL @I412771177266@
-0 @F35@ FAM
+0 @F39@ FAM
 1 HUSB @I412262485793@
 1 WIFE @I412054724445@
 1 CHIL @I412262486093@
 1 CHIL @I412262485976@
 1 CHIL @I412262487525@
 1 CHIL @I412262485899@
-0 @F36@ FAM
+0 @F40@ FAM
 1 HUSB @I412066426017@
 1 WIFE @I412066426158@
 1 CHIL @I412054722706@
 1 CHIL @I412066426538@
 1 CHIL @I412066426540@
-1 CHIL @I412771181204@
-0 @F37@ FAM
+0 @F41@ FAM
 1 HUSB @I412076082591@
 1 WIFE @I412076082494@
 1 CHIL @I412054727948@
-0 @F38@ FAM
+0 @F42@ FAM
 1 HUSB @I412076091482@
 1 WIFE @I412076089247@
 1 CHIL @I412076091496@
@@ -4367,7 +4498,7 @@
 1 MARR
 2 DATE 11 Jan 1729
 2 PLAC Brutten Par, Bayern, Germany
-0 @F39@ FAM
+0 @F43@ FAM
 1 HUSB @I412076087326@
 1 WIFE @I412076091537@
 1 CHIL @I412076091538@
@@ -4377,7 +4508,7 @@
 1 MARR
 2 DATE 1788
 2 PLAC Westmoreland, Pennsylvania, United States
-0 @F40@ FAM
+0 @F44@ FAM
 1 HUSB @I412076087326@
 1 WIFE @I412076087445@
 1 CHIL @I412076091517@
@@ -4407,27 +4538,27 @@
 1 MARR
 2 DATE 1788
 2 PLAC Westmoreland, Pennsylvania, United States
-0 @F41@ FAM
+0 @F45@ FAM
 1 HUSB @I412224918653@
 1 WIFE @I412224918698@
 1 CHIL @I412054722914@
-0 @F42@ FAM
+0 @F46@ FAM
 1 HUSB @I412771182831@
 1 WIFE @I412771182853@
 1 CHIL @I412771176429@
-0 @F43@ FAM
+0 @F47@ FAM
 1 HUSB @I412261827938@
 1 WIFE @I412261831829@
 1 CHIL @I412261843743@
-0 @F44@ FAM
+0 @F48@ FAM
 1 HUSB @I412260113239@
 1 WIFE @I412260113593@
 1 CHIL @I412217325254@
-0 @F45@ FAM
+0 @F49@ FAM
 1 HUSB @I412261843867@
 1 WIFE @I412261843743@
 1 CHIL @I412261844417@
-0 @F46@ FAM
+0 @F50@ FAM
 1 HUSB @I412054724162@
 1 WIFE @I412054724344@
 1 CHIL @I412261827213@
@@ -4441,29 +4572,29 @@
 1 CHIL @I412261828159@
 1 CHIL @I412261827720@
 1 CHIL @I412261827484@
-0 @F47@ FAM
+0 @F51@ FAM
 1 HUSB @I412260105779@
 1 WIFE @I412260106684@
 1 CHIL @I412224920603@
-0 @F48@ FAM
+0 @F52@ FAM
 1 HUSB @I412076084093@
 1 WIFE @I412076084002@
 1 CHIL @I412076087328@
 1 CHIL @I412076082591@
-0 @F49@ FAM
+0 @F53@ FAM
 1 HUSB @I412217325254@
 1 WIFE @I412217325255@
 1 CHIL @I412054723111@
-0 @F50@ FAM
+0 @F54@ FAM
 1 HUSB @I412054722479@
 1 WIFE @I412054722706@
 1 CHIL @I412054722275@
 1 CHIL @I412771181117@
-0 @F51@ FAM
+0 @F55@ FAM
 1 HUSB @I412771179926@
 1 WIFE @I412771180003@
 1 CHIL @I412771176371@
-0 @F52@ FAM
+0 @F56@ FAM
 1 _SREL other
 1 HUSB @I412076094304@
 1 WIFE @I412054722274@
@@ -4474,7 +4605,7 @@
 2 PLAC New Castle, Lawrence, Pennsylvania, USA
 1 DIV
 2 DATE 2012
-0 @F53@ FAM
+0 @F57@ FAM
 1 HUSB @I412771176404@
 1 WIFE @I412771176429@
 1 CHIL @I412771177306@
@@ -4482,27 +4613,27 @@
 1 CHIL @I412771173007@
 1 CHIL @I412771177335@
 1 CHIL @I412771177291@
-0 @F54@ FAM
+0 @F58@ FAM
 1 HUSB @I412771182779@
 1 WIFE @I412771182807@
 1 CHIL @I412771176404@
-0 @F55@ FAM
+0 @F59@ FAM
 1 HUSB @I412077347596@
 1 WIFE @I412077347651@
 1 CHIL @I412066426158@
-0 @F56@ FAM
+0 @F60@ FAM
 1 HUSB @I412771936647@
 1 WIFE @I412771174611@
 1 CHIL @I412771936584@
-0 @F57@ FAM
+0 @F61@ FAM
 1 HUSB @I412771182534@
 1 WIFE @I412771182556@
 1 CHIL @I412771176534@
-0 @F58@ FAM
+0 @F62@ FAM
 1 HUSB @I412077350732@
 1 WIFE @I412076099086@
 1 CHIL @I412076093858@
-0 @F59@ FAM
+0 @F63@ FAM
 1 HUSB @I412771175855@
 1 WIFE @I412771175899@
 1 CHIL @I412771177387@
@@ -4510,9 +4641,9 @@
 1 CHIL @I412771177456@
 1 CHIL @I412771177419@
 1 CHIL @I412771172650@
-1 CHIL @I412771177446@
 1 CHIL @I412771177561@
-0 @F60@ FAM
+1 CHIL @I412771177446@
+0 @F64@ FAM
 1 HUSB @I412076081426@
 1 WIFE @I412076079182@
 1 MARR
@@ -4521,15 +4652,15 @@
 2 SOUR @S1582737903@
 3 _HPID 1,61381::3076176
 3 _WPID 1,61381::903076176
-0 @F61@ FAM
+0 @F65@ FAM
 1 HUSB @I412771182984@
 1 WIFE @I412771183051@
 1 CHIL @I412771176999@
-0 @F62@ FAM
+0 @F66@ FAM
 1 HUSB @I412054723016@
 1 WIFE @I412054723056@
 1 CHIL @I412054722977@
-0 @F63@ FAM
+0 @F67@ FAM
 1 HUSB @I412076092162@
 1 WIFE @I412076092201@
 1 CHIL @I412076093346@
@@ -4542,10 +4673,10 @@
 1 MARR
 2 DATE 28 SEP 1658
 2 PLAC Evangelisch -  Reformierte Kirche, Brütten,Kt. Zürich, Switzerland
-0 @F64@ FAM
+0 @F68@ FAM
 1 HUSB @I412077352394@
 1 CHIL @I412076080608@
-0 @F65@ FAM
+0 @F69@ FAM
 1 HUSB @I412260252734@
 1 CHIL @I412076094304@
 0 @O1@ OBJE
@@ -4562,7 +4693,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:48.369
-1 _USER 79F8DREIqCDlVFPJqB1SBFOx/7JnPeffe6D3CzKXl+VX74T7gCgEGw7q+KOjebAwjyytveVL4sjjG69h7EQ80Q==
+1 _USER y9Yf005nPxOs88NIxs12ktiJjuiQJ7OsRuTEBvasPl4xu9B3Bs14/PFlPcAOL2DON5fgXqUD0gdSt0kzBxL+Rw==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -4581,7 +4712,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription>The Shaheen Fa
 2 CONC mily shown in the picture taken in front of 633 Third St sometime between 1910 and 1912</transcription><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-07 16:23:16.366
-1 _USER ae4TU/Chuxol+tFaxnffpmQxR5rXafFZErZGO8b/OQ5v0c7e28Tx+aFmcZrK6G33fgvxy1p8/C5ulkE+fNEx6Q==
+1 _USER tQlecj4SP/pOEZW7jPp4P4AkEaZ+I5AJSQQ7vI8vsoh6P9qXol2WQd71VPfd/nAh9SKj0Jc0dxwkio8iiZgPHQ==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -4600,13 +4731,13 @@
 1 PLAC Pittsburgh, PA
 1 _META <metadataxml><cemetery /><transcription /></metadataxml>
 1 _CREA 2018-11-24 18:02:22.632
-1 _USER EHOiPUkn7/u252vCA13Ht9M/doKkmJjOB886sXi0MNw/hdK+w6aRIVDziJbVFbH1uPqOMUOCoKSDgANqh5osXA==
+1 _USER ulg0tFHNZYjpnUt4Rb46LTqsM1aQR0URMFzj01gLoYgay62fWZyeAs2aIEd6kH2ZudpYR2vBZrLonrRIzuhjGw==
 2 _ENCR 1
 1 _CLON
 2 _TID 32576842
 2 _PID 18803225037
 2 _OID e96153fd-1b96-48eb-8472-c08d3ef4d531
-2 _USER +NmmcQ2Ru6BrWs91QzMXRyh+HtewRcU3qWv0EXuHHOIsET9ms3QICap3NXt0NkLp3188GlPxprlwop1QvGFs6Q==
+2 _USER y5Iqk5lS8wZ8iWGLQpJnWP1Bpg8dty5lxgN7NWnETkyPdP158S9Ni/NANr9QOLaXlyiRcjRLb/B4L/GaFedAfQ==
 3 _ENCR 1
 2 _DATE 2014-05-16 14:42:16.000
 1 _ORIG u
@@ -4625,13 +4756,13 @@
 1 DATE 30 Jan 1892
 1 _META <metadataxml><cemetery /><transcription /></metadataxml>
 1 _CREA 2020-09-08 23:48:44.000
-1 _USER COGx22cN7p2l2gQW/6L2wUXDZSSK90Y/BAi4ddNmeUr5bmVpyGU2Zdf0OlGqGH5nGR8Ei/ujsgCNbdP3xswsgQ==
+1 _USER RE220rPWMDYgZYzOXoj84Kjwk5miihfRv7WUK84PD48Mkrl+qL6Kq+NqT5xd5tZN7BNMCXP5G2OePHh0p6sJJw==
 2 _ENCR 1
 1 _CLON
 2 _TID 32576842
 2 _PID 18805104788
 2 _OID 4e70aaa8-9140-48b3-b0ec-ba54eb9572df
-2 _USER QaTtfg90iEqDHoaRqhIM6v/IfTZOzmqJdhvWTmycY8W8sln3nyuOYAybHi05PWV8lmaZnaN9kprmMh6Fm4+VGw==
+2 _USER bzUDdMwR47zI4I+Mixn9valI6N3uUrzHjJa6QBiZiHcBHHwo6WGUBRju6CkCFj375C8yeq6AQQbasvXpHCXOXQ==
 3 _ENCR 1
 2 _DATE 2012-05-28 08:25:24.000
 1 _ORIG u
@@ -4651,13 +4782,13 @@
 1 _DSCR The beautiful Anna Margaret Soulier Bleacher
 1 _META <metadataxml><cemetery /><transcription /></metadataxml>
 1 _CREA 2018-12-28 03:44:17.068
-1 _USER +7z8Q87rDumdmQJ+tHtRMLVXA0L48BQ9+r2YnlyHqEeG5PGluhRY22YMFDajZcIXaO8P/F5Szrj5m3LNFRbULw==
+1 _USER lOusDUbQ6gK+oxhAYN7upPzDzh4oZymKKa7YkJkn0Z1uYtqd5W0XToHxobPnat8ejvti33VxudNj+Zp57p6m7Q==
 2 _ENCR 1
 1 _CLON
 2 _TID 73547650
 2 _PID 30276120670
 2 _OID c3c90eeb-a3b2-4132-99b7-fcbb4e672439
-2 _USER GjuyWWBOJP9Utv7zdeDHUzIMvsd+n4/j6MI48r7ot6OHv359Jq91/ePrMEc5dXWyi3l6pRqjNQEMTZEHPYcYgA==
+2 _USER pbb9FRdUhKTlz5RDalH07GXgTu0eq8SA5W7xAIsxsjwCHOKQYMDYXzSYXW1+S76KNLV9OWzIP/UQiH9rduIc8g==
 3 _ENCR 1
 2 _DATE 2015-06-02 19:40:17.000
 1 _ORIG u
@@ -4677,13 +4808,13 @@
 1 PLAC Herman, Pennsylvania
 1 _META <metadataxml><cemetery>St. Mary's Cemetery, </cemetery><transcription /><personas><persona><pname>Lorenz Bleichner</pname><bdate>1819</bdate><bplace /><ddate>1909</ddate><dplace /></persona></personas></metadataxml>
 1 _CREA 2021-01-22 22:24:17.000
-1 _USER nbn20ByyWmEemej2pIvn4oF8moyw9/RnaSyvs2vAwibQ+WivoebZWcdlripnKhGKmd8bb+ywJiZe/qYUxasd5Q==
+1 _USER 80leUau0DlrUEKZ8yWMJrzUMeSuzUYropZ9vcFTONXyGtCIeebYJdai2iZINsK3tEE1HX8RS68FE4VJPScKtxA==
 2 _ENCR 1
 1 _CLON
 2 _TID 27424369
 2 _PID 13623062747
 2 _OID ddbb8541-8b14-4cc8-96be-14b40cf46bf2
-2 _USER ZVHXsOh+ezkH0/T33OJ2t+16MIMxhI9arYG/4Z0W6TTUG2YhZK2V+oVncJYSR7lLyPc1s3EyyeeJrzLPVTIAJA==
+2 _USER ro16nhaJpfB8qH+0BUp9JF0lNHzSngvjT7BvGb4+FLZOm2DTe8Kj/XoELDOQVwddY0gWhF46FcuudIF/x00Zqg==
 3 _ENCR 1
 2 _DATE 2013-03-24 22:26:04.000
 1 _ORIG u
@@ -4704,7 +4835,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:27:14.889
-1 _USER mXk1k3F8mAAyYFDQeKGm98twGj6G1VrY8xuqOkXGlVhjhha6kcdkmvYek/vxrezcxzU575EoLctKRJDlPoCFKA==
+1 _USER wuCBew0qP7+DG0XZKmKAcTc4J5GhugI2pXql86K8zwO3LwL24OZGumkevt/hDnwFneoCOlISywMyUY14fe7+Hg==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -4722,7 +4853,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:49.237
-1 _USER xUkcacKguOiDXOCtuppcGB9FMbPNX+tzCg6KJXKe4xZR4qaXiXKlTkr1u7hiAJmIRipiJVtBwfPoDfgFkMu6Sg==
+1 _USER AwW9JJNyZjK7qyB9SF6uwwFRRvWU50B9ydqbmkigNLWMtETcG6u81pjT7KDbSiIVCIE0PIrrzpPWuIrEexi24w==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -4737,13 +4868,13 @@
 2 TITL 1860 United States Federal Census
 1 _OID 359a9d7a-d5af-40f4-9676-5e50c4cc5a95
 1 _CREA 2021-01-22 21:28:23.000
-1 _USER eegBPgPsQ5rLjrEInH5tctL/93HrZKAsqEaUdj0mIHfMDfGF5Afn+aBht2pA/awWDt4OIBpafFhcrUjryLKd0w==
+1 _USER RUd0J6EgfBkHDXwzRERUC6zQK1pyXENDZ3ylcTfAdhiq1vA23Io6WBk2AphOUSFDusfcoyJwHOjKT7g+uraNaQ==
 2 _ENCR 1
 1 _CLON
 2 _TID 77593603
 2 _PID 36372113929
 2 _OID df3bb29c-38c8-436d-9b99-b3c6171a8250
-2 _USER rarAiGmZcRS1vIvWJZlRZt60x+A2UjgrwP2YXLTB0KZxeWZxMB4Jz0UhjNvtSSsQdfPXIRt5Yu4KS+159J3xJw==
+2 _USER 8anm5bGkUFBFCA88M5GAfGk07fAJXYxcyj7qhFt9TImILoyBXPAGONUIT79rMhUhVARP+GmyzpmxXdpQAGOnjA==
 3 _ENCR 1
 2 _DATE 2015-02-20 00:07:34.000
 1 _ORIG u
@@ -4762,7 +4893,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:48.208
-1 _USER pYsDOm3PLEZ66svqWL6CC0cIqVq4pi9KucrP6aPBN8TriJP20fa0d6Paps6xF6urpOiyxzMHtXvozA7zCXrk8A==
+1 _USER SDZ5d+dB3ublhn4yKpCOnrVno2ESRi4iuUAgQqYuOOfYRBB1LOaT8IulP14rWIqgEjIWpIM3Za+0orp2gxgTyQ==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -4780,7 +4911,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:48.264
-1 _USER +9Y7XTp4Pyu/gyHrohu8KH+xRFxc003sn21i6u0n6evMXcDMuabD+7yvAGLRHKeawW+UfsID6VAaG2wziO9Q3A==
+1 _USER ZY5DNv2Vl/riIYI8Nq3/I1H9yS+xKCi+HDQ0oOgTDO6RCejI9j1KI1JmWI1UDP6uFJF3n/7vb6hFU2KUEupRuQ==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -4800,7 +4931,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:47:01.278
-1 _USER 03srUa17ovtANnwQzPg1zJiTZADjNmBp8s4ZslW1SVkAuH28CP1I4Dl2oB86KsyBaFpUNeGbd5o7MnezPQPEEA==
+1 _USER Dus8JsF3cPIYoD65/VILrdrT0fcR0/xVmZyjwyqSWZQgdZiRAMSPlJJIFT6ndVd2A1r/5//ZgAPEFCZ4Adx9ag==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL Y
@@ -4816,13 +4947,13 @@
 1 _OID 4cfc43ca-1cc4-4824-aa3c-cbccbab2bb4c
 1 DATE 6/5/2014 11:27:41 PM
 1 _CREA 2018-12-28 04:36:47.568
-1 _USER pN8D7rFs2h+pG18+UIi353YW1Tikdhc5qO6rTwQwNbv08WUkq8jboj3SGmz2NSd4524NxzzMq8WxJ7mTpY48jg==
+1 _USER 9NRiDWv7SX4tOZ6PrJe/v5+Z9arcKqdbGwwPgjkiHNv5QBPWZgvdwMQug9oF1xFg/m9SrA52Bkzb273N2/JVQA==
 2 _ENCR 1
 1 _CLON
 2 _TID 43572778
 2 _PID 13922357760
 2 _OID f82aebce-71e5-4391-afe2-3a57d3e6dbf1
-2 _USER YmG3uSQTxkMhti5aceAwQBO3tGnU7U14K7R4xdGnp3gUEvYqvj0ZmHH4MDuUpzycHNNY4X42TqkKk+BYPoD+Ww==
+2 _USER t0NFHitrBsAAqZX/RkqnZoVNR+MyXt8qcmJuM9Y78rESnKEO3I95+fs6F0/z0dkhgH+MaBUOcStKSC3jiaibDA==
 3 _ENCR 1
 2 _DATE 2014-06-06 04:29:42.000
 1 _ORIG u
@@ -4841,13 +4972,13 @@
 1 DATE 18 Jun 1947, Wed
 1 PLAC Pittsburgh, Pennsylvania
 1 _CREA 2021-01-28 00:16:36.000
-1 _USER yO2Ys58x9jZrPk9RIKsNPHkdiZJQL9A9LjxLG01ple3mlwgkte1Tr1d0vyxOjqbOmcdk5aoD86zSDe7Vc5axdw==
+1 _USER JkMVQoYuUMLr5Lejd+WdI7186UsRk2ANPP1/OxdjUlU5yWV7Z3MMs8NI+cZoh2cDRlb4Wam/JQakDBsxEtDgNQ==
 2 _ENCR 1
 1 _CLON
 2 _TID 10045005
 2 _PID 210024685462
 2 _OID 5bbbf67c-3d42-45d3-92e2-c5d9f1c99a73
-2 _USER 2PEhajwifk0HJim5xgjUAVxSm7C+TELIiCGSA8z9PFa30mfYEBlpkOwiBXDX4QUBA6Pbd2obdgK2fuAQuYAC0w==
+2 _USER SsUL+ia1Ut6DohpnoUvSXiYngzvlJud1g6+xeNaVx9LlFhDQeO2G5BN04ihLe4nsX0M8cc5KUTlbm+4v+5g8iw==
 3 _ENCR 1
 2 _DATE 2016-08-17 01:59:49.000
 1 _ORIG newspapers
@@ -4867,13 +4998,13 @@
 1 DATE 25 Mar 2018
 1 PLAC Pittsburgh, Allegheny, Pennsylvania, USA
 1 _CREA 2018-12-28 03:42:06.864
-1 _USER oAaVnx+PykX3xbNJa2/M+7ajRMRIxY01AwYM5mdXMnJWlknXMBk+nH/2kOGO5VCfox+2jb8pFTN+Ax0hVg26kw==
+1 _USER yYZoXTNzTjyrmArMq6QaUCrRyqk47TlSo7efFP/a1eu//noidWIiqMkuKZy03TiNUW1+df3fZbLjA5Lu5BwEnA==
 2 _ENCR 1
 1 _CLON
 2 _TID 32576842
 2 _PID 18803225037
 2 _OID ef8c7fed-cd8a-4d9f-a184-4c6033b74ae4
-2 _USER rXqpyG8cvcs0FCvW5E+RRTpl/kEru5g//VynyN79rAX+sUdAZOltX/A7trBPZFoe+syGanAE4I+ri0MUh+48/Q==
+2 _USER zwjbuqoWn7XRsZw/UznQax6O+WaZ67tjB+6DRfZLHWfz6m/zaSKQ8gk1Bm8BNVxq6wBrdlj13vaGpXGSnmx8sA==
 3 _ENCR 1
 2 _DATE 2018-03-26 02:00:41.000
 1 _ORIG u
@@ -4892,7 +5023,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:27:14.941
-1 _USER Gjdsgk6JdMmyK10/08UEErQLSqIKYAiuKuswuAQLvdyWMpWpCYatbx+VKhB2sE1wEFiZmSDgO3Dne/aVMvDReA==
+1 _USER Zt3UHKZVUfMBCT0MqVIY1NKBIjtkRBhI3XeFckanV2bxMngtjgOb//fnk0p6ucqLe858iF0y0KaouJdTrmmGNA==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -4910,7 +5041,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:50.105
-1 _USER v1EwGIvwWWfGB91F0vytvI2EDeBpNYNBcGKdlBiZ5WR3l0N2ZbSMmtoTgXGTIf1xhL20MTs9eRnL8t5WsdVHSw==
+1 _USER BKRLraDEdryHHUTV++rFK+Scwcu21iZx0bBO00jU1UtG1FSdM/nudVptK7gT1y+ggfyR4uZKdZEnfzGasNbUGQ==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -4928,13 +5059,13 @@
 1 _DSCR Great Grandfather George J. Bleichner
 1 _META <metadataxml><cemetery /><transcription /></metadataxml>
 1 _CREA 2020-09-08 23:50:07.000
-1 _USER rT1G0Untz0x6n4lGC9F3EZaLDs4I06Pllzj8NNQ1IbXgNA0nfJr+JKEPM8TVgihMhahMjrRcpyDLtvZXxtNbVg==
+1 _USER 3jMqzKo+acO9z50xrZfjVpvp+A3Aa8h/68Z8J277pODs0+MWi1wEDTiPZTjqCc6zjtdfirrPjhCaxVwDAngPEA==
 2 _ENCR 1
 1 _CLON
 2 _TID 73547650
 2 _PID 30276120756
 2 _OID 3a619b2d-f24d-40ca-a9a8-98ae3ed09d13
-2 _USER vglIhrHhRVVIMOIQZXre7m2s1k7piY+4YB4yMtmVzzFazKoVPgGnve/+slyxTGXvHeGmg6T2INZc0Cu/reWv9A==
+2 _USER AkNRwbV77Wm7RHPWcZxpwns2yRKXC6QTo/1hkFqa2M9aCguRzVARoEFIzOWPo6nz6Zur/bjvErsyMxTgHHMogw==
 3 _ENCR 1
 2 _DATE 2015-06-10 02:14:23.000
 1 _ORIG u
@@ -4952,13 +5083,13 @@
 1 _OID 7fd9835b-88b9-48bb-9773-758fb373a8c9
 1 _META <metadataxml><cemetery /><transcription /></metadataxml>
 1 _CREA 2019-02-05 00:44:04.390
-1 _USER SjRBRCPGjtBPr9slS2eMbA8mj9chzh8An92cCLsh+myWYiZhgeWv/cL/p0unP2ebpq8mua01mHfFE03/unm7mg==
+1 _USER pSxSXAQDlGNC7IjCL9QzmRW45C4PqOho0xCguO3k/Ak8Y+eRBd6ghpMTSi9E6hKc4v7XsStRj9Ju+4HTTE+cmA==
 2 _ENCR 1
 1 _CLON
 2 _TID 3290666
 2 _PID -1625128717
 2 _OID 8062fd17-3221-49e5-b8e1-bff839e6c54c
-2 _USER zbFUJdG3wB36f0tfKelIa6CvzQGqt3mEJwqbdOcoQcsJkcB+8NU0bntkbM3f97RtwZN8uWY6dFdA5ez/wx21PQ==
+2 _USER vwLGWm0s+5afsA6O896Z/DMXLPh4iSDGNf6xlT+4BRZZCj6iDW8p7J8I5bH0evMQVWAlIwp5mQWlHAxEzi8+uA==
 3 _ENCR 1
 2 _DATE 2012-11-29 23:20:58.000
 1 _ORIG u
@@ -4979,7 +5110,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:27:14.698
-1 _USER Qqm5IgK9pmbIYE8HCUNHWwUOLJDwbGZACDuCTDzVGSEYY/YzRrfkk+c7isd5YMtrkwY53pvcbKYBHqJDklAXLQ==
+1 _USER WM3a4xNH6AwxYTNk0yN0twkFRt9prpMzjCkWJ5k4pF+9r6UMpzCHtRkLrJ0j6WHYMSR/adLrkS44dbb2P8lzCw==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -4997,13 +5128,13 @@
 1 DATE 29 Apr 1921
 1 PLAC Pittsburgh, Pennsylvania
 1 _CREA 2021-01-28 00:42:59.000
-1 _USER UfekYR9UqYsoT2TUgy60NXMvi7KN87GWwtNAVXa/TtVbQxi8OZk1FBi0FJIOGuO13p6FKTezpkdt+VvapM+UjA==
+1 _USER OXjSmRaRxf0fVU1C0O4Gvyiw/RvRjjM643Lplqtro4esODO7v6pPeXWXvlklq5bg1ewgqubJ+AEUtq2fwyRJBQ==
 2 _ENCR 1
 1 _CLON
 2 _TID 10045005
 2 _PID 210024683520
 2 _OID ed5c61b0-8369-4ea6-98a7-f56fe502e33d
-2 _USER 4iePoOnBDJ5kzSpYA7gbTKFmwhC3BCJO3v7y7o00x5asYNV0e0E+MvAUoJLcvJtBNA2GoqClR+N1eeezm77POw==
+2 _USER IEIH8U13GSKLYinzr8Ng4OkZw/jKUfE0RWimScybwGVGtfgkFOSN9+B48No+Ai0ajH/7LsaEjvEBKPGbETgO6Q==
 3 _ENCR 1
 2 _DATE 2018-03-08 21:07:39.000
 1 _ORIG newspapers
@@ -5020,13 +5151,13 @@
 2 TITL William Joseph Wolbert
 1 _OID 8cfc6890-25a0-4d96-9838-21439f0a92bc
 1 _CREA 2021-01-21 18:46:39.000
-1 _USER 2NGaeJwAxJwBXLJrK3W8skZkfMbFAy45CNaJciqFxyRV1f4nhKE4rCGC9eKDgObWVhIGzRTHUyptIftT2ap+jA==
+1 _USER f6nqLEZFu+yBBM/21tph+HBgI6sxCR7DjgBL/NCTDcZRJyyhKqOy7fqF2pmdBFy0dz9KbfSHRnhUW337MEOoOA==
 2 _ENCR 1
 1 _CLON
 2 _TID 3748446
 2 _PID 242127434519
 2 _OID 10e85cc3-af86-4cdf-9ca2-de9340712d85
-2 _USER azWYgr6Wfoiiz7E170Hd3XlxWvzAR60usMKACIWrNjzC4DRNwzkzBmApXlXqJ+CB58IsWamFILmAWG+nYZEKXg==
+2 _USER k5YrcV3r/FuGlQHrcrshaINYuWXXISKFIB2tSsV9keiBL4h6zVvxmpMf1ss9TJPJ7dHLKBoPFJXooM2tNqegdg==
 3 _ENCR 1
 2 _DATE 2019-09-13 12:28:18.000
 1 _ORIG u
@@ -5045,13 +5176,13 @@
 1 DATE 28 May 2015
 1 _META <metadataxml><cemetery /><transcription /></metadataxml>
 1 _CREA 2021-01-22 22:26:40.000
-1 _USER cn0l39kD8d/ormmlIuSE8k12+AuiM8B+SzhqIlHQXVI2FffBQkhnRYu7E1aDbIT6KQuvUSVyeLfc1qvAFmGIZg==
+1 _USER VPz8NgVkVKK4hAdDoCjelHoK30qDF18Phh12zPZr7TOPsPKpkZJdNqvQ5+e+V6pJ6W5L+PxMP0tls3R/KKJrIA==
 2 _ENCR 1
 1 _CLON
 2 _TID 79060437
 2 _PID 44401676435
 2 _OID 9e1996b4-3d93-42af-ba2e-92ee997b3063
-2 _USER 0IhVsSbNsVv2c60+0LwYGoI116ixyATRGYb1cX0JNTW2/ckV4jfSUPUQt4t94tAhXpyn9b2KDetBBR2zyJ1Aog==
+2 _USER 3xIlmdMca6uSharhOq8fr5hSJWOqmpSVWF6/5eosTcHjpAMJIr/ijmHyXYTyLL7PUwbEuV8Rqbz6NihZ4JuNWg==
 3 _ENCR 1
 2 _DATE 2015-05-28 15:45:23.000
 1 _ORIG u
@@ -5071,7 +5202,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:27:14.946
-1 _USER 67OgeDwLIu9mSnmYvFTmIYPMhkRwgzbrKlOwC90LXELpdseDXNphZixfA6C5QNMjKF/W04aI0pd5IBIL/iUc8g==
+1 _USER cBZhnYdxyJOpnBTxuJxeNRrWIJ8rLZfAt1EQpNmWtWAqBhlVvingkjN1ZCR88G244AYSw4HRngwJLNwqjaaGrA==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -5088,7 +5219,7 @@
 1 _OID 925938c8-cb36-48bd-ad08-e20836a24630
 1 _META <metadataxml></metadataxml>
 1 _CREA 2026-04-07 16:32:20.469
-1 _USER 5AKlAkCrNQwZMMpQMmX43Mu/yeiunnmU1BBHQgsffux/ek5Rbl/ObUOBbM1WgOk59JFYvym4LYhOZ6YvlqQ+Ug==
+1 _USER RUkMnys7Ei8IRJcxXqyPyaahE7f5KWLeFuYI6dNnzcv2PPi7Xnfflm4ur82pn/o9WrZodfZicVwb9MqbOAmcqg==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL Y
@@ -5106,7 +5237,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:48.261
-1 _USER zAjRi/tvzUXU1vLQWRRnbL5VYV+1na2sNt5H+fOaWTFyW3hDBB0z5hb754GYaBxrhW8iIiMdHjuyYWdL4bHIVQ==
+1 _USER lqEThgKZ+SI4HB67/DifNNJhm+lEGm259Y95BLWzv0VmmMAE3IZ60tl7KA6a/eZisAnVs06NtvU2dGKS4YCwMQ==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -5121,13 +5252,13 @@
 2 TITL Ochs Family Crest
 1 _OID 99f9d6d6-1698-4342-aba1-9b6e4878e4a2
 1 _CREA 2020-09-08 23:12:13.000
-1 _USER YN92Juo51N4PikB/WTXScVa8m083CHT4LDMsnVtwF10qJ6yM5lINIcMEu5d+N3JEkqRzoYVlPWwUe5SSquZX2w==
+1 _USER AFdiyfL57zyqbMz0ur0EsGosvMdhCmw4pBjnWSk7rNBoRYupmL7dBHJ//K2xIs2QYUfpce5F9fDWp36tTmKAYA==
 2 _ENCR 1
 1 _CLON
 2 _TID 46275268
 2 _PID 6509052774
 2 _OID 1b3ad3fd-814f-493e-9c28-c8a4fbc2f6ca
-2 _USER 0VRUMQhyc2MEbDytWk8OGmqwrsoSj2e/ofkJRHE1GELk/PRGXrKeWbEFu+NItpEqBIiUU8el210P/AU9is1Wdw==
+2 _USER m/PZ4CMrtBur+LzNn+dus1QEgeRe9/VevgecQ+OGAIWocT5ggHhTWQgeeYs0Z7P6WELBsVWW+vBd/8ZioseZyw==
 3 _ENCR 1
 2 _DATE 2012-09-06 20:45:35.000
 1 _ORIG u
@@ -5144,13 +5275,13 @@
 1 _OID a49b27b5-5a01-4f48-8a89-de101bc4e1b4
 1 _META <metadataxml><cemetery /><transcription /></metadataxml>
 1 _CREA 2019-02-05 00:44:43.281
-1 _USER dNnjy3wk6cqhQZ9WFeoUnGy2TcLzvDLQyReeZodkHnc64g8158R0Yb8Tt/D5ZZ9w+t7Wuoa3Vc+h5LhKetHPqg==
+1 _USER HGRaFOta6OWYupzK0jbJbU+/xtdWiBGIn06pa+G0xr7AnfoKKX/lWVNfoq71oPgOB3F6yAAdkDJHqQ8TXhOjAg==
 2 _ENCR 1
 1 _CLON
 2 _TID 3290666
 2 _PID -1625127792
 2 _OID e01b48f8-dad7-42f6-8ff3-86a290ec3ba2
-2 _USER gMjO59yAjGtBzTe35tsHWKn09zykf2zrLgtzo12IdBak2kjkteGKzfQ9N0OF4an8+BdUbYfaMGNa56KHVbg/EQ==
+2 _USER lfUxa3x6ngcagJjJo7gI9Uf2LX2SGBzNQHaewy2PXD4tfeFD1B6L7kMGZSIADEWEA0F62ch9JSRfZl6/NtANLQ==
 3 _ENCR 1
 2 _DATE 2007-10-31 19:20:37.000
 1 _ORIG u
@@ -5167,13 +5298,13 @@
 1 _OID ba53c24a-d457-4b94-bb43-48928e487606
 1 DATE 1913
 1 _CREA 2018-11-24 17:41:52.512
-1 _USER AuYJwKeAR+h05Lo6Ae/4982GEzUxzs3d4jI6Cov5b8ve2QFngI23/v9Mmgvkry9JrruqsA/379QHPRGZ3sxHdw==
+1 _USER S2N62FMxey3KxZ1gBehVW9gVs5WOyOKUSDwQosrNBbXiebGlgjU717W/D9sngDctk95VaVgOpFEz65COvkga+Q==
 2 _ENCR 1
 1 _CLON
 2 _TID 10045005
 2 _PID 210024119499
 2 _OID 2ff2a489-0678-41fb-9194-6ef308db6c88
-2 _USER k7oEfgTZ3cEiodHOyr604WvHr5FD78VE90kwzHAjX2KKJpZUhC3YoldyebB+LNaolOknj6AwAKEOf6xFQxwa5w==
+2 _USER c/HKDTBL0FOnVDroBkmAmSlfCFHPByfjsq61ExgM5M6PSQCPFcNC7tgxN/5RMFuIoWvoP1ck+RMqCkNcgQORZw==
 3 _ENCR 1
 2 _DATE 2016-08-17 01:22:47.000
 1 _ORIG u
@@ -5192,13 +5323,13 @@
 1 DATE 18 Jun 1947, Wed
 1 PLAC Pittsburgh, Pennsylvania
 1 _CREA 2021-01-22 18:54:37.000
-1 _USER vLLZrfzj6L5Ljj+ZDhV4abAYUzmTJpe/7haPdRt+OQLSoEuuggnB14O2aDwHqO6vcx7L5mE01oMIqp3Msj+d8A==
+1 _USER S3ofTpZ2fShnxs+YrohCdOfq0vfheBbMkCE9UmaU+lh2m9wpZqiwUJ0EXFoxI+82auiFMauiDC+MwcMakeSlMg==
 2 _ENCR 1
 1 _CLON
 2 _TID 10045005
 2 _PID 210024682920
 2 _OID 5bbbf67c-3d42-45d3-92e2-c5d9f1c99a73
-2 _USER wuzB4T6OvFaYtpTxeoy4MIhdOTa1UTuzPeZvNUEipzzUMrew7Xw+/urkzSm+G39M2Ute0ivSRTuwRVvCgAqcsA==
+2 _USER v9VDuRse3dKta+YtxlSJOPKJAX4t7iexxS2WkpFpi5nhUUe2zdZpvcZIQluAfGf77fou9CvNM7SMXxkFg+X4SQ==
 3 _ENCR 1
 2 _DATE 2016-08-17 01:59:49.000
 1 _ORIG newspapers
@@ -5219,7 +5350,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:27:14.734
-1 _USER IU3kM2HV6dhroMue/ITY/2d8xQduC4QEXZ42Wypt9bUvbtXmQh7JAIB5fk52jiardUHGCmqTN5rrs7y2tm7VYw==
+1 _USER XjN0dhUiOzpQxiwICNQc34OHAA9NEEq6zgzo8XDm4miVdydO6+H4rwnbja+7qs1ZERxqKRxvVFDGMB1dbEJp7w==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -5237,7 +5368,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:48.174
-1 _USER 2fgXvwjXUeUr+SwDX0hRfTWgFT0LnimyNlmZHzZLfqLcmpBYG3bPAK4uMHVJwg68LPKdxeOUAMBmrNn0EVjwSA==
+1 _USER Z+bN1B/EnTFLpMB+4xTjJkFTeFJAfYWXj4D8tIQzhb2/allt5+P2QefAde6gPE/KepxVHOOQ5snbbqONNsLiQA==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -5255,7 +5386,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:48.279
-1 _USER 05CJJZcC7z/v7B5b0BC8mDMpP9p+kzBERtbt2oi3hvWGjlzpwTA6M+Lv0ENnl52kV7n0Mg/rQz6mA29sUIlr6w==
+1 _USER idQtcoOMy7edHn1KbrVmsAuA8PPLgbKU6dDn0q1o+Or+PrwInwbK+WHpuddWUzoh7o6OFfWa7kz4EMBTObaMaQ==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -5273,7 +5404,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:48.374
-1 _USER 0ZY2O6GClwymQnXQoD8Rl9tDMSsNS+K9PcCRTO/p4pCJKw9KDux7pj29e3ksKfhlHZ6i1/7xPwpzAyS1fYbvog==
+1 _USER ZumWkuYZW46u2LNhVlR+fYlwzvso0rD2J3E4u7bhBPfcY48443+5GiejtpVQm/yEOjUzV07ko+UdeHYkZ/pgIQ==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -5291,7 +5422,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:49.043
-1 _USER 4U2RexehdwGCmll/jLHvLsPFYnTpKF92b7T0xn5n6XoX5rBb7oeEKlMnDyOmPXqnlSYWziuYPs3OFBSAYjj3bg==
+1 _USER uRPzHzxh4rzm9BGE7BqZ+Bcd9YJFXl9HgTgEpjaho+vitgv1ZNXitj7d+4fCjvuG2wkuAXPz95TPBa8+37JN+w==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -5308,10 +5439,10 @@
 1 _OID d4daa42c-b593-49f2-bf18-4620a847b2c2
 1 _META <metadataxml></metadataxml>
 1 _CREA 2026-04-07 16:36:06.641
-1 _USER yQ0aW2KYeIvjIC1lf0ky8y+ouerg7a/Uv53IWH5rjJuye+lTh53ZNTB2tsCD8Z0rVTw3cv8Lj0kFRw4k3GP6FQ==
+1 _USER jsh2BMjDZcGBSSLaUtnuUvmYuuTrO+mexwu4uPhTW8C6T1qtcBIJYozICH51QPKfkKciJxo3hHLu+arqeFUbbg==
 2 _ENCR 1
 1 _CLON
-2 _USER d04jgbJi5ySKoijFWjy7wRmCXgHk1JnILElKAtXbnmc9VjdwqPhdWy4pitfHhy9lCve2NPTCIr7CXsZLMb85jQ==
+2 _USER VNvit6g8czex2JXknx/Y2eG44bQ8LiEWwL8w+eWPCjg54wkmTwfQLPTb9nV8QCJdR4SWyb7+QLEDTCmmZ0RCgA==
 3 _ENCR 1
 2 _DATE 2026-04-07 16:32:20.469
 1 _ORIG acom
@@ -5329,13 +5460,13 @@
 2 TITL Media0200
 1 _OID d54b2604-e558-4470-90f1-b589ef8c0bb4
 1 _CREA 2018-11-24 18:13:14.972
-1 _USER ag4h6ecoKi4rM3O76C7ke92kGFY62h/nv1ZDGM2u6GGA8oVEdFDubFwO6h7xMcxNDAp0x7kMwOKeb/e0NwIbbg==
+1 _USER sD7iWfwzylIYcZdgwoaaDT8gBC114kgbQbHhEwULcR60cf/8MNYQRhQfr2CBd1LCtxzQ8s+lBuVyBeTpm8/8ww==
 2 _ENCR 1
 1 _CLON
 2 _TID 108278092
 2 _PID 360063857305
 2 _OID 3526f7d6-1b73-4d25-ae41-c83c67fdd807
-2 _USER n6YoiVMLNjjhWYcv9L9vMWmyAThqRoScT1tV/t6yNFOeHLGs+z43oYNFh1zOE1jFpi8iYiPS2hqm1qr49QwIqQ==
+2 _USER Jp+thYdp6T4dDPJ2ZoLl/BrS+6stjM0VgzO+ZX08Obr8elvxO26bqN2kqIW6tUsN/NX6rel10zxtlduVQObM8A==
 3 _ENCR 1
 2 _DATE 2017-02-04 00:29:35.000
 1 _ORIG u
@@ -5353,13 +5484,13 @@
 1 _OID e3f53e27-4f15-43b8-a96d-3286799652da
 1 _META <metadataxml><cemetery /><transcription /></metadataxml>
 1 _CREA 2018-11-24 17:59:35.348
-1 _USER gbeQ8RtcBjundO9l4UFYNPCjo2xFJ8KYCDgHIiNkZJJjOOvpaJAG2nzOE+Ry/Guol7R/TAsrDTAsT7W86ft8sQ==
+1 _USER SPlLnDgkwrDMS69XVvxy0ZVTd1zJFgrvBHfeyNev+0gQZgIFLPnuqczrX7AtFwBAt31d9vQTH50RWokecXXXJw==
 2 _ENCR 1
 1 _CLON
 2 _TID 32576842
 2 _PID 18803225037
 2 _OID 3d181fb9-e6e8-4ebf-8ce2-c4d9bd6623e1
-2 _USER /2fHBOHqBCRJuJcMz78ZKRNpAPoOJb0T2UOyr0gTmF1muyes6T0v8CtfhZlEB+aiBKxCE8bYEU/qG0G2zzopvw==
+2 _USER +BxXmbRg3/SyGfxlHPlAyoCJvKrT1GJ1BSPgvymdpR0YACD86zAoAJYFmx8PvnvZh3qRXylLnfgmTjg0vceIhw==
 3 _ENCR 1
 2 _DATE 2012-04-04 20:13:07.000
 1 _ORIG u
@@ -5377,13 +5508,13 @@
 1 _OID e48c856a-0277-4a00-be6b-18ea3043b1a5
 1 PLAC St Joseph Lucinda PA
 1 _CREA 2021-01-22 19:17:46.000
-1 _USER 4UQC4s3YDIjeJ516+Lwk7bD2XQmqxVDCd4OSWE6f3jf+swVTAvKlJiRMFbSQjo9get6Y42VoUyaCXvSAutNcog==
+1 _USER m1fN4cRii3JoRFnMYbCQAmPPzKLfwPw6xczl4n6ShE/205qbYjPm0B2u+rmcWNbZZThA12uaHMkxvFBTolZBdg==
 2 _ENCR 1
 1 _CLON
 2 _TID 6065188
 2 _PID 304118361
 2 _OID aaa0b0e5-97f7-4e87-9d4a-911fe3ddd092
-2 _USER 75Zj72FF4eDfm1Yoa2bza9TzlFepAl/8pz9XgHGC9mk4Z6B0YLw90GoWQir1UFLWN0fmG35BrLuRuTWRkxYRZg==
+2 _USER S0Y33dGiEdY8n3tRwTr99/Di3HxvCQ0nhYHpRbiHtlZOLfj61MVfSHuoRN+lFRC+xTfVPNM4kEM2APf0BWvv8A==
 3 _ENCR 1
 2 _DATE 2017-01-14 06:52:59.000
 1 _ORIG u
@@ -5400,13 +5531,13 @@
 1 _OID e68acff8-003e-431e-a3bd-ef58e67cf7da
 1 DATE 6/5/2014 11:13:14 PM
 1 _CREA 2018-12-28 04:32:10.525
-1 _USER ZOZeOW01mPHLe200Q5PrWrA74YxCXY0WSkGyMMhd0bWC0owb3iUZJq3K2uTI4XGuP4mz4s2pXoC3wcDPHzkCRw==
+1 _USER RhhFJFZrI9K5ZpLkJw6wfGZwTU9sKalxKCRoKlgOtbXmj47URqxgilqyAgrNzri+avJj1hoB1QdQp02rIS6+Dg==
 2 _ENCR 1
 1 _CLON
 2 _TID 43572778
 2 _PID 13922357764
 2 _OID 3beb75a6-c243-434a-b58f-ea93f49b3a7f
-2 _USER Sn/vHPpFUNpN1OIk59YymKWe2vZxH4srwdsaWdWmci78j6TG+iC4SC/dMiOcPRlOptzU+mTwAomqRtAmKM0dsw==
+2 _USER KN/H9TJEaonUU6g6nmla+pma9AB/EB4/fziTwG8mpb9jVVw0b2WGnwyR4/U1byYgrYAdh4ks1GGJJrL612H8kQ==
 3 _ENCR 1
 2 _DATE 2014-06-06 04:29:42.000
 1 _ORIG u
@@ -5425,7 +5556,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:48.090
-1 _USER qASvCF1aDep0CAq/QD0FGh19egc1gcq2uWnCiku4G1u243HCnu3/7L/CFhdFu/76IZ5Yuc/kl6yWRav6HGIbSA==
+1 _USER RG1QfMzpvPGDnsOMyX+YPyU3FMJ+b5FmuQxd0hfQfoFGkku8LjvNNXbRX/1VPVamGtpPn1AQoaU0Wb2UpBabHQ==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -5443,7 +5574,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:48.095
-1 _USER IeyeaSgakaADUd97SnbQneEOjQJG+R90uVSqwVWVUASQb5db4iJMk08xvHOW4v3R8i7zenM5DX5apc3raQjDQQ==
+1 _USER x1x/pbb6h0bHWKlxMCbuJZqhNcRvZx2znlMqFg/jEzjOIUkpU4Z2R5bjvLkHokkAMmJpRu16l8ASaWgAfr55rQ==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -5461,7 +5592,7 @@
 1 _DSCR "U.S., School Yearbooks, 1880-2012"; School Name: Penn Township High School; Year: 1950
 1 _META <metadataxml><record_source_gid>1308024950:1265</record_source_gid></metadataxml>
 1 _CREA 2020-08-10 04:03:19.000
-1 _USER b/BSYttyvGItacApDngpKZkCbAVFT971TJyDjBE47y9r4JDOpAvF4YnSw173IsWLBblYHfXRVnGob9Tn6UjR6Q==
+1 _USER CrPLu5f3mUPU5P483xcQRtGH37oVHX8b8Pd4+QIpBs+jpRB+KH3Qa2ul/6VzqETMWR8TmO/NXzm+83PETblb3g==
 2 _ENCR 1
 1 _ORIG u
 1 _ATL Y
@@ -5479,13 +5610,13 @@
 1 DATE 23 Oct 1929, Wed
 1 PLAC Pittsburgh, Pennsylvania
 1 _CREA 2018-12-08 21:51:28.895
-1 _USER foV4CzUYvrXpLRrPvHNZaGZAGr6OQuuvKbnH6FfDxiAWBIreW1WOyvfhHZEgEdefLd0JdueEClvZcMxv6EL/9Q==
+1 _USER C86Yf4avUNE8Xfxb0Ow9eFLxNdAal+TGWMbpmEKZy/9k5fE6hbtQ9JSJcanwiEExhQpNMxRZCD14Qlwdy8orTw==
 2 _ENCR 1
 1 _CLON
 2 _TID 10045005
 2 _PID 210024198232
 2 _OID e1f11d93-c3cc-4c1d-b326-9ef884a9aadb
-2 _USER GQ2lxcWt/r4Zk9zmz7yppGdpzvZyD3aO7+lGNly+9QDj69RvkPXZrVJGniZyaymir5qThluVZ5jegb0XaCGW1g==
+2 _USER Q26SrRLzZksVlBFndE2xWDvq7ZWB7VeJsCmdWKjqV+0tqyzMCguOdcwLcrz3kpXTVFbvfNhGEmXCLmW+zfPbUA==
 3 _ENCR 1
 2 _DATE 2016-08-14 01:12:21.000
 1 _ORIG newspapers
