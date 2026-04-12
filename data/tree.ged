@@ -12,8 +12,8 @@
 3 ADDR 1300 West Traverse Parkway
 4 CONT Lehi, UT  84043
 4 CONT USA
-1 DATE 11 Apr 2026
-2 TIME 19:00:01
+1 DATE 12 Apr 2026
+2 TIME 13:30:02
 1 GEDC
 2 VERS 5.5.1
 2 FORM LINEAGE-LINKED
@@ -257,7 +257,7 @@
 2 _APID 1,61843::377553020
 1 SOUR @S1603543043@
 2 _APID 1,70050::18688084
-1 OBJE @O14@
+1 OBJE @O17@
 0 @I412054722977@ INDI
 1 NAME Esther /Bleichner/
 2 GIVN Esther
@@ -367,7 +367,8 @@
 2 _APID 1,62116::20759401
 1 SOUR @S1603543181@
 2 _APID 1,70497::203071
-1 OBJE @O30@
+1 OBJE @O17@
+1 OBJE @O40@
 0 @I412054723016@ INDI
 1 NAME Laurence /Bleichner/
 2 GIVN Laurence
@@ -405,7 +406,7 @@
 2 _APID 1,6482::25939699
 1 SOUR @S1582737838@
 2 _APID 1,7602::51561640
-1 OBJE @O44@
+1 OBJE @O59@
 2 _PRIM Y
 0 @I412054723056@ INDI
 1 NAME Esther /Fuchs/
@@ -520,9 +521,9 @@
 1 SOUR @S1598899878@
 2 PAGE Pennsylvania Historical and Museum Commission; Harrisburg, Pennsylvania; Pennsylvania County Marriages, 1852-1973; County: Allegheny; Year Range: 1892; Roll Number: 549761
 2 _APID 1,61324::86729
-1 OBJE @O29@
+1 OBJE @O39@
 2 _PRIM Y
-1 OBJE @O18@
+1 OBJE @O24@
 1 OBJE @O4@
 0 @I412054724162@ INDI
 1 NAME Jacob J /Fuchs/
@@ -634,7 +635,7 @@
 2 _APID 1,7884::101865208
 1 SOUR @S1603901329@
 2 _APID 1,60484::2466851
-1 OBJE @O21@
+1 OBJE @O27@
 0 @I412054724445@ INDI
 1 NAME Gertrude Genevieve /Fuchs/
 2 GIVN Gertrude Genevieve
@@ -774,10 +775,10 @@
 1 SOUR @S1598899878@
 2 PAGE Pennsylvania Historical and Museum Commission; Harrisburg, Pennsylvania; Pennsylvania County Marriages, 1852-1973; County: Allegheny; Year Range: 1892; Roll Number: 549761
 2 _APID 1,61324::900086729
-1 OBJE @O38@
+1 OBJE @O52@
 2 _PRIM Y
 1 OBJE @O5@
-1 OBJE @O15@
+1 OBJE @O18@
 1 OBJE @O3@
 0 @I412054726073@ INDI
 1 NAME Samuel Earnest /Heasley/
@@ -864,7 +865,7 @@
 2 _APID 1,9279::116386125
 1 SOUR @S1580498962@
 2 _APID 1,60525::121307845
-1 OBJE @O37@
+1 OBJE @O51@
 2 _PRIM Y
 0 @I412054726931@ INDI
 1 NAME Catherine E /Yinger/
@@ -1081,7 +1082,7 @@
 3 _APID 1,60525::143235426
 1 SOUR @S1580498962@
 2 _APID 1,60525::143235426
-1 OBJE @O40@
+1 OBJE @O54@
 2 _PRIM Y
 0 @I412063905711@ INDI
 1 NAME Antoine /Soulier/
@@ -1107,7 +1108,7 @@
 3 _APID 1,60525::143235789
 1 SOUR @S1580498962@
 2 _APID 1,60525::143235789
-1 OBJE @O13@
+1 OBJE @O15@
 2 _PRIM Y
 0 @I412066424299@ INDI
 1 NAME Mary /Nieder/
@@ -1412,7 +1413,7 @@
 1 SOUR @S1581627428@
 2 PAGE Year: 1940; Census Place: Penn, Westmoreland, Pennsylvania; Roll: m-t0627-03636; Page: 2A; Enumeration District: 65-175
 2 _APID 1,2442::19785274
-1 OBJE @O43@
+1 OBJE @O57@
 2 _PRIM Y
 2 _CROP
 3 _LEFT 0
@@ -1539,14 +1540,15 @@
 1 SOUR @S1582737903@
 2 _APID 1,61381::903076176
 0 @I412076080608@ INDI
-1 NAME Unknown /Yinger/
-2 GIVN Unknown
+1 NAME Brice Martin /Yinger/
+2 GIVN Brice Martin
 2 SURN Yinger
 1 SEX M
-1 FAMC @F68@
 1 FAMS @F7@
+1 BIRT
+2 DATE 1861
 1 DEAT
-2 DATE 1897
+2 DATE 1957
 1 SOUR @S1582737802@
 2 PAGE Ancestry Family Tree
 2 _APID 34307352065:1030:73458282
@@ -2605,7 +2607,7 @@
 2 GIVN Kevin Mathew
 2 SURN Lavelle
 1 SEX M
-1 FAMC @F69@
+1 FAMC @F68@
 1 FAMS @F56@
 1 BIRT
 2 DATE 1/7/76
@@ -2620,7 +2622,7 @@
 1 BIRT
 2 DATE 2/21/75
 2 PLAC Pittsburgh, Allegheny County, Pennsylvania, United States of America
-1 OBJE @O25@
+1 OBJE @O32@
 2 _PRIM Y
 2 _CROP
 3 _LEFT 0
@@ -2628,12 +2630,19 @@
 3 _WDTH 288
 3 _HGHT 288
 3 _TYPE primary
-1 OBJE @O36@
+1 OBJE @O31@
 2 _CROP
-3 _LEFT 103
-3 _TOP -29
-3 _WDTH 288
-3 _HGHT 288
+3 _LEFT 1924
+3 _TOP 1155
+3 _WDTH 399
+3 _HGHT 399
+3 _TYPE standard
+1 OBJE @O50@
+2 _CROP
+3 _LEFT 27
+3 _TOP 24
+3 _WDTH 125
+3 _HGHT 125
 3 _TYPE primary
 0 @I412076094944@ INDI
 1 NAME Ashlyn Marie /Lavelle/
@@ -2677,7 +2686,7 @@
 1 DEAT
 2 DATE 16 Oct 1960
 2 PLAC Harrison City, Westmoreland, Pennsylvania, USA
-1 OBJE @O19@
+1 OBJE @O25@
 2 _PRIM Y
 0 @I412077347651@ INDI
 1 NAME Pauline C F /Schmidt BAUER/
@@ -2713,7 +2722,7 @@
 1 SOUR @S1582847621@
 2 PAGE Year: 1881; Arrival: New York, New York; Microfilm Serial: M237, 1820-1897; Microfilm Roll: Roll 441; Line: 5; List Number: 1242
 2 _APID 1,7488::11468577
-1 OBJE @O28@
+1 OBJE @O37@
 2 _PRIM Y
 0 @I412077349355@ INDI
 1 NAME Felix /Ochsner/
@@ -2749,12 +2758,6 @@
 2 DATE 1540
 1 DEAT
 2 DATE 1592
-0 @I412077352394@ INDI
-1 NAME Brice M /Yinger/
-2 GIVN Brice M
-2 SURN Yinger
-1 SEX M
-1 FAMS @F68@
 0 @I412217321395@ INDI
 1 NAME Rebecca Ann /Behun/
 2 GIVN Rebecca Ann
@@ -2765,7 +2768,7 @@
 1 BIRT
 2 DATE 29 Nov 1950
 2 PLAC Latrobe, Westmoreland, Pennsylvania, USA
-1 OBJE @O12@
+1 OBJE @O14@
 2 _PRIM Y
 2 _CROP
 3 _LEFT 143
@@ -2985,9 +2988,9 @@
 3 _APID 1,5164::606403282
 1 SOUR @S1581408971@
 2 _APID 1,5164::606403282
-1 OBJE @O27@
+1 OBJE @O35@
 2 _PRIM Y
-1 OBJE @O39@
+1 OBJE @O53@
 0 @I412224920773@ INDI
 1 NAME Elizabeth /Schill/
 2 GIVN Elizabeth
@@ -3025,7 +3028,7 @@
 2 DATE 11 Sep 1938
 1 SOUR @S1582737838@
 2 _APID 1,7602::51883786
-1 OBJE @O22@
+1 OBJE @O29@
 0 @I412260088210@ INDI
 1 NAME Susanne A /Snyder/
 2 GIVN Susanne A
@@ -3060,7 +3063,7 @@
 3 _APID 1,5164::604814411
 1 SOUR @S1581408971@
 2 _APID 1,5164::604814411
-1 OBJE @O9@
+1 OBJE @O11@
 2 _PRIM Y
 0 @I412260106684@ INDI
 1 NAME Elizabeth /Schmidt/
@@ -3117,14 +3120,14 @@
 1 DEAT
 2 DATE 1890
 2 PLAC Herman Station, Butler, Pennsylvania, USA
-1 OBJE @O23@
+1 OBJE @O30@
 2 _PRIM Y
 0 @I412260252734@ INDI
 1 NAME Lawrence /Lavelle/
 2 GIVN Lawrence
 2 SURN Lavelle
 1 SEX M
-1 FAMS @F69@
+1 FAMS @F68@
 0 @I412261827213@ INDI
 1 NAME Arthur Charles /Fuchs/
 2 GIVN Arthur Charles
@@ -3573,21 +3576,58 @@
 1 BIRT
 2 DATE 5 May 1931
 2 PLAC Pennsylvania, USA
+1 OBJE @O9@
+2 _PRIM Y
+2 _CROP
+3 _LEFT 770
+3 _TOP 743
+3 _WDTH 406
+3 _HGHT 406
+3 _TYPE primary
 0 @I412771172650@ INDI
 1 NAME Michael /Behun/ Jr
 2 GIVN Michael
 2 SURN Behun
 2 NSFX Jr
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Michael Behun Jr., Memorial ID 81759416
+3 DATA
+4 WWW https://www.findagrave.com/memorial/81759416/michael-behun
+3 OBJE @O44@
 1 SEX M
 1 FAMC @F63@
 1 FAMS @F38@
 1 BIRT
 2 DATE 17 May 1927
-2 PLAC Westmoreland County, Pennsylvania, USA
+2 PLAC Salem Township, Westmoreland County, Pennsylvania, United States of America
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Michael Behun Jr., Memorial ID 81759416
+3 DATA
+4 WWW https://www.findagrave.com/memorial/81759416/michael-behun
+3 OBJE @O44@
 1 DEAT
 2 DATE 8 Dec 2011
 2 PLAC Greensburg, Westmoreland, Pennsylvania, USA
-1 OBJE @O41@
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Michael Behun Jr., Memorial ID 81759416
+3 DATA
+4 WWW https://www.findagrave.com/memorial/81759416/michael-behun
+3 OBJE @O44@
+1 BURI
+2 PLAC Delmont, Westmoreland County, Pennsylvania, United States of America
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Michael Behun Jr., Memorial ID 81759416
+3 DATA
+4 WWW https://www.findagrave.com/memorial/81759416/michael-behun
+3 OBJE @O44@
+2 OBJE @O44@
+2 NOTE Cemetery: Twin Valley Memorial Park and Mausoleum
+1 SOUR @S1677610451@
+2 PAGE Memorial page for Michael Behun Jr., Memorial ID 81759416
+2 DATA
+3 WWW https://www.findagrave.com/memorial/81759416/michael-behun
+2 OBJE @O44@
+1 OBJE @O55@
 2 _PRIM Y
 2 _CROP
 3 _LEFT 61
@@ -3595,21 +3635,75 @@
 3 _WDTH 558
 3 _HGHT 558
 3 _TYPE primary
-1 OBJE @O17@
-1 OBJE @O8@
-1 OBJE @O35@
-1 OBJE @O34@
+1 OBJE @O44@
+1 OBJE @O23@
+2 _CROP
+3 _LEFT 10
+3 _TOP 93
+3 _WDTH 361
+3 _HGHT 361
+3 _TYPE primary
+1 OBJE @O9@
+2 _CROP
+3 _LEFT 1657
+3 _TOP 296
+3 _WDTH 474
+3 _HGHT 474
+3 _TYPE standard
+1 OBJE @O49@
+2 _CROP
+3 _LEFT 1187
+3 _TOP 308
+3 _WDTH 237
+3 _HGHT 237
+3 _TYPE primary
+1 OBJE @O48@
+2 _CROP
+3 _LEFT 115
+3 _TOP 30
+3 _WDTH 63
+3 _HGHT 63
+3 _TYPE primary
 1 OBJE @O1@
+2 _CROP
+3 _LEFT 140
+3 _TOP 64
+3 _WDTH 103
+3 _HGHT 103
+3 _TYPE primary
+1 OBJE @O46@
+2 _CROP
+3 _LEFT 289
+3 _TOP 212
+3 _WDTH 82
+3 _HGHT 82
+3 _TYPE primary
+1 OBJE @O13@
+2 _CROP
+3 _LEFT 250
+3 _TOP 244
+3 _WDTH 109
+3 _HGHT 109
+3 _TYPE primary
 1 OBJE @O33@
-1 OBJE @O11@
-1 OBJE @O26@
-1 OBJE @O10@
-1 OBJE @O32@
-1 OBJE @O42@
+2 _CROP
+3 _LEFT 341
+3 _TOP 146
+3 _WDTH 58
+3 _HGHT 58
+3 _TYPE primary
+1 OBJE @O12@
+1 OBJE @O45@
+1 OBJE @O56@
 0 @I412771173007@ INDI
 1 NAME Blanche /Dziadosz/
 2 GIVN Blanche
 2 SURN Dziadosz
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Blanche Dziadosz Shaheen, Memorial ID 79676470
+3 DATA
+4 WWW https://www.findagrave.com/memorial/79676470/blanche-shaheen
+3 OBJE @O20@
 1 NAME Bernice /Dziadosz/
 2 GIVN Bernice
 2 SURN Dziadosz
@@ -3622,10 +3716,34 @@
 1 BIRT
 2 DATE 21 Jan 1918
 2 PLAC Pittsburgh, Allegheny, Pennsylvania, USA
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Blanche Dziadosz Shaheen, Memorial ID 79676470
+3 DATA
+4 WWW https://www.findagrave.com/memorial/79676470/blanche-shaheen
+3 OBJE @O20@
 1 DEAT
 2 DATE 6 Jan 2009
 2 PLAC Pittsburgh, Allegheny, Pennsylvania, USA
-1 OBJE @O16@
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Blanche Dziadosz Shaheen, Memorial ID 79676470
+3 DATA
+4 WWW https://www.findagrave.com/memorial/79676470/blanche-shaheen
+3 OBJE @O20@
+1 BURI
+2 PLAC Clairton, Allegheny County, Pennsylvania, United States of America
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Blanche Dziadosz Shaheen, Memorial ID 79676470
+3 DATA
+4 WWW https://www.findagrave.com/memorial/79676470/blanche-shaheen
+3 OBJE @O20@
+2 OBJE @O20@
+2 NOTE Cemetery: Saint Clare of Assisi Cemetery
+1 SOUR @S1677610451@
+2 PAGE Memorial page for Blanche Dziadosz Shaheen, Memorial ID 79676470
+2 DATA
+3 WWW https://www.findagrave.com/memorial/79676470/blanche-shaheen
+2 OBJE @O20@
+1 OBJE @O21@
 2 _PRIM Y
 2 _CROP
 3 _LEFT 108
@@ -3633,10 +3751,29 @@
 3 _WDTH 838
 3 _HGHT 838
 3 _TYPE primary
-1 OBJE @O24@
-1 OBJE @O7@
-1 OBJE @O31@
 1 OBJE @O20@
+1 OBJE @O31@
+2 _CROP
+3 _LEFT 1292
+3 _TOP 203
+3 _WDTH 343
+3 _HGHT 343
+3 _TYPE primary
+1 OBJE @O8@
+2 _CROP
+3 _LEFT 284
+3 _TOP 203
+3 _WDTH 233
+3 _HGHT 233
+3 _TYPE primary
+1 OBJE @O41@
+2 _CROP
+3 _LEFT 412
+3 _TOP 80
+3 _WDTH 190
+3 _HGHT 190
+3 _TYPE primary
+1 OBJE @O26@
 0 @I412771174434@ INDI
 1 NAME Abraham Elias /Shaheen/
 2 GIVN Abraham Elias
@@ -3650,6 +3787,15 @@
 1 DEAT
 2 DATE 13 Apr 1983
 2 PLAC Clairton, Allegheny, Pennsylvania, USA
+1 OBJE @O8@
+2 _PRIM Y
+2 _CROP
+3 _LEFT 775
+3 _TOP 142
+3 _WDTH 240
+3 _HGHT 240
+3 _TYPE primary
+1 OBJE @O20@
 0 @I412771174611@ INDI
 1 NAME Jill Marie /Shaheen/
 2 GIVN Jill Marie
@@ -3660,19 +3806,64 @@
 1 BIRT
 2 DATE 9 Sep 1977
 2 PLAC Pittsburgh PA
+1 OBJE @O33@
+2 _PRIM Y
+2 _CROP
+3 _LEFT 257
+3 _TOP 209
+3 _WDTH 50
+3 _HGHT 50
+3 _TYPE primary
+1 OBJE @O31@
+2 _CROP
+3 _LEFT 190
+3 _TOP 1105
+3 _WDTH 386
+3 _HGHT 386
+3 _TYPE standard
 0 @I412771175855@ INDI
 1 NAME Michael /Behun/
 2 GIVN Michael
 2 SURN Behun
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Michael Behun, Memorial ID 73144916
+3 DATA
+4 WWW https://www.findagrave.com/memorial/73144916/michael-behun
+3 OBJE @O42@
 1 SEX M
 1 FAMC @F8@
 1 FAMS @F63@
 1 BIRT
 2 DATE 18 Mar 1887
 2 PLAC Ukraine
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Michael Behun, Memorial ID 73144916
+3 DATA
+4 WWW https://www.findagrave.com/memorial/73144916/michael-behun
+3 OBJE @O42@
 1 DEAT
 2 DATE 12 Apr 1964
-2 PLAC Export, Westmoreland, Pennsylvania, USA
+2 PLAC Greensburg, Westmoreland County, Pennsylvania, United States of America
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Michael Behun, Memorial ID 73144916
+3 DATA
+4 WWW https://www.findagrave.com/memorial/73144916/michael-behun
+3 OBJE @O42@
+1 BURI
+2 PLAC Export, Westmoreland County, Pennsylvania, United States of America
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Michael Behun, Memorial ID 73144916
+3 DATA
+4 WWW https://www.findagrave.com/memorial/73144916/michael-behun
+3 OBJE @O42@
+2 OBJE @O42@
+2 NOTE Cemetery: Grandview Cemetery
+1 SOUR @S1677610451@
+2 PAGE Memorial page for Michael Behun, Memorial ID 73144916
+2 DATA
+3 WWW https://www.findagrave.com/memorial/73144916/michael-behun
+2 OBJE @O42@
+1 OBJE @O42@
 0 @I412771175899@ INDI
 1 NAME Eva Julia /Pylpzak/
 2 GIVN Eva Julia
@@ -3713,31 +3904,62 @@
 2 DATE 1965
 2 PLAC Clairton, Allegheny, Pennsylvania, USA
 0 @I412771176404@ INDI
-1 NAME John /Dziadosz/
-2 GIVN John
+1 NAME Jan /Dziadosz/
+2 GIVN Jan
 2 SURN Dziadosz
 1 SEX M
 1 FAMC @F58@
 1 FAMS @F57@
 1 BIRT
-2 DATE 1878
+2 DATE 15 Feb 1888
 2 PLAC Poland
 1 DEAT
-2 DATE 21 Jan 1950
+2 DATE 19 Jul 1940
 2 PLAC Glassport, Allegheny, Pennsylvania, USA
+1 OBJE @O58@
 0 @I412771176429@ INDI
-1 NAME Mary /Sowa/
-2 GIVN Mary
+1 NAME Maryanna /Sowa/
+2 GIVN Maryanna
 2 SURN Sowa
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Maryanna Dziadosz, Memorial ID 23025745
+3 DATA
+4 WWW https://www.findagrave.com/memorial/23025745/maryanna-dziadosz
+3 OBJE @O58@
 1 SEX F
 1 FAMC @F46@
 1 FAMS @F57@
 1 BIRT
-2 DATE 1884
+2 DATE 5 Sep 1890
 2 PLAC Poland
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Maryanna Dziadosz, Memorial ID 23025745
+3 DATA
+4 WWW https://www.findagrave.com/memorial/23025745/maryanna-dziadosz
+3 OBJE @O58@
 1 DEAT
-2 DATE 1968
+2 DATE Mar 1978
 2 PLAC Glassport, Allegheny, Pennsylvania, USA
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Maryanna Dziadosz, Memorial ID 23025745
+3 DATA
+4 WWW https://www.findagrave.com/memorial/23025745/maryanna-dziadosz
+3 OBJE @O58@
+1 BURI
+2 PLAC Carrick, Allegheny County, Pennsylvania, United States of America
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Maryanna Dziadosz, Memorial ID 23025745
+3 DATA
+4 WWW https://www.findagrave.com/memorial/23025745/maryanna-dziadosz
+3 OBJE @O58@
+2 OBJE @O58@
+2 NOTE Cemetery: Saint Adalbert's Cemetery
+1 SOUR @S1677610451@
+2 PAGE Memorial page for Maryanna Dziadosz, Memorial ID 23025745
+2 DATA
+3 WWW https://www.findagrave.com/memorial/23025745/maryanna-dziadosz
+2 OBJE @O58@
+1 OBJE @O58@
 0 @I412771176534@ INDI
 1 NAME Anna Elizabeth /Mihalik/
 2 GIVN Anna Elizabeth
@@ -3755,27 +3977,88 @@
 1 NAME George /Sutyak/
 2 GIVN George
 2 SURN Sutyak
+2 SOUR @S1677610451@
+3 PAGE Memorial page for George Sutyak, Memorial ID 231038052
+3 DATA
+4 WWW https://www.findagrave.com/memorial/231038052/george-sutyak
+3 OBJE @O38@
 1 SEX M
 1 FAMC @F17@
 1 FAMS @F9@
 1 BIRT
 2 DATE 11 Dec 1909
-2 PLAC Pennsylvania, USA
+2 PLAC Jefferson County, Pennsylvania, USA
+2 SOUR @S1677610451@
+3 PAGE Memorial page for George Sutyak, Memorial ID 231038052
+3 DATA
+4 WWW https://www.findagrave.com/memorial/231038052/george-sutyak
+3 OBJE @O38@
 1 DEAT
 2 DATE 13 Aug 1990
-2 PLAC Pennsylvania, USA
+2 PLAC Saltsburg, Indiana County, Pennsylvania, United States of America
+2 SOUR @S1677610451@
+3 PAGE Memorial page for George Sutyak, Memorial ID 231038052
+3 DATA
+4 WWW https://www.findagrave.com/memorial/231038052/george-sutyak
+3 OBJE @O38@
+1 BURI
+2 PLAC Saltsburg, Indiana County, Pennsylvania, United States of America
+2 SOUR @S1677610451@
+3 PAGE Memorial page for George Sutyak, Memorial ID 231038052
+3 DATA
+4 WWW https://www.findagrave.com/memorial/231038052/george-sutyak
+3 OBJE @O38@
+2 OBJE @O38@
+2 NOTE Cemetery: Saint Matthew's Cemetery
+1 SOUR @S1677610451@
+2 PAGE Memorial page for George Sutyak, Memorial ID 231038052
+2 DATA
+3 WWW https://www.findagrave.com/memorial/231038052/george-sutyak
+2 OBJE @O38@
+1 OBJE @O38@
 0 @I412771176999@ INDI
 1 NAME Peter /Sutyak/
 2 GIVN Peter
 2 SURN Sutyak
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Peter “Pete” Sutyak, Memorial ID 218110268
+3 DATA
+4 WWW https://www.findagrave.com/memorial/218110268/peter-sutyak
+3 OBJE @O60@
 1 SEX M
 1 FAMC @F65@
 1 FAMS @F17@
 1 BIRT
-2 DATE 1870
-2 PLAC Csircs, Malopolskie, Poland
+2 DATE 07 Jul 1870
+2 PLAC Circ, okres Stará Ľubovňa, Prešovský, Slovakia
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Peter “Pete” Sutyak, Memorial ID 218110268
+3 DATA
+4 WWW https://www.findagrave.com/memorial/218110268/peter-sutyak
+3 OBJE @O60@
 1 DEAT
-2 DATE 1927
+2 DATE 11 Aug 1927
+2 PLAC Conemaugh Township, Indiana County, Pennsylvania, United States of America
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Peter “Pete” Sutyak, Memorial ID 218110268
+3 DATA
+4 WWW https://www.findagrave.com/memorial/218110268/peter-sutyak
+3 OBJE @O60@
+1 BURI
+2 PLAC Saltsburg, Indiana County, Pennsylvania, United States of America
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Peter “Pete” Sutyak, Memorial ID 218110268
+3 DATA
+4 WWW https://www.findagrave.com/memorial/218110268/peter-sutyak
+3 OBJE @O60@
+2 OBJE @O60@
+2 NOTE Cemetery: Saint Matthew's Cemetery
+1 SOUR @S1677610451@
+2 PAGE Memorial page for Peter “Pete” Sutyak, Memorial ID 218110268
+2 DATA
+3 WWW https://www.findagrave.com/memorial/218110268/peter-sutyak
+2 OBJE @O60@
+1 OBJE @O60@
 0 @I412771177028@ INDI
 1 NAME Maria /Kovalik/
 2 GIVN Maria
@@ -3805,75 +4088,260 @@
 2 DATE 24 Jun 1959
 2 PLAC Latrobe, Westmoreland, Pennsylvania, USA
 0 @I412771177291@ INDI
-1 NAME Theresa /Dziadosz/
-2 GIVN Theresa
+1 NAME Theresa Marie /Dziadosz/
+2 GIVN Theresa Marie
 2 SURN Dziadosz
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Theresa Marie Dziadosz Rattay, Memorial ID 99998536
+3 DATA
+4 WWW https://www.findagrave.com/memorial/99998536/theresa_marie-rattay
+3 OBJE @O36@
 1 SEX F
 1 FAMC @F57@
 1 FAMS @F25@
 1 BIRT
-2 DATE 1929
+2 DATE 2 Oct 1929
 2 PLAC Glassport, Allegheny, Pennsylvania, USA
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Theresa Marie Dziadosz Rattay, Memorial ID 99998536
+3 DATA
+4 WWW https://www.findagrave.com/memorial/99998536/theresa_marie-rattay
+3 OBJE @O36@
 1 DEAT
-2 DATE 2012
+2 DATE 30 Jul 1994
+2 PLAC Pittsburgh, Allegheny, Pennsylvania, USA
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Theresa Marie Dziadosz Rattay, Memorial ID 99998536
+3 DATA
+4 WWW https://www.findagrave.com/memorial/99998536/theresa_marie-rattay
+3 OBJE @O36@
+1 BURI
+2 PLAC Pittsburgh, Allegheny County, Pennsylvania, United States of America
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Theresa Marie Dziadosz Rattay, Memorial ID 99998536
+3 DATA
+4 WWW https://www.findagrave.com/memorial/99998536/theresa_marie-rattay
+3 OBJE @O36@
+2 OBJE @O36@
+2 NOTE Cemetery: Saint Michaels Cemetery
+1 SOUR @S1677610451@
+2 PAGE Memorial page for Theresa Marie Dziadosz Rattay, Memorial ID 99998536
+2 DATA
+3 WWW https://www.findagrave.com/memorial/99998536/theresa_marie-rattay
+2 OBJE @O36@
+1 OBJE @O36@
 0 @I412771177306@ INDI
 1 NAME Helen /Dziadosz/
 2 GIVN Helen
 2 SURN Dziadosz
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Helen Dziadosz Smyczek, Memorial ID 23025628
+3 DATA
+4 WWW https://www.findagrave.com/memorial/23025628/helen-smyczek
+3 OBJE @O28@
 1 SEX F
 1 FAMC @F57@
 1 FAMS @F15@
 1 BIRT
-2 DATE 1906
+2 DATE 22 Sep 1915
+2 PLAC Pennsylvania, USA
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Helen Dziadosz Smyczek, Memorial ID 23025628
+3 DATA
+4 WWW https://www.findagrave.com/memorial/23025628/helen-smyczek
+3 OBJE @O28@
 1 DEAT
-2 DATE 2004
+2 DATE 17 Jan 2006
+2 PLAC Pittsburgh, Allegheny County, Pennsylvania, USA
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Helen Dziadosz Smyczek, Memorial ID 23025628
+3 DATA
+4 WWW https://www.findagrave.com/memorial/23025628/helen-smyczek
+3 OBJE @O28@
+1 BURI
+2 PLAC Carrick, Allegheny County, Pennsylvania, United States of America
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Helen Dziadosz Smyczek, Memorial ID 23025628
+3 DATA
+4 WWW https://www.findagrave.com/memorial/23025628/helen-smyczek
+3 OBJE @O28@
+2 OBJE @O28@
+2 NOTE Cemetery: Saint Adalbert's Cemetery
+1 SOUR @S1677610451@
+2 PAGE Memorial page for Helen Dziadosz Smyczek, Memorial ID 23025628
+2 DATA
+3 WWW https://www.findagrave.com/memorial/23025628/helen-smyczek
+2 OBJE @O28@
+1 OBJE @O28@
 0 @I412771177312@ INDI
 1 NAME Edward /Dziadosz/
 2 GIVN Edward
 2 SURN Dziadosz
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Edward Dziadosz, Memorial ID 23025759
+3 DATA
+4 WWW https://www.findagrave.com/memorial/23025759/edward-dziadosz
+3 OBJE @O43@
 1 SEX M
 1 FAMC @F57@
 1 BIRT
-2 DATE 1910
+2 DATE 29 Nov 1913
 2 PLAC Glassport, Allegheny, Pennsylvania, USA
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Edward Dziadosz, Memorial ID 23025759
+3 DATA
+4 WWW https://www.findagrave.com/memorial/23025759/edward-dziadosz
+3 OBJE @O43@
 1 DEAT
-2 DATE 1989
+2 DATE 8 Aug 1997
+2 PLAC Pittsburgh, Allegheny, Pennsylvania, USA
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Edward Dziadosz, Memorial ID 23025759
+3 DATA
+4 WWW https://www.findagrave.com/memorial/23025759/edward-dziadosz
+3 OBJE @O43@
+1 BURI
+2 PLAC Carrick, Allegheny County, Pennsylvania, United States of America
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Edward Dziadosz, Memorial ID 23025759
+3 DATA
+4 WWW https://www.findagrave.com/memorial/23025759/edward-dziadosz
+3 OBJE @O43@
+2 OBJE @O43@
+2 NOTE Cemetery: Saint Adalbert's Cemetery
+1 SOUR @S1677610451@
+2 PAGE Memorial page for Edward Dziadosz, Memorial ID 23025759
+2 DATA
+3 WWW https://www.findagrave.com/memorial/23025759/edward-dziadosz
+2 OBJE @O43@
+1 OBJE @O43@
 0 @I412771177335@ INDI
 1 NAME Clara /Dziadosz/
 2 GIVN Clara
 2 SURN Dziadosz
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Clara Dziadosz Gardocki, Memorial ID 120635600
+3 DATA
+4 WWW https://www.findagrave.com/memorial/120635600/clara-gardocki
+3 OBJE @O19@
 1 SEX F
 1 FAMC @F57@
 1 FAMS @F1@
 1 BIRT
 2 DATE 1920
 2 PLAC Glassport, Allegheny, Pennsylvania, USA
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Clara Dziadosz Gardocki, Memorial ID 120635600
+3 DATA
+4 WWW https://www.findagrave.com/memorial/120635600/clara-gardocki
+3 OBJE @O19@
 1 DEAT
-2 DATE 2008
+2 DATE 10 Apr 2013
+2 PLAC Pittsburgh, Allegheny, Pennsylvania, USA
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Clara Dziadosz Gardocki, Memorial ID 120635600
+3 DATA
+4 WWW https://www.findagrave.com/memorial/120635600/clara-gardocki
+3 OBJE @O19@
+1 BURI
+2 PLAC Pittsburgh, Allegheny County, Pennsylvania, United States of America
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Clara Dziadosz Gardocki, Memorial ID 120635600
+3 DATA
+4 WWW https://www.findagrave.com/memorial/120635600/clara-gardocki
+3 OBJE @O19@
+2 OBJE @O19@
+2 NOTE Cemetery: Saint Michaels Cemetery
+1 SOUR @S1677610451@
+2 PAGE Memorial page for Clara Dziadosz Gardocki, Memorial ID 120635600
+2 DATA
+3 WWW https://www.findagrave.com/memorial/120635600/clara-gardocki
+2 OBJE @O19@
+1 OBJE @O19@
 0 @I412771177387@ INDI
 1 NAME Nicholas /Behun/
 2 GIVN Nicholas
 2 SURN Behun
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Nicholas Behun, Memorial ID 85531861
+3 DATA
+4 WWW https://www.findagrave.com/memorial/85531861/nicholas-behun
+3 OBJE @O47@
 1 SEX M
 1 FAMC @F63@
 1 BIRT
 2 DATE 13 Sep 1909
 2 PLAC salem township, Westmoreland County, Pennsylvania, USA
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Nicholas Behun, Memorial ID 85531861
+3 DATA
+4 WWW https://www.findagrave.com/memorial/85531861/nicholas-behun
+3 OBJE @O47@
 1 DEAT
 2 DATE Apr 1982
 2 PLAC Delmont, Westmoreland, Pennsylvania, USA
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Nicholas Behun, Memorial ID 85531861
+3 DATA
+4 WWW https://www.findagrave.com/memorial/85531861/nicholas-behun
+3 OBJE @O47@
+1 BURI
+2 PLAC Delmont, Westmoreland County, Pennsylvania, United States of America
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Nicholas Behun, Memorial ID 85531861
+3 DATA
+4 WWW https://www.findagrave.com/memorial/85531861/nicholas-behun
+3 OBJE @O47@
+2 OBJE @O47@
+2 NOTE Cemetery: Eastview Union Cemetery
+1 SOUR @S1677610451@
+2 PAGE Memorial page for Nicholas Behun, Memorial ID 85531861
+2 DATA
+3 WWW https://www.findagrave.com/memorial/85531861/nicholas-behun
+2 OBJE @O47@
+1 OBJE @O47@
 0 @I412771177413@ INDI
 1 NAME John /Behun/
 2 GIVN John
 2 SURN Behun
+2 SOUR @S1677610451@
+3 PAGE Memorial page for John Behun, Memorial ID 85531642
+3 DATA
+4 WWW https://www.findagrave.com/memorial/85531642/john-behun
+3 OBJE @O7@
 1 SEX M
 1 FAMC @F63@
 1 BIRT
 2 DATE 10 Feb 1912
 2 PLAC Etna, Allegheny, Pennsylvania, USA
+2 SOUR @S1677610451@
+3 PAGE Memorial page for John Behun, Memorial ID 85531642
+3 DATA
+4 WWW https://www.findagrave.com/memorial/85531642/john-behun
+3 OBJE @O7@
 1 DEAT
 2 DATE 6 Nov 1997
 2 PLAC Delmont, Westmoreland, Pennsylvania, USA
+2 SOUR @S1677610451@
+3 PAGE Memorial page for John Behun, Memorial ID 85531642
+3 DATA
+4 WWW https://www.findagrave.com/memorial/85531642/john-behun
+3 OBJE @O7@
+1 BURI
+2 PLAC Delmont, Westmoreland County, Pennsylvania, United States of America
+2 SOUR @S1677610451@
+3 PAGE Memorial page for John Behun, Memorial ID 85531642
+3 DATA
+4 WWW https://www.findagrave.com/memorial/85531642/john-behun
+3 OBJE @O7@
+2 OBJE @O7@
+2 NOTE Cemetery: Eastview Union Cemetery
+1 SOUR @S1677610451@
+2 PAGE Memorial page for John Behun, Memorial ID 85531642
+2 DATA
+3 WWW https://www.findagrave.com/memorial/85531642/john-behun
+2 OBJE @O7@
+1 OBJE @O7@
 0 @I412771177419@ INDI
 1 NAME Joseph Andrew /Behun/
 2 GIVN Joseph Andrew
@@ -3896,14 +4364,44 @@
 1 NAME Anna Louise /Behun/
 2 GIVN Anna Louise
 2 SURN Behun
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Anna Louise Behun Sada, Memorial ID 73143744
+3 DATA
+4 WWW https://www.findagrave.com/memorial/73143744/anna_louise-sada
+3 OBJE @O10@
 1 SEX F
 1 FAMC @F63@
 1 BIRT
 2 DATE 26 Jul 1914
 2 PLAC Etna, Allegheny, Pennsylvania, USA
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Anna Louise Behun Sada, Memorial ID 73143744
+3 DATA
+4 WWW https://www.findagrave.com/memorial/73143744/anna_louise-sada
+3 OBJE @O10@
 1 DEAT
 2 DATE 22 Apr 1993
 2 PLAC Export, Westmoreland, Pennsylvania, USA
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Anna Louise Behun Sada, Memorial ID 73143744
+3 DATA
+4 WWW https://www.findagrave.com/memorial/73143744/anna_louise-sada
+3 OBJE @O10@
+1 BURI
+2 PLAC Export, Westmoreland County, Pennsylvania, United States of America
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Anna Louise Behun Sada, Memorial ID 73143744
+3 DATA
+4 WWW https://www.findagrave.com/memorial/73143744/anna_louise-sada
+3 OBJE @O10@
+2 OBJE @O10@
+2 NOTE Cemetery: Grandview Cemetery
+1 SOUR @S1677610451@
+2 PAGE Memorial page for Anna Louise Behun Sada, Memorial ID 73143744
+2 DATA
+3 WWW https://www.findagrave.com/memorial/73143744/anna_louise-sada
+2 OBJE @O10@
+1 OBJE @O10@
 0 @I412771177561@ INDI
 1 NAME Helen /Behun/
 2 GIVN Helen
@@ -4140,12 +4638,14 @@
 2 SURN Smyczek
 1 SEX M
 1 FAMS @F15@
+1 OBJE @O28@
 0 @I412771198490@ INDI
 1 NAME Walter /Gardocki/
 2 GIVN Walter
 2 SURN Gardocki
 1 SEX M
 1 FAMS @F1@
+1 OBJE @O19@
 0 @I412771198614@ INDI
 1 NAME Vince /Rattay/
 2 GIVN Vince
@@ -4161,6 +4661,14 @@
 1 BIRT
 2 DATE 26 Jun 2020
 2 PLAC Pittsburgh PA
+1 OBJE @O14@
+2 _PRIM Y
+2 _CROP
+3 _LEFT 158
+3 _TOP 238
+3 _WDTH 50
+3 _HGHT 50
+3 _TYPE primary
 0 @I412771936647@ INDI
 1 NAME Gerald Bruce /Clark/
 2 GIVN Gerald Bruce
@@ -4257,6 +4765,156 @@
 2 SURN Whitehouse
 1 SEX M
 1 FAMC @F35@
+0 @I412772380097@ INDI
+1 NAME Michael /Rattay/
+2 GIVN Michael
+2 SURN Rattay
+1 SEX M
+1 FAMC @F25@
+0 @I412772380105@ INDI
+1 NAME Rich /Rattay/
+2 GIVN Rich
+2 SURN Rattay
+1 SEX M
+1 FAMC @F25@
+0 @I412772433747@ INDI
+1 NAME Anna /Sutyak/
+2 GIVN Anna
+2 SURN Sutyak
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Anna Sudick Sutyak Nicolikin, Memorial ID 33375558
+3 DATA
+4 WWW https://www.findagrave.com/memorial/33375558/anna_sudick-nicolikin
+3 OBJE @O22@
+1 SEX F
+1 FAMC @F17@
+1 BIRT
+2 DATE 6 Oct 1900
+2 PLAC Barnesboro, Cambria, Pennsylvania, USA
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Anna Sudick Sutyak Nicolikin, Memorial ID 33375558
+3 DATA
+4 WWW https://www.findagrave.com/memorial/33375558/anna_sudick-nicolikin
+3 OBJE @O22@
+1 DEAT
+2 DATE 11 Mar 1980
+2 PLAC Apollo, Armstrong, Pennsylvania, USA
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Anna Sudick Sutyak Nicolikin, Memorial ID 33375558
+3 DATA
+4 WWW https://www.findagrave.com/memorial/33375558/anna_sudick-nicolikin
+3 OBJE @O22@
+1 BURI
+2 PLAC Saltsburg, Indiana County, Pennsylvania, United States of America
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Anna Sudick Sutyak Nicolikin, Memorial ID 33375558
+3 DATA
+4 WWW https://www.findagrave.com/memorial/33375558/anna_sudick-nicolikin
+3 OBJE @O22@
+2 OBJE @O22@
+2 NOTE Cemetery: Saint Matthew's Cemetery
+1 SOUR @S1677610451@
+2 PAGE Memorial page for Anna Sudick Sutyak Nicolikin, Memorial ID 33375558
+2 DATA
+3 WWW https://www.findagrave.com/memorial/33375558/anna_sudick-nicolikin
+2 OBJE @O22@
+1 OBJE @O22@
+0 @I412772433972@ INDI
+1 NAME Marie /Sutyak/
+2 GIVN Marie
+2 SURN Sutyak
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Marie Sutyak Tomko, Memorial ID 195476845
+3 DATA
+4 WWW https://www.findagrave.com/memorial/195476845/marie-tomko
+3 OBJE @O16@
+1 SEX F
+1 FAMC @F17@
+1 BIRT
+2 DATE 22 Sep 1911
+2 PLAC susquehanna township, Cambria County, Pennsylvania, USA
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Marie Sutyak Tomko, Memorial ID 195476845
+3 DATA
+4 WWW https://www.findagrave.com/memorial/195476845/marie-tomko
+3 OBJE @O16@
+1 DEAT
+2 DATE 21 Sep 1989
+2 PLAC Fredericksburg, Virginia, USA
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Marie Sutyak Tomko, Memorial ID 195476845
+3 DATA
+4 WWW https://www.findagrave.com/memorial/195476845/marie-tomko
+3 OBJE @O16@
+1 BURI
+2 PLAC Aliquippa, Beaver County, Pennsylvania, United States of America
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Marie Sutyak Tomko, Memorial ID 195476845
+3 DATA
+4 WWW https://www.findagrave.com/memorial/195476845/marie-tomko
+3 OBJE @O16@
+2 OBJE @O16@
+2 NOTE Cemetery: Mount Olivet Catholic Cemetery
+1 SOUR @S1677610451@
+2 PAGE Memorial page for Marie Sutyak Tomko, Memorial ID 195476845
+2 DATA
+3 WWW https://www.findagrave.com/memorial/195476845/marie-tomko
+2 OBJE @O16@
+1 OBJE @O16@
+0 @I412772434051@ INDI
+1 NAME Nicholas /Sutyak/
+2 GIVN Nicholas
+2 SURN Sutyak
+1 SEX M
+1 FAMC @F17@
+1 BIRT
+2 DATE 11 Dec 1915
+2 PLAC Barnesboro, Cambria, Pennsylvania, USA
+1 DEAT
+2 DATE 3 Jul 1997
+2 PLAC Phoenixville, Chester, Pennsylvania, USA
+0 @I412772434128@ INDI
+1 NAME Pete /Sutyak/
+2 GIVN Pete
+2 SURN Sutyak
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Pete Sutyak, Memorial ID 74353887
+3 DATA
+4 WWW https://www.findagrave.com/memorial/74353887/pete-sutyak
+3 OBJE @O34@
+1 SEX M
+1 FAMC @F17@
+1 BIRT
+2 DATE 14 Apr 1918
+2 PLAC Barnesboro, Cambria, Pennsylvania, USA
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Pete Sutyak, Memorial ID 74353887
+3 DATA
+4 WWW https://www.findagrave.com/memorial/74353887/pete-sutyak
+3 OBJE @O34@
+1 DEAT
+2 DATE 18 Jan 1983
+2 PLAC Export, Westmoreland, Pennsylvania, USA
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Pete Sutyak, Memorial ID 74353887
+3 DATA
+4 WWW https://www.findagrave.com/memorial/74353887/pete-sutyak
+3 OBJE @O34@
+1 BURI
+2 PLAC Export, Westmoreland County, Pennsylvania, United States of America
+2 SOUR @S1677610451@
+3 PAGE Memorial page for Pete Sutyak, Memorial ID 74353887
+3 DATA
+4 WWW https://www.findagrave.com/memorial/74353887/pete-sutyak
+3 OBJE @O34@
+2 OBJE @O34@
+2 NOTE Cemetery: Grandview Cemetery
+1 SOUR @S1677610451@
+2 PAGE Memorial page for Pete Sutyak, Memorial ID 74353887
+2 DATA
+3 WWW https://www.findagrave.com/memorial/74353887/pete-sutyak
+2 OBJE @O34@
+1 OBJE @O34@
 0 @F1@ FAM
 1 HUSB @I412771198490@
 1 WIFE @I412771177335@
@@ -4356,7 +5014,11 @@
 0 @F17@ FAM
 1 HUSB @I412771176999@
 1 WIFE @I412771177028@
+1 CHIL @I412772433747@
 1 CHIL @I412771176558@
+1 CHIL @I412772433972@
+1 CHIL @I412772434051@
+1 CHIL @I412772434128@
 0 @F18@ FAM
 1 HUSB @I412076093604@
 1 WIFE @I412076093643@
@@ -4395,6 +5057,8 @@
 0 @F25@ FAM
 1 HUSB @I412771198614@
 1 WIFE @I412771177291@
+1 CHIL @I412772380097@
+1 CHIL @I412772380105@
 0 @F26@ FAM
 1 HUSB @I412076078014@
 1 WIFE @I412076078175@
@@ -4608,8 +5272,8 @@
 0 @F57@ FAM
 1 HUSB @I412771176404@
 1 WIFE @I412771176429@
-1 CHIL @I412771177306@
 1 CHIL @I412771177312@
+1 CHIL @I412771177306@
 1 CHIL @I412771173007@
 1 CHIL @I412771177335@
 1 CHIL @I412771177291@
@@ -4674,9 +5338,6 @@
 2 DATE 28 SEP 1658
 2 PLAC Evangelisch -  Reformierte Kirche, Brütten,Kt. Zürich, Switzerland
 0 @F68@ FAM
-1 HUSB @I412077352394@
-1 CHIL @I412076080608@
-0 @F69@ FAM
 1 HUSB @I412260252734@
 1 CHIL @I412076094304@
 0 @O1@ OBJE
@@ -4693,7 +5354,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:48.369
-1 _USER y9Yf005nPxOs88NIxs12ktiJjuiQJ7OsRuTEBvasPl4xu9B3Bs14/PFlPcAOL2DON5fgXqUD0gdSt0kzBxL+Rw==
+1 _USER nXlzzxqus85M43Lc0ziJzbWDTg+zL5XquTAj3pAa1q88C8rRu2JF7lxNH4ReSIuxIMD68A+i+Ic9FnXqSzqn6g==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -4712,7 +5373,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription>The Shaheen Fa
 2 CONC mily shown in the picture taken in front of 633 Third St sometime between 1910 and 1912</transcription><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-07 16:23:16.366
-1 _USER tQlecj4SP/pOEZW7jPp4P4AkEaZ+I5AJSQQ7vI8vsoh6P9qXol2WQd71VPfd/nAh9SKj0Jc0dxwkio8iiZgPHQ==
+1 _USER TbempxhYmaz1LbxYOXA1cy+N69Em040oKytsRvaZhtz51pVSQys2Nf6iaJc8JU/PGNbVCX0PEzTMLNvCCpAfuw==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -4731,13 +5392,13 @@
 1 PLAC Pittsburgh, PA
 1 _META <metadataxml><cemetery /><transcription /></metadataxml>
 1 _CREA 2018-11-24 18:02:22.632
-1 _USER ulg0tFHNZYjpnUt4Rb46LTqsM1aQR0URMFzj01gLoYgay62fWZyeAs2aIEd6kH2ZudpYR2vBZrLonrRIzuhjGw==
+1 _USER 17qIu5u7c1+t49xxiuY5jgCFSKDWobdxhKFvt0jIn8DmYVmRZb7pz8O25LQ/abAVzhieEQgb4xTHqyIGikZi+Q==
 2 _ENCR 1
 1 _CLON
 2 _TID 32576842
 2 _PID 18803225037
 2 _OID e96153fd-1b96-48eb-8472-c08d3ef4d531
-2 _USER y5Iqk5lS8wZ8iWGLQpJnWP1Bpg8dty5lxgN7NWnETkyPdP158S9Ni/NANr9QOLaXlyiRcjRLb/B4L/GaFedAfQ==
+2 _USER 3/dEXG7xJNlGArV8CXKw24HR32hZ6/U5zNDJai8udt8EL5JqfwOwo/rb70UmtCSXs0/RWog47zzNAXlQR9vuLA==
 3 _ENCR 1
 2 _DATE 2014-05-16 14:42:16.000
 1 _ORIG u
@@ -4756,13 +5417,13 @@
 1 DATE 30 Jan 1892
 1 _META <metadataxml><cemetery /><transcription /></metadataxml>
 1 _CREA 2020-09-08 23:48:44.000
-1 _USER RE220rPWMDYgZYzOXoj84Kjwk5miihfRv7WUK84PD48Mkrl+qL6Kq+NqT5xd5tZN7BNMCXP5G2OePHh0p6sJJw==
+1 _USER 4IUJu8UB0Olm5A+yTG5L0Z5F1LqYxWfxfd8B84y0ofGss57c/m/gOybJUguyrkkAqIQiZVa9wASxpYza7reoCg==
 2 _ENCR 1
 1 _CLON
 2 _TID 32576842
 2 _PID 18805104788
 2 _OID 4e70aaa8-9140-48b3-b0ec-ba54eb9572df
-2 _USER bzUDdMwR47zI4I+Mixn9valI6N3uUrzHjJa6QBiZiHcBHHwo6WGUBRju6CkCFj375C8yeq6AQQbasvXpHCXOXQ==
+2 _USER eQ4On2g1TLwLzkFJ/Rv6pOB4IQ6eYYOC6pPeE46BZZN+RbtL1rlr63nEAcdupOSSWJnnhmQUdTaZFXQG3wDSjQ==
 3 _ENCR 1
 2 _DATE 2012-05-28 08:25:24.000
 1 _ORIG u
@@ -4782,13 +5443,13 @@
 1 _DSCR The beautiful Anna Margaret Soulier Bleacher
 1 _META <metadataxml><cemetery /><transcription /></metadataxml>
 1 _CREA 2018-12-28 03:44:17.068
-1 _USER lOusDUbQ6gK+oxhAYN7upPzDzh4oZymKKa7YkJkn0Z1uYtqd5W0XToHxobPnat8ejvti33VxudNj+Zp57p6m7Q==
+1 _USER 7teOiBe/Z5AXEvaDkkjMmGLthwtIGNiFIi1EvA7qN5JlEJR/OgfTNpYgUNvqi5HK4Rku2yNeknvt/F3pC+70VA==
 2 _ENCR 1
 1 _CLON
 2 _TID 73547650
 2 _PID 30276120670
 2 _OID c3c90eeb-a3b2-4132-99b7-fcbb4e672439
-2 _USER pbb9FRdUhKTlz5RDalH07GXgTu0eq8SA5W7xAIsxsjwCHOKQYMDYXzSYXW1+S76KNLV9OWzIP/UQiH9rduIc8g==
+2 _USER rFxKMbpyaoa2aNtPA4nVrsQ04513/yjkCtwc57Y0mOfcR0mZKlvbtiHqOtjeIBrSnwrWCRrj9YPM9EH8QUWlFA==
 3 _ENCR 1
 2 _DATE 2015-06-02 19:40:17.000
 1 _ORIG u
@@ -4808,18 +5469,33 @@
 1 PLAC Herman, Pennsylvania
 1 _META <metadataxml><cemetery>St. Mary's Cemetery, </cemetery><transcription /><personas><persona><pname>Lorenz Bleichner</pname><bdate>1819</bdate><bplace /><ddate>1909</ddate><dplace /></persona></personas></metadataxml>
 1 _CREA 2021-01-22 22:24:17.000
-1 _USER 80leUau0DlrUEKZ8yWMJrzUMeSuzUYropZ9vcFTONXyGtCIeebYJdai2iZINsK3tEE1HX8RS68FE4VJPScKtxA==
+1 _USER hbIF7/0PV7YtChlv/3413UmXilaK7Zdt3vUKPjV44csqUM80kEqAjy1wEddSf0I6v/Ly5KO3Y1k0zsw74eLiMw==
 2 _ENCR 1
 1 _CLON
 2 _TID 27424369
 2 _PID 13623062747
 2 _OID ddbb8541-8b14-4cc8-96be-14b40cf46bf2
-2 _USER ro16nhaJpfB8qH+0BUp9JF0lNHzSngvjT7BvGb4+FLZOm2DTe8Kj/XoELDOQVwddY0gWhF46FcuudIF/x00Zqg==
+2 _USER EmwLbG7NFaLKoR6fnt9BQkP3O3kzZ5TTTHIUqUBa8BCp1+B/PgLq/wByUuLudtcfbewBlaCJ8BYaeW16JriUEw==
 3 _ENCR 1
 2 _DATE 2013-03-24 22:26:04.000
 1 _ORIG u
 1 _ATL N
 0 @O7@ OBJE
+1 FILE
+2 FORM
+3 TYPE image
+3 _MTYPE document
+3 _STYPE jpeg
+3 _SIZE 0
+2 TITL Find a Grave Memorial page for John Behun, Memorial ID 85531642
+1 _OID 27bf2dc6-7365-459f-a2d9-845d274e7079
+1 _CREA 2026-04-12 13:05:59.083
+1 _USER d8nunUxD3Wz8wc6FA0C31lEXzCwc7DRpjEn/Mm8bTdWnZW96Fqi5RZdutAGVhLsjp2235DOkGM/pqbw9A1nlOw==
+2 _ENCR 1
+1 _ORIG acom
+2 _URL https://www.findagrave.com/memorial/85531642/john-behun
+1 _ATL N
+0 @O8@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -4835,11 +5511,11 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:27:14.889
-1 _USER wuCBew0qP7+DG0XZKmKAcTc4J5GhugI2pXql86K8zwO3LwL24OZGumkevt/hDnwFneoCOlISywMyUY14fe7+Hg==
+1 _USER TK5rVBuVCx3Ca+y80WphMzjbq+TZYwGRGqTEGKirObWoxMuH11mSvBqbNA6UsV5CdTnb/jkT651BYwTdGzleFQ==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
-0 @O8@ OBJE
+0 @O9@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -4853,11 +5529,26 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:49.237
-1 _USER AwW9JJNyZjK7qyB9SF6uwwFRRvWU50B9ydqbmkigNLWMtETcG6u81pjT7KDbSiIVCIE0PIrrzpPWuIrEexi24w==
+1 _USER pIKPPnj1eN4gO4HQPswqQwuLFd0v6+stoThqwe4+OQJG6CKvM9At1OMTDJstiC32RmfqRJfEcoNgOczIQryflg==
 2 _ENCR 1
 1 _ORIG acom
+1 _ATL Y
+0 @O10@ OBJE
+1 FILE
+2 FORM
+3 TYPE image
+3 _MTYPE document
+3 _STYPE jpeg
+3 _SIZE 0
+2 TITL Find a Grave Memorial page for Anna Louise Behun Sada, Memorial ID 73143744
+1 _OID 33d7e11b-440f-4e95-8229-af895b5d2963
+1 _CREA 2026-04-12 13:06:55.975
+1 _USER bF8eMb3XjzTOCgwPyosNtq3YZ/wHhjUMIxVyC10e6un75DsvpMMA/8jrZDvm3I8lXca73FeO1F/Db4r5W/SvoA==
+2 _ENCR 1
+1 _ORIG acom
+2 _URL https://www.findagrave.com/memorial/73143744/anna_louise-sada
 1 _ATL N
-0 @O9@ OBJE
+0 @O11@ OBJE
 1 FILE
 2 FORM
 3 TYPE image
@@ -4868,18 +5559,18 @@
 2 TITL 1860 United States Federal Census
 1 _OID 359a9d7a-d5af-40f4-9676-5e50c4cc5a95
 1 _CREA 2021-01-22 21:28:23.000
-1 _USER RUd0J6EgfBkHDXwzRERUC6zQK1pyXENDZ3ylcTfAdhiq1vA23Io6WBk2AphOUSFDusfcoyJwHOjKT7g+uraNaQ==
+1 _USER ZwTwojlG/oxcUxJkTGpDuD5FvQm+ujROckXJs9gzDvi/BbL1YbT6BLXCtch1zH4Z+PA3HzphQl1gQQejd8drWQ==
 2 _ENCR 1
 1 _CLON
 2 _TID 77593603
 2 _PID 36372113929
 2 _OID df3bb29c-38c8-436d-9b99-b3c6171a8250
-2 _USER 8anm5bGkUFBFCA88M5GAfGk07fAJXYxcyj7qhFt9TImILoyBXPAGONUIT79rMhUhVARP+GmyzpmxXdpQAGOnjA==
+2 _USER HMWh0tyHz2bQkR6j4Z6JmjA/YMMNr9zQ1KGaMU+agPYZ49cq8cl1Wz2/pNS93Wwh9+9mRG1wKuOkvSl6gW+C+Q==
 3 _ENCR 1
 2 _DATE 2015-02-20 00:07:34.000
 1 _ORIG u
 1 _ATL N
-0 @O10@ OBJE
+0 @O12@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -4893,11 +5584,11 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:48.208
-1 _USER SDZ5d+dB3ublhn4yKpCOnrVno2ESRi4iuUAgQqYuOOfYRBB1LOaT8IulP14rWIqgEjIWpIM3Za+0orp2gxgTyQ==
+1 _USER njtyFlEaGS9D8E28vgvaAMWBorOZZMIWlC+8M0MqZNiR8IvNFK7kdu0G2VvNPaIopWcKS8UZ2KR7/jh/Z+WUKA==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
-0 @O11@ OBJE
+0 @O13@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -4911,11 +5602,11 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:48.264
-1 _USER ZY5DNv2Vl/riIYI8Nq3/I1H9yS+xKCi+HDQ0oOgTDO6RCejI9j1KI1JmWI1UDP6uFJF3n/7vb6hFU2KUEupRuQ==
+1 _USER Pa2lPEHQ2AO8DtX90dhT58mDd/yymixjT/97wO2IS5eOrakPmdq3gyRnVZjGM03n4kDtp3qfk0oxbou55DbkzA==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
-0 @O12@ OBJE
+0 @O14@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -4931,11 +5622,11 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:47:01.278
-1 _USER Dus8JsF3cPIYoD65/VILrdrT0fcR0/xVmZyjwyqSWZQgdZiRAMSPlJJIFT6ndVd2A1r/5//ZgAPEFCZ4Adx9ag==
+1 _USER 5RoN/UQUxt6X2nNyXVN6CQhfj7tszOUAGE/8HGGhRsRVZ7/rwIYzvdFP/I8j367Xw1/xVUSOgH341UyICRpn0g==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL Y
-0 @O13@ OBJE
+0 @O15@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -4947,18 +5638,33 @@
 1 _OID 4cfc43ca-1cc4-4824-aa3c-cbccbab2bb4c
 1 DATE 6/5/2014 11:27:41 PM
 1 _CREA 2018-12-28 04:36:47.568
-1 _USER 9NRiDWv7SX4tOZ6PrJe/v5+Z9arcKqdbGwwPgjkiHNv5QBPWZgvdwMQug9oF1xFg/m9SrA52Bkzb273N2/JVQA==
+1 _USER VkYEoE1oZZK4h8mgL7GRGefH5T+sKLSgq8Te3rifO/WLl7jQJCr1/gYnRMh5ly6ERy8D9s2NVdQ6rQTEw1GihA==
 2 _ENCR 1
 1 _CLON
 2 _TID 43572778
 2 _PID 13922357760
 2 _OID f82aebce-71e5-4391-afe2-3a57d3e6dbf1
-2 _USER t0NFHitrBsAAqZX/RkqnZoVNR+MyXt8qcmJuM9Y78rESnKEO3I95+fs6F0/z0dkhgH+MaBUOcStKSC3jiaibDA==
+2 _USER BjbtyupH6WbzzGa0zF82D0B1k2d6aL0XKaViBl7Lvel0bzy8ROTAgdUOn5GP3cWOLcosWdKYZ4DL4jWZcxFjfA==
 3 _ENCR 1
 2 _DATE 2014-06-06 04:29:42.000
 1 _ORIG u
 1 _ATL N
-0 @O14@ OBJE
+0 @O16@ OBJE
+1 FILE
+2 FORM
+3 TYPE image
+3 _MTYPE document
+3 _STYPE jpeg
+3 _SIZE 0
+2 TITL Find a Grave Memorial page for Marie Sutyak Tomko, Memorial ID 195476845
+1 _OID 4d6b3997-d92d-4444-bc8b-fde6ea365e55
+1 _CREA 2026-04-12 13:17:51.871
+1 _USER xalIMmpi5d/9mqf/NFYUtEQ01le6E4xD8p564TaYyM/zjx8RM99T42Pa4LsPYhFdHHjcR54lXJW9c/qKmmqWhA==
+2 _ENCR 1
+1 _ORIG acom
+2 _URL https://www.findagrave.com/memorial/195476845/marie-tomko
+1 _ATL N
+0 @O17@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -4972,19 +5678,19 @@
 1 DATE 18 Jun 1947, Wed
 1 PLAC Pittsburgh, Pennsylvania
 1 _CREA 2021-01-28 00:16:36.000
-1 _USER JkMVQoYuUMLr5Lejd+WdI7186UsRk2ANPP1/OxdjUlU5yWV7Z3MMs8NI+cZoh2cDRlb4Wam/JQakDBsxEtDgNQ==
+1 _USER sNttgMeZ9WdXDbXct/y7sp+k5S4jq2L3u618cOzXEHd1SKdMAxfb4zK7CSSmZN46yBVUwZUmbmQIxc5KPIbucw==
 2 _ENCR 1
 1 _CLON
 2 _TID 10045005
 2 _PID 210024685462
 2 _OID 5bbbf67c-3d42-45d3-92e2-c5d9f1c99a73
-2 _USER SsUL+ia1Ut6DohpnoUvSXiYngzvlJud1g6+xeNaVx9LlFhDQeO2G5BN04ihLe4nsX0M8cc5KUTlbm+4v+5g8iw==
+2 _USER HL6EFOQh5eE7x+W0Sp1oX/4PrVRO42yLakZFCfq3rcysBhTE6QpisNPQw6f2vejxEH1m+4okb7/DFO+P6sZ8pw==
 3 _ENCR 1
 2 _DATE 2016-08-17 01:59:49.000
 1 _ORIG newspapers
 2 _URL https://www.newspapers.com/clip/6263966/?xid=637
 1 _ATL N
-0 @O15@ OBJE
+0 @O18@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -4998,18 +5704,48 @@
 1 DATE 25 Mar 2018
 1 PLAC Pittsburgh, Allegheny, Pennsylvania, USA
 1 _CREA 2018-12-28 03:42:06.864
-1 _USER yYZoXTNzTjyrmArMq6QaUCrRyqk47TlSo7efFP/a1eu//noidWIiqMkuKZy03TiNUW1+df3fZbLjA5Lu5BwEnA==
+1 _USER hFRQE21D1Jlohev8Zi1hyt5wxCPSnLaeadihOOty6OyGuVJZ6JABTqhDso78cdRxwDE+g0X/Z929BkHV9KJOoA==
 2 _ENCR 1
 1 _CLON
 2 _TID 32576842
 2 _PID 18803225037
 2 _OID ef8c7fed-cd8a-4d9f-a184-4c6033b74ae4
-2 _USER zwjbuqoWn7XRsZw/UznQax6O+WaZ67tjB+6DRfZLHWfz6m/zaSKQ8gk1Bm8BNVxq6wBrdlj13vaGpXGSnmx8sA==
+2 _USER TCAlQZ42MhtWfm6oZrnf6w5x8hjkt/Knmqzoffc/NZtWGWhVz5DbIvw1ivtIFeo332ZJ6PaXoTKv20shPvQimA==
 3 _ENCR 1
 2 _DATE 2018-03-26 02:00:41.000
 1 _ORIG u
 1 _ATL N
-0 @O16@ OBJE
+0 @O19@ OBJE
+1 FILE
+2 FORM
+3 TYPE image
+3 _MTYPE document
+3 _STYPE jpeg
+3 _SIZE 0
+2 TITL Find a Grave Memorial page for Clara Dziadosz Gardocki, Memorial ID 120635600
+1 _OID 6859a9d1-5b9f-4d48-95ac-26d2d9424d79
+1 _CREA 2026-04-12 12:44:26.884
+1 _USER 96g+lsh8MenJI9BKt9BS2P6+ldP3evr1z03EiK7Gvu9nCdtkZ6AF4WLlYODNU292wnJVQR64Mt8kM/fERDsqCw==
+2 _ENCR 1
+1 _ORIG acom
+2 _URL https://www.findagrave.com/memorial/120635600/clara-gardocki
+1 _ATL N
+0 @O20@ OBJE
+1 FILE
+2 FORM
+3 TYPE image
+3 _MTYPE document
+3 _STYPE jpeg
+3 _SIZE 0
+2 TITL Find a Grave Memorial page for Blanche Dziadosz Shaheen, Memorial ID 79676470
+1 _OID 68b8957e-60a6-4ad5-864c-7dec082296ce
+1 _CREA 2026-04-12 12:43:39.493
+1 _USER sQXiWytKeQFdtBK5uW56vRvEWRo3al0mIzBvYuDT0GqcWbZ36gwxK5dJM3Y62iG0G7YHWjSj2NyUMPGajsvh6A==
+2 _ENCR 1
+1 _ORIG acom
+2 _URL https://www.findagrave.com/memorial/79676470/blanche-shaheen
+1 _ATL N
+0 @O21@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -5023,11 +5759,26 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:27:14.941
-1 _USER Zt3UHKZVUfMBCT0MqVIY1NKBIjtkRBhI3XeFckanV2bxMngtjgOb//fnk0p6ucqLe858iF0y0KaouJdTrmmGNA==
+1 _USER h6AGSA+FMat0HrE34+mVtppL930ThNSK9ghZSloxYhtwdNeGysEE0AAsAIXFfax4cr/kYS32N1ABktuyOmi56Q==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
-0 @O17@ OBJE
+0 @O22@ OBJE
+1 FILE
+2 FORM
+3 TYPE image
+3 _MTYPE document
+3 _STYPE jpeg
+3 _SIZE 0
+2 TITL Find a Grave Memorial page for Anna Sudick Sutyak Nicolikin, Memorial ID 33375558
+1 _OID 7ca3dbf5-a45a-4425-ad8a-50b73dbdcf54
+1 _CREA 2026-04-12 13:16:05.823
+1 _USER d4Xf5t1oWNZ1CzS3AZtkr2ppeAkqL/ZCJ7kYnUr1Wwond2J4vaFL5nzPRsgsPqyPJc3bFvVL1iCmcz4xGBTepg==
+2 _ENCR 1
+1 _ORIG acom
+2 _URL https://www.findagrave.com/memorial/33375558/anna_sudick-nicolikin
+1 _ATL N
+0 @O23@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -5041,11 +5792,11 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:50.105
-1 _USER BKRLraDEdryHHUTV++rFK+Scwcu21iZx0bBO00jU1UtG1FSdM/nudVptK7gT1y+ggfyR4uZKdZEnfzGasNbUGQ==
+1 _USER 5+wXVe/PoZtcNHm83JHHzbvtd67+LcDwh7/EG2UhIyKoFHzNbHvjq4h1BMFeh8QHd4AXmE32OYkcQjoRPyHDsQ==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
-0 @O18@ OBJE
+0 @O24@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -5059,18 +5810,18 @@
 1 _DSCR Great Grandfather George J. Bleichner
 1 _META <metadataxml><cemetery /><transcription /></metadataxml>
 1 _CREA 2020-09-08 23:50:07.000
-1 _USER 3jMqzKo+acO9z50xrZfjVpvp+A3Aa8h/68Z8J277pODs0+MWi1wEDTiPZTjqCc6zjtdfirrPjhCaxVwDAngPEA==
+1 _USER lNNRrTEwmKB+w1yWwOcutofEV/bf65KDn/InPhtS+th8b1B3EtaZvoWdAeOZjmsbwa5e//5Y/w9kq0nzUL2djg==
 2 _ENCR 1
 1 _CLON
 2 _TID 73547650
 2 _PID 30276120756
 2 _OID 3a619b2d-f24d-40ca-a9a8-98ae3ed09d13
-2 _USER AkNRwbV77Wm7RHPWcZxpwns2yRKXC6QTo/1hkFqa2M9aCguRzVARoEFIzOWPo6nz6Zur/bjvErsyMxTgHHMogw==
+2 _USER bdb2AeFptYsgaW/5+N6Rlv8rqyQD3Yahhf/4wSNG0BlzETl6yxESoBOrae0N0Z2twNcstWNGCqOHEwn0nITA0Q==
 3 _ENCR 1
 2 _DATE 2015-06-10 02:14:23.000
 1 _ORIG u
 1 _ATL N
-0 @O19@ OBJE
+0 @O25@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -5083,18 +5834,18 @@
 1 _OID 7fd9835b-88b9-48bb-9773-758fb373a8c9
 1 _META <metadataxml><cemetery /><transcription /></metadataxml>
 1 _CREA 2019-02-05 00:44:04.390
-1 _USER pSxSXAQDlGNC7IjCL9QzmRW45C4PqOho0xCguO3k/Ak8Y+eRBd6ghpMTSi9E6hKc4v7XsStRj9Ju+4HTTE+cmA==
+1 _USER TKdSt6tjSZBiXzChTGuKnbTKNDsKB08ve0+BHqVO5U38hiDEWwGgCxZ79PMrdp4pumPCfIuBClNFXFvGYziQBw==
 2 _ENCR 1
 1 _CLON
 2 _TID 3290666
 2 _PID -1625128717
 2 _OID 8062fd17-3221-49e5-b8e1-bff839e6c54c
-2 _USER vwLGWm0s+5afsA6O896Z/DMXLPh4iSDGNf6xlT+4BRZZCj6iDW8p7J8I5bH0evMQVWAlIwp5mQWlHAxEzi8+uA==
+2 _USER kTt4mZ9XE4RNXXS/6HBB7WT2I2yfl3Yo5IB6rt92IVHGXrGfFVdP/UUX+GIEaGTgBGxekm7NDIT61UIMWMAFdg==
 3 _ENCR 1
 2 _DATE 2012-11-29 23:20:58.000
 1 _ORIG u
 1 _ATL N
-0 @O20@ OBJE
+0 @O26@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -5110,11 +5861,11 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:27:14.698
-1 _USER WM3a4xNH6AwxYTNk0yN0twkFRt9prpMzjCkWJ5k4pF+9r6UMpzCHtRkLrJ0j6WHYMSR/adLrkS44dbb2P8lzCw==
+1 _USER ompQU5kJb/aPc7dMwlpwYnpfUYwI2nCspH25/S9pbHkRVWJCWJtfmNRbBjq1UMUS7jsMw5QfVWV5xV8zJFztrw==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
-0 @O21@ OBJE
+0 @O27@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -5128,19 +5879,34 @@
 1 DATE 29 Apr 1921
 1 PLAC Pittsburgh, Pennsylvania
 1 _CREA 2021-01-28 00:42:59.000
-1 _USER OXjSmRaRxf0fVU1C0O4Gvyiw/RvRjjM643Lplqtro4esODO7v6pPeXWXvlklq5bg1ewgqubJ+AEUtq2fwyRJBQ==
+1 _USER 6G5usR2ZSyXLTp8z9hbNTlAi7seHBDPYGarIh/DidpXlzciqnnWMe7gNDjl3fSEalCdnKRypYT8u4pezWfokVg==
 2 _ENCR 1
 1 _CLON
 2 _TID 10045005
 2 _PID 210024683520
 2 _OID ed5c61b0-8369-4ea6-98a7-f56fe502e33d
-2 _USER IEIH8U13GSKLYinzr8Ng4OkZw/jKUfE0RWimScybwGVGtfgkFOSN9+B48No+Ai0ajH/7LsaEjvEBKPGbETgO6Q==
+2 _USER WxSFiXbAqE6KeOsOAofekJ+Pyv0C2yR1xb8HfWPL66rAmifZng3i1HaSmQyEccJlcnZ7hYYEopKpWLTvsKQ0gg==
 3 _ENCR 1
 2 _DATE 2018-03-08 21:07:39.000
 1 _ORIG newspapers
 2 _URL https://www.newspapers.com/clip/18114128/the_pittsburgh_press/?xid=865
 1 _ATL N
-0 @O22@ OBJE
+0 @O28@ OBJE
+1 FILE
+2 FORM
+3 TYPE image
+3 _MTYPE document
+3 _STYPE jpeg
+3 _SIZE 0
+2 TITL Find a Grave Memorial page for Helen Dziadosz Smyczek, Memorial ID 23025628
+1 _OID 8a8c4d62-1549-4898-a386-1ad3dcd7e5ef
+1 _CREA 2026-04-12 12:42:58.927
+1 _USER 0KY4+Lr7PLjNXGyE9KRcUC8VCy0lrqjbLUrteUQkhl1kd+p/+n1iNUWmH7VXuclAdnEThxB3X+jqwrNjpCEWiw==
+2 _ENCR 1
+1 _ORIG acom
+2 _URL https://www.findagrave.com/memorial/23025628/helen-smyczek
+1 _ATL N
+0 @O29@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -5151,18 +5917,18 @@
 2 TITL William Joseph Wolbert
 1 _OID 8cfc6890-25a0-4d96-9838-21439f0a92bc
 1 _CREA 2021-01-21 18:46:39.000
-1 _USER f6nqLEZFu+yBBM/21tph+HBgI6sxCR7DjgBL/NCTDcZRJyyhKqOy7fqF2pmdBFy0dz9KbfSHRnhUW337MEOoOA==
+1 _USER 1XyyWc1zWSVK+7P0oXaTEo743xSRIgnt7kRf4ys9vpCModbHthWfm6hCj7Frs3Iqz8KH88Q/PLQrcaWHeoQFIg==
 2 _ENCR 1
 1 _CLON
 2 _TID 3748446
 2 _PID 242127434519
 2 _OID 10e85cc3-af86-4cdf-9ca2-de9340712d85
-2 _USER k5YrcV3r/FuGlQHrcrshaINYuWXXISKFIB2tSsV9keiBL4h6zVvxmpMf1ss9TJPJ7dHLKBoPFJXooM2tNqegdg==
+2 _USER E/EmwRlVchfqvIsMaKCXX4F+dy58j8Cr/TyFWwAzKifFiyPz+ErrJu743qINKv4/ZHiXXKRth7DKqs2Cwl844Q==
 3 _ENCR 1
 2 _DATE 2019-09-13 12:28:18.000
 1 _ORIG u
 1 _ATL N
-0 @O23@ OBJE
+0 @O30@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -5176,18 +5942,18 @@
 1 DATE 28 May 2015
 1 _META <metadataxml><cemetery /><transcription /></metadataxml>
 1 _CREA 2021-01-22 22:26:40.000
-1 _USER VPz8NgVkVKK4hAdDoCjelHoK30qDF18Phh12zPZr7TOPsPKpkZJdNqvQ5+e+V6pJ6W5L+PxMP0tls3R/KKJrIA==
+1 _USER iUqFmnvxvT2nzJlo8Yg3sddJogYFE8ElEjL91ij/0YE6gVAiQ0crEt81P5UEj3mx2uMqL6Q1WCM6onU4juJYOg==
 2 _ENCR 1
 1 _CLON
 2 _TID 79060437
 2 _PID 44401676435
 2 _OID 9e1996b4-3d93-42af-ba2e-92ee997b3063
-2 _USER 3xIlmdMca6uSharhOq8fr5hSJWOqmpSVWF6/5eosTcHjpAMJIr/ijmHyXYTyLL7PUwbEuV8Rqbz6NihZ4JuNWg==
+2 _USER 73VbbYkB6P9emgsI9iBbfOtM+BsVFWRer8dy49dAl/aRy5Zm0wGLLG1emWMrIvuI9pP8H5q+nUB15Y3a2gw6qg==
 3 _ENCR 1
 2 _DATE 2015-05-28 15:45:23.000
 1 _ORIG u
 1 _ATL N
-0 @O24@ OBJE
+0 @O31@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -5202,11 +5968,11 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:27:14.946
-1 _USER cBZhnYdxyJOpnBTxuJxeNRrWIJ8rLZfAt1EQpNmWtWAqBhlVvingkjN1ZCR88G244AYSw4HRngwJLNwqjaaGrA==
+1 _USER aRa5GwjdtygxDRuui8cfyDUi9ocq+x0SaaplPXwgNYscd0IAoh85LPKkOvBcCQte0dRvW7821z7Hp9QNyVs74Q==
 2 _ENCR 1
 1 _ORIG acom
-1 _ATL N
-0 @O25@ OBJE
+1 _ATL Y
+0 @O32@ OBJE
 1 FILE
 2 FORM png
 3 TYPE image
@@ -5219,11 +5985,11 @@
 1 _OID 925938c8-cb36-48bd-ad08-e20836a24630
 1 _META <metadataxml></metadataxml>
 1 _CREA 2026-04-07 16:32:20.469
-1 _USER RUkMnys7Ei8IRJcxXqyPyaahE7f5KWLeFuYI6dNnzcv2PPi7Xnfflm4ur82pn/o9WrZodfZicVwb9MqbOAmcqg==
+1 _USER hZ7/uqx+54Re3cepk8G6DPjf/ZPjh31ZshPQ0nECgIcun4vushnXU2ytkEEvbvtR9TZMjw/XrAsW2MdxnVVJxA==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL Y
-0 @O26@ OBJE
+0 @O33@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -5237,11 +6003,26 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:48.261
-1 _USER lqEThgKZ+SI4HB67/DifNNJhm+lEGm259Y95BLWzv0VmmMAE3IZ60tl7KA6a/eZisAnVs06NtvU2dGKS4YCwMQ==
+1 _USER UFUfcg/1aV8+v6J5mf+GbWrs7oeqi8pG3kyFElEE1d2amiLWYeAEgOCBs59icSxGNN6sMp1vDhanQcfkyyLY9g==
 2 _ENCR 1
 1 _ORIG acom
+1 _ATL Y
+0 @O34@ OBJE
+1 FILE
+2 FORM
+3 TYPE image
+3 _MTYPE document
+3 _STYPE jpeg
+3 _SIZE 0
+2 TITL Find a Grave Memorial page for Pete Sutyak, Memorial ID 74353887
+1 _OID 9442818e-7666-489b-b394-4589e078969b
+1 _CREA 2026-04-12 13:20:21.170
+1 _USER ZPq1ieu0RMal2gNvgwB42sH5JeViC5m4lTxycLHLsVzQEEmjyTkcMAMphpCFCy415Y39ZS3oAFfQL+9t9FVyYQ==
+2 _ENCR 1
+1 _ORIG acom
+2 _URL https://www.findagrave.com/memorial/74353887/pete-sutyak
 1 _ATL N
-0 @O27@ OBJE
+0 @O35@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -5252,18 +6033,33 @@
 2 TITL Ochs Family Crest
 1 _OID 99f9d6d6-1698-4342-aba1-9b6e4878e4a2
 1 _CREA 2020-09-08 23:12:13.000
-1 _USER AFdiyfL57zyqbMz0ur0EsGosvMdhCmw4pBjnWSk7rNBoRYupmL7dBHJ//K2xIs2QYUfpce5F9fDWp36tTmKAYA==
+1 _USER lXwatCJpeUvHhJw3iA8ZXMnq5i9PLQReU7zjvmXac153MWQe3+TEqdClKESqqZIdg9fQqvOL5Gdfuil0hRhylQ==
 2 _ENCR 1
 1 _CLON
 2 _TID 46275268
 2 _PID 6509052774
 2 _OID 1b3ad3fd-814f-493e-9c28-c8a4fbc2f6ca
-2 _USER m/PZ4CMrtBur+LzNn+dus1QEgeRe9/VevgecQ+OGAIWocT5ggHhTWQgeeYs0Z7P6WELBsVWW+vBd/8ZioseZyw==
+2 _USER VmdFWY5X+JLjxXPNqnb+i8SVUiVac1YJG5eAEaXC2og9Ftrdx+oKRv1Btgy5sMkir8Tyn/X0BZCCv3QETiO8ew==
 3 _ENCR 1
 2 _DATE 2012-09-06 20:45:35.000
 1 _ORIG u
 1 _ATL N
-0 @O28@ OBJE
+0 @O36@ OBJE
+1 FILE
+2 FORM
+3 TYPE image
+3 _MTYPE document
+3 _STYPE jpeg
+3 _SIZE 0
+2 TITL Find a Grave Memorial page for Theresa Marie Dziadosz Rattay, Memorial ID 99998536
+1 _OID 9cfa4733-2ca1-4fa7-9701-5f3811e4c755
+1 _CREA 2026-04-12 12:57:05.711
+1 _USER Lzb5KxdFFfPn6YSEi4/9MMzYBuXlvh4HdVX3H7zuh4ZgoY2Y4Fr0ZJq6AyR5cdgCQrrowvLFtEiP86J+fDdQ1A==
+2 _ENCR 1
+1 _ORIG acom
+2 _URL https://www.findagrave.com/memorial/99998536/theresa_marie-rattay
+1 _ATL N
+0 @O37@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -5275,18 +6071,33 @@
 1 _OID a49b27b5-5a01-4f48-8a89-de101bc4e1b4
 1 _META <metadataxml><cemetery /><transcription /></metadataxml>
 1 _CREA 2019-02-05 00:44:43.281
-1 _USER HGRaFOta6OWYupzK0jbJbU+/xtdWiBGIn06pa+G0xr7AnfoKKX/lWVNfoq71oPgOB3F6yAAdkDJHqQ8TXhOjAg==
+1 _USER +OXQzVklI9Kd/zKqQw78HZWQ2dlear213YvyqOGPNaOUqymL/1DPgaA9jhG097ZwPSohaJhEWTPi708JTSHZ+g==
 2 _ENCR 1
 1 _CLON
 2 _TID 3290666
 2 _PID -1625127792
 2 _OID e01b48f8-dad7-42f6-8ff3-86a290ec3ba2
-2 _USER lfUxa3x6ngcagJjJo7gI9Uf2LX2SGBzNQHaewy2PXD4tfeFD1B6L7kMGZSIADEWEA0F62ch9JSRfZl6/NtANLQ==
+2 _USER wo0gNMsung9BAdWxCbyfgpvL2YfJ+8loEEIVld+E/hKQxgDkwG35b+DSSUnl71G4L1uwSH5UfSjKT0M8b9N7lQ==
 3 _ENCR 1
 2 _DATE 2007-10-31 19:20:37.000
 1 _ORIG u
 1 _ATL N
-0 @O29@ OBJE
+0 @O38@ OBJE
+1 FILE
+2 FORM
+3 TYPE image
+3 _MTYPE document
+3 _STYPE jpeg
+3 _SIZE 0
+2 TITL Find a Grave Memorial page for George Sutyak, Memorial ID 231038052
+1 _OID a9f66339-7be1-4673-a055-65d02df01cde
+1 _CREA 2026-04-12 13:10:26.564
+1 _USER fqaYZKwz4j+HcjFZwg5ocSThF7Pez+hMEC13EwxfNinIDAdby6dtK/Zbs/w0rZrUS7zwEHKXKafo0AcycTXSmg==
+2 _ENCR 1
+1 _ORIG acom
+2 _URL https://www.findagrave.com/memorial/231038052/george-sutyak
+1 _ATL N
+0 @O39@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -5298,18 +6109,18 @@
 1 _OID ba53c24a-d457-4b94-bb43-48928e487606
 1 DATE 1913
 1 _CREA 2018-11-24 17:41:52.512
-1 _USER S2N62FMxey3KxZ1gBehVW9gVs5WOyOKUSDwQosrNBbXiebGlgjU717W/D9sngDctk95VaVgOpFEz65COvkga+Q==
+1 _USER erzs5wid+gm1lyiMhEnB47Qh0489fHkkQLWCS6HOL3HtKiS+DflH3qo+yrydcOepLnpxbje3x8jHyb2nnvVijg==
 2 _ENCR 1
 1 _CLON
 2 _TID 10045005
 2 _PID 210024119499
 2 _OID 2ff2a489-0678-41fb-9194-6ef308db6c88
-2 _USER c/HKDTBL0FOnVDroBkmAmSlfCFHPByfjsq61ExgM5M6PSQCPFcNC7tgxN/5RMFuIoWvoP1ck+RMqCkNcgQORZw==
+2 _USER YzJDIbwaruBTSz+5hz4OGDM/aqXtxTZUAa1Znq5SqYRx4Z0fdzu32EYeOiFE25SmERHXgPPmPLHP0f/OU+wGxg==
 3 _ENCR 1
 2 _DATE 2016-08-17 01:22:47.000
 1 _ORIG u
 1 _ATL N
-0 @O30@ OBJE
+0 @O40@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -5323,19 +6134,19 @@
 1 DATE 18 Jun 1947, Wed
 1 PLAC Pittsburgh, Pennsylvania
 1 _CREA 2021-01-22 18:54:37.000
-1 _USER S3ofTpZ2fShnxs+YrohCdOfq0vfheBbMkCE9UmaU+lh2m9wpZqiwUJ0EXFoxI+82auiFMauiDC+MwcMakeSlMg==
+1 _USER b2ASBMLqbjKjXp4t3jFqej3AjpZNsM+20zBVPTKo7F4P3QApMw58mOpVFZYkb6/euZ8cXuH4uqHhlUFkFZ/T4g==
 2 _ENCR 1
 1 _CLON
 2 _TID 10045005
 2 _PID 210024682920
 2 _OID 5bbbf67c-3d42-45d3-92e2-c5d9f1c99a73
-2 _USER v9VDuRse3dKta+YtxlSJOPKJAX4t7iexxS2WkpFpi5nhUUe2zdZpvcZIQluAfGf77fou9CvNM7SMXxkFg+X4SQ==
+2 _USER 6Dnzu7Ahku1mvkCcqt5AwYuqK7koci4bFFzQBKKKMoDOyhAIumgvnoIih/Jet8OdMSlTHsCNbEtZ86T75tqmlQ==
 3 _ENCR 1
 2 _DATE 2016-08-17 01:59:49.000
 1 _ORIG newspapers
 2 _URL https://www.newspapers.com/clip/6263966/?xid=637
 1 _ATL N
-0 @O31@ OBJE
+0 @O41@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -5350,11 +6161,56 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:27:14.734
-1 _USER XjN0dhUiOzpQxiwICNQc34OHAA9NEEq6zgzo8XDm4miVdydO6+H4rwnbja+7qs1ZERxqKRxvVFDGMB1dbEJp7w==
+1 _USER 2tFWLZFx+z8ocgHB3RnrxihkyFOt1vchcj+iEQTH6lbBqlgeM9B783EkLqL1QN6hAPgegFAp58fV+5pvdV3olQ==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
-0 @O32@ OBJE
+0 @O42@ OBJE
+1 FILE
+2 FORM
+3 TYPE image
+3 _MTYPE document
+3 _STYPE jpeg
+3 _SIZE 0
+2 TITL Find a Grave Memorial page for Michael Behun, Memorial ID 73144916
+1 _OID be938fd1-d572-4dd5-b127-75c488cb9e7a
+1 _CREA 2026-04-12 13:04:20.610
+1 _USER cI/9K5RzUjFAQvZ+cBz4tn7E3sDS4W5RpghvIcHSRcBGHJoVp9JhOvcXEjCdsJQyxX7W+6q5xxNlpI+L3q6awQ==
+2 _ENCR 1
+1 _ORIG acom
+2 _URL https://www.findagrave.com/memorial/73144916/michael-behun
+1 _ATL N
+0 @O43@ OBJE
+1 FILE
+2 FORM
+3 TYPE image
+3 _MTYPE document
+3 _STYPE jpeg
+3 _SIZE 0
+2 TITL Find a Grave Memorial page for Edward Dziadosz, Memorial ID 23025759
+1 _OID c31df0b6-3737-4531-b565-5872915d657c
+1 _CREA 2026-04-12 12:42:19.362
+1 _USER yv24okloPNfJSiBa+56b518Q3CP1MrsTj8CQkFz2G4WBrR9W+rR6Dl4aMTor7GRABhhh6HetesLg2S1T4gIw2Q==
+2 _ENCR 1
+1 _ORIG acom
+2 _URL https://www.findagrave.com/memorial/23025759/edward-dziadosz
+1 _ATL N
+0 @O44@ OBJE
+1 FILE
+2 FORM
+3 TYPE image
+3 _MTYPE document
+3 _STYPE jpeg
+3 _SIZE 0
+2 TITL Find a Grave Memorial page for Michael Behun Jr., Memorial ID 81759416
+1 _OID c675fe79-15ed-4ca2-8851-81dae75d5ded
+1 _CREA 2026-04-12 13:03:33.914
+1 _USER E7qqWqEnaqENfoEhNW13nSvli1O3suuAf2yeS4oswB1MsAZ+eICNVaeMUUJPsIBXkmuWwRMO4d4ZpqlerzGxDw==
+2 _ENCR 1
+1 _ORIG acom
+2 _URL https://www.findagrave.com/memorial/81759416/michael-behun
+1 _ATL N
+0 @O45@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -5368,11 +6224,11 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:48.174
-1 _USER Z+bN1B/EnTFLpMB+4xTjJkFTeFJAfYWXj4D8tIQzhb2/allt5+P2QefAde6gPE/KepxVHOOQ5snbbqONNsLiQA==
+1 _USER CtpAIFogt/yViiRFs/NPUZNBeYTaU9yvIWgkjZn/QyAXmM4hlTJaxOabNibgOdBkYxyahcAeEjZERTyFDdB2QA==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
-0 @O33@ OBJE
+0 @O46@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -5386,11 +6242,26 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:48.279
-1 _USER idQtcoOMy7edHn1KbrVmsAuA8PPLgbKU6dDn0q1o+Or+PrwInwbK+WHpuddWUzoh7o6OFfWa7kz4EMBTObaMaQ==
+1 _USER ft/CD4SlBQhnGpffQxtt6rD2/KpaZv4h4b6bwkZcjV3LgfTC0oviozkmjIM5/jG+eP65dicFPZom7NEXZvz9VQ==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
-0 @O34@ OBJE
+0 @O47@ OBJE
+1 FILE
+2 FORM
+3 TYPE image
+3 _MTYPE document
+3 _STYPE jpeg
+3 _SIZE 0
+2 TITL Find a Grave Memorial page for Nicholas Behun, Memorial ID 85531861
+1 _OID ca0f68db-6429-46f1-aeae-3889424af754
+1 _CREA 2026-04-12 13:05:28.609
+1 _USER gLH2XnJFs+upfU21amLWf0ltwgtx8VZkWRac8PurLjM1LzmEMTG6VCbRCxBQ0lihQ/51bc4wAsfJ4lttRR7APg==
+2 _ENCR 1
+1 _ORIG acom
+2 _URL https://www.findagrave.com/memorial/85531861/nicholas-behun
+1 _ATL N
+0 @O48@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -5404,11 +6275,11 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:48.374
-1 _USER ZumWkuYZW46u2LNhVlR+fYlwzvso0rD2J3E4u7bhBPfcY48443+5GiejtpVQm/yEOjUzV07ko+UdeHYkZ/pgIQ==
+1 _USER XB1myzshw+hzJhtSTX2seJxAYyFeQISo6mZFBkXF20pUuXClilqFvO2UMCEcYXVfe4pz1+hiQwmHxUULFIL0/w==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
-0 @O35@ OBJE
+0 @O49@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -5422,11 +6293,11 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:49.043
-1 _USER uRPzHzxh4rzm9BGE7BqZ+Bcd9YJFXl9HgTgEpjaho+vitgv1ZNXitj7d+4fCjvuG2wkuAXPz95TPBa8+37JN+w==
+1 _USER pyAUw2H6Dk7hnMfoieg38V5pfu7AAfnTuxSCbn0SS+kB6midq+mW9Ud3KlFmr562S9XYhpreoT2anw5GuYg6vQ==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
-0 @O36@ OBJE
+0 @O50@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -5439,17 +6310,17 @@
 1 _OID d4daa42c-b593-49f2-bf18-4620a847b2c2
 1 _META <metadataxml></metadataxml>
 1 _CREA 2026-04-07 16:36:06.641
-1 _USER jsh2BMjDZcGBSSLaUtnuUvmYuuTrO+mexwu4uPhTW8C6T1qtcBIJYozICH51QPKfkKciJxo3hHLu+arqeFUbbg==
+1 _USER jBe8qmdbW6hih4gEncMB0Q4TvwKvNv3WohYUJsQBp3QVr8hnJ9+nM/Wa7q2UCa6OTO9eLsZ+QkWZtuYHx35lhw==
 2 _ENCR 1
 1 _CLON
-2 _USER VNvit6g8czex2JXknx/Y2eG44bQ8LiEWwL8w+eWPCjg54wkmTwfQLPTb9nV8QCJdR4SWyb7+QLEDTCmmZ0RCgA==
+2 _USER YrKj7tMG32+WJBFD65mlNK6qwdq0lhe6Ot9iUTzhOatmkmPVqDa/EDp/4NXw6tP5Knfjn/dKrEkiTHVnLzNdwA==
 3 _ENCR 1
 2 _DATE 2026-04-07 16:32:20.469
 1 _ORIG acom
 1 _MSER
 2 _LKID d4daa42c-b593-49f2-bf18-4620a847b2c2
 1 _ATL Y
-0 @O37@ OBJE
+0 @O51@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -5460,18 +6331,18 @@
 2 TITL Media0200
 1 _OID d54b2604-e558-4470-90f1-b589ef8c0bb4
 1 _CREA 2018-11-24 18:13:14.972
-1 _USER sD7iWfwzylIYcZdgwoaaDT8gBC114kgbQbHhEwULcR60cf/8MNYQRhQfr2CBd1LCtxzQ8s+lBuVyBeTpm8/8ww==
+1 _USER G5UG9OuRqDJ1k5F8pQv2gDCfT02INycFyAe80QjvHPXcLAS0gRQay6Jnwiuz8y2IaGrYwGiQhjvMl7LjywfobA==
 2 _ENCR 1
 1 _CLON
 2 _TID 108278092
 2 _PID 360063857305
 2 _OID 3526f7d6-1b73-4d25-ae41-c83c67fdd807
-2 _USER Jp+thYdp6T4dDPJ2ZoLl/BrS+6stjM0VgzO+ZX08Obr8elvxO26bqN2kqIW6tUsN/NX6rel10zxtlduVQObM8A==
+2 _USER 9jqrOrRMJO7e0Yi2o3/WWpxpVjhsqb69HYtabGVLSjje7M4tUzOd2dx6sJhTLjotPzPSqyJaqgb+s2flbFRpmA==
 3 _ENCR 1
 2 _DATE 2017-02-04 00:29:35.000
 1 _ORIG u
 1 _ATL N
-0 @O38@ OBJE
+0 @O52@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -5484,18 +6355,18 @@
 1 _OID e3f53e27-4f15-43b8-a96d-3286799652da
 1 _META <metadataxml><cemetery /><transcription /></metadataxml>
 1 _CREA 2018-11-24 17:59:35.348
-1 _USER SPlLnDgkwrDMS69XVvxy0ZVTd1zJFgrvBHfeyNev+0gQZgIFLPnuqczrX7AtFwBAt31d9vQTH50RWokecXXXJw==
+1 _USER nOkrgAHz9V1VwlynzZlojzIImfHnh28dXfjHpbl0BkQC00ZM3ovfkRprWEurfoMRn8NOrLAAtZjfI2Be5K7+pw==
 2 _ENCR 1
 1 _CLON
 2 _TID 32576842
 2 _PID 18803225037
 2 _OID 3d181fb9-e6e8-4ebf-8ce2-c4d9bd6623e1
-2 _USER +BxXmbRg3/SyGfxlHPlAyoCJvKrT1GJ1BSPgvymdpR0YACD86zAoAJYFmx8PvnvZh3qRXylLnfgmTjg0vceIhw==
+2 _USER A5PgtOYH21VJSnWd2miOvJYEqT8cxvjhD6Tb4gy8+wLkYgxL2Z3aI/E6O2DfQhTVtbdxclqxfNE0jlWfbE4Kzw==
 3 _ENCR 1
 2 _DATE 2012-04-04 20:13:07.000
 1 _ORIG u
 1 _ATL N
-0 @O39@ OBJE
+0 @O53@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -5508,18 +6379,18 @@
 1 _OID e48c856a-0277-4a00-be6b-18ea3043b1a5
 1 PLAC St Joseph Lucinda PA
 1 _CREA 2021-01-22 19:17:46.000
-1 _USER m1fN4cRii3JoRFnMYbCQAmPPzKLfwPw6xczl4n6ShE/205qbYjPm0B2u+rmcWNbZZThA12uaHMkxvFBTolZBdg==
+1 _USER kJtRPN/tztvaswF2m/vr4yNgkxV8TQ7sBgggl899im9bB00Hdd6MvTlwZDoj0VzSJgEs74tHC8bgwoVZuvPfuQ==
 2 _ENCR 1
 1 _CLON
 2 _TID 6065188
 2 _PID 304118361
 2 _OID aaa0b0e5-97f7-4e87-9d4a-911fe3ddd092
-2 _USER S0Y33dGiEdY8n3tRwTr99/Di3HxvCQ0nhYHpRbiHtlZOLfj61MVfSHuoRN+lFRC+xTfVPNM4kEM2APf0BWvv8A==
+2 _USER brPs+UEz/7a3uJES1SQvxqi1xfH0t32TnpLNSI+/kBJ1mpEVcLyaPKQTreF3OjFkEawQbTere6h4Cu7k9pxc9A==
 3 _ENCR 1
 2 _DATE 2017-01-14 06:52:59.000
 1 _ORIG u
 1 _ATL N
-0 @O40@ OBJE
+0 @O54@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -5531,18 +6402,18 @@
 1 _OID e68acff8-003e-431e-a3bd-ef58e67cf7da
 1 DATE 6/5/2014 11:13:14 PM
 1 _CREA 2018-12-28 04:32:10.525
-1 _USER RhhFJFZrI9K5ZpLkJw6wfGZwTU9sKalxKCRoKlgOtbXmj47URqxgilqyAgrNzri+avJj1hoB1QdQp02rIS6+Dg==
+1 _USER blKPFKjaAwvv7aC1brwCHiG27TPAXRukRyyPdaM+HOx9rx7+3VG0UfZBi0eY2ifK3LwEmBWDrkhhp9Q4H9cFvQ==
 2 _ENCR 1
 1 _CLON
 2 _TID 43572778
 2 _PID 13922357764
 2 _OID 3beb75a6-c243-434a-b58f-ea93f49b3a7f
-2 _USER KN/H9TJEaonUU6g6nmla+pma9AB/EB4/fziTwG8mpb9jVVw0b2WGnwyR4/U1byYgrYAdh4ks1GGJJrL612H8kQ==
+2 _USER GKwPkP+MiUcH4xnbBoGt8kYxliR6OHYzjNk+5tknXRO5/OsaQuN52DAxMHjBNUP7BvdK0nLAGlkaamn3FQupSA==
 3 _ENCR 1
 2 _DATE 2014-06-06 04:29:42.000
 1 _ORIG u
 1 _ATL N
-0 @O41@ OBJE
+0 @O55@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -5556,11 +6427,11 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:48.090
-1 _USER RG1QfMzpvPGDnsOMyX+YPyU3FMJ+b5FmuQxd0hfQfoFGkku8LjvNNXbRX/1VPVamGtpPn1AQoaU0Wb2UpBabHQ==
+1 _USER jiGBDF7KL/+3RnfPA1TqZuWDGp9c/eaLgWtmlKouDMb4+n/XldxiEGMedxdC3fIMffjv3T0d9hnj2mOgLn8sTQ==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
-0 @O42@ OBJE
+0 @O56@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -5574,11 +6445,11 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:48.095
-1 _USER x1x/pbb6h0bHWKlxMCbuJZqhNcRvZx2znlMqFg/jEzjOIUkpU4Z2R5bjvLkHokkAMmJpRu16l8ASaWgAfr55rQ==
+1 _USER hiS+EQzNFjybaOxtBfIoSEZaWutl5FUcirmMtsQ9hYJnlT0KmfFfRqmfA3AGoJ0IlFeQTbZenSB7dsvA4ir/Ig==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
-0 @O43@ OBJE
+0 @O57@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -5592,11 +6463,26 @@
 1 _DSCR "U.S., School Yearbooks, 1880-2012"; School Name: Penn Township High School; Year: 1950
 1 _META <metadataxml><record_source_gid>1308024950:1265</record_source_gid></metadataxml>
 1 _CREA 2020-08-10 04:03:19.000
-1 _USER CrPLu5f3mUPU5P483xcQRtGH37oVHX8b8Pd4+QIpBs+jpRB+KH3Qa2ul/6VzqETMWR8TmO/NXzm+83PETblb3g==
+1 _USER 0OnGYbumuWzFbDCcg6AIiynwBffxn9oQRmgTWvFUlsqa+Ycvjl1OEQpZoNaI9GYmV4cLCgRY0O9PkfIZFu6Nvw==
 2 _ENCR 1
 1 _ORIG u
 1 _ATL Y
-0 @O44@ OBJE
+0 @O58@ OBJE
+1 FILE
+2 FORM
+3 TYPE image
+3 _MTYPE document
+3 _STYPE jpeg
+3 _SIZE 0
+2 TITL Find a Grave Memorial page for Maryanna Dziadosz, Memorial ID 23025745
+1 _OID f7e95f05-af4f-42b2-9baf-3e4dee3ffa19
+1 _CREA 2026-04-12 12:41:13.479
+1 _USER UxchgIiThlmrkHx2DlTIJ/IEGCQZkpg/S3AljWt7StQrCPDgGwnhmpr9zxe3RSNGw1ZitMh3+dFKQiXOPAXVZA==
+2 _ENCR 1
+1 _ORIG acom
+2 _URL https://www.findagrave.com/memorial/23025745/maryanna-dziadosz
+1 _ATL N
+0 @O59@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -5610,17 +6496,32 @@
 1 DATE 23 Oct 1929, Wed
 1 PLAC Pittsburgh, Pennsylvania
 1 _CREA 2018-12-08 21:51:28.895
-1 _USER C86Yf4avUNE8Xfxb0Ow9eFLxNdAal+TGWMbpmEKZy/9k5fE6hbtQ9JSJcanwiEExhQpNMxRZCD14Qlwdy8orTw==
+1 _USER vK4BP+ZEchrfJsKvIo1J5dHhbHXmCVLEJul+6VDz0pFEfLBaoppKleYW2Quv3yCF7pSLdwbIPidaUIU8beKznQ==
 2 _ENCR 1
 1 _CLON
 2 _TID 10045005
 2 _PID 210024198232
 2 _OID e1f11d93-c3cc-4c1d-b326-9ef884a9aadb
-2 _USER Q26SrRLzZksVlBFndE2xWDvq7ZWB7VeJsCmdWKjqV+0tqyzMCguOdcwLcrz3kpXTVFbvfNhGEmXCLmW+zfPbUA==
+2 _USER ZNqr9FJVwrv3g7hKo5SRzTr6XRdVzytfQrtLv440a+yPOU2/GMGFLeFgd8mWYRd5ji/ImJXC3tCV67LvbYoaHA==
 3 _ENCR 1
 2 _DATE 2016-08-14 01:12:21.000
 1 _ORIG newspapers
 2 _URL https://www.newspapers.com/clip/6225569/?xid=637
+1 _ATL N
+0 @O60@ OBJE
+1 FILE
+2 FORM
+3 TYPE image
+3 _MTYPE document
+3 _STYPE jpeg
+3 _SIZE 0
+2 TITL Find a Grave Memorial page for Peter “Pete” Sutyak, Memorial ID 218110268
+1 _OID fc03ff3f-dc15-4753-b000-b48f4c3ee7ac
+1 _CREA 2026-04-12 13:21:50.928
+1 _USER gJk8yOCS1ToS/mNlBmwz+LvsyYc+ir/BHV+Bai+nQoEtJazd1mF6ZE9fgoUJYKFWBoyx887aLc+3+uhUCm1Kzg==
+2 _ENCR 1
+1 _ORIG acom
+2 _URL https://www.findagrave.com/memorial/218110268/peter-sutyak
 1 _ATL N
 0 @S1580498932@ SOUR
 1 TITL U.S., World War II Draft Registration Cards, 1942
@@ -5934,6 +6835,14 @@
 1 _APID 1,1174::0
 1 REPO @R1553320584@
 1 NOTE &lt;i&gt;Selected Passports&lt;/i&gt;. National Archives, Washington, D.C.&lt;p&gt;&lt;br&gt;A full list of sources can be found &lt;a href="##SearchUrlPrefix##/search/dbextra.aspx?dbid=1174" target="_blank"&gt;here.&lt;/a&gt;&lt;/p&gt;
+0 @S1677610451@ SOUR
+1 TITL Find a Grave
+1 AUTH www.findagrave.com
+1 PUBL Ancestry.com
+1 REPO @R1556131879@
 0 @R1553320584@ REPO
 1 NAME Ancestry.com
+0 @R1556131879@ REPO
+1 NAME Find a Grave
+1 ADDR <line>www.findagrave.com</line>
 0 TRLR
