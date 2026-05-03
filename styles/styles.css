@@ -228,3 +228,26 @@ svg#connectors { position:absolute; top:0; left:0; pointer-events:none; overflow
 .legend-line.descent  { background:#7a3b1e; }
 .legend-line.marriage { border-top:2px dashed #1a6b8a; height:0; background:transparent; }
 .legend .origin-tag { width: 110px; text-align: center; }
+.headshot, .headshot-fallback {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 8px;
+  background-color: var(--card-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink-light);
+  flex-shrink: 0;
+}
+
+.headshot {
+  border: 2px solid var(--card-bg);
+  box-shadow: 0 0 0 1px var(--card-border);
+}
+
+/* Adjust card padding when there's a photo */
+.card.has-photo {
+  padding-top: 12px;
+}

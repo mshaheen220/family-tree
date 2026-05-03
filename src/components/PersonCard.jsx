@@ -1,10 +1,23 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { originLabels } from '../utils/constants.js';
 
 export default function PersonCard({ person, isRoot, isDimmed, onClick, onMouseEnter, onMouseLeave }) {
+  const [imgError, setImgError] = useState(false);
+
+  // Remove '@' symbols and 'I' prefixes from the ID
+  // Use `import.meta.env.BASE_URL` to respect the `base` setting in vite.config.js
+  const cleanId = person.id.replace(/[@I]/gi, '');
+  // Note: Vite's BASE_URL includes a trailing slash if the base is not root.
+  const photoUrl = `${import.meta.env.BASE_URL}headshots/${cleanId}.jpg`;
+
+  // Reset image error state when the person (and thus photoUrl) changes
+  useEffect(() => {
+    setImgError(false);
+  }, [photoUrl]);
+
   return (
     <div 
-      className={`card ${isRoot ? 'selected' : ''} ${isDimmed ? 'dimmed' : ''}`} 
+      className={`card ${isRoot ? 'selected' : ''} ${isDimmed ? 'dimmed' : ''} ${!imgError ? 'has-photo' : ''}`}
       style={{ left: person.x, top: person.y }}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
@@ -13,6 +26,24 @@ export default function PersonCard({ person, isRoot, isDimmed, onClick, onMouseE
         onClick();
       }}
     >
+      {!imgError ? (
+        <img 
+          src={photoUrl} 
+          alt={`Portrait of ${person.name}`} 
+          className="headshot" 
+          onError={(e) => {
+            console.error(`Failed to load image: ${e.target.src}`);
+            setImgError(true);
+          }} 
+        />
+      ) : (
+        <div className="headshot-fallback">
+          <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" strokeWidth="1" fill="none" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </div>
+      )}
       {person.hasHiddenRelations && (
         <div className="hidden-indicator" title="Click to reveal hidden relatives">
           <svg viewBox="0 0 24 24" width="12" height="12" stroke="currentColor" strokeWidth="3" fill="none" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
