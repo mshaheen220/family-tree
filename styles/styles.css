@@ -251,3 +251,20 @@ svg#connectors { position:absolute; top:0; left:0; pointer-events:none; overflow
 .card.has-photo {
   padding-top: 12px;
 }
+
+/* ==========================================================================
+   EXPORT STYLES (Applied temporarily during html2canvas capture)
+   ========================================================================== */
+.exporting-active #canvas {
+  /* Force remove any zoom/pan transforms so the screenshot captures raw, unscaled coordinates */
+  transform: none !important;
+  transition: none !important;
+}
+
+.export-hide-headshots .headshot,
+.export-hide-headshots .headshot-fallback {
+  display: none !important;
+}
+.export-hide-headshots .card.has-photo {
+  padding-top: 9px; /* Revert back to the standard card padding */
+}

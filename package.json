@@ -7,9 +7,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "relatives-tree": "^1.1.1",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^4.2.1",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "relatives-tree": "^1.1.1"
   },
   "description": "",
   "main": "split-gedcom.js",
