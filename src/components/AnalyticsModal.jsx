@@ -326,10 +326,8 @@ export default function AnalyticsModal({ show, onClose, indis, nodes, fams, root
     return { person: rootPerson, slices, desc };
   }, [indis, rootId]);
 
-  if (!show) return null;
-
   return (
-    <div className="analytics-backdrop" onClick={onClose} onWheel={e => e.stopPropagation()}>
+    <div className={`analytics-backdrop ${show ? 'show' : ''}`} onClick={onClose} onWheel={e => e.stopPropagation()}>
       <div className="analytics-modal" onClick={e => e.stopPropagation()}>
         <div className="analytics-header">
           <h2>Tree Analytics</h2>
@@ -340,26 +338,26 @@ export default function AnalyticsModal({ show, onClose, indis, nodes, fams, root
           {rootHeritageData && (
             <section className="analytics-section">
               <h3>🧬 {rootHeritageData.person.name}'s Heritage</h3>
-              {rootHeritageData.desc && <p style={{ marginBottom: '15px', color: 'var(--ink-light)', fontStyle: 'italic' }}>{rootHeritageData.desc}</p>}
+              {rootHeritageData.desc && <p className="analytics-desc">{rootHeritageData.desc}</p>}
               
               {rootHeritageData.slices.length > 0 && <SegmentedBarChart data={rootHeritageData.slices} colors={originColors} />}
             </section>
           )}
 
-          <section className="analytics-section" style={{ paddingBottom: '15px' }}>
-            <h3 style={{ borderBottom: 'none', marginBottom: '5px' }}>📊 Group Insights</h3>
-            <p style={{ fontSize: '0.95rem', color: 'var(--ink-light)', fontStyle: 'italic', marginBottom: '15px' }}>
+          <section className="analytics-section analytics-section-condensed">
+            <h3 className="analytics-group-title">📊 Group Insights</h3>
+            <p className="analytics-desc">
               The statistics below analyze multiple relatives. Select your dataset:
             </p>
-            <div style={{ display: 'flex', background: 'var(--card-border)', padding: '4px', borderRadius: '6px' }}>
+            <div className="toggle-group">
               <button 
-                style={{ flex: 1, padding: '6px 12px', border: 'none', borderRadius: '4px', background: isFullData ? 'var(--card-bg)' : 'transparent', color: isFullData ? 'var(--ink)' : 'var(--ink-light)', fontWeight: isFullData ? 600 : 400, cursor: 'pointer', transition: 'all 0.2s', boxShadow: isFullData ? '0 2px 4px var(--shadow)' : 'none' }}
+                className={`toggle-btn ${isFullData ? 'active' : ''}`}
                 onClick={() => setIsFullData(true)}
               >
                 Entire File Data
               </button>
               <button 
-                style={{ flex: 1, padding: '6px 12px', border: 'none', borderRadius: '4px', background: !isFullData ? 'var(--card-bg)' : 'transparent', color: !isFullData ? 'var(--ink)' : 'var(--ink-light)', fontWeight: !isFullData ? 600 : 400, cursor: 'pointer', transition: 'all 0.2s', boxShadow: !isFullData ? '0 2px 4px var(--shadow)' : 'none' }}
+                className={`toggle-btn ${!isFullData ? 'active' : ''}`}
                 onClick={() => setIsFullData(false)}
               >
                 Everyone on Canvas
@@ -372,10 +370,9 @@ export default function AnalyticsModal({ show, onClose, indis, nodes, fams, root
           {originsData.length > 0 ? (
             <DonutChart data={originsData} colors={originColors} />
           ) : (
-            <p style={{ color: 'var(--ink-light)', fontStyle: 'italic', marginTop: '10px' }}>No historical immigrant data available in this view.</p>
+            <p className="analytics-empty">No historical immigrant data available in this view.</p>
           )}
         </section>
-
 
           <section className="analytics-section">
             <h3>👨‍👩‍👧‍👦 Family Size & Dynamics</h3>
@@ -387,17 +384,17 @@ export default function AnalyticsModal({ show, onClose, indis, nodes, fams, root
           </section>
           <section className="analytics-section">
             <h3>📛 Most Common Names</h3>
-            <div style={{ display: 'flex', gap: '20px' }}>
-              <div style={{ flex: 1 }}>
-                <h4 style={{ fontSize: '0.95rem', color: 'var(--ink-light)', marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>First Names</h4>
+            <div className="names-container">
+              <div className="names-col">
+                <h4 className="analytics-sub-title">First Names</h4>
                 <ul className="stats-list">
                   {namesData.topFirst.map(([name, count], i) => (
                     <li key={i}><strong>{name}</strong> <span>{count}</span></li>
                   ))}
                 </ul>
               </div>
-              <div style={{ flex: 1 }}>
-                <h4 style={{ fontSize: '0.95rem', color: 'var(--ink-light)', marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Surnames</h4>
+              <div className="names-col">
+                <h4 className="analytics-sub-title">Surnames</h4>
                 <ul className="stats-list">
                   {namesData.topLast.map(([name, count], i) => (
                     <li key={i}><strong>{name}</strong> <span>{count}</span></li>
@@ -413,14 +410,14 @@ export default function AnalyticsModal({ show, onClose, indis, nodes, fams, root
               <li><strong>Direct Namesakes</strong> <span>{namesakesData.namesakesCount} relatives share a name with a parent</span></li>
             </ul>
             {namesakesData.topChains.length > 0 && (
-              <div style={{ marginTop: '15px' }}>
-                <h4 style={{ fontSize: '0.95rem', color: 'var(--ink-light)', marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Longest Passed-Down Names</h4>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+              <div className="namesakes-chains">
+                <h4 className="analytics-sub-title">Longest Passed-Down Names</h4>
+                <div className="chain-list">
                   {namesakesData.topChains.map((chain, i) => (
-                    <div key={i} style={{ background: 'var(--badge-bg)', padding: '10px 12px', borderRadius: '6px', border: '1px solid var(--badge-border)' }}>
-                      <strong style={{ color: 'var(--accent)', fontSize: '1.05rem' }}>"{chain.name}"</strong> 
-                      <span style={{ fontSize: '0.85rem', color: 'var(--ink-light)', marginLeft: '6px' }}>({chain.path.length} generations)</span>
-                      <div style={{ marginTop: '4px', fontSize: '0.9rem', color: 'var(--ink)', lineHeight: '1.4' }}>
+                    <div key={i} className="chain-item">
+                      <strong className="chain-name">"{chain.name}"</strong> 
+                      <span className="chain-gen">({chain.path.length} generations)</span>
+                      <div className="chain-path">
                         {chain.path.join(' → ')}
                       </div>
                     </div>
@@ -437,7 +434,7 @@ export default function AnalyticsModal({ show, onClose, indis, nodes, fams, root
                 <li key={i}>
                   <strong>
                     {p.name}
-                    {p.isLiving && <span style={{ fontSize: '0.75rem', color: 'var(--accent2)', marginLeft: '6px', fontStyle: 'italic' }}>(Living)</span>}
+                    {p.isLiving && <span className="living-badge">(Living)</span>}
                   </strong> 
                   <span>{p.age} years ({p.bYear} - {p.isLiving ? 'Present' : p.dYear})</span>
                 </li>

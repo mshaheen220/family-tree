@@ -22,12 +22,12 @@ export default function Legend({ nodes }) {
       
       {uniqueOrigins.length > 0 && (
         <>
-          <div style={{ marginTop: '8px', borderTop: '1px solid var(--card-border)', paddingTop: '7px', fontSize: '.72rem', color: 'var(--ink-light)', letterSpacing: '.04em', textTransform: 'uppercase', marginBottom: '4px', fontWeight: 600 }}>
+          <div className="legend-section-title">
             Geographic Origin
           </div>
           {uniqueOrigins.map(origin => (
             <div className="legend-row" key={origin}>
-              <span className={`origin-tag origin-${origin}`} style={{ margin: 0 }}>
+              <span className={`origin-tag origin-${origin}`}>
                 {originLabels[origin] || origin}
               </span>
             </div>

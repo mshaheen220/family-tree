@@ -30,8 +30,8 @@ export default function Header({
       </div>
       <div className="controls">
         <Tooltip text="Search and select the root person">
-          <div style={{ display: 'flex', alignItems: 'center', background: 'var(--btn-bg)', border: '1px solid var(--gold)', borderRadius: '3px', padding: '2px 5px', transition: 'all 0.2s' }}>
-            <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" strokeWidth="2" fill="none" style={{ color: 'var(--gold)' }}><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <div className="search-wrap">
+            <svg className="search-icon" viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" strokeWidth="2" fill="none"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
             <input 
               className="search-input"
               type="text" 
@@ -48,8 +48,9 @@ export default function Header({
                 }
               }}
             />
-            <div style={{ width: '1px', height: '16px', background: 'var(--gold)', opacity: 0.3, margin: '0 5px' }}></div>
+            <div className="search-divider"></div>
             <select 
+              className="person-select"
               value={searchTerm ? 'search_prompt' : (rootId || '')} 
               aria-label="Select root person"
               onChange={(e) => { 
@@ -58,31 +59,30 @@ export default function Header({
                   setSearchTerm(''); 
                 }
               }}
-              style={{ padding: '3px 5px', border: 'none', background: 'transparent', color: 'var(--gold)', fontFamily: "'Crimson Text', serif", outline: 'none', cursor: 'pointer', maxWidth: '160px', textOverflow: 'ellipsis' }}
             >
               {searchTerm && filteredIndividuals.length > 0 && <option value="search_prompt" disabled>Select from {filteredIndividuals.length} result(s)...</option>}
               {filteredIndividuals.length === 0 && <option value="search_prompt" disabled>No results...</option>}
               {filteredIndividuals.map(ind => (
-                <option key={ind.id} value={ind.id} style={{ color: '#000' }}>{ind.name}</option>
+                <option key={ind.id} value={ind.id}>{ind.name}</option>
               ))}
             </select>
           </div>
         </Tooltip>
         <Tooltip text="Select a visual color theme">
           <select 
+            className="theme-select"
             value={theme} 
             aria-label="Select color theme"
             onChange={(e) => setTheme(e.target.value)}
-            style={{ padding: '5px 10px', borderRadius: '3px', border: '1px solid var(--gold)', background: 'var(--btn-bg)', color: 'var(--gold)', fontFamily: "'Crimson Text', serif", outline: 'none', cursor: 'pointer' }}
           >
-            <option value="classic" style={{ color: '#000' }}>Classic Theme</option>
-            <option value="dark" style={{ color: '#000' }}>Dark Theme</option>
-            <option value="ocean" style={{ color: '#000' }}>Ocean Theme</option>
-            <option value="forest" style={{ color: '#000' }}>Forest Theme</option>
-            <option value="monochrome" style={{ color: '#000' }}>Monochrome Theme</option>
+            <option value="classic">Classic Theme</option>
+            <option value="dark">Dark Theme</option>
+            <option value="ocean">Ocean Theme</option>
+            <option value="forest">Forest Theme</option>
+            <option value="monochrome">Monochrome Theme</option>
           </select>
         </Tooltip>
-        <input type="file" accept=".ged" style={{ display: 'none' }} ref={fileInputRef} onChange={handleFileUpload} />
+        <input type="file" accept=".ged" className="hidden-file-input" ref={fileInputRef} onChange={handleFileUpload} />
         <Tooltip text="Upload GEDCOM file">
           <button className="btn" aria-label="Upload GEDCOM file" onClick={() => fileInputRef.current?.click()}>
             <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
@@ -105,7 +105,7 @@ export default function Header({
         <Tooltip text="Zoom In">
           <button className="btn" aria-label="Zoom in" onClick={() => setView(prev => ({ ...prev, scale: Math.min(2, prev.scale + 0.12) }))}>+</button>
         </Tooltip>
-        <div style={{ width: '1px', height: '20px', background: 'rgba(200,153,42,.3)', margin: '0 5px' }}></div>
+        <div className="header-divider"></div>
         <Tooltip text="Recenter on current person">
           <button className="btn" aria-label="Recenter on current person" onClick={handleRecenter}>
             <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="3"></circle></svg>

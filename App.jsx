@@ -153,11 +153,11 @@ export default function App() {
   return (
     <div 
       id="canvas-wrap" 
+      className={isDragging ? 'grabbing' : ''}
       onMouseDown={handleMouseDown} 
       onMouseMove={handleMouseMove} 
       onMouseUp={handleMouseUp} 
       onMouseLeave={handleMouseUp}
-      style={{ cursor: isDragging ? 'grabbing' : 'grab' }}
     >
       <Header 
         maxGen={maxGen}
@@ -180,29 +180,24 @@ export default function App() {
 
       <div 
         id="canvas" 
+        className={isDragging ? 'dragging' : ''}
         style={{ 
           width: maxX, height: maxY, 
-          transform: `translate(${view.tx}px, ${view.ty}px) scale(${view.scale})`,
-          transition: isDragging ? 'none' : 'transform 0.4s ease-out'
+          transform: `translate(${view.tx}px, ${view.ty}px) scale(${view.scale})`
         }}
       >
-        <svg id="connectors" width={maxX} height={maxY} style={{ position: 'absolute', top: 0, left: 0, pointerEvents: 'none', overflow: 'visible', opacity: highlightedIds ? 0.35 : 1, transition: 'opacity 0.2s' }}>
+        <svg id="connectors" width={maxX} height={maxY} className={highlightedIds ? 'dimmed' : ''}>
           {connectors?.map(c => (
             <polyline 
               key={c.id} 
+              className={`connector-line ${c.isMarriage ? 'marriage' : ''}`}
               points={c.path} 
-              stroke={c.isMarriage ? "var(--marriage-line)" : "var(--blood-line)"} 
-              strokeWidth="2" 
-              fill="none" 
-              strokeLinejoin="round" 
-              strokeDasharray={c.isMarriage ? "6,3" : "none"}
-              opacity={c.isMarriage ? "0.85" : "0.7"} 
             />
           ))}
         </svg>
 
         {nodes.length === 0 && (
-          <div style={{ position: 'absolute', top: window.innerHeight / 2 - view.ty, left: window.innerWidth / 2 - view.tx, transform: 'translate(-50%, -50%)', color: 'var(--accent)', fontSize: '1.2rem', textAlign: 'center', fontFamily: "'Playfair Display', serif" }}>
+          <div className="error-message" style={{ top: window.innerHeight / 2 - view.ty, left: window.innerWidth / 2 - view.tx }}>
             The layout engine couldn't calculate this person's family tree.<br/>
             Please select another relative from the dropdown.
           </div>

@@ -58,9 +58,29 @@ export async function exportTreeToPdf({ hideHeadshots = false } = {}) {
     const pdf = new jsPDF({ orientation, unit: 'pt', format: [cropWidth, cropHeight] });
 
     pdf.addImage(imgData, 'PNG', 0, 0, cropWidth, cropHeight);
+
+    // 5. Capture Analytics Page
+    const analyticsElement = document.querySelector('.analytics-backdrop');
+    if (analyticsElement) {
+      const analyticsCanvas = await html2canvas(analyticsElement, {
+        scale: 2,
+        backgroundColor: bgColor,
+        useCORS: true
+      });
+      const aImgData = analyticsCanvas.toDataURL('image/png');
+      
+      // Divide by 2 to get the logical CSS dimensions back for the PDF page size
+      const aWidth = analyticsCanvas.width / 2;
+      const aHeight = analyticsCanvas.height / 2;
+      const aOrientation = aWidth > aHeight ? 'landscape' : 'portrait';
+      
+      pdf.addPage([aWidth, aHeight], aOrientation);
+      pdf.addImage(aImgData, 'PNG', 0, 0, aWidth, aHeight);
+    }
+
     pdf.save('family-tree.pdf');
   } finally {
-    // 5. Always clean up classes, even if an error occurs
+    // 6. Always clean up classes, even if an error occurs
     document.body.classList.remove('exporting-active', 'export-hide-headshots');
   }
 }

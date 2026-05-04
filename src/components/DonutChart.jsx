@@ -4,14 +4,13 @@ export default function DonutChart({ data, colors }) {
   const [hoveredOrigin, setHoveredOrigin] = useState(null);
 
   return (
-    <div style={{ display: 'flex', alignItems: 'center', gap: '40px', marginTop: '20px' }}>
-      <div style={{ 
-        width: '160px', height: '160px', position: 'relative', flexShrink: 0
-      }}>
-        <svg viewBox="0 0 42 42" width="100%" height="100%" style={{ transform: 'rotate(-90deg)', overflow: 'visible', filter: 'drop-shadow(0 4px 10px var(--shadow))' }}>
+    <div className="donut-container">
+      <div className="donut-chart-wrap">
+        <svg viewBox="0 0 42 42" width="100%" height="100%" className="donut-svg">
           <circle cx="21" cy="21" r="15.915494309189533" fill="transparent" stroke="var(--card-border)" strokeWidth="6" />
           {data.map(o => (
             <circle
+              className="donut-segment"
               key={o.origin}
               cx="21" cy="21" r="15.915494309189533"
               fill="transparent"
@@ -19,40 +18,39 @@ export default function DonutChart({ data, colors }) {
               strokeWidth={hoveredOrigin === o.origin ? "8" : "6"}
               strokeDasharray={`${o.exactPct} ${100 - o.exactPct}`}
               strokeDashoffset={-o.offset}
-              style={{ transition: 'stroke-width 0.2s, stroke 0.2s', cursor: 'pointer', outline: 'none' }}
               onMouseEnter={() => setHoveredOrigin(o.origin)}
               onMouseLeave={() => setHoveredOrigin(null)}
             />
           ))}
         </svg>
         
-        <div style={{ position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none', textAlign: 'center' }}>
+        <div className="donut-center">
           {hoveredOrigin ? (
             <>
-              <span style={{ fontSize: '0.65rem', fontWeight: 600, color: 'var(--ink-light)', textTransform: 'uppercase', letterSpacing: '0.05em', padding: '0 10px', lineHeight: 1.2, marginBottom: '2px' }}>
+              <span className="donut-label">
                 {data.find(o => o.origin === hoveredOrigin)?.label}
               </span>
-              <strong style={{ fontSize: '1.4rem', color: 'var(--ink)', lineHeight: 1 }}>
+              <strong className="donut-percent">
                 {data.find(o => o.origin === hoveredOrigin)?.percentage}%
               </strong>
             </>
           ) : (
-            <span style={{ fontSize: '0.85rem', color: 'var(--ink-light)', fontStyle: 'italic', padding: '0 15px' }}>Hover to view</span>
+            <span className="donut-hover-prompt">Hover to view</span>
           )}
         </div>
       </div>
       
-      <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '10px' }}>
+      <div className="donut-legend">
         {data.map(o => (
           <div 
             key={o.origin} 
+            className={`donut-legend-item ${hoveredOrigin && hoveredOrigin !== o.origin ? 'dimmed' : ''}`}
             onMouseEnter={() => setHoveredOrigin(o.origin)}
             onMouseLeave={() => setHoveredOrigin(null)}
-            style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontSize: '1rem', color: 'var(--ink)', cursor: 'pointer', opacity: hoveredOrigin && hoveredOrigin !== o.origin ? 0.3 : 1, transition: 'opacity 0.2s' }}
           >
-            <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-              <div style={{ width: '16px', height: '16px', borderRadius: '4px', background: colors[o.origin] || colors.generic, transition: 'transform 0.2s', transform: hoveredOrigin === o.origin ? 'scale(1.2)' : 'scale(1)' }}></div>
-              <strong style={{ transition: 'color 0.2s', color: hoveredOrigin === o.origin ? 'var(--accent)' : 'inherit' }}>{o.label}</strong>
+            <div className="donut-legend-label">
+              <div className={`donut-legend-color ${hoveredOrigin === o.origin ? 'hovered' : ''}`} style={{ background: colors[o.origin] || colors.generic }}></div>
+              <strong className={`donut-legend-name ${hoveredOrigin === o.origin ? 'hovered' : ''}`}>{o.label}</strong>
             </div>
             <span>{o.percentage}%</span>
           </div>

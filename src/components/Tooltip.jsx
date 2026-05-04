@@ -40,20 +40,16 @@ const Tooltip = ({ text, children, style }) => {
             className="tooltip-wrapper"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={() => setShow(false)}
-            style={{ position: 'relative', display: 'inline-flex', alignItems: 'center', ...style }}
+            style={style}
         >
             {children}
             {show && text && createPortal(
                 <div 
                     className="tooltip-popup" 
                     style={{ 
-                        position: 'fixed', 
                         top: coords.top, 
                         left: coords.left, 
                         transform: `translate(${coords.alignX}, ${placement === 'top' ? '-100%' : '0'})`, 
-                        margin: 0, 
-                        bottom: 'auto', 
-                        zIndex: 10000 
                     }}
                 >
                     {text}

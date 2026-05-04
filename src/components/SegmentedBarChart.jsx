@@ -5,17 +5,14 @@ export default function SegmentedBarChart({ data, colors }) {
 
   return (
     <div>
-      <div style={{ display: 'flex', width: '100%', height: '20px', borderRadius: '10px', overflow: 'hidden', marginBottom: '15px', boxShadow: '0 2px 5px var(--shadow)' }}>
+      <div className="segmented-bar">
         {data.map(o => (
           <div 
             key={o.origin} 
+            className={`segmented-segment ${hoveredOrigin && hoveredOrigin !== o.origin ? 'dimmed' : ''}`}
             style={{ 
               width: `${o.exactPct}%`, 
-              height: '100%', 
               background: colors[o.origin] || colors.generic,
-              opacity: hoveredOrigin && hoveredOrigin !== o.origin ? 0.3 : 1,
-              transition: 'opacity 0.2s',
-              cursor: 'pointer'
             }}
             title={`${o.label}: ${o.percentage}%`}
             onMouseEnter={() => setHoveredOrigin(o.origin)}
@@ -23,17 +20,17 @@ export default function SegmentedBarChart({ data, colors }) {
           ></div>
         ))}
       </div>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(120px, 1fr))', gap: '10px' }}>
+      <div className="segmented-legend">
         {data.map(o => (
           <div 
             key={o.origin} 
+            className={`segmented-legend-item ${hoveredOrigin && hoveredOrigin !== o.origin ? 'dimmed' : ''}`}
             onMouseEnter={() => setHoveredOrigin(o.origin)}
             onMouseLeave={() => setHoveredOrigin(null)}
-            style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.95rem', color: 'var(--ink)', cursor: 'pointer', opacity: hoveredOrigin && hoveredOrigin !== o.origin ? 0.3 : 1, transition: 'opacity 0.2s' }}
           >
-            <div style={{ width: '12px', height: '12px', borderRadius: '3px', background: colors[o.origin] || colors.generic, transition: 'transform 0.2s', transform: hoveredOrigin === o.origin ? 'scale(1.2)' : 'scale(1)' }}></div>
-            <strong style={{ transition: 'color 0.2s', color: hoveredOrigin === o.origin ? 'var(--accent)' : 'inherit' }}>{o.label}</strong>
-            <span style={{ color: 'var(--ink-light)' }}>{o.percentage}%</span>
+            <div className={`segmented-legend-color ${hoveredOrigin === o.origin ? 'hovered' : ''}`} style={{ background: colors[o.origin] || colors.generic }}></div>
+            <strong className={`segmented-legend-name ${hoveredOrigin === o.origin ? 'hovered' : ''}`}>{o.label}</strong>
+            <span className="segmented-legend-pct">{o.percentage}%</span>
           </div>
         ))}
       </div>
