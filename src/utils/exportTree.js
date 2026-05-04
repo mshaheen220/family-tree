@@ -51,13 +51,13 @@ export async function exportTreeToPdf({ hideHeadshots = false } = {}) {
       useCORS: true, // Needed if headshots are hosted externally or via different paths
     });
 
-    const imgData = renderedCanvas.toDataURL('image/png');
+    const imgData = renderedCanvas.toDataURL('image/jpeg', 0.85);
 
     // 4. Calculate best orientation for PDF & perfectly size the page to the tree
     const orientation = cropWidth > cropHeight ? 'landscape' : 'portrait';
     const pdf = new jsPDF({ orientation, unit: 'pt', format: [cropWidth, cropHeight] });
 
-    pdf.addImage(imgData, 'PNG', 0, 0, cropWidth, cropHeight);
+    pdf.addImage(imgData, 'JPEG', 0, 0, cropWidth, cropHeight);
 
     // 5. Capture Analytics Page
     const analyticsElement = document.querySelector('.analytics-backdrop');
@@ -67,7 +67,7 @@ export async function exportTreeToPdf({ hideHeadshots = false } = {}) {
         backgroundColor: bgColor,
         useCORS: true
       });
-      const aImgData = analyticsCanvas.toDataURL('image/png');
+      const aImgData = analyticsCanvas.toDataURL('image/jpeg', 0.85);
       
       // Divide by 2 to get the logical CSS dimensions back for the PDF page size
       const aWidth = analyticsCanvas.width / 2;
@@ -75,7 +75,7 @@ export async function exportTreeToPdf({ hideHeadshots = false } = {}) {
       const aOrientation = aWidth > aHeight ? 'landscape' : 'portrait';
       
       pdf.addPage([aWidth, aHeight], aOrientation);
-      pdf.addImage(aImgData, 'PNG', 0, 0, aWidth, aHeight);
+      pdf.addImage(aImgData, 'JPEG', 0, 0, aWidth, aHeight);
     }
 
     pdf.save('family-tree.pdf');
