@@ -10,7 +10,10 @@ Unlike static diagrams, this viewer allows you to "walk" through the family tree
 * **Direct GEDCOM Parsing:** Upload any `.ged` file directly in the browser—no server or database required.
 * **Dynamic Layout Engine:** Automatically handles pedigree collapse, multiple marriages, and half-siblings using a specialized Directed Acyclic Graph (DAG) algorithm.
 * **Interactive Traversal:** Click any person's card to re-center the universe on them and reveal their hidden ancestors/descendants.
+* **High-Resolution PDF Export:** Capture and download the current family tree view as a perfectly cropped, print-ready PDF document.
+* **Headshot Integration:** Automatically displays portrait photos for relatives by mapping their GEDCOM IDs to local image files, with graceful fallbacks for missing photos.
 * **Smooth Camera Controls:** Drag to pan, scroll to zoom, and enjoy smooth CSS transitions when jumping between relatives.
+* **Quick Reset Controls:** One-click buttons to instantly re-center the camera, reset to the dataset's default root person, or completely reload the original tree.
 * **Custom Themes:** Switch between 5 mathematically balanced, high-contrast color themes (Classic, Dark, Ocean, Forest, Monochrome) to suit your preference.
 * **Nationality Badges:** Automatically assigns flag-inspired origin badges based on parsed birthplaces or deathplaces.
 * **Tree Analytics & Insights:** A dedicated modal offering rich data analysis including Geographic "Melting Pot" donut charts, Longest Lived Relatives, Namesake Lineages, and Family Size dynamics.
@@ -47,7 +50,13 @@ To keep the screen from turning into a tangled spiderweb of overlapping lines, t
 **3. Tree Analytics**
 Click the **Analytics (Bar Chart)** icon in the header to view deep statistical insights about your family tree. You can toggle the modal to analyze either the *Entire File* or just the *Current Tree View*.
 
-**4. Uploading Your Own Tree**
+**4. Exporting to PDF**
+Click the **Printer** icon in the header to take a high-resolution snapshot of your current tree and download it as a perfectly-sized PDF, great for printing or sharing.
+
+**5. Quick Actions**
+Use the toolbar icons on the right side of the header to quickly recenter the camera on the current person, revert back to the primary person in your dataset, or completely restart and load the original default tree.
+
+**6. Uploading Your Own Tree**
 Click the **Upload .ged** button in the header to load your own family tree. You can export a `.ged` file from ancestry sites like Ancestry.com, FamilySearch, or MyHeritage. All data is processed locally in your browser and is never uploaded to a server.
 
 ---
