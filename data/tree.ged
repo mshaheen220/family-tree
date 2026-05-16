@@ -12,8 +12,8 @@
 3 ADDR 1300 West Traverse Parkway
 4 CONT Lehi, UT  84043
 4 CONT USA
-1 DATE 4 May 2026
-2 TIME 17:35:57
+1 DATE 16 May 2026
+2 TIME 16:01:04
 1 GEDC
 2 VERS 5.5.1
 2 FORM LINEAGE-LINKED
@@ -37,9 +37,9 @@
 3 _APID 1,1788::177743618
 2 SOUR @S1603542783@
 3 _APID 1,62209::324209248
-1 FAMC @F25@
-1 FAMS @F63@
-1 FAMS @F34@
+1 FAMC @F26@
+1 FAMS @F65@
+1 FAMS @F36@
 1 BIRT
 2 DATE 15 Nov 1974
 2 PLAC New Castle, Lawrence, Pennsylvania, USA
@@ -92,8 +92,8 @@
 2 GIVN Bryce
 2 SURN Heasley
 1 SEX M
-1 FAMC @F61@
-1 FAMS @F25@
+1 FAMC @F63@
+1 FAMS @F26@
 1 BIRT
 2 DATE 13 Apr 48
 2 PLAC Westmoreland County, Pennsylvania, USA
@@ -108,7 +108,7 @@
 3 OBJE @O35@
 1 SEX M
 1 FAMC @F16@
-1 FAMS @F61@
+1 FAMS @F63@
 1 BIRT
 2 DATE 01 Apr 1922
 2 PLAC Manor, Westmoreland County, Pennsylvania, United States of America
@@ -151,8 +151,8 @@
 3 PAGE Publication Date: 17/ Jun/ 2009; Publication Place: Pittsburgh, Pennsylvania, USA; URL: http://www.pittsburghlive.com/x/pittsburghtrib/obituaries/?mode=view&amp;obit_id=173674
 3 _APID 1,7545::67095580
 1 SEX F
-1 FAMC @F44@
-1 FAMS @F61@
+1 FAMC @F46@
+1 FAMS @F63@
 1 BIRT
 2 DATE 22 Nov 1925
 2 PLAC Allegheny County, Pennsylvania, USA
@@ -188,8 +188,8 @@
 1 SEX F
 2 SOUR @S1603542947@
 3 _APID 1,61843::377859819
-1 FAMC @F39@
-1 FAMS @F25@
+1 FAMC @F41@
+1 FAMS @F26@
 1 BIRT
 2 DATE 25 Mar 1950
 2 PLAC Allegheny County, Pennsylvania, USA
@@ -227,8 +227,8 @@
 3 _APID 1,61843::377553020
 2 SOUR @S1603543043@
 3 _APID 1,70050::18688084
-1 FAMC @F50@
-1 FAMS @F39@
+1 FAMC @F52@
+1 FAMS @F41@
 1 BIRT
 2 DATE 15 Oct 1919
 2 PLAC Clarion County, Pennsylvania, USA
@@ -333,8 +333,8 @@
 3 _APID 1,62116::20759401
 2 SOUR @S1603543181@
 3 _APID 1,70497::203071
-1 FAMC @F74@
-1 FAMS @F39@
+1 FAMC @F76@
+1 FAMS @F41@
 1 BIRT
 2 DATE 1918
 2 PLAC Allegheny County, Pennsylvania, USA
@@ -421,7 +421,7 @@
 2 SOUR @S1582737838@
 3 _APID 1,7602::51561640
 1 FAMC @F7@
-1 FAMS @F74@
+1 FAMS @F76@
 1 BIRT
 2 DATE Jul 1897
 2 PLAC Allegheny County, Pennsylvania, USA
@@ -451,8 +451,8 @@
 2 GIVN Esther
 2 SURN Fuchs
 1 SEX F
-1 FAMC @F56@
-1 FAMS @F74@
+1 FAMC @F58@
+1 FAMS @F76@
 1 BIRT
 2 DATE 4 Dec 1891
 2 PLAC Allegheny County, Pennsylvania, United States of America
@@ -491,7 +491,7 @@
 3 _APID 1,7488::4011734928
 2 SOUR @S1582737838@
 3 _APID 1,7602::51561637
-1 FAMC @F60@
+1 FAMC @F62@
 1 FAMS @F7@
 1 BIRT
 2 DATE 23 Sep 1868
@@ -577,7 +577,7 @@
 2 SOUR @S1581408971@
 3 _APID 1,5164::4582319
 1 FAMC @F2@
-1 FAMS @F56@
+1 FAMS @F58@
 1 BIRT
 2 DATE 9 July 1861
 2 PLAC Pittsburgh, Pennsylvania
@@ -626,8 +626,8 @@
 3 _APID 1,7884::101865208
 2 SOUR @S1603901329@
 3 _APID 1,60484::2466851
-1 FAMC @F30@
-1 FAMS @F56@
+1 FAMC @F31@
+1 FAMS @F58@
 1 BIRT
 2 DATE abt 1869
 2 PLAC West Virginia
@@ -691,8 +691,8 @@
 3 _APID 1,7602::51402743
 2 SOUR @S1582848415@
 3 _APID 1,7884::101865212
-1 FAMC @F56@
-1 FAMS @F43@
+1 FAMC @F58@
+1 FAMS @F45@
 1 BIRT
 2 DATE 28 Dec 1893
 2 PLAC Pittsburgh, Allegheny County, Pennsylvania, USA
@@ -843,7 +843,7 @@
 4 WWW https://www.findagrave.com/memorial/146345739/samuel_e-heasley
 3 OBJE @O84@
 1 SEX M
-1 FAMC @F22@
+1 FAMC @F23@
 1 FAMS @F16@
 1 BIRT
 2 DATE 09 Oct 1890
@@ -1098,8 +1098,8 @@
 4 WWW https://www.findagrave.com/memorial/80138676/samuel-heasley
 3 OBJE @O63@
 1 SEX M
-1 FAMC @F45@
-1 FAMS @F22@
+1 FAMC @F47@
+1 FAMS @F23@
 1 BIRT
 2 DATE 6 Nov 1847
 2 PLAC Grapeville, Westmoreland, Pennsylvania, USA
@@ -1176,8 +1176,8 @@
 4 WWW https://www.findagrave.com/memorial/80138678/sarah_e-heasley
 3 OBJE @O80@
 1 SEX F
-1 FAMC @F58@
-1 FAMS @F22@
+1 FAMC @F60@
+1 FAMS @F23@
 1 BIRT
 2 DATE 1 Aug 1853
 2 PLAC Westmoreland, Pennsylvania, USA, 
@@ -1407,7 +1407,7 @@
 3 PAGE Year: 1940; Census Place: Penn, Westmoreland, Pennsylvania; Roll: m-t0627-03636; Page: 2A; Enumeration District: 65-175
 3 _APID 1,2442::19785268
 1 SEX M
-1 FAMS @F44@
+1 FAMS @F46@
 1 BIRT
 2 DATE abt 1906
 2 PLAC Pennsylvania
@@ -1437,8 +1437,8 @@
 3 PAGE Year: 1940; Census Place: Penn, Westmoreland, Pennsylvania; Roll: m-t0627-03636; Page: 2A; Enumeration District: 65-175
 3 _APID 1,2442::19785270
 1 SEX F
-1 FAMC @F66@
-1 FAMS @F44@
+1 FAMC @F68@
+1 FAMS @F46@
 1 BIRT
 2 DATE 4 Jan 1907
 2 PLAC Braddock, Allegheny, Pennsylvania, USA
@@ -1478,7 +1478,7 @@
 2 SOUR @S1580498962@
 3 _APID 1,60525::80361522
 1 SEX M
-1 FAMC @F44@
+1 FAMC @F46@
 1 BIRT
 2 DATE 13 Jan 1927
 2 PLAC Greensburg, Westmoreland County, Pennsylvania, USA
@@ -1534,7 +1534,7 @@
 3 PAGE Year: 1940; Census Place: Penn, Westmoreland, Pennsylvania; Roll: m-t0627-03636; Page: 2A; Enumeration District: 65-175
 3 _APID 1,2442::19785274
 1 SEX F
-1 FAMC @F44@
+1 FAMC @F46@
 1 BIRT
 2 DATE abt 1935
 2 PLAC Pennsylvania
@@ -1617,7 +1617,7 @@
 4 WWW https://www.findagrave.com/memorial/271198687/george_y-heasley
 1 SEX M
 1 FAMC @F16@
-1 FAMS @F29@
+1 FAMS @F30@
 1 BIRT
 2 DATE 06 May 1919
 2 PLAC Manor, Allegheny County, Pennsylvania, USA
@@ -1670,7 +1670,7 @@
 3 PAGE Virginia Department of Health; Richmond, Virginia; Virginia Marriages, 1936-2014; Roll: 101168236
 3 _APID 1,9279::27815536
 1 SEX F
-1 FAMS @F29@
+1 FAMS @F30@
 1 BIRT
 2 DATE 6 Dec 1929
 2 SOUR @S1582737496@
@@ -1693,7 +1693,7 @@
 3 _APID 1,61381::903076176
 1 SEX F
 1 FAMC @F16@
-1 FAMS @F72@
+1 FAMS @F74@
 1 BIRT
 2 DATE 8 Sep 1915
 2 PLAC Pennsylvania
@@ -1764,7 +1764,7 @@
 2 SOUR @S1582737903@
 3 _APID 1,61381::3076176
 1 SEX M
-1 FAMS @F72@
+1 FAMS @F74@
 1 BIRT
 2 DATE 25 Aug 1920
 2 PLAC Manor, Westmoreland, Pennsylvania, USA
@@ -1792,7 +1792,7 @@
 2 GIVN Elizabeth
 2 SURN Altman
 1 SEX F
-1 FAMS @F45@
+1 FAMS @F47@
 1 BIRT
 2 DATE 2 Apr 1820
 2 PLAC Westmoreland, Pennsylvania, USA
@@ -1807,8 +1807,8 @@
 2 SOUR @S1580498962@
 3 _APID 1,60525::78672369
 1 SEX M
-1 FAMC @F59@
-1 FAMS @F45@
+1 FAMC @F61@
+1 FAMS @F47@
 1 BIRT
 2 DATE 1814
 2 SOUR @S1580498962@
@@ -1830,7 +1830,7 @@
 2 SOUR @S1580498962@
 3 _APID 1,60525::18604319
 1 SEX F
-1 FAMS @F59@
+1 FAMS @F61@
 1 BIRT
 2 DATE 14 February 1786
 2 PLAC Pennsylvania, United States of America
@@ -1854,8 +1854,8 @@
 2 SOUR @S1580498962@
 3 _APID 1,60525::18604314
 1 SEX M
-1 FAMC @F49@
-1 FAMS @F59@
+1 FAMC @F51@
+1 FAMS @F61@
 1 BIRT
 2 DATE 1785
 2 PLAC Westmoreland County, Pennsylvania, United States of America
@@ -1887,9 +1887,9 @@
 2 SOUR @S1580498962@
 3 _APID 1,60525::118215563
 1 SEX M
-1 FAMC @F46@
-1 FAMS @F49@
-1 FAMS @F48@
+1 FAMC @F48@
+1 FAMS @F51@
+1 FAMS @F50@
 1 BIRT
 2 DATE 27 October 1736
 2 PLAC Switzerland
@@ -1913,7 +1913,7 @@
 2 SURN Shotts
 2 SOUR @S1580498962@
 3 _APID 1,60525::49388924
-1 FAMC @F59@
+1 FAMC @F61@
 1 BIRT
 2 DATE 9 May 1809
 2 SOUR @S1580498962@
@@ -1933,7 +1933,7 @@
 2 GIVN Maria Barbara
 2 SURN (Heasley)
 1 SEX F
-1 FAMS @F49@
+1 FAMS @F51@
 1 BIRT
 2 DATE 18 Nov 1727
 2 PLAC Neunkirchen, Saar, Rheinland-Pfalz, Germany
@@ -2001,8 +2001,8 @@
 2 GIVN Elsbeth
 2 SURN OCHSNER
 1 SEX F
-1 FAMC @F31@
-1 FAMS @F46@
+1 FAMC @F32@
+1 FAMS @F48@
 1 BIRT
 2 DATE 9 January 1707
 2 PLAC Lindau, Zurich, Switzerland
@@ -2022,8 +2022,8 @@
 2 GIVN Joachim
 2 SURN Häussli
 1 SEX M
-1 FAMC @F32@
-1 FAMS @F46@
+1 FAMC @F33@
+1 FAMS @F48@
 1 BIRT
 2 DATE 15 Feb 1705
 2 PLAC Winterburg, Bad Kreuznach, Rheinland-Pfalz, Germany
@@ -2040,7 +2040,7 @@
 2 GIVN Elizabeth
 2 SURN Haussli, Heasley
 1 SEX F
-1 FAMC @F46@
+1 FAMC @F48@
 1 BIRT
 2 DATE 1739
 2 PLAC Winterburg, Switzerland
@@ -2054,7 +2054,7 @@
 2 GIVN Barbara
 2 SURN Haussli, Heasley
 1 SEX F
-1 FAMC @F46@
+1 FAMC @F48@
 1 BIRT
 2 DATE 28 May 1731
 2 PLAC Brütten Parish, Kt. Zürich, Switzerland
@@ -2069,7 +2069,7 @@
 2 GIVN Lenhard
 2 SURN Haussli, Heasley
 1 SEX M
-1 FAMC @F46@
+1 FAMC @F48@
 1 BIRT
 2 DATE 1746
 2 PLAC Whitehall, Northampton, Pennsylvania, United States
@@ -2084,7 +2084,7 @@
 2 GIVN Johann Jacob
 2 SURN Heasley
 1 SEX M
-1 FAMC @F46@
+1 FAMC @F48@
 1 BIRT
 2 DATE 21 FEB 1734
 2 PLAC Brutten, Switzerland
@@ -2102,7 +2102,7 @@
 2 GIVN Jacob
 2 SURN Haussli, Heisli, Heasley
 1 SEX M
-1 FAMC @F46@
+1 FAMC @F48@
 1 BIRT
 2 DATE About  1740
 2 PLAC Kt. Zurich or PA
@@ -2117,7 +2117,7 @@
 2 GIVN Magdalena
 2 SURN Haeussli, Haussli, Heisli, Heasley
 1 SEX F
-1 FAMC @F46@
+1 FAMC @F48@
 1 BIRT
 2 DATE 1725
 1 DEAT
@@ -2130,7 +2130,7 @@
 2 GIVN Anna Magdalena
 2 SURN Heasley
 1 SEX F
-1 FAMC @F46@
+1 FAMC @F48@
 1 BIRT
 2 DATE 20 Nov 1742
 2 PLAC Whitehall, Bucks, Pennsylvania, USA
@@ -2145,7 +2145,7 @@
 2 GIVN Magdelena
 2 SURN HEASLEY
 1 SEX F
-1 FAMC @F46@
+1 FAMC @F48@
 1 BIRT
 2 DATE 23 NOV 1742
 1 DEAT
@@ -2158,7 +2158,7 @@
 2 GIVN Maria Barbara
 2 SURN HEASLEY
 1 SEX F
-1 FAMC @F49@
+1 FAMC @F51@
 1 BIRT
 2 DATE 24 Dec 1769
 2 PLAC Northampton, Northampton, Pennsylvania, USA
@@ -2177,7 +2177,7 @@
 2 GIVN Catherine
 2 SURN Heasley
 1 SEX F
-1 FAMC @F49@
+1 FAMC @F51@
 1 BIRT
 2 DATE 28 Feb 1773
 2 PLAC , Northampton, Pennsylvania, USA
@@ -2203,7 +2203,7 @@
 2 GIVN Daniel
 2 SURN HEASLEY
 1 SEX M
-1 FAMC @F49@
+1 FAMC @F51@
 1 BIRT
 2 DATE 11 Jul 1779
 2 PLAC Hempfield, Westmoreland, Pennsylvania, United States
@@ -2223,7 +2223,7 @@
 2 GIVN Anna Maria
 2 SURN Heasley
 1 SEX F
-1 FAMC @F49@
+1 FAMC @F51@
 1 BIRT
 2 DATE 1787
 2 PLAC Westmoreland City, Westmoreland, Pennsylvania, United States
@@ -2246,7 +2246,7 @@
 2 GIVN Elizabeth
 2 SURN HEASLEY
 1 SEX F
-1 FAMC @F49@
+1 FAMC @F51@
 1 BIRT
 2 DATE 26 Nov 1776
 2 PLAC Northampton County, Pennsylvania, USA
@@ -2263,7 +2263,7 @@
 2 GIVN Maria Magdalena
 2 SURN HEASLEY
 1 SEX F
-1 FAMC @F49@
+1 FAMC @F51@
 1 BIRT
 2 DATE 1769
 2 PLAC , Lehigh Twsp, Northampton Co, Pennsylvania
@@ -2280,7 +2280,7 @@
 2 GIVN Susanna
 2 SURN HEASLEY
 1 SEX F
-1 FAMC @F49@
+1 FAMC @F51@
 1 BIRT
 2 DATE 1775
 2 PLAC Lehigh County, Pennsylvania, United States of America
@@ -2300,7 +2300,7 @@
 2 GIVN Henry
 2 SURN Heasley
 1 SEX M
-1 FAMC @F49@
+1 FAMC @F51@
 1 BIRT
 2 DATE 1780
 2 PLAC Hempfield, Westmoreland, Pennsylvania, United States
@@ -2320,7 +2320,7 @@
 2 GIVN Esther
 2 SURN Heasley
 1 SEX F
-1 FAMC @F49@
+1 FAMC @F51@
 1 BIRT
 2 DATE 17 Aug 1804
 2 PLAC , Hempfield Twsp, Westmoreland Co, Pennsylvania
@@ -2343,7 +2343,7 @@
 2 GIVN Simon
 2 SURN Heasley
 1 SEX M
-1 FAMC @F49@
+1 FAMC @F51@
 1 BIRT
 2 DATE 13 Aug 1794
 2 PLAC , Westmoreland, Pennsylvania, USA
@@ -2360,7 +2360,7 @@
 2 GIVN John Peter
 2 SURN Heasley
 1 SEX M
-1 FAMC @F49@
+1 FAMC @F51@
 1 BIRT
 2 DATE 11 Apr 1799
 2 PLAC , Hempfield Twsp, Westmoreland Co, Pennsylvania
@@ -2377,7 +2377,7 @@
 2 GIVN Johan George
 2 SURN Heasley
 1 SEX M
-1 FAMC @F49@
+1 FAMC @F51@
 1 BIRT
 2 DATE 14 Nov 1801
 2 PLAC , Hempfield Twsp, Westmoreland Co, Pennsylvania
@@ -2397,7 +2397,7 @@
 2 GIVN John
 2 SURN Heasley
 1 SEX M
-1 FAMC @F49@
+1 FAMC @F51@
 1 BIRT
 2 DATE 29 Mar 1792
 2 PLAC Hempfield Township, Westmoreland County, Pennsylvania
@@ -2415,7 +2415,7 @@
 2 GIVN Joseph
 2 SURN Heasley
 1 SEX M
-1 FAMC @F49@
+1 FAMC @F51@
 1 BIRT
 2 DATE 4 Oct 1789
 2 PLAC Westmoreland, Pennsylvania, United States
@@ -2431,7 +2431,7 @@
 2 GIVN Hanna Small
 2 SURN Heasley
 1 SEX F
-1 FAMC @F49@
+1 FAMC @F51@
 1 BIRT
 2 DATE 23 Dec 1795
 2 PLAC , Hempfield Twsp, Westmoreland Co, Pennsylvania
@@ -2450,7 +2450,7 @@
 2 GIVN Catherine Anna
 2 SURN UBER
 1 SEX F
-1 FAMS @F48@
+1 FAMS @F50@
 1 BIRT
 2 DATE 26 Apr 1769
 2 PLAC Westmoreland, Pennsylvania, United States
@@ -2467,7 +2467,7 @@
 2 GIVN Hannah
 2 SURN Heasley
 1 SEX F
-1 FAMC @F48@
+1 FAMC @F50@
 1 BIRT
 2 DATE 23 Dec 1795
 2 PLAC Westmoreland, Pennsylvania, United States
@@ -2482,7 +2482,7 @@
 2 GIVN Heinrich
 2 SURN Ochsner
 1 SEX M
-1 FAMS @F31@
+1 FAMS @F32@
 1 BIRT
 2 DATE 1 August 1675
 2 PLAC Wulflingen, Lindau Parish, Zurich Canton
@@ -2494,7 +2494,7 @@
 2 GIVN Anna Barbara 
 2 SURN Nusli
 1 SEX F
-1 FAMS @F31@
+1 FAMS @F32@
 1 BIRT
 2 DATE 14 Nov 1669
 2 PLAC Lindau, Kt Z Rich, Switzerland
@@ -2506,8 +2506,8 @@
 2 GIVN Ulrich
 2 SURN Haussli
 1 SEX M
-1 FAMC @F75@
-1 FAMS @F32@
+1 FAMC @F77@
+1 FAMS @F33@
 1 BIRT
 2 DATE 1676
 2 PLAC Brütten, Kt. Zürich, Switzerland
@@ -2525,14 +2525,14 @@
 2 GIVN Katarina
 2 SURN Meyer
 1 SEX F
-1 FAMS @F32@
+1 FAMS @F33@
 0 @I412076092162@ INDI
 1 NAME Felix /Haussli/
 2 GIVN Felix
 2 SURN Haussli
 1 SEX M
-1 FAMC @F23@
-1 FAMS @F75@
+1 FAMC @F24@
+1 FAMS @F77@
 1 BIRT
 2 DATE 15 Apr 1632
 2 PLAC Brütten,Kt. Zürich, Switzerland
@@ -2552,7 +2552,7 @@
 2 SURN Ochsner
 1 SEX F
 1 FAMC @F3@
-1 FAMS @F75@
+1 FAMS @F77@
 1 BIRT
 2 DATE 10 March 1633
 2 PLAC Zürich, Switzerland
@@ -2571,7 +2571,7 @@
 2 SURN Haussli
 1 SEX M
 1 FAMC @F21@
-1 FAMS @F23@
+1 FAMS @F24@
 1 BIRT
 2 DATE 1587
 2 PLAC Zürich, Switzerland
@@ -2591,7 +2591,7 @@
 2 SURN MORF
 1 SEX F
 1 FAMC @F19@
-1 FAMS @F23@
+1 FAMS @F24@
 1 BIRT
 2 DATE 18 Mar 1593
 2 PLAC Nürensdorf, Zürich, Switzerland
@@ -2609,7 +2609,7 @@
 2 GIVN Jacob
 2 SURN HAUSSLI
 1 SEX M
-1 FAMC @F23@
+1 FAMC @F24@
 1 BIRT
 2 DATE 02 DEC 1638
 2 PLAC Brütten,Kt. Zürich, Switzerland
@@ -2623,7 +2623,7 @@
 2 GIVN Johannes
 2 SURN HAUSSLI
 1 SEX M
-1 FAMC @F23@
+1 FAMC @F24@
 1 BIRT
 2 DATE BEF 23 DEC 1627
 2 PLAC Brütten,Kt. Zürich, Switzerland
@@ -2636,7 +2636,7 @@
 2 GIVN Rudolph
 2 SURN HAUSSLI
 1 SEX M
-1 FAMC @F23@
+1 FAMC @F24@
 1 BIRT
 2 DATE BEF 25 JUN 1626
 2 PLAC Brütten,Kt. Zürich, Switzerland
@@ -2650,7 +2650,7 @@
 2 GIVN Anna
 2 SURN HAUSSLI
 1 SEX F
-1 FAMC @F75@
+1 FAMC @F77@
 1 BIRT
 2 DATE BEF 15 MAR 1674
 2 PLAC Brütten,Kt. Zürich, Switzerland
@@ -2664,7 +2664,7 @@
 2 GIVN Barbara
 2 SURN HAUSSLI
 1 SEX F
-1 FAMC @F75@
+1 FAMC @F77@
 1 BIRT
 2 DATE BEF 20 JAN 1667
 2 PLAC Brütten,Kt. Zürich, Switzerland
@@ -2675,7 +2675,7 @@
 2 GIVN Barbara
 2 SURN HAUSSLI
 1 SEX F
-1 FAMC @F75@
+1 FAMC @F77@
 1 BIRT
 2 DATE BEF 30 MAY 1659
 2 PLAC Brütten,Kt. Zürich, Switzerland
@@ -2686,7 +2686,7 @@
 2 GIVN Conrad
 2 SURN HAUSSLI
 1 SEX M
-1 FAMC @F75@
+1 FAMC @F77@
 1 BIRT
 2 DATE BEF 05 APR 1663
 2 PLAC Brütten,Kt. Zürich, Switzerland
@@ -2700,7 +2700,7 @@
 2 GIVN Elsbeth
 2 SURN HAUSSLI
 1 SEX F
-1 FAMC @F75@
+1 FAMC @F77@
 1 BIRT
 2 DATE BEF 22 OCT 1671
 2 PLAC Brütten,Kt. Zürich, Switzerland
@@ -2713,7 +2713,7 @@
 2 GIVN Johannes
 2 SURN HAUSSLI
 1 SEX M
-1 FAMC @F75@
+1 FAMC @F77@
 1 BIRT
 2 DATE BEF 12 DEC 1669
 2 PLAC Brütten,Kt. Zürich, Switzerland
@@ -2764,7 +2764,7 @@
 2 GIVN Johannes Heinrich
 2 SURN MORF
 1 SEX M
-1 FAMC @F69@
+1 FAMC @F71@
 1 FAMS @F19@
 1 BIRT
 2 DATE Bef. 1557
@@ -2785,8 +2785,8 @@
 2 GIVN Kevin Mathew
 2 SURN Lavelle
 1 SEX M
-1 FAMC @F76@
-1 FAMS @F63@
+1 FAMC @F78@
+1 FAMS @F65@
 1 BIRT
 2 DATE 1/7/76
 2 PLAC Philadelphia, Philadelphia, Pennsylvania, USA
@@ -2795,8 +2795,8 @@
 2 GIVN Michael Leslie
 2 SURN Shaheen
 1 SEX M
-1 FAMC @F27@
-1 FAMS @F34@
+1 FAMC @F28@
+1 FAMS @F36@
 1 BIRT
 2 DATE 21 Feb 1975
 2 PLAC Pittsburgh, Allegheny County, Pennsylvania, United States of America
@@ -2834,8 +2834,8 @@
 2 GIVN Ashlyn Marie
 2 SURN Lavelle
 1 SEX F
-1 FAMC @F34@
-1 FAMC @F63@
+1 FAMC @F36@
+1 FAMC @F65@
 1 BIRT
 2 DATE 9 Mar 2003
 2 PLAC New Castle, Lawrence, Pennsylvania, USA
@@ -2852,8 +2852,8 @@
 2 GIVN Kylie Marie
 2 SURN Lavelle
 1 SEX F
-1 FAMC @F34@
-1 FAMC @F63@
+1 FAMC @F36@
+1 FAMC @F65@
 1 BIRT
 2 DATE 12/25/2005
 2 PLAC New Castle, Lawrence, Pennsylvania, USA
@@ -2870,7 +2870,7 @@
 2 GIVN Anna
 2 SURN Moos
 1 SEX F
-1 FAMS @F69@
+1 FAMS @F71@
 1 BIRT
 2 DATE 1544
 2 PLAC Illnau, Zürich, Switzerland
@@ -2882,7 +2882,7 @@
 2 GIVN William Ernest
 2 SURN Bauer
 1 SEX M
-1 FAMS @F66@
+1 FAMS @F68@
 1 BIRT
 2 DATE 27 May 1874
 2 PLAC Glade Twp Warren, Pennsylvania
@@ -2899,7 +2899,7 @@
 3 PAGE Year: 1881; Arrival: New York, New York; Microfilm Serial: M237, 1820-1897; Microfilm Roll: Roll 441; Line: 5; List Number: 1242
 3 _APID 1,7488::11468577
 1 SEX F
-1 FAMS @F66@
+1 FAMS @F68@
 1 BIRT
 2 DATE 24 May 1875
 2 PLAC Flensburg, Schleswig-Holstein, Deutschland
@@ -2956,7 +2956,7 @@
 2 GIVN Meinrath
 2 SURN MORF
 1 SEX M
-1 FAMS @F69@
+1 FAMS @F71@
 1 BIRT
 2 DATE 1540
 1 DEAT
@@ -2966,8 +2966,8 @@
 2 GIVN Rebecca Ann
 2 SURN Behun
 1 SEX F
-1 FAMC @F41@
-1 FAMS @F27@
+1 FAMC @F43@
+1 FAMS @F28@
 1 BIRT
 2 DATE 29 Nov 1950
 2 PLAC Latrobe, Westmoreland, Pennsylvania, USA
@@ -3002,8 +3002,8 @@
 3 _APID 1,7667::1722346
 2 SOUR @S1580498962@
 3 _APID 1,60525::81812067
-1 FAMC @F53@
-1 FAMS @F60@
+1 FAMC @F55@
+1 FAMS @F62@
 1 BIRT
 2 DATE abt 1844
 2 PLAC Butler County, Pennsylvania
@@ -3041,7 +3041,7 @@
 3 PAGE Pennsylvania Historic and Museum Commission; Harrisburg, Pennsylvania; Pennsylvania (State). Death certificates, 1906–1967; Certificate Number Range: 090151-093150
 3 _APID 1,5164::753059593
 1 SEX F
-1 FAMS @F60@
+1 FAMS @F62@
 1 BIRT
 2 PLAC Pittsburgh, Pennsylvania
 2 SOUR @S1581408971@
@@ -3108,7 +3108,7 @@
 2 SOUR @S1603542947@
 3 _APID 1,61843::244258736
 1 FAMC @F12@
-1 FAMS @F50@
+1 FAMS @F52@
 1 BIRT
 2 DATE 11 Sep 1888
 2 PLAC Clarion, Pennsylvania, USA
@@ -3168,8 +3168,8 @@
 2 GIVN Clara M
 2 SURN Wolbert
 1 SEX F
-1 FAMC @F33@
-1 FAMS @F50@
+1 FAMC @F35@
+1 FAMS @F52@
 1 BIRT
 2 DATE Jul 1895
 2 PLAC Pennsylvania
@@ -3184,7 +3184,7 @@
 1 SEX M
 2 SOUR @S1581408971@
 3 _APID 1,5164::606403282
-1 FAMC @F57@
+1 FAMC @F59@
 1 FAMS @F12@
 1 BIRT
 2 DATE 19 NOV 1853
@@ -3222,7 +3222,7 @@
 1 SEX M
 2 SOUR @S1582737838@
 3 _APID 1,7602::51883786
-1 FAMS @F33@
+1 FAMS @F35@
 1 BIRT
 2 DATE 29 Apr 1867
 2 PLAC Leeper, Clarion, Pennsylvania, USA
@@ -3244,7 +3244,7 @@
 2 GIVN Susanne A
 2 SURN Snyder
 1 SEX F
-1 FAMS @F33@
+1 FAMS @F35@
 1 BIRT
 2 DATE 27 Feb 1866
 2 PLAC Leeper, Clarion, Pennsylvania, USA
@@ -3260,7 +3260,7 @@
 1 SEX M
 2 SOUR @S1581408971@
 3 _APID 1,5164::604814411
-1 FAMS @F57@
+1 FAMS @F59@
 1 BIRT
 2 DATE 4 Nov 1813
 2 PLAC Leidersbach, Miltenberg, Bayern, Germany
@@ -3284,7 +3284,7 @@
 1 SEX F
 2 SOUR @S1603319743@
 3 _APID 1,7163::2184595
-1 FAMS @F57@
+1 FAMS @F59@
 1 BIRT
 2 DATE 31 March 1816
 2 PLAC Bruckenau, Unterfranken, Bayern, Germany
@@ -3306,7 +3306,7 @@
 2 GIVN Lawrence\Lorentz
 2 SURN Bleichner
 1 SEX M
-1 FAMS @F53@
+1 FAMS @F55@
 1 BIRT
 2 DATE 16 Aug 1819
 2 PLAC Siewiller, Bas-Rhin, Alsace, France
@@ -3323,7 +3323,7 @@
 2 GIVN Mary
 2 SURN Ganter
 1 SEX F
-1 FAMS @F53@
+1 FAMS @F55@
 1 BIRT
 2 DATE 11/13/1818
 2 PLAC Memprechtshofen: Gamshurst, Bühl, Baden, Germany
@@ -3337,13 +3337,13 @@
 2 GIVN Lawrence
 2 SURN Lavelle
 1 SEX M
-1 FAMS @F76@
+1 FAMS @F78@
 0 @I412261827213@ INDI
 1 NAME Arthur Charles /Fuchs/
 2 GIVN Arthur Charles
 2 SURN Fuchs
 1 SEX M
-1 FAMC @F56@
+1 FAMC @F58@
 1 BIRT
 2 DATE 1 Jun 1888
 2 PLAC Pittsburgh, Allegheny, Pennsylvania, USA
@@ -3355,13 +3355,13 @@
 2 GIVN Alice
 2 SURN Fuchs
 1 SEX F
-1 FAMC @F56@
+1 FAMC @F58@
 0 @I412261827720@ INDI
 1 NAME Ruth /Fuchs/
 2 GIVN Ruth
 2 SURN Fuchs
 1 SEX F
-1 FAMC @F56@
+1 FAMC @F58@
 0 @I412261827938@ INDI
 1 NAME Jacob Melchiot /Fuchs/
 2 GIVN Jacob Melchiot
@@ -3389,8 +3389,8 @@
 3 _APID 1,7884::101865214
 2 SOUR @S1580498962@
 3 _APID 1,60525::70249657
-1 FAMC @F56@
-1 FAMS @F52@
+1 FAMC @F58@
+1 FAMS @F54@
 1 BIRT
 2 DATE 6 Jan 1898
 2 PLAC Pittsburgh, Pennsylvania
@@ -3449,25 +3449,25 @@
 2 GIVN Edward
 2 SURN Fuchs
 1 SEX M
-1 FAMC @F56@
+1 FAMC @F58@
 0 @I412261828195@ INDI
 1 NAME Leo /Fuchs/
 2 GIVN Leo
 2 SURN Fuchs
 1 SEX M
-1 FAMC @F56@
+1 FAMC @F58@
 0 @I412261828265@ INDI
 1 NAME Florence /Fuchs/
 2 GIVN Florence
 2 SURN Fuchs
 1 SEX F
-1 FAMC @F56@
+1 FAMC @F58@
 0 @I412261828307@ INDI
 1 NAME Anna /Fuchs/
 2 GIVN Anna
 2 SURN Fuchs
 1 SEX F
-1 FAMC @F56@
+1 FAMC @F58@
 0 @I412261830893@ INDI
 1 NAME Jacob /Fuchs/
 2 GIVN Jacob
@@ -3520,7 +3520,7 @@
 2 SOUR @S1582737903@
 3 _APID 1,61381::1503075651
 1 FAMC @F7@
-1 FAMS @F52@
+1 FAMS @F54@
 1 BIRT
 2 DATE 25 Mar 1900
 2 PLAC Pittsburgh, Allegheny, Pennsylvania, USA
@@ -3626,8 +3626,8 @@
 1 SEX F
 2 SOUR @S1582737903@
 3 _APID 1,61381::903075651
-1 FAMC @F52@
-1 FAMS @F55@
+1 FAMC @F54@
+1 FAMS @F57@
 1 BIRT
 2 DATE 1922
 2 PLAC Pittsburgh, Allegheny, Pennsylvania, USA
@@ -3643,7 +3643,7 @@
 2 GIVN Alexander
 2 SURN Meyers
 1 SEX M
-1 FAMS @F55@
+1 FAMS @F57@
 1 BIRT
 2 DATE 1913
 1 DEAT
@@ -3653,7 +3653,7 @@
 2 GIVN Jacob
 2 SURN Meyers
 1 SEX M
-1 FAMC @F55@
+1 FAMC @F57@
 1 BIRT
 2 DATE 1948
 1 DEAT
@@ -3663,7 +3663,7 @@
 2 GIVN Michael Alexander
 2 SURN Wolak
 1 SEX M
-1 FAMS @F43@
+1 FAMS @F45@
 1 BIRT
 2 DATE 1895
 2 PLAC Pennsylvania, USA
@@ -3676,13 +3676,13 @@
 2 SURN Wolak
 2 NSFX Jr
 1 SEX M
-1 FAMC @F43@
+1 FAMC @F45@
 0 @I412262485976@ INDI
 1 NAME Jane /Wolak/
 2 GIVN Jane
 2 SURN Wolak
 1 SEX F
-1 FAMC @F43@
+1 FAMC @F45@
 1 BIRT
 2 DATE 30 Oct 1926
 2 PLAC Pittsburgh, Allegheny, Pennsylvania, USA
@@ -3693,7 +3693,7 @@
 2 GIVN Elizabeth
 2 SURN Wolak
 1 SEX F
-1 FAMC @F43@
+1 FAMC @F45@
 1 BIRT
 2 DATE 30 Oct 1926
 2 PLAC Pittsburgh, Allegheny, Pennsylvania, USA
@@ -3705,13 +3705,13 @@
 2 GIVN John
 2 SURN Wolak
 1 SEX M
-1 FAMC @F43@
+1 FAMC @F45@
 0 @I412264271852@ INDI
 1 NAME Charlotte /Fuchs/
 2 GIVN Charlotte
 2 SURN Fuchs
 1 SEX F
-1 FAMC @F56@
+1 FAMC @F58@
 1 BIRT
 2 DATE 18 Apr 1908
 2 PLAC Pittsburgh, Allegheny, Pennsylvania, USA
@@ -3724,7 +3724,7 @@
 1 SEX F
 2 SOUR @S1603592808@
 3 _APID 1,2469::935437953
-1 FAMS @F30@
+1 FAMS @F31@
 1 BIRT
 2 DATE 06 May 1836
 2 PLAC Ireland
@@ -3750,7 +3750,7 @@
 2 SOUR @S1603592808@
 3 _APID 1,2469::1433159629
 1 SEX M
-1 FAMS @F30@
+1 FAMS @F31@
 1 BIRT
 2 DATE abt 1837
 2 PLAC Ireland
@@ -3771,8 +3771,8 @@
 2 GIVN Elias Leslie
 2 SURN Shaheen
 1 SEX M
-1 FAMC @F36@
-1 FAMS @F27@
+1 FAMC @F38@
+1 FAMS @F28@
 1 BIRT
 2 DATE 26 Feb 1949
 2 PLAC Clairton, Allegheny, Pennsylvania, USA
@@ -3782,7 +3782,7 @@
 2 SURN Sutyak
 1 SEX F
 1 FAMC @F10@
-1 FAMS @F41@
+1 FAMS @F43@
 1 BIRT
 2 DATE 5 May 1931
 2 PLAC Pennsylvania, USA
@@ -3812,8 +3812,8 @@
 4 WWW https://www.findagrave.com/memorial/81759416/michael-behun
 3 OBJE @O76@
 1 SEX M
-1 FAMC @F70@
-1 FAMS @F41@
+1 FAMC @F72@
+1 FAMS @F43@
 1 BIRT
 2 DATE 17 May 1927
 2 PLAC Salem Township, Westmoreland County, Pennsylvania, United States of America
@@ -3928,8 +3928,8 @@
 2 GIVN Blanche
 2 SURN Dziadosz
 1 SEX F
-1 FAMC @F64@
-1 FAMS @F36@
+1 FAMC @F66@
+1 FAMS @F38@
 1 BIRT
 2 DATE 21 Jan 1918
 2 PLAC Pittsburgh, Allegheny, Pennsylvania, USA
@@ -3997,8 +3997,8 @@
 2 GIVN Abraham Elias
 2 SURN Shaheen
 1 SEX M
-1 FAMC @F37@
-1 FAMS @F36@
+1 FAMC @F39@
+1 FAMS @F38@
 1 BIRT
 2 DATE 12 Mar 1912
 2 PLAC Clairton, Allegheny, Pennsylvania, USA
@@ -4019,8 +4019,8 @@
 2 GIVN Jill Marie
 2 SURN Shaheen
 1 SEX F
-1 FAMC @F27@
-1 FAMS @F67@
+1 FAMC @F28@
+1 FAMS @F69@
 1 BIRT
 2 DATE 9 Sep 1977
 2 PLAC Pittsburgh PA
@@ -4064,7 +4064,7 @@
 3 OBJE @O71@
 1 SEX M
 1 FAMC @F9@
-1 FAMS @F70@
+1 FAMS @F72@
 1 BIRT
 2 DATE 18 Mar 1887
 2 PLAC Ukraine
@@ -4101,8 +4101,8 @@
 2 GIVN Eva Julia
 2 SURN Pylpzak
 1 SEX F
-1 FAMC @F24@
-1 FAMS @F70@
+1 FAMC @F25@
+1 FAMS @F72@
 1 BIRT
 2 DATE 4 Aug 1889
 2 PLAC Poland
@@ -4115,7 +4115,7 @@
 2 SURN Shaheen
 1 SEX M
 1 FAMC @F6@
-1 FAMS @F37@
+1 FAMS @F39@
 1 BIRT
 2 DATE 1874
 2 PLAC Lebanon
@@ -4127,8 +4127,8 @@
 2 GIVN Mary
 2 SURN Nassar
 1 SEX F
-1 FAMC @F62@
-1 FAMS @F37@
+1 FAMC @F64@
+1 FAMS @F39@
 1 BIRT
 2 DATE 1880
 2 PLAC Lebanon
@@ -4140,8 +4140,8 @@
 2 GIVN Jan
 2 SURN Dziadosz
 1 SEX M
-1 FAMC @F65@
-1 FAMS @F64@
+1 FAMC @F67@
+1 FAMS @F66@
 1 BIRT
 2 DATE 15 Feb 1888
 2 PLAC Poland
@@ -4159,8 +4159,8 @@
 4 WWW https://www.findagrave.com/memorial/23025745/maryanna-dziadosz
 3 OBJE @O100@
 1 SEX F
-1 FAMC @F51@
-1 FAMS @F64@
+1 FAMC @F53@
+1 FAMS @F66@
 1 BIRT
 2 DATE 5 Sep 1890
 2 PLAC Poland
@@ -4197,7 +4197,7 @@
 2 GIVN Anna Elizabeth
 2 SURN Mihalik
 1 SEX F
-1 FAMC @F68@
+1 FAMC @F70@
 1 FAMS @F10@
 1 BIRT
 2 DATE 13 Oct 1912
@@ -4274,7 +4274,7 @@
 4 WWW https://www.findagrave.com/memorial/218110268/peter-sutyak
 3 OBJE @O103@
 1 SEX M
-1 FAMC @F73@
+1 FAMC @F75@
 1 FAMS @F20@
 1 BIRT
 2 DATE 07 Jul 1870
@@ -4312,7 +4312,7 @@
 2 GIVN Maria
 2 SURN Kovalik
 1 SEX F
-1 FAMC @F40@
+1 FAMC @F42@
 1 FAMS @F20@
 1 BIRT
 2 DATE 1875
@@ -4322,8 +4322,8 @@
 2 GIVN Donna
 2 SURN Behun
 1 SEX F
-1 FAMC @F41@
-1 FAMS @F42@
+1 FAMC @F43@
+1 FAMS @F44@
 1 BIRT
 2 DATE 13 May 1954
 2 PLAC Latrobe, Westmoreland, Pennsylvania, USA
@@ -4340,8 +4340,8 @@
 2 GIVN Michelle
 2 SURN Behun
 1 SEX F
-1 FAMC @F41@
-1 FAMS @F77@
+1 FAMC @F43@
+1 FAMS @F79@
 1 BIRT
 2 DATE 24 Jun 1959
 2 PLAC Latrobe, Westmoreland, Pennsylvania, USA
@@ -4363,8 +4363,8 @@
 4 WWW https://www.findagrave.com/memorial/99998536/theresa_marie-rattay
 3 OBJE @O59@
 1 SEX F
-1 FAMC @F64@
-1 FAMS @F28@
+1 FAMC @F66@
+1 FAMS @F29@
 1 BIRT
 2 DATE 2 Oct 1929
 2 PLAC Glassport, Allegheny, Pennsylvania, USA
@@ -4406,7 +4406,7 @@
 4 WWW https://www.findagrave.com/memorial/23025628/helen-smyczek
 3 OBJE @O49@
 1 SEX F
-1 FAMC @F64@
+1 FAMC @F66@
 1 FAMS @F18@
 1 BIRT
 2 DATE 22 Sep 1915
@@ -4449,7 +4449,7 @@
 4 WWW https://www.findagrave.com/memorial/23025759/edward-dziadosz
 3 OBJE @O72@
 1 SEX M
-1 FAMC @F64@
+1 FAMC @F66@
 1 BIRT
 2 DATE 29 Nov 1913
 2 PLAC Glassport, Allegheny, Pennsylvania, USA
@@ -4491,7 +4491,7 @@
 4 WWW https://www.findagrave.com/memorial/120635600/clara-gardocki
 3 OBJE @O32@
 1 SEX F
-1 FAMC @F64@
+1 FAMC @F66@
 1 FAMS @F1@
 1 BIRT
 2 DATE 1920
@@ -4534,7 +4534,7 @@
 4 WWW https://www.findagrave.com/memorial/85531861/nicholas-behun
 3 OBJE @O79@
 1 SEX M
-1 FAMC @F70@
+1 FAMC @F72@
 1 BIRT
 2 DATE 13 Sep 1909
 2 PLAC salem township, Westmoreland County, Pennsylvania, USA
@@ -4576,7 +4576,7 @@
 4 WWW https://www.findagrave.com/memorial/85531642/john-behun
 3 OBJE @O11@
 1 SEX M
-1 FAMC @F70@
+1 FAMC @F72@
 1 BIRT
 2 DATE 10 Feb 1912
 2 PLAC Etna, Allegheny, Pennsylvania, USA
@@ -4613,7 +4613,7 @@
 2 GIVN Joseph Andrew
 2 SURN Behun
 1 SEX M
-1 FAMC @F70@
+1 FAMC @F72@
 1 BIRT
 2 DATE 18 Mar 1919
 2 PLAC Westmoreland County, Pennsylvania, USA
@@ -4625,7 +4625,7 @@
 2 GIVN Mary
 2 SURN Behun
 1 SEX F
-1 FAMC @F70@
+1 FAMC @F72@
 0 @I412771177456@ INDI
 1 NAME Anna Louise /Behun/
 2 GIVN Anna Louise
@@ -4636,7 +4636,7 @@
 4 WWW https://www.findagrave.com/memorial/73143744/anna_louise-sada
 3 OBJE @O18@
 1 SEX F
-1 FAMC @F70@
+1 FAMC @F72@
 1 BIRT
 2 DATE 26 Jul 1914
 2 PLAC Etna, Allegheny, Pennsylvania, USA
@@ -4673,7 +4673,7 @@
 2 GIVN Helen
 2 SURN Behun
 1 SEX F
-1 FAMC @F70@
+1 FAMC @F72@
 1 FAMS @F15@
 1 BIRT
 2 DATE 12 Jul 1931
@@ -4722,7 +4722,7 @@
 2 SURN Sutyak
 1 SEX F
 1 FAMC @F10@
-1 FAMS @F35@
+1 FAMS @F37@
 1 BIRT
 2 DATE 03 sept 1932
 2 PLAC Conemaugh, Indiana, Pennsylvania, USA
@@ -4735,7 +4735,7 @@
 2 SURN Sutyak
 1 SEX F
 1 FAMC @F10@
-1 FAMS @F38@
+1 FAMS @F40@
 0 @I412771179869@ INDI
 1 NAME Elias /Shaheen/
 2 GIVN Elias
@@ -4755,7 +4755,7 @@
 2 GIVN George
 2 SURN Nassar
 1 SEX M
-1 FAMS @F62@
+1 FAMS @F64@
 1 BIRT
 2 DATE 1850
 2 PLAC Lebanon
@@ -4763,13 +4763,13 @@
 1 NAME Victoria //
 2 GIVN Victoria
 1 SEX F
-1 FAMS @F62@
+1 FAMS @F64@
 0 @I412771181117@ INDI
 1 NAME Bonnie /Heasley/
 2 GIVN Bonnie
 2 SURN Heasley
 1 SEX F
-1 FAMC @F61@
+1 FAMC @F63@
 0 @I412771182138@ INDI
 1 NAME Michael /Behun/
 2 GIVN Michael
@@ -4792,40 +4792,47 @@
 2 GIVN Wasyl
 2 SURN Pylpzak
 1 SEX M
-1 FAMS @F24@
+1 FAMS @F25@
 1 BIRT
 2 PLAC Austria
 0 @I412771182400@ INDI
 1 NAME Anna //
 2 GIVN Anna
 1 SEX F
-1 FAMS @F24@
+1 FAMS @F25@
 1 BIRT
 2 PLAC Austria
 0 @I412771182534@ INDI
-1 NAME John /Mihalik/
-2 GIVN John
+1 NAME Stephen John /Mihalik/
+2 GIVN Stephen John
 2 SURN Mihalik
 1 SEX M
-1 FAMS @F68@
+1 FAMS @F70@
 1 BIRT
 2 DATE 1882
 2 PLAC Slovakia
+1 DEAT
+2 DATE 1927
 0 @I412771182556@ INDI
-1 NAME Mary /Vira/
-2 GIVN Mary
-2 SURN Vira
+1 NAME Agatha /Medvetz/
+2 GIVN Agatha
+2 SURN Medvetz
 1 SEX F
-1 FAMS @F68@
+1 FAMC @F34@
+1 FAMS @F22@
+1 FAMS @F70@
 1 BIRT
-2 DATE 1884
-2 PLAC Slovakia
+2 DATE 15 feb 1886
+2 PLAC Czechoslovakia
+1 DEAT
+2 DATE 06 jan 1958
+2 PLAC Indiana County, Pennsylvania, USA
 0 @I412771182779@ INDI
 1 NAME Mateusz /Dziadosz/
 2 GIVN Mateusz
 2 SURN Dziadosz
 1 SEX M
-1 FAMS @F65@
+1 FAMS @F67@
 1 BIRT
 2 DATE 1845
 2 PLAC Poland
@@ -4833,7 +4840,7 @@
 1 NAME Katarzyna //
 2 GIVN Katarzyna
 1 SEX F
-1 FAMS @F65@
+1 FAMS @F67@
 1 BIRT
 2 DATE 1850
 2 PLAC Poland
@@ -4842,7 +4849,7 @@
 2 GIVN Wojciech
 2 SURN Sowa
 1 SEX M
-1 FAMS @F51@
+1 FAMS @F53@
 1 BIRT
 2 DATE 1855
 2 PLAC Poland
@@ -4850,7 +4857,7 @@
 1 NAME Marianna //
 2 GIVN Marianna
 1 SEX F
-1 FAMS @F51@
+1 FAMS @F53@
 1 BIRT
 2 DATE 1860
 2 PLAC Poland
@@ -4859,7 +4866,7 @@
 2 GIVN Peter
 2 SURN Sutyak
 1 SEX M
-1 FAMS @F73@
+1 FAMS @F75@
 1 BIRT
 2 DATE 1855
 2 PLAC Austria-Hungary
@@ -4867,7 +4874,7 @@
 1 NAME Anna //
 2 GIVN Anna
 1 SEX F
-1 FAMS @F73@
+1 FAMS @F75@
 1 BIRT
 2 DATE 1860
 2 PLAC Austria-Hungary
@@ -4876,7 +4883,7 @@
 2 GIVN Jan
 2 SURN Kovalik
 1 SEX M
-1 FAMS @F40@
+1 FAMS @F42@
 1 BIRT
 2 DATE 1858
 2 PLAC Austria-Hungary
@@ -4884,7 +4891,7 @@
 1 NAME Maria //
 2 GIVN Maria
 1 SEX F
-1 FAMS @F40@
+1 FAMS @F42@
 1 BIRT
 2 DATE 1862
 2 PLAC Austria-Hungary
@@ -4893,7 +4900,7 @@
 2 GIVN Bernice
 2 SURN Shaheen
 1 SEX F
-1 FAMC @F36@
+1 FAMC @F38@
 1 BIRT
 2 DATE 28 Oct 1940
 2 PLAC Clairton, Allegheny, Pennsylvania, USA
@@ -4946,13 +4953,13 @@
 2 GIVN Vince
 2 SURN Rattay
 1 SEX M
-1 FAMS @F28@
+1 FAMS @F29@
 0 @I412771936584@ INDI
 1 NAME Quinn Michael /Clark/
 2 GIVN Quinn Michael
 2 SURN Clark
 1 SEX M
-1 FAMC @F67@
+1 FAMC @F69@
 1 BIRT
 2 DATE 26 Jun 2020
 2 PLAC Pittsburgh PA
@@ -4976,7 +4983,7 @@
 2 GIVN Gerald Bruce
 2 SURN Clark
 1 SEX M
-1 FAMS @F67@
+1 FAMS @F69@
 1 BIRT
 2 DATE 13 May 1986
 2 PLAC Weirton Heights, Hancock, West Virginia, USA
@@ -4993,7 +5000,7 @@
 2 GIVN Edward Pete
 2 SURN Pytlak
 1 SEX M
-1 FAMC @F26@
+1 FAMC @F27@
 1 FAMS @F15@
 1 BIRT
 2 DATE 5 Aug 1923
@@ -5006,7 +5013,7 @@
 2 GIVN Peter P
 2 SURN Pytlak
 1 SEX M
-1 FAMS @F26@
+1 FAMS @F27@
 1 BIRT
 2 DATE 1888
 1 DEAT
@@ -5017,7 +5024,7 @@
 2 GIVN Mary
 2 SURN Kolvich
 1 SEX F
-1 FAMS @F26@
+1 FAMS @F27@
 1 DEAT
 2 DATE 1929
 2 PLAC Pennsylvania, USA
@@ -5038,13 +5045,13 @@
 2 GIVN Anthony
 2 SURN Butekoff
 1 SEX M
-1 FAMS @F35@
+1 FAMS @F37@
 0 @I412772295661@ INDI
 1 NAME Donald Ray /Whitehouse/
 2 GIVN Donald Ray
 2 SURN Whitehouse
 1 SEX M
-1 FAMS @F38@
+1 FAMS @F40@
 1 BIRT
 2 DATE 12 Jul 1936
 2 PLAC Flint, Genesee, Michigan, USA
@@ -5056,37 +5063,37 @@
 2 GIVN Sarah
 2 SURN Whitehouse
 1 SEX F
-1 FAMC @F38@
+1 FAMC @F40@
 0 @I412772296152@ INDI
 1 NAME Donald B /Whitehouse/
 2 GIVN Donald B
 2 SURN Whitehouse
 1 SEX M
-1 FAMC @F38@
+1 FAMC @F40@
 0 @I412772296177@ INDI
 1 NAME Steven G /Whitehouse/
 2 GIVN Steven G
 2 SURN Whitehouse
 1 SEX M
-1 FAMC @F38@
+1 FAMC @F40@
 0 @I412772296206@ INDI
 1 NAME Scott P /Whitehouse/
 2 GIVN Scott P
 2 SURN Whitehouse
 1 SEX M
-1 FAMC @F38@
+1 FAMC @F40@
 0 @I412772380097@ INDI
 1 NAME Michael /Rattay/
 2 GIVN Michael
 2 SURN Rattay
 1 SEX M
-1 FAMC @F28@
+1 FAMC @F29@
 0 @I412772380105@ INDI
 1 NAME Rich /Rattay/
 2 GIVN Rich
 2 SURN Rattay
 1 SEX M
-1 FAMC @F28@
+1 FAMC @F29@
 0 @I412772433747@ INDI
 1 NAME Anna /Sutyak/
 2 GIVN Anna
@@ -5235,7 +5242,7 @@
 4 WWW https://www.findagrave.com/memorial/75105936/frank_edward-heasley
 3 OBJE @O104@
 1 SEX M
-1 FAMC @F22@
+1 FAMC @F23@
 1 BIRT
 2 DATE 02 Oct 1874
 2 PLAC Pennsylvania, United States of America
@@ -5277,7 +5284,7 @@
 4 WWW https://www.findagrave.com/memorial/98847298/charles_rexford-heasley
 3 OBJE @O42@
 1 SEX M
-1 FAMC @F22@
+1 FAMC @F23@
 1 FAMS @F5@
 1 BIRT
 2 DATE 15 Aug 1876
@@ -5315,7 +5322,7 @@
 2 GIVN Alice "Allie"
 2 SURN Heasley
 1 SEX F
-1 FAMC @F22@
+1 FAMC @F23@
 1 BIRT
 2 DATE 01 Nov 1880
 2 PLAC Pennsylvania, United States of America
@@ -5400,7 +5407,7 @@
 3 OBJE @O65@
 1 SEX F
 1 FAMC @F5@
-1 FAMS @F54@
+1 FAMS @F56@
 1 BIRT
 2 DATE 09 Oct 1893
 2 SOUR @S1677610451@
@@ -5569,7 +5576,7 @@
 3 OBJE @O68@
 1 SEX M
 1 FAMC @F5@
-1 FAMS @F71@
+1 FAMS @F73@
 1 BIRT
 2 DATE 08 Oct 1912
 2 PLAC Manor, Westmoreland County, Pennsylvania, United States of America
@@ -5611,7 +5618,7 @@
 4 WWW https://www.findagrave.com/memorial/35260314/catherine_c-heasley
 3 OBJE @O53@
 1 SEX F
-1 FAMS @F71@
+1 FAMS @F73@
 1 BIRT
 2 DATE 06 Mar 1920
 2 SOUR @S1677610451@
@@ -5704,7 +5711,7 @@
 4 WWW https://www.findagrave.com/memorial/25129593/william_peter-klingensmith
 3 OBJE @O89@
 1 SEX M
-1 FAMS @F54@
+1 FAMS @F56@
 1 BIRT
 2 DATE 16 Apr 1889
 2 SOUR @S1677610451@
@@ -5745,7 +5752,7 @@
 4 WWW https://www.findagrave.com/memorial/59994599/george-beswick
 3 OBJE @O57@
 1 SEX M
-1 FAMS @F58@
+1 FAMS @F60@
 1 BIRT
 2 DATE 1819
 2 SOUR @S1677610451@
@@ -5786,7 +5793,7 @@
 4 WWW https://www.findagrave.com/memorial/59994648/mary_a-beswick
 3 OBJE @O44@
 1 SEX F
-1 FAMS @F58@
+1 FAMS @F60@
 1 BIRT
 2 DATE 1832
 2 SOUR @S1677610451@
@@ -5826,7 +5833,7 @@
 3 DATA
 4 WWW https://www.findagrave.com/memorial/230269230/charles-beswick
 1 SEX M
-1 FAMC @F58@
+1 FAMC @F60@
 1 BIRT
 2 DATE 19 Jun 1851
 2 PLAC Westmoreland County, Pennsylvania, USA
@@ -5862,7 +5869,7 @@
 4 WWW https://www.findagrave.com/memorial/99478712/william_h-beswick
 3 OBJE @O101@
 1 SEX M
-1 FAMC @F58@
+1 FAMC @F60@
 1 BIRT
 2 DATE 04 Mar 1855
 2 PLAC Pennsylvania, United States of America
@@ -5904,7 +5911,7 @@
 4 WWW https://www.findagrave.com/memorial/103902189/alice_b-loughry
 3 OBJE @O28@
 1 SEX F
-1 FAMC @F58@
+1 FAMC @F60@
 1 BIRT
 2 DATE 16 Apr 1859
 2 PLAC Westmoreland County, Pennsylvania, USA
@@ -5946,7 +5953,7 @@
 4 WWW https://www.findagrave.com/memorial/186015524/nancy_jane-young
 3 OBJE @O8@
 1 SEX F
-1 FAMC @F58@
+1 FAMC @F60@
 1 BIRT
 2 DATE 27 Apr 1863
 2 PLAC Pennsylvania, United States of America
@@ -5988,7 +5995,7 @@
 4 WWW https://www.findagrave.com/memorial/92560255/kathryn_e-plotner
 3 OBJE @O5@
 1 SEX F
-1 FAMC @F58@
+1 FAMC @F60@
 1 BIRT
 2 DATE 13 May 1865
 2 PLAC Manor, Westmoreland County, Pennsylvania, United States of America
@@ -6030,7 +6037,7 @@
 4 WWW https://www.findagrave.com/memorial/59994625/george_lincoln-beswick
 3 OBJE @O26@
 1 SEX M
-1 FAMC @F58@
+1 FAMC @F60@
 1 BIRT
 2 DATE 07 Jul 1867
 2 PLAC Manor, Westmoreland County, Pennsylvania, United States of America
@@ -6067,7 +6074,7 @@
 2 GIVN John
 2 SURN Sphon
 1 SEX M
-1 FAMS @F42@
+1 FAMS @F44@
 1 BIRT
 2 DATE 5 May 1957
 2 PLAC United States of America
@@ -6084,8 +6091,8 @@
 2 GIVN Lucas
 2 SURN Sphon
 1 SEX M
-1 FAMC @F42@
-1 FAMS @F47@
+1 FAMC @F44@
+1 FAMS @F49@
 1 BIRT
 2 DATE 12 Jan 1995
 2 PLAC United States of America
@@ -6102,7 +6109,7 @@
 2 GIVN Evan
 2 SURN Poska
 1 SEX M
-1 FAMC @F77@
+1 FAMC @F79@
 1 BIRT
 2 DATE 23 Aug 1996
 2 PLAC United States of America
@@ -6126,7 +6133,7 @@
 2 GIVN Maggie
 2 SURN Laderer
 1 SEX F
-1 FAMS @F47@
+1 FAMS @F49@
 1 BIRT
 2 DATE 27 May 1995
 2 PLAC United States of America
@@ -6143,7 +6150,7 @@
 2 GIVN Finlay John
 2 SURN Sphon
 1 SEX M
-1 FAMC @F47@
+1 FAMC @F49@
 1 BIRT
 2 DATE 25 Feb 2025
 2 PLAC Pennsylvania, United States of America
@@ -6155,6 +6162,42 @@
 3 _WDTH 1524
 3 _HGHT 1523
 3 _TYPE primary
+0 @I412782110736@ INDI
+1 NAME Frank Joseph /Mihalik/
+2 GIVN Frank Joseph
+2 SURN Mihalik
+1 SEX M
+1 FAMC @F70@
+0 @I412782110771@ INDI
+1 NAME Stephen John /Mihalik/
+2 GIVN Stephen John
+2 SURN Mihalik
+1 SEX M
+1 FAMC @F70@
+0 @I412782110785@ INDI
+1 NAME Albert /Mihalik/
+2 GIVN Albert
+2 SURN Mihalik
+1 SEX M
+1 FAMC @F70@
+0 @I412782110842@ INDI
+1 NAME Joseph /Medvetz/
+2 GIVN Joseph
+2 SURN Medvetz
+1 SEX M
+1 FAMS @F34@
+0 @I412782110869@ INDI
+1 NAME Anna /Orechovsky/
+2 GIVN Anna
+2 SURN Orechovsky
+1 SEX F
+1 FAMS @F34@
+0 @I412782110953@ INDI
+1 NAME Michael /Kovalski/
+2 GIVN Michael
+2 SURN Kovalski
+1 SEX M
+1 FAMS @F22@
 0 @F1@ FAM
 1 HUSB @I412771198490@
 1 WIFE @I412771177335@
@@ -6278,13 +6321,16 @@
 1 WIFE @I412076093643@
 1 CHIL @I412076092365@
 0 @F22@ FAM
+1 HUSB @I412782110953@
+1 WIFE @I412771182556@
+0 @F23@ FAM
 1 HUSB @I412054727948@
 1 WIFE @I412054728025@
 1 CHIL @I412772445725@
 1 CHIL @I412772445818@
 1 CHIL @I412772445901@
 1 CHIL @I412054726073@
-0 @F23@ FAM
+0 @F24@ FAM
 1 HUSB @I412076092365@
 1 WIFE @I412076092441@
 1 CHIL @I412076093341@
@@ -6294,31 +6340,31 @@
 1 MARR
 2 DATE 25 OCT 1625
 2 PLAC Evangelisch -  Reformierte Kirche, Brütten,Kt. Zürich, Switzerland
-0 @F24@ FAM
+0 @F25@ FAM
 1 HUSB @I412771182338@
 1 WIFE @I412771182400@
 1 CHIL @I412771175899@
-0 @F25@ FAM
+0 @F26@ FAM
 1 HUSB @I412054722275@
 1 WIFE @I412054722826@
 1 CHIL @I412054722274@
-0 @F26@ FAM
+0 @F27@ FAM
 1 HUSB @I412772293744@
 1 WIFE @I412772294041@
 1 CHIL @I412772293474@
-0 @F27@ FAM
+0 @F28@ FAM
 1 HUSB @I412771172424@
 1 WIFE @I412217321395@
 1 CHIL @I412076094635@
 1 CHIL @I412771174611@
 1 DIV
 2 DATE 2015
-0 @F28@ FAM
+0 @F29@ FAM
 1 HUSB @I412771198614@
 1 WIFE @I412771177291@
 1 CHIL @I412772380097@
 1 CHIL @I412772380105@
-0 @F29@ FAM
+0 @F30@ FAM
 1 HUSB @I412076078014@
 1 WIFE @I412076078175@
 1 MARR
@@ -6334,23 +6380,27 @@
 3 PAGE Virginia Department of Health; Richmond, Virginia; Virginia Marriages, 1936-2014; Roll: 101168236
 3 _HPID 1,9279::11386125
 3 _WPID 1,9279::27815536
-0 @F30@ FAM
+0 @F31@ FAM
 1 HUSB @I412308113575@
 1 WIFE @I412308112993@
 1 CHIL @I412054724344@
-0 @F31@ FAM
+0 @F32@ FAM
 1 HUSB @I412076091754@
 1 WIFE @I412076091825@
 1 CHIL @I412076089247@
-0 @F32@ FAM
+0 @F33@ FAM
 1 HUSB @I412076092005@
 1 WIFE @I412076092082@
 1 CHIL @I412076091482@
-0 @F33@ FAM
+0 @F34@ FAM
+1 HUSB @I412782110842@
+1 WIFE @I412782110869@
+1 CHIL @I412771182556@
+0 @F35@ FAM
 1 HUSB @I412259669356@
 1 WIFE @I412260088210@
 1 CHIL @I412224918698@
-0 @F34@ FAM
+0 @F36@ FAM
 1 HUSB @I412076094635@
 1 WIFE @I412054722274@
 1 CHIL @I412076094944@
@@ -6360,61 +6410,61 @@
 1 MARR
 2 DATE 6/13/2013
 2 PLAC Clarion County, Pennsylvania, USA
-0 @F35@ FAM
+0 @F37@ FAM
 1 HUSB @I412772294935@
 1 WIFE @I412771177768@
-0 @F36@ FAM
+0 @F38@ FAM
 1 HUSB @I412771174434@
 1 WIFE @I412771173007@
 1 CHIL @I412771183372@
 1 CHIL @I412771172424@
-0 @F37@ FAM
+0 @F39@ FAM
 1 HUSB @I412771176237@
 1 WIFE @I412771176371@
 1 CHIL @I412771174434@
-0 @F38@ FAM
+0 @F40@ FAM
 1 HUSB @I412772295661@
 1 WIFE @I412771177774@
 1 CHIL @I412772296075@
 1 CHIL @I412772296152@
 1 CHIL @I412772296177@
 1 CHIL @I412772296206@
-0 @F39@ FAM
+0 @F41@ FAM
 1 HUSB @I412054722914@
 1 WIFE @I412054722977@
 1 CHIL @I412054722826@
-0 @F40@ FAM
+0 @F42@ FAM
 1 HUSB @I412771183116@
 1 WIFE @I412771183145@
 1 CHIL @I412771177028@
-0 @F41@ FAM
+0 @F43@ FAM
 1 HUSB @I412771172650@
 1 WIFE @I412771172515@
 1 CHIL @I412217321395@
 1 CHIL @I412771177258@
 1 CHIL @I412771177266@
-0 @F42@ FAM
+0 @F44@ FAM
 1 HUSB @I412772450197@
 1 WIFE @I412771177258@
 1 CHIL @I412772450206@
-0 @F43@ FAM
+0 @F45@ FAM
 1 HUSB @I412262485793@
 1 WIFE @I412054724445@
 1 CHIL @I412262486093@
 1 CHIL @I412262485976@
 1 CHIL @I412262487525@
 1 CHIL @I412262485899@
-0 @F44@ FAM
+0 @F46@ FAM
 1 HUSB @I412066426017@
 1 WIFE @I412066426158@
 1 CHIL @I412054722706@
 1 CHIL @I412066426538@
 1 CHIL @I412066426540@
-0 @F45@ FAM
+0 @F47@ FAM
 1 HUSB @I412076082591@
 1 WIFE @I412076082494@
 1 CHIL @I412054727948@
-0 @F46@ FAM
+0 @F48@ FAM
 1 HUSB @I412076091482@
 1 WIFE @I412076089247@
 1 CHIL @I412076091496@
@@ -6429,11 +6479,11 @@
 1 MARR
 2 DATE 11 Jan 1729
 2 PLAC Brutten Par, Bayern, Germany
-0 @F47@ FAM
+0 @F49@ FAM
 1 HUSB @I412772450206@
 1 WIFE @I412777414517@
 1 CHIL @I412777414587@
-0 @F48@ FAM
+0 @F50@ FAM
 1 HUSB @I412076087326@
 1 WIFE @I412076091537@
 1 CHIL @I412076091538@
@@ -6443,7 +6493,7 @@
 1 MARR
 2 DATE 1788
 2 PLAC Westmoreland, Pennsylvania, United States
-0 @F49@ FAM
+0 @F51@ FAM
 1 HUSB @I412076087326@
 1 WIFE @I412076087445@
 1 CHIL @I412076091517@
@@ -6473,30 +6523,30 @@
 1 MARR
 2 DATE 1788
 2 PLAC Westmoreland, Pennsylvania, United States
-0 @F50@ FAM
+0 @F52@ FAM
 1 HUSB @I412224918653@
 1 WIFE @I412224918698@
 1 CHIL @I412054722914@
-0 @F51@ FAM
+0 @F53@ FAM
 1 HUSB @I412771182831@
 1 WIFE @I412771182853@
 1 CHIL @I412771176429@
-0 @F52@ FAM
+0 @F54@ FAM
 1 HUSB @I412261827938@
 1 WIFE @I412261831829@
 1 CHIL @I412261843743@
-0 @F53@ FAM
+0 @F55@ FAM
 1 HUSB @I412260113239@
 1 WIFE @I412260113593@
 1 CHIL @I412217325254@
-0 @F54@ FAM
+0 @F56@ FAM
 1 HUSB @I412772447548@
 1 WIFE @I412772446132@
-0 @F55@ FAM
+0 @F57@ FAM
 1 HUSB @I412261843867@
 1 WIFE @I412261843743@
 1 CHIL @I412261844417@
-0 @F56@ FAM
+0 @F58@ FAM
 1 HUSB @I412054724162@
 1 WIFE @I412054724344@
 1 CHIL @I412261827213@
@@ -6510,11 +6560,11 @@
 1 CHIL @I412261828159@
 1 CHIL @I412261827720@
 1 CHIL @I412261827484@
-0 @F57@ FAM
+0 @F59@ FAM
 1 HUSB @I412260105779@
 1 WIFE @I412260106684@
 1 CHIL @I412224920603@
-0 @F58@ FAM
+0 @F60@ FAM
 1 HUSB @I412772448186@
 1 WIFE @I412772448312@
 1 CHIL @I412772448447@
@@ -6524,25 +6574,25 @@
 1 CHIL @I412772448742@
 1 CHIL @I412772448796@
 1 CHIL @I412772448857@
-0 @F59@ FAM
+0 @F61@ FAM
 1 HUSB @I412076084093@
 1 WIFE @I412076084002@
 1 CHIL @I412076087328@
 1 CHIL @I412076082591@
-0 @F60@ FAM
+0 @F62@ FAM
 1 HUSB @I412217325254@
 1 WIFE @I412217325255@
 1 CHIL @I412054723111@
-0 @F61@ FAM
+0 @F63@ FAM
 1 HUSB @I412054722479@
 1 WIFE @I412054722706@
 1 CHIL @I412054722275@
 1 CHIL @I412771181117@
-0 @F62@ FAM
+0 @F64@ FAM
 1 HUSB @I412771179926@
 1 WIFE @I412771180003@
 1 CHIL @I412771176371@
-0 @F63@ FAM
+0 @F65@ FAM
 1 _SREL other
 1 HUSB @I412076094304@
 1 WIFE @I412054722274@
@@ -6553,7 +6603,7 @@
 2 PLAC New Castle, Lawrence, Pennsylvania, USA
 1 DIV
 2 DATE 2012
-0 @F64@ FAM
+0 @F66@ FAM
 1 HUSB @I412771176404@
 1 WIFE @I412771176429@
 1 CHIL @I412771177312@
@@ -6561,27 +6611,30 @@
 1 CHIL @I412771173007@
 1 CHIL @I412771177335@
 1 CHIL @I412771177291@
-0 @F65@ FAM
+0 @F67@ FAM
 1 HUSB @I412771182779@
 1 WIFE @I412771182807@
 1 CHIL @I412771176404@
-0 @F66@ FAM
+0 @F68@ FAM
 1 HUSB @I412077347596@
 1 WIFE @I412077347651@
 1 CHIL @I412066426158@
-0 @F67@ FAM
+0 @F69@ FAM
 1 HUSB @I412771936647@
 1 WIFE @I412771174611@
 1 CHIL @I412771936584@
-0 @F68@ FAM
+0 @F70@ FAM
 1 HUSB @I412771182534@
 1 WIFE @I412771182556@
 1 CHIL @I412771176534@
-0 @F69@ FAM
+1 CHIL @I412782110736@
+1 CHIL @I412782110771@
+1 CHIL @I412782110785@
+0 @F71@ FAM
 1 HUSB @I412077350732@
 1 WIFE @I412076099086@
 1 CHIL @I412076093858@
-0 @F70@ FAM
+0 @F72@ FAM
 1 HUSB @I412771175855@
 1 WIFE @I412771175899@
 1 CHIL @I412771177387@
@@ -6591,10 +6644,10 @@
 1 CHIL @I412771172650@
 1 CHIL @I412771177561@
 1 CHIL @I412771177446@
-0 @F71@ FAM
+0 @F73@ FAM
 1 HUSB @I412772446887@
 1 WIFE @I412772446965@
-0 @F72@ FAM
+0 @F74@ FAM
 1 HUSB @I412076081426@
 1 WIFE @I412076079182@
 1 MARR
@@ -6603,15 +6656,15 @@
 2 SOUR @S1582737903@
 3 _HPID 1,61381::3076176
 3 _WPID 1,61381::903076176
-0 @F73@ FAM
+0 @F75@ FAM
 1 HUSB @I412771182984@
 1 WIFE @I412771183051@
 1 CHIL @I412771176999@
-0 @F74@ FAM
+0 @F76@ FAM
 1 HUSB @I412054723016@
 1 WIFE @I412054723056@
 1 CHIL @I412054722977@
-0 @F75@ FAM
+0 @F77@ FAM
 1 HUSB @I412076092162@
 1 WIFE @I412076092201@
 1 CHIL @I412076093346@
@@ -6624,10 +6677,10 @@
 1 MARR
 2 DATE 28 SEP 1658
 2 PLAC Evangelisch -  Reformierte Kirche, Brütten,Kt. Zürich, Switzerland
-0 @F76@ FAM
+0 @F78@ FAM
 1 HUSB @I412260252734@
 1 CHIL @I412076094304@
-0 @F77@ FAM
+0 @F79@ FAM
 1 WIFE @I412771177266@
 1 CHIL @I412772450227@
 0 @O1@ OBJE
@@ -6644,7 +6697,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:48.369
-1 _USER cdwfUyUcP6W4FKcinBpb7WzZFAPQbkzDDNYLLSHFV6vkleCjMtyuQX2wjtXUjJxq9k7VAOO9ZbivJLCknqIXog==
+1 _USER BFAD/xMjiQV/Eulu61Nc/I3e9aq0yHrkKAG4tGFAnUMG9Ah7zFr+K2lXt6xHfjxa61q1XX5MrYuZg4SfoDKtdg==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -6663,7 +6716,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription>The Shaheen Fa
 2 CONC mily shown in the picture taken in front of 633 Third St sometime between 1910 and 1912</transcription><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-07 16:23:16.366
-1 _USER Q6r7uAqSBbQHatsI9g4INdTLbWXk3wJGlCmPXtKYEZk9Azi5a4xBzCho66fd1N3btZ+7DILkI2bVQel0HDsjZg==
+1 _USER AjzNEADkBw0WreBy43eRJ//mUvS2puIMD2fP1JJgQqIZTww1QLJKjCQJEfJtIRfYDaOV4XYBeHAuE6S4P9C5qw==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -6678,7 +6731,7 @@
 2 TITL Congratulations-John-Sphon-Greensburg-Salem-Excela-Health
 1 _OID 05965eae-c08a-4cb3-8481-07ed602ab55d
 1 _CREA 2026-04-29 15:56:39.369
-1 _USER IUCJHCgtI9UInestK8qEhxO/XirOzKaDJzn+SqybFwBKRzB56SdBWb9VwKvfFWkMzcKe6dYMPnjWKS8CDakbIA==
+1 _USER yMI7higTEArocNu+tqGdLulWhr8lvfY3HMm0TqxWPKCuDCNkje6lS68G2C59+Vym/GMvLqtRs+94Kjq1v0/cNw==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL Y
@@ -6693,7 +6746,7 @@
 2 TITL 1697247701479
 1 _OID 0881a56b-0352-4c28-98c3-9d28e92b0f60
 1 _CREA 2026-04-29 15:52:37.881
-1 _USER 8qUb9ubsmHM0UfGH+Pmzvw5O1qmrrtHnG5VrmYdToyqYXYBB3ccqrvEDqWFQ/SQc638AaVPr7dmH/3dMvRvnew==
+1 _USER wq2rWlZGWGRwnTiCWrxxf8L3zaaMeYPN22T8Ts9hl2ydCkrswKIIESh2gZL2ktvGXchPs02Xcwo4BBIxPWt2Bg==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL Y
@@ -6707,7 +6760,7 @@
 2 TITL Find a Grave Memorial page for Kathryn E. Beswick Plotner, Memorial ID 92560255
 1 _OID 0ded1b6d-5659-4630-9d1e-eb6fcc50b0e9
 1 _CREA 2026-04-12 16:12:18.199
-1 _USER 80V3gkLoluRWvc3h3wbIc3IUhlNmXbzwhjhal+Hg1LKYjRIOTplPQ9glNyslHg5OHeLrOve0tct/CUtWk8meWg==
+1 _USER mYXSj5RsP7/1tB+3fjOfIT5btao8UPeSBwar2Xr9q1wXeJfTmenvOTtsUOCLPwhCT4u2dTPCiD8qDg99AlMXTA==
 2 _ENCR 1
 1 _ORIG acom
 2 _URL https://www.findagrave.com/memorial/92560255/kathryn_e-plotner
@@ -6727,13 +6780,13 @@
 1 PLAC Pittsburgh, PA
 1 _META <metadataxml><cemetery /><transcription /></metadataxml>
 1 _CREA 2018-11-24 18:02:22.632
-1 _USER XeecgL8tCsC8gDbuCNRzqap7eR2sd1vODqW7VqMYj83/d6SMG8mtuZmGzqXvyv9Q20Z2lJAlg4sAdqlaU35VWQ==
+1 _USER j2lKgckFenQ+ehYikNfmcLKwPArYAG53gUf0wda7Xcw+yB94IMChqo9mOy/dVTNcMb2Kjhr7kvUNNyMCz5428w==
 2 _ENCR 1
 1 _CLON
 2 _TID 32576842
 2 _PID 18803225037
 2 _OID e96153fd-1b96-48eb-8472-c08d3ef4d531
-2 _USER Pqfb6FMktUwCQw8bMlWp9WVkJdrsk2EFo0cTCfLjbDmnEM574jKBPlvlemnENcsAxeyLLKNzysubEbBjfesAAw==
+2 _USER 8H3Af6nmtMQLNgn8x12VlQfIa7MqnxIuDtHSrshIgjd3SP0gZ3YqgvRgEPwn/em+6AzRnPRLWmUfhU1c/8k8uA==
 3 _ENCR 1
 2 _DATE 2014-05-16 14:42:16.000
 1 _ORIG u
@@ -6752,13 +6805,13 @@
 1 DATE 30 Jan 1892
 1 _META <metadataxml><cemetery /><transcription /></metadataxml>
 1 _CREA 2020-09-08 23:48:44.000
-1 _USER o0VqdWph6wel1TibFrU+JgScWJd7O36iqm5uf57pyZr6gbThQCCpiy4JiOkBqq5yjIAVU9V/2Jz2kzDi7e8Nqg==
+1 _USER a2OTlZvrcHNWV8OJgnbvkf/F6Tq4izQ5pqaz93u7fD011Zw/rYRPhVWHWKdQ5H4t8aOKlG7xvpfk8y/atiK0KA==
 2 _ENCR 1
 1 _CLON
 2 _TID 32576842
 2 _PID 18805104788
 2 _OID 4e70aaa8-9140-48b3-b0ec-ba54eb9572df
-2 _USER EUQjlbXqgvw6WW1J2ZOZC9z9xGtFaeWwnEbtly7xks8+xQV4humnOq/TGC+7ewAMutnbE7RwmMKDfeSojphTTQ==
+2 _USER s42hGEG/gCDSG9HDbuDuTh7/8k6Gln+EbZUTuoyKeMYSHTlplDxYO/87zrSRm2FUiCMPzAjbq3riO41ueUTBfw==
 3 _ENCR 1
 2 _DATE 2012-05-28 08:25:24.000
 1 _ORIG u
@@ -6773,7 +6826,7 @@
 2 TITL Find a Grave Memorial page for Nancy Jane Beswick Young, Memorial ID 186015524
 1 _OID 23ec648d-8511-47ee-a885-37a3739c80a6
 1 _CREA 2026-04-12 16:11:40.597
-1 _USER nl6QP2s/rJDPAPs6mybfu8+0iaR/u3Ba5jwu9oys8n4yxCDd1+z6jy4sIZ1jo722woVkPSI34acguk5BuJ+A0g==
+1 _USER MGGkfihxfgb+Z8iDoakuPidqJaDjsKZlazdr3Qr0MvKkgPXeF9GdzGlmb7kjg7DMqHwbpjoEiTgMLgt83+Gv8g==
 2 _ENCR 1
 1 _ORIG acom
 2 _URL https://www.findagrave.com/memorial/186015524/nancy_jane-young
@@ -6793,13 +6846,13 @@
 1 _DSCR The beautiful Anna Margaret Soulier Bleacher
 1 _META <metadataxml><cemetery /><transcription /></metadataxml>
 1 _CREA 2018-12-28 03:44:17.068
-1 _USER aW1zLw5LM6n3qFq7TNdSpzAFs7ldApOhZzGrGPud+GdP0womuTOKigIlktzzwaE2gl9wqJm4G5fxGWIaxn24Lw==
+1 _USER 6fZUTfUfRZziPoFzoXiypDkiQW+AKujoIIBbAqkLCEkMIveMl9xImnbEWtbh3PG52UemlY9loo8vsFzDLp+CRQ==
 2 _ENCR 1
 1 _CLON
 2 _TID 73547650
 2 _PID 30276120670
 2 _OID c3c90eeb-a3b2-4132-99b7-fcbb4e672439
-2 _USER NTJcds+amHE9t/12TDtY1gU81wAckS/eSF+/P/jSGIAa55m1IgMfs9997TOA2mm0toaJHjqDdd+RKFCGzcjtXg==
+2 _USER 7s3Y01euEwVST7xrHaKFr21+0PZbKOTxQ0BK4ywM9IBfeG9orv7mh4WylXgfrsuyQhrzfKfZP8jWBSyeigItjw==
 3 _ENCR 1
 2 _DATE 2015-06-02 19:40:17.000
 1 _ORIG u
@@ -6819,13 +6872,13 @@
 1 PLAC Herman, Pennsylvania
 1 _META <metadataxml><cemetery>St. Mary's Cemetery, </cemetery><transcription /><personas><persona><pname>Lorenz Bleichner</pname><bdate>1819</bdate><bplace /><ddate>1909</ddate><dplace /></persona></personas></metadataxml>
 1 _CREA 2021-01-22 22:24:17.000
-1 _USER Xe1HW0EwtjUB9mnQE2INuOvj4vnblVZNnzskd2W8nlz+pYOAH5zuOi8ch0+MWIDK5ghkd67IESUioD/XPo0DtQ==
+1 _USER eZNoePjMQRYsdDnINDGBtjKuBsOMT+TTIbKRPIdSfwVuUyqJdeX2SGNHfVOgYiee7MSkiARSu8OJB7szXu4Fvw==
 2 _ENCR 1
 1 _CLON
 2 _TID 27424369
 2 _PID 13623062747
 2 _OID ddbb8541-8b14-4cc8-96be-14b40cf46bf2
-2 _USER mYnpyxq3+Ex/sli7PvcMir4VTEhM5rWpLwJelO0PcaCs8ZlkgclIprRAZEvPdb5eh2cqHVnlCnSJwGZFMzQ5Og==
+2 _USER Hgwe0e5BTrGkueSPjS2DgsJ6czNO8sU8y0iNuMrT8dGsdyQTshbzmKzr2aiFGzF36/yeQFQtYGt0UbnaQETTsg==
 3 _ENCR 1
 2 _DATE 2013-03-24 22:26:04.000
 1 _ORIG u
@@ -6840,7 +6893,7 @@
 2 TITL Find a Grave Memorial page for John Behun, Memorial ID 85531642
 1 _OID 27bf2dc6-7365-459f-a2d9-845d274e7079
 1 _CREA 2026-04-12 13:05:59.083
-1 _USER dU+Lpcd6M3sdnmKvq3ZAEtadiV+MPEsZ+S/V+GpbKE6jMCKogdVmvgSGMPoBsQX+DbUgrw3tfe6UgCKGZVBAbQ==
+1 _USER /TfneJAi7r6gVGFMVplaF0ZmYRggI8zQKzUOGJ1LNnE96GmJeD831HMnEkR9VoIeeQ7OnYJn5s9dUGPGEpz8nA==
 2 _ENCR 1
 1 _ORIG acom
 2 _URL https://www.findagrave.com/memorial/85531642/john-behun
@@ -6861,7 +6914,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:27:14.889
-1 _USER cHoGKOhUOmlvRnee1ePjqzTJwBEFsGR/BR/mrn+aJ8I08ZWcjNansKamyGf+CvIf9krpM9WCsZ+Eo8E/3b254w==
+1 _USER 94b+4kuaF7wWnJYfZIsOCSdDQj9TfGPN7csSWRjmoZNrnvLjlgDr8DcKmw3tf8zcC8LuL/hwASoOwB8Bq7yCRQ==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -6875,7 +6928,7 @@
 2 TITL Find a Grave Memorial page for Elizabeth L “Bethie” Heasley Cox, Memorial ID 32636953
 1 _OID 2cc3c822-709e-4729-91fb-2d31bdc84961
 1 _CREA 2026-04-12 15:45:17.925
-1 _USER SPxJzgfXhlxxuwn5+9nxv0jImBIeTiQ7PAbpV5VtPCQl1XdRiks0KbEU4bkgQ6LhycUKRRX7wvc5SoRB1Ql/wg==
+1 _USER kb59SMUkd08N8VB9YuhcOopC3gfAIEaqfbTbTp7CA9N30QnYS62IOgOVU1JHcFNhBIWc7+lbnVEFCbC6hl9Xdw==
 2 _ENCR 1
 1 _ORIG acom
 2 _URL https://www.findagrave.com/memorial/32636953/elizabeth_l-cox
@@ -6891,7 +6944,7 @@
 2 TITL IMG_0999
 1 _OID 2e11ad53-c3d4-4f36-9248-8fa16253fa1a
 1 _CREA 2026-04-29 15:24:40.793
-1 _USER MXJyR7/04m3Kjqs+9lbPNwbFLgxOCAeR8d0pjWR/+3/aHI728B/kiSZtSPoUdt30vLD6OmeVFi0vIbHBFGMaeg==
+1 _USER JR7NNzvefQAFFKlXiXpa/yMJ5ojIwfRerLoffAcPrTO117z+DZvnSyatiIazFl+N14ZpVK0qmLXu9ibQx3e2eg==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL Y
@@ -6908,7 +6961,7 @@
 1 _OID 2fc66a92-213e-4b4a-bcb8-58371249f2b5
 1 _META <metadataxml><school></school><transcription></transcription></metadataxml>
 1 _CREA 2026-04-12 14:07:05.522
-1 _USER ZZj8CynNoYqF/JCMB+zKjrlaiP1iDTSt7P3G2n69rQzw/t4juZ27SPPzDEtECq1wUbyZMra4RMwnVyWywI71RQ==
+1 _USER vb0DsFG5MF7D/pZbgKP62ERw7TEbzBKBWL8tAzHsLrvt1uHrcIypjK3s1gUh7j7ZgQfl1lZlpJrk41y4Wl4gEQ==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -6926,7 +6979,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:49.237
-1 _USER DZhK0cIx+Z2bEy/OTmmaKBAOo7fuTribsE2iM4FNkwnVum+dkAPS0twQn1ynOd7d4mDYJmFvuEECmtrZyJTS6Q==
+1 _USER 7q7huVJE8m6Kp6E+T/HOE80SbMNhB/VyLOVabTNEVYHXEOT1VEvYiA966NaEBPDJ1b1oDIsQLRUjHTSV8rtfiQ==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL Y
@@ -6940,7 +6993,7 @@
 2 TITL Find a Grave Memorial page for Dorothy Ruth Heasley George, Memorial ID 98847307
 1 _OID 312cc189-c789-459c-863d-906835697c95
 1 _CREA 2026-04-12 15:49:54.252
-1 _USER t4+OuxfE1B4ttgGdciajkClwlumRoDu/nudD5kgoVP8Hba9odspZPwTCmrG9JxYTOq4QHzG5acOxmj9cqjl2Cg==
+1 _USER DDT/j6ijDWqOLfyUn/GUMC7uxHxxb3RLGlzw97KUSRwx7gouLNH0H8ymWge2P66jwZcGjLu5YLk6Oy5Z/AZH3w==
 2 _ENCR 1
 1 _ORIG acom
 2 _URL https://www.findagrave.com/memorial/98847307/dorothy_ruth-george
@@ -6955,7 +7008,7 @@
 2 TITL Find a Grave Memorial page for Anna Louise Behun Sada, Memorial ID 73143744
 1 _OID 33d7e11b-440f-4e95-8229-af895b5d2963
 1 _CREA 2026-04-12 13:06:55.975
-1 _USER JvZqZ+YKI/HTn0RzRgOEyhcP4k+ngnnivVYP7PRSSkBd4ti9BwiGlmTf/ZES5f0QC869ic37MvHJ2sWS2+tIPQ==
+1 _USER 3b6I834NOb+Gd5MjzI/tjbQm9TKGOfyXObfvd+kW6ftwrxTODKXdNlWA8oKqnqIp8j+YzOAmtagIhnoYdLAJWQ==
 2 _ENCR 1
 1 _ORIG acom
 2 _URL https://www.findagrave.com/memorial/73143744/anna_louise-sada
@@ -6971,13 +7024,13 @@
 2 TITL 1860 United States Federal Census
 1 _OID 359a9d7a-d5af-40f4-9676-5e50c4cc5a95
 1 _CREA 2021-01-22 21:28:23.000
-1 _USER V3xNK4ZaYhXQUgjeTlqVLnpO8oc4Y57ksR0WiARFb4cvXlDmBMxMeB7adob68MITmlmny9D64K/6OattumOvoA==
+1 _USER nruMykyWC0cq/qrvCZEaNtPBAKJ0cQgYTT6ALmo/LkwZ3P2W7zu4pd0uhCWvMjrk8QWm4ri0KUDSeOqhPT4kzg==
 2 _ENCR 1
 1 _CLON
 2 _TID 77593603
 2 _PID 36372113929
 2 _OID df3bb29c-38c8-436d-9b99-b3c6171a8250
-2 _USER fsQGSAg2T5cJ3HTwKp4ieqQJtPO7LCu+wq1mkuO9kGkDy13f31Qn/FzPdgeO4D7uWwFA/mFCCrJqV94+CVx6CQ==
+2 _USER E9W7ZWi0pCcEwM7Qp27l1kukJaA2xrh6mjIyyGjIxAce9+kVLfpneyos62IsPXz8Ct6f8l5equYxa7AxGp3XZw==
 3 _ENCR 1
 2 _DATE 2015-02-20 00:07:34.000
 1 _ORIG u
@@ -6993,7 +7046,7 @@
 2 TITL grandma
 1 _OID 3a3cc29f-e610-4e8e-9297-0c50add99b47
 1 _CREA 2026-04-28 23:06:16.477
-1 _USER v3cpQNZUqljFPyLGUqCvD5JlnXnRmry4QkjG6LISX1+a49O9kMqBDLUJTaYcF3H0j/Wc6VM8INzWk4fwk+SAug==
+1 _USER 1qMJc+q6w11wcxVCgU/KBRFElc2W6fbXQhg491p/YZRita79+BpcIazrHpZ5mGenNcp9xw08IgaamF9mSGFnXA==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL Y
@@ -7011,7 +7064,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:48.208
-1 _USER F1o8ifVpfc7Y69fyFw2381aG3NfkYt8GKuJ3bPRrdOgRNHYdgspZAedRpOEl52pzitRzg9UNbWLCl7tXTQ0UAQ==
+1 _USER 6tASAlkwkO99OCnia0UeKV/yVBQLipo5Wf4HuloRGp5JnJPzlwCBJWVJaJ02mJ8YUxpwqv3EblE98YFnkszENA==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -7029,7 +7082,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:48.264
-1 _USER qdJpm7ZMZmyfuQf6NB9FglGr9F57yG+qEtV6r+o5axw8L2+JN3nm8p6NlB68A8Sa+M4gah+5eaPAJ085KpB9uA==
+1 _USER CE4p1Aq8NWRqv02TCy1DBn4lOWsw7C8Kam8JcNvN9/lplH2hteGzxpHiaYJoNW90RMZ7DBCNSTe+ajjoZ3VJWg==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -7049,7 +7102,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:47:01.278
-1 _USER 5E/nhdGg8cuuilK//rCT8CXi4REqqpw0byyOUvpfo6vsppR00c2yGno12Et+zaJ9hwiR6/dZln0igIrnO2tg+Q==
+1 _USER 0lsYG3w+xwg743T/yP1QvObQcAdNcc8fZWVuZeCCiO5vOcxd7ghgju9oy2f1vYfIuJpHaXK80sGXO/CW6UXI5A==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL Y
@@ -7065,13 +7118,13 @@
 1 _OID 4cfc43ca-1cc4-4824-aa3c-cbccbab2bb4c
 1 DATE 6/5/2014 11:27:41 PM
 1 _CREA 2018-12-28 04:36:47.568
-1 _USER dRoxVcrTap2UmpMaFHzUD/2hRC6EYGEGrnUto4aoQ5zaXpsNWObe1KFIm4gt1RRinJpmljQkkE9KZ9nUxm1XRw==
+1 _USER KjmXbOD14d5zMPdnLRkC7J//rVtNqCs8+TATa4cBJptbhZevpa12nQ5tBHC6zZ8kBqmffIhFfXTyV3k0/ugrIg==
 2 _ENCR 1
 1 _CLON
 2 _TID 43572778
 2 _PID 13922357760
 2 _OID f82aebce-71e5-4391-afe2-3a57d3e6dbf1
-2 _USER tj9XhjTrf4AuV6StnwbusNQmbLbGnLh5JzPHVyG1plI11BzyawHSoGrUMhVRKVcyrQLiiZMdloqWwioXbqj4HA==
+2 _USER e5wdyNbaCvam+FxeVg8bLA7AU5xECDKsQQqzEVLUGDuPCBmvo6I96KiomHWGDT/9RCCxkbiujtqE4YFHKXM3Ww==
 3 _ENCR 1
 2 _DATE 2014-06-06 04:29:42.000
 1 _ORIG u
@@ -7086,7 +7139,7 @@
 2 TITL Find a Grave Memorial page for Marie Sutyak Tomko, Memorial ID 195476845
 1 _OID 4d6b3997-d92d-4444-bc8b-fde6ea365e55
 1 _CREA 2026-04-12 13:17:51.871
-1 _USER 2LUAXaXdNMnYW6ERHWwn7i7M1bk97GrYuNkBwWvQULa8hTtAZvUX1OcEfWWeTyFTnTe1dTE3rRDx8r5GkwE6Rw==
+1 _USER LDGfXHegFIQL+/DWvT1LlhPdvD5objXXhbAdJ7TCZAoyXqAXWXgG3qulfc7jTtqrGvcYpZWf78spbWGH7Wc4ew==
 2 _ENCR 1
 1 _ORIG acom
 2 _URL https://www.findagrave.com/memorial/195476845/marie-tomko
@@ -7101,7 +7154,7 @@
 2 TITL Find a Grave Memorial page for Dr George Lincoln Beswick, Memorial ID 59994625
 1 _OID 5293ba37-de68-417b-96b4-07cbe53d116e
 1 _CREA 2026-04-12 16:13:00.748
-1 _USER XSBRfymg2bOk+VnejM9k6/IttCrXcp7gTeYBxrC72QZsfu/ZDYRPjT3x4Uf/9IhZnZGbQ2j4cSsBVzX0Mhfq+g==
+1 _USER R0oo34y66Bsb8/ed5qesMCYTg88tVJof4VCKO7eCncPyxoIAm+ruKhSSl81m7tdcKGgiDXw90meEr5mznK/B8A==
 2 _ENCR 1
 1 _ORIG acom
 2 _URL https://www.findagrave.com/memorial/59994625/george_lincoln-beswick
@@ -7116,7 +7169,7 @@
 2 TITL Find a Grave Memorial page for Florence May Balsley Heasley, Memorial ID 98847299
 1 _OID 54ccac03-715d-4cb1-8fed-26b2903c0561
 1 _CREA 2026-04-12 15:42:03.278
-1 _USER WLOmY0d1k+sJs1Z/G/u1JXKHvEVugaKu0RKeDA84CNiTO8I5ecgc0u16P+dxRfPGahr8DXzBytS+mEvR8pE5yw==
+1 _USER KMpUZZh/7itNsPr/mQKEfPiEM09/g1aY+Y7m0R29tjtse0RFXlwfja3zS119kgb3R6x4eGHaENwfbBwv5dxWRA==
 2 _ENCR 1
 1 _ORIG acom
 2 _URL https://www.findagrave.com/memorial/98847299/florence_may-heasley
@@ -7131,7 +7184,7 @@
 2 TITL Find a Grave Memorial page for Alice B. Beswick Loughry, Memorial ID 103902189
 1 _OID 56914022-8c61-4da3-897a-7ab8ba5d4f01
 1 _CREA 2026-04-12 16:10:37.824
-1 _USER OWPzkm6E3zHiliW5fez1abCmyBmWtPUM3FSfPuctrlBrJGNRBJiHRwoIEnqJC1vdZ6ats0PQWF/TbgZjFF+PZQ==
+1 _USER P7Bd1P9pcEMU3lANFp0aJsDExLwEh3VnEnm/g7v3tCzzkWTyykvCLQqdROCcQB+bNqRcV5ukU3YxlrLQOXr8xA==
 2 _ENCR 1
 1 _ORIG acom
 2 _URL https://www.findagrave.com/memorial/103902189/alice_b-loughry
@@ -7150,13 +7203,13 @@
 1 DATE 18 Jun 1947, Wed
 1 PLAC Pittsburgh, Pennsylvania
 1 _CREA 2021-01-28 00:16:36.000
-1 _USER C2MQL6OXmDMdNnVxk6h2k8M3jwYzyOyqFL50sYRegCMrURci470ki+ciVxcwOBAEiQE3iQe8SbGoAxj8uWTkMA==
+1 _USER Kn9vmtjE47j284TyPC7TeprV3Ta87NiOc+gMsVF9bsoOmlBCcUm8CWqGpzrzxV6YOInbAwCT7Vk5eRr5b/xXng==
 2 _ENCR 1
 1 _CLON
 2 _TID 10045005
 2 _PID 210024685462
 2 _OID 5bbbf67c-3d42-45d3-92e2-c5d9f1c99a73
-2 _USER tvoKXmeuDhdVQIZD37ruwiikbiQxTi6w3CMj4LLVBEFHVeiJFkMiAFLRr2cY6qaAKMalUykQ/Kc621Fgp89IhQ==
+2 _USER T0rJA38FBavehhsQgu3RcZBMAn4/WqQF69fyL+0g+gbrW427zt91Z96EEL3e7FTQ1qFh17qkm1vRi1vFNPRXrg==
 3 _ENCR 1
 2 _DATE 2016-08-17 01:59:49.000
 1 _ORIG newspapers
@@ -7176,13 +7229,13 @@
 1 DATE 25 Mar 2018
 1 PLAC Pittsburgh, Allegheny, Pennsylvania, USA
 1 _CREA 2018-12-28 03:42:06.864
-1 _USER 6+uhPd8ecjxGV6aDDJwk19jVcEEx9bjne4NoihSUu29WgJrAF5K4WrFQ3oEmlOjnhPe3PQQU94o+WQ7mL8vauQ==
+1 _USER BgSJtKSmgUJeoRc7VU+9PZAqwMRx7KUcxxCRjWCHUJgfBVrL2hd+YAmPNr8zEcpqzTxpa+35gVMIzLU1pl0z0A==
 2 _ENCR 1
 1 _CLON
 2 _TID 32576842
 2 _PID 18803225037
 2 _OID ef8c7fed-cd8a-4d9f-a184-4c6033b74ae4
-2 _USER DnFZAAH7tzxhKzrm433jaztLnoBc19oN/7qqaBZZ7zpkbNSuK2FUArR6FZas2/iEOBHHvVt3S56HdIp6m08SWA==
+2 _USER uGboU9PSeu9f1UzLPvEFHsZZ5FDx1RieZs3zVmkfpQL/fXbOyC4xAnVBqhv/IaL7b2er1oFKXx7vKvKhHz9HEA==
 3 _ENCR 1
 2 _DATE 2018-03-26 02:00:41.000
 1 _ORIG u
@@ -7197,7 +7250,7 @@
 2 TITL Find a Grave Memorial page for Catherine Elene Yinger Heasley, Memorial ID 146345768
 1 _OID 61777c56-4d8b-4132-b3ef-b0d690c69a9d
 1 _CREA 2026-04-12 15:31:58.801
-1 _USER uAmtgYIk4RQ9jmYmZ0mrQsho2NVqiL3cuKcojQp/GiilYdq80mlFFhwtM/CAk7sjtnoTTXNlqW8/zF2GcTTivA==
+1 _USER P/Q5jZwPPNq9vM+Jtgte685rYubU83PdyeGqixJx0V69fm4yBcW9mfl1KNT4yhxo/YdkmeVgvvlvoMufU8MwcQ==
 2 _ENCR 1
 1 _ORIG acom
 2 _URL https://www.findagrave.com/memorial/146345768/catherine_elene-heasley
@@ -7212,7 +7265,7 @@
 2 TITL Find a Grave Memorial page for Clara Dziadosz Gardocki, Memorial ID 120635600
 1 _OID 6859a9d1-5b9f-4d48-95ac-26d2d9424d79
 1 _CREA 2026-04-12 12:44:26.884
-1 _USER /ShQG2w3hTiLV0nZsizezKvVwI0nptqlG/Qt+Mv2sJUX6SZ1zHgml0Nak2oahumIu5HX2yR8zyqhM6Cn1XnG5Q==
+1 _USER iZ8QBoI7WSildeDcVTSlh3WWwUGhYqFzayaduDsTJ/qnpPmLz2l092n6iMnadSA6KZi/hMbSnD6y9Q0t9qUiow==
 2 _ENCR 1
 1 _ORIG acom
 2 _URL https://www.findagrave.com/memorial/120635600/clara-gardocki
@@ -7227,7 +7280,7 @@
 2 TITL Find a Grave Memorial page for Blanche Dziadosz Shaheen, Memorial ID 79676470
 1 _OID 68b8957e-60a6-4ad5-864c-7dec082296ce
 1 _CREA 2026-04-12 12:43:39.493
-1 _USER 4bWR9b0JBBTTSacmfZeU+o8M9r7hH/8Oy4vAl4dtAsQCVzSX9v1XoXrg8UxQJzF/C3+6vVsuvhxMjR5UBuOiFQ==
+1 _USER X29Ifc4Ux754SwFtPXrbCzHjol9revs6/+lRDhGZVRAfxrvw4YD58jvr7uh43muj+q2PiUYybETGBHCsDOsOAQ==
 2 _ENCR 1
 1 _ORIG acom
 2 _URL https://www.findagrave.com/memorial/79676470/blanche-shaheen
@@ -7242,7 +7295,7 @@
 2 TITL Find a Grave Memorial page for C R Heasley, Memorial ID 149429731
 1 _OID 6a83849e-acb5-4d7c-bda6-3ffca0c180c3
 1 _CREA 2026-04-12 15:47:59.029
-1 _USER 5F2b78FFBiKXvEknJ9DXzY0hb2bQ50qBsQnmVVS7PqxMWTJACYJQsrTiNRJCiWhwZiiANvVyPnxhwdcsAtai0w==
+1 _USER 2SVTvVO3r6M2Cg6F/0hjSvIqzVLZGJJ9nXEGg1GSnHX3mazCFqPHY5UzZWircxVbWXtkiY1khzyWQxgR+ePg3A==
 2 _ENCR 1
 1 _ORIG acom
 2 _URL https://www.findagrave.com/memorial/149429731/c_r-heasley
@@ -7257,7 +7310,7 @@
 2 TITL Find a Grave Memorial page for Brice Eugene Heasley, Memorial ID 117628523
 1 _OID 6bb20e30-555c-4fb7-bb63-9c5edfac3f59
 1 _CREA 2026-04-12 15:30:07.889
-1 _USER PuQUmRwlJ9OPsHWPtx0LOB9DqqVLtzADfmCtXFp8EDaS5I2O/I6kF6FEJRj3UiCS/Vn9dzWEm3Mr8NuIFo2lQg==
+1 _USER VEu9vYHn9Ehntoq+iOSjVbyxAOoxMeXxgNauwiwXlm6vjET1gi7ltxXyjqvLAaBD/PiOXoqX2dLsyykP3CoQtw==
 2 _ENCR 1
 1 _ORIG acom
 2 _URL https://www.findagrave.com/memorial/117628523/brice_eugene-heasley
@@ -7273,7 +7326,7 @@
 2 TITL 1688816953868
 1 _OID 6ec9b22d-d9e0-4b93-9824-e6e2a4bbadb8
 1 _CREA 2026-04-29 15:50:27.830
-1 _USER 7qsHtBNC58Dz2TsUkmeU68OqKgNRpOUdg80MPf5URqBpwSs8IDvwNUYqC4k+IwEEMaf0NAuCIH/pe88sg3Cn5Q==
+1 _USER ZTARb4Hu0Bl9zotHepn8ZhmX9uYR3uAZEpEEFgDbmillQvY3+GQcmlrMHW9Rq9XjVAlM9xHR+9eQmphW8hSwkQ==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL Y
@@ -7291,7 +7344,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:27:14.941
-1 _USER vderspJLtKILgI2qKaO84OMAuJpLxlKsYAPVdRa3ulrdXV+Vw2aoH5zsdN+VIQMaf5GTLVycR2oTrV8m6Msscw==
+1 _USER ZmfaompgTJs3URh3hijQsURoPGHPDXbMHl612ERSMCmq5bNYn4Ce81QGi3AbblnyfoVj39Kxkflu+DEuhroMFw==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -7305,7 +7358,7 @@
 2 TITL Find a Grave Memorial page for Anna Sudick Sutyak Nicolikin, Memorial ID 33375558
 1 _OID 7ca3dbf5-a45a-4425-ad8a-50b73dbdcf54
 1 _CREA 2026-04-12 13:16:05.823
-1 _USER kiJAiI7nhKZidKjAXd8ZhggXEcEWElEihJOeAKcX0Ec9nLMGqIna/aH9VAPF/FCplH40Vky7LhQtNBkuwMDzXw==
+1 _USER 2bswgpHq9cuY2MgeKdm9qPa8QjKEpHn8xO4zRhy3QwmdZ4gfs8GjKcwld61dSTM/9NCG4J2ExBx2BDepqFWovA==
 2 _ENCR 1
 1 _ORIG acom
 2 _URL https://www.findagrave.com/memorial/33375558/anna_sudick-nicolikin
@@ -7324,7 +7377,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:50.105
-1 _USER S1Fj5eVA7MfuFULMxaeiRRmiEr4ZZRe7dSxGYHRfNr5E+arrf6/dbinFqJ7FCgY73m766T1S8/9uNgtMap5geQ==
+1 _USER 4h6EygtsDKbwZpPsWvyLx/EJ0oQ4eTLtnPKl2MgbZU+EGQ7lPMSW+Z87tCy0JxMDzstkaDiM9+eT58Di8pIEFw==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -7342,13 +7395,13 @@
 1 _DSCR Great Grandfather George J. Bleichner
 1 _META <metadataxml><cemetery /><transcription /></metadataxml>
 1 _CREA 2020-09-08 23:50:07.000
-1 _USER kb4T4tb1T5WWlV6WdNXjsjBMycm+z/nE3twtO2dUhFEFgjA1nuigVG+ju+nxxbDT9MxMOl4e1ziIQm+I5A8VVg==
+1 _USER ae7G/9FeAn/lMGDje4GcAdgwOMwexgsfdM4AJYNh9RRvwL7rl4lpreN4Ld+RwyjJkU+3BT/kGEC1frQ6RQ3dDg==
 2 _ENCR 1
 1 _CLON
 2 _TID 73547650
 2 _PID 30276120756
 2 _OID 3a619b2d-f24d-40ca-a9a8-98ae3ed09d13
-2 _USER bm7Jcn+Fg9V2a/Mx9F6iNTsy2Ilu5FTrRZL6+xkgaFI1XU45hCR7A4ULM2LXOXX+z3nwRWPb+eATT06CQNl6bw==
+2 _USER cxlDcIfhqRu36WgAYZwKJmtx94gEr3c52xkY+GILKQkyKOMdGvLXFDL1Nuy7PsAgfMugF8tWWEU1sy6V9GFCkQ==
 3 _ENCR 1
 2 _DATE 2015-06-10 02:14:23.000
 1 _ORIG u
@@ -7364,7 +7417,7 @@
 2 TITL IMG_6513
 1 _OID 7faa6f14-060b-42c5-a0e5-a9fabeee1a61
 1 _CREA 2026-04-12 16:33:11.214
-1 _USER N9/uvkKF5A3rCcWVrXcrLFGl4JMnSmqSbpXh7uDSvfFRCsvbpDumsNjPXI/hi3vzDiZZPAj8zot6nnkdI4oeXg==
+1 _USER s5EGgpk9igdAX5p2bwlRfyiG/BqxfxaJeF4JzXkLChVuE/WwH6YfzVSb724aDQMPKINb9L4182/jezZVUfi9kQ==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL Y
@@ -7378,7 +7431,7 @@
 2 TITL Find a Grave Memorial page for Charles Rexford Heasley, Memorial ID 98847298
 1 _OID 7fab0d25-9d4c-437c-ab94-69617c8bb1cb
 1 _CREA 2026-04-12 15:38:26.148
-1 _USER h8z3wjFLBaCc1pF1HHtwdpqPO9rMNpJQ0kU44OVfmui8WkTSA4fhDJD5wb5B0I8fNQoOLt0jwU8pr9GQLlSNTg==
+1 _USER /vD1mWhTGqLTRpnhdInO94qcW4zxDkev2kdOCmB2Lnr5aDonOe6S1ZM+NNdVxREmK4+WMR15w/yLqL5hez2LnA==
 2 _ENCR 1
 1 _ORIG acom
 2 _URL https://www.findagrave.com/memorial/98847298/charles_rexford-heasley
@@ -7396,13 +7449,13 @@
 1 _OID 7fd9835b-88b9-48bb-9773-758fb373a8c9
 1 _META <metadataxml><cemetery /><transcription /></metadataxml>
 1 _CREA 2019-02-05 00:44:04.390
-1 _USER o1WcQES0PqX3pEdEv2v3fo0ajC6UQwELx3ndMmjGGYMv1ChUZB9MtfyrZtRtWacHr/m4/9XYGsVThH7zP2z9Kw==
+1 _USER Hj5U6cBivUi1ul83CaPUTF5iHnUmgmp4pdnOQvh3S+qWMSc79frbtySl21o7lX/its2Fl7IoqyrlE76OmUlN+Q==
 2 _ENCR 1
 1 _CLON
 2 _TID 3290666
 2 _PID -1625128717
 2 _OID 8062fd17-3221-49e5-b8e1-bff839e6c54c
-2 _USER VN8RyupFfMPuPAfIRe1kTEkiz3z5e/o9OvgywnA6fiNiD1EM5/qgAtigvE6zSWVF9AVqjfBqZAxwc6XRtIA2Ug==
+2 _USER 2SH+n7bo2FpiiKJKkFUOJ+BgrgVXNYxYLY/+tT7ZEfkCGO7KgemXIkKlwLVc40B201ZofBf0KM+KTFdqrx0RNA==
 3 _ENCR 1
 2 _DATE 2012-11-29 23:20:58.000
 1 _ORIG u
@@ -7417,7 +7470,7 @@
 2 TITL Find a Grave Memorial page for Mary A Hart Beswick, Memorial ID 59994648
 1 _OID 80f5af91-a186-44fc-830b-71a8ee891ba7
 1 _CREA 2026-04-12 16:06:32.842
-1 _USER F/4Ert+97Y5bNKGV5uqa4xyhGgIrT2WLg91AHEA3M0UdRp5Yo6XzHuQCk5VDdZR3P+QeNOpvjT0sNYpNpzrZlQ==
+1 _USER E57cJsOLMGlPK9IIUvf13MOt8a3HdwVZILyIuNesPOIJenEfQ52djncai+5QHGb3YjFD0t+Xv/KnpmnkBh7zKA==
 2 _ENCR 1
 1 _ORIG acom
 2 _URL https://www.findagrave.com/memorial/59994648/mary_a-beswick
@@ -7438,7 +7491,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:27:14.698
-1 _USER azemi58r9fVlymeD1eGnHy8Shg2j08u0tGylslxlXhtk1e7VkPbsc20skYdrKfgizDM9HD/lX7lKBaPb4Z23TQ==
+1 _USER C/xq+2smfbw0wLS1jNuts/EPn0lQgonIWm4aitUaaqzBKxr+sSNRKVWf2kwDNZdJd/q6IjLeyZlikFV279AS6Q==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -7453,7 +7506,7 @@
 2 TITL IMG_4177.heic
 1 _OID 84d2f253-fe18-44d9-ab25-a3903046cb76
 1 _CREA 2026-04-29 16:18:06.009
-1 _USER XVkUvTlTqhPLhIPv51eGiUIuS25mEGoZkCoNQNXmYOrIZaNZD2YuHfzLP6RBrVekMRGJiRribWltt6xdqOW+Tg==
+1 _USER ES4QnCeKQsUhBUWKI7ru/YcVOM1HYwGmxcCQHjHd/6YROHLIWr13ZHhOzaIaxSct1K8z6JDVeDTmVIQuTPm31w==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL Y
@@ -7471,13 +7524,13 @@
 1 DATE 29 Apr 1921
 1 PLAC Pittsburgh, Pennsylvania
 1 _CREA 2021-01-28 00:42:59.000
-1 _USER F0a3FMGUSKurttNsq1tPtKQFgKeibzmZeJDnymN/dt+rPc4LvH+Ik5E0kV3/nBBTsr2PlGfWQqi0DjTTvAWHcg==
+1 _USER QOfLH6vd6zK/LZa+EdhGt4spLcUwffSBzJkM+HJvESW1yxBeP2ly6U/6Xasbrr2yPCqhCaAiz5BQHv1uc7dz6g==
 2 _ENCR 1
 1 _CLON
 2 _TID 10045005
 2 _PID 210024683520
 2 _OID ed5c61b0-8369-4ea6-98a7-f56fe502e33d
-2 _USER vHd+4CY6pYAAliYMx1HlspEKo5525Ad8iqekJCCbyu4xpb1B9yRNg9tBTFJXwYKC0S30SvqU7AjzyaK7Ngh+kQ==
+2 _USER 2AbohqhmR6y7d/cxcAOgERflm8LqEOsCv5zVGh69nVYyWz2QBH7cSpdbVeC3jWG5ezviygeLiA7F4E1k+9XiLA==
 3 _ENCR 1
 2 _DATE 2018-03-08 21:07:39.000
 1 _ORIG newspapers
@@ -7494,7 +7547,7 @@
 2 TITL IMG_2878
 1 _OID 873f74f3-e58d-4b32-9c89-b77409683c86
 1 _CREA 2026-05-03 20:29:06.607
-1 _USER UU0SnJZ2bf9G+88XDFpFzWoL2XxjsKpyx6dpqd/e+Vg/DZjVk6Vnm7TmRj6Q6Vxlc/yeOvFhXn0+5FFXH2SPnA==
+1 _USER rnwbYb4jYBa3LJcymG+76WMZ8akVZ0FFXfSfZIOvpm9dpi6zPuhAcdf97P7uVEIBgom9nio1RLo/2GT3S2jt/Q==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL Y
@@ -7508,7 +7561,7 @@
 2 TITL Find a Grave Memorial page for Helen Dziadosz Smyczek, Memorial ID 23025628
 1 _OID 8a8c4d62-1549-4898-a386-1ad3dcd7e5ef
 1 _CREA 2026-04-12 12:42:58.927
-1 _USER JCWYBar3YvkoGQB3Oih5EQjI1Qyh5qKDX6B6ZvlePbWd7AsCY7YKxwh9UpCM6ge7ThH5UJgTF92FxGD0r/07ug==
+1 _USER dpbs/igtPC1eoH/ImvVwDljV67pVucoS6PxEeXkvRhhMXbyGFbgcG3aANWpAsk6VOgIdOtoaKutnLvIXm4A0gQ==
 2 _ENCR 1
 1 _ORIG acom
 2 _URL https://www.findagrave.com/memorial/23025628/helen-smyczek
@@ -7524,13 +7577,13 @@
 2 TITL William Joseph Wolbert
 1 _OID 8cfc6890-25a0-4d96-9838-21439f0a92bc
 1 _CREA 2021-01-21 18:46:39.000
-1 _USER kifRPyClkYkJg+5B4V7Uc9LLUTQS2scasmJgX2kWHPGjVQnwtNitJmID993tBmDyb9kBArH9RvGlEIpPKSbR1A==
+1 _USER yDus+070PJkdgz8BOrIBssc9b8a/h6d89yTSJkdxeMCeEtA3pjTtIkpa6mU0waTJza2NeUtvWHpg4kmFqOxnTw==
 2 _ENCR 1
 1 _CLON
 2 _TID 3748446
 2 _PID 242127434519
 2 _OID 10e85cc3-af86-4cdf-9ca2-de9340712d85
-2 _USER pPXQP1OBjjw/50ykPrUYBz1uaVB/T5GMatdjit2nI8ziPVS+QuxSU1H+javiac+p3E1fh9fPudLKelpmEybK1g==
+2 _USER y5hZwHPt1IFz5RzqMz8rs6IC//QoeIJOxv0MwiF6mkuiVqY9edaYKVxrHEtc/gHrEXEq94suswnHTHyXloaEbA==
 3 _ENCR 1
 2 _DATE 2019-09-13 12:28:18.000
 1 _ORIG u
@@ -7549,13 +7602,13 @@
 1 DATE 28 May 2015
 1 _META <metadataxml><cemetery /><transcription /></metadataxml>
 1 _CREA 2021-01-22 22:26:40.000
-1 _USER rrHyl5ajxpDaYwicrKb6NM5ADK8JdIKCCekOKPsQMhPqiOMkuZ7jdX6HXyIXVnga00YuvV6FXn2XGLhpqpYwbA==
+1 _USER z7bjdi3wDviWOz1xRdprYqZ+kLcuBBbSST9OZ52U6d61MqN3FgZWnG8RAbs35jgoz2I9vVOabtj+xv8XcPGRGQ==
 2 _ENCR 1
 1 _CLON
 2 _TID 79060437
 2 _PID 44401676435
 2 _OID 9e1996b4-3d93-42af-ba2e-92ee997b3063
-2 _USER OIjypOgmebUKJJG5nyUdsfcDNO1nqOR8Gd5kyVDKXN00vi7j2AO5nu3HmdwbRPP1DWkE4636SML/urRZgyWZjA==
+2 _USER xq7NtIxG8oUYtEo9QqIV9GwQs+PgD2a77+MEcsF88XUZlDxcSqgtR0jFb4rertbGr1Raq/GMWi69hg0S7Qti9Q==
 3 _ENCR 1
 2 _DATE 2015-05-28 15:45:23.000
 1 _ORIG u
@@ -7575,7 +7628,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:27:14.946
-1 _USER ztGpQIZU72vtfjzgoo724cMrtjLVWU4bO2R9BMAiS9vCsgTkN8nzKHefQJnDfGMk5sh1yxr5ZjfiIJ8gxdM2WQ==
+1 _USER 0Qdjhh0O6vuQPaaFzdYjUbzqIbhsPsOPCcBcZQmHm3EV2mhj6bvLWhOKfZ2msfb7wBwPBW4qKf7t2mv9qQr2Sw==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL Y
@@ -7589,7 +7642,7 @@
 2 TITL Find a Grave Memorial page for Catherine C. Turcheck Heasley, Memorial ID 35260314
 1 _OID 908eba28-e13f-4c21-9636-38b481ec4b07
 1 _CREA 2026-04-12 15:52:24.087
-1 _USER qcVQIq77TXedPT+6wbOS/ZE2RiJ0HZPcpDgd4bRScp2gApbYP+1fpq+0HMjq87LZNMtxKPFa0u0BpJM2o6MmNQ==
+1 _USER /U03kM8lbt4Ififk5rK4961LrWqpQHL7RdY6nLMvLk1leSNXbg5Qje1TysdpQjG6cUb19LtuKEtb5kFMOGKZzQ==
 2 _ENCR 1
 1 _ORIG acom
 2 _URL https://www.findagrave.com/memorial/35260314/catherine_c-heasley
@@ -7607,7 +7660,7 @@
 1 _OID 925938c8-cb36-48bd-ad08-e20836a24630
 1 _META <metadataxml></metadataxml>
 1 _CREA 2026-04-07 16:32:20.469
-1 _USER pjgjbgcgsGtXO4f//fJ89SODxZsZ2IpmXrMFn2V9lidra8CZSiZQQkEC2twlkHm+cXFZoslM1kAV+UnUiDpDvg==
+1 _USER 7ZleMO2/Poln5m92w/+OZZBbEJ0eYhsMYtByn8u3UJxdASCxuO9rI6ZmHrh1ehJ+tBYfRpN6rPjSolCUKzcKAw==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL Y
@@ -7625,7 +7678,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:48.261
-1 _USER O21XH/lAJsvWWxcBk4DejUfDdAJV0GNBZ1yEY9Frb15lQi0z66PzYxrZXI6wRxn+kHzZgy3noibUmOe8crRbAQ==
+1 _USER GciiIuObjz2lX971W3+Wh14F34BCq2ow3IoH4nhUZWHDM6REygI1RyNecH5GirXoHJh5fYbtZZPc7YLfLPkJNg==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL Y
@@ -7639,7 +7692,7 @@
 2 TITL Find a Grave Memorial page for Pete Sutyak, Memorial ID 74353887
 1 _OID 9442818e-7666-489b-b394-4589e078969b
 1 _CREA 2026-04-12 13:20:21.170
-1 _USER dGmdQMq3rR1HcB0/ODoiJ3zIhhuvjEVKIi9eANsxKl2G5YnxC1DYrq2qoAqZ/jLMkilg0iNbNM7+26EKx3dE7A==
+1 _USER gOboYcpmoUge38JyaQjY72AQ2bBpqTo1nkJANRtCGFa4oVb7Qwzx998/eWSGfbqgNP/RvT08epD09YmN5tx4SQ==
 2 _ENCR 1
 1 _ORIG acom
 2 _URL https://www.findagrave.com/memorial/74353887/pete-sutyak
@@ -7654,7 +7707,7 @@
 2 TITL Find a Grave Memorial page for George Beswick, Memorial ID 59994599
 1 _OID 95307d79-09da-44a5-99aa-c2d13c3f2d28
 1 _CREA 2026-04-12 16:05:32.889
-1 _USER PXME3FCHS6QMJd42mgPWKeOyuT3OaG8P19NOfaRISuS5MMLw3/hqEG99NtKtNfy9Cd5/0YMJ+JB1a8OzUagEGg==
+1 _USER ZUipJCYHpzUyimsj39Xe/kzfycM7bGVwh3hStrjbVyKeWcOmZ4APWDvL2lGejw2AwFOHw46ggREqD0cxAavvAw==
 2 _ENCR 1
 1 _ORIG acom
 2 _URL https://www.findagrave.com/memorial/59994599/george-beswick
@@ -7670,13 +7723,13 @@
 2 TITL Ochs Family Crest
 1 _OID 99f9d6d6-1698-4342-aba1-9b6e4878e4a2
 1 _CREA 2020-09-08 23:12:13.000
-1 _USER rVyeA2VlUVz03+5rySQzpwwjL9gIgXapQmSOkU89clxH1MyvtA6mXLqXSwv5gicL6h1DIxUe09bSeQSdmzX4zg==
+1 _USER 2GKoQgVy5yJQyrCNSh/HXIC6E/ktT5N0KDrHuMirLMUnTlDv+8weOIa5Kk36aGffyX/CAYGjEOMcJmQmMJfVzg==
 2 _ENCR 1
 1 _CLON
 2 _TID 46275268
 2 _PID 6509052774
 2 _OID 1b3ad3fd-814f-493e-9c28-c8a4fbc2f6ca
-2 _USER ZpINn15pWYCvOnKg4Am+QXeEInAGCz/QtpfLshGP4USossPkKve+99VCku4OprYJQ15hIa9bUHsygr5tCoGSfA==
+2 _USER z4s53mKyOJH+oubLYrOwmyHooS01qOfSjE+E9GrRdwHb69yy3uciPwtZ21UMYkP1gLQZA6vPiwjhkBvzMIJDjA==
 3 _ENCR 1
 2 _DATE 2012-09-06 20:45:35.000
 1 _ORIG u
@@ -7691,7 +7744,7 @@
 2 TITL Find a Grave Memorial page for Theresa Marie Dziadosz Rattay, Memorial ID 99998536
 1 _OID 9cfa4733-2ca1-4fa7-9701-5f3811e4c755
 1 _CREA 2026-04-12 12:57:05.711
-1 _USER 1LfEd/98vFPsJkk9P+8xUISc+b/a+DfgWv4TVgLfocUZfQhBFZ7YOaK5X+vvVCqjMFbGcNw0uRg4/gKsfw0xbw==
+1 _USER BptK7vJbHdzKouerb1ue1MPrWtTYUbKWEwdG2S4omTSHeINQJJW8LbDEr3AsmmH93RhwPEzrsBiqc8HZVqEXYg==
 2 _ENCR 1
 1 _ORIG acom
 2 _URL https://www.findagrave.com/memorial/99998536/theresa_marie-rattay
@@ -7708,13 +7761,13 @@
 1 _OID a49b27b5-5a01-4f48-8a89-de101bc4e1b4
 1 _META <metadataxml><cemetery /><transcription /></metadataxml>
 1 _CREA 2019-02-05 00:44:43.281
-1 _USER G24F/bZ8k+s4I5ukuckyh023c5DvXdEaqAtNiS8f1y1VycMsbr3lbhrVH51sRhatyC9o2lWnHR3TuQX14MmVcA==
+1 _USER yIPCdsZUmxe7sATt5InBr6EgftqS4RtRpq/atvEODKxoJozD5HHtTVmuRByQH3YiRMqkyikelIp3rOpKabguqQ==
 2 _ENCR 1
 1 _CLON
 2 _TID 3290666
 2 _PID -1625127792
 2 _OID e01b48f8-dad7-42f6-8ff3-86a290ec3ba2
-2 _USER +AORwB+/AJJpzean1hPvEUGTYGEsiW/YyI9TMPiJ7NGwy/00b/0rkng9BhLKbhgOKXU89WB3w7kkEdpfsxwodw==
+2 _USER DPit67qxltqLO0HN9vDjHTy1UjsCj6Eppz8XK1nx2McCVUrHXx2FGfwc5YxqKfR1i3C92VyPn6H5a1syfXTutA==
 3 _ENCR 1
 2 _DATE 2007-10-31 19:20:37.000
 1 _ORIG u
@@ -7729,7 +7782,7 @@
 2 TITL Find a Grave Memorial page for George Sutyak, Memorial ID 231038052
 1 _OID a9f66339-7be1-4673-a055-65d02df01cde
 1 _CREA 2026-04-12 13:10:26.564
-1 _USER PE9JbJXmzV/6yb+mHPdb/6YMGu21Oy+Pin9NoljcpPmH0XVrev4j2SGshAGF2JZHalOLHWPqzsqR4lWnyj94sg==
+1 _USER 5n6tqP+HPV4k/kBRkmdGSHKkiF2MumnuhT9PF03SA30EwzZ8ohjS6acAFxBSqMcoQUqpiT2NhXJXH+B13Ke2uw==
 2 _ENCR 1
 1 _ORIG acom
 2 _URL https://www.findagrave.com/memorial/231038052/george-sutyak
@@ -7745,7 +7798,7 @@
 2 TITL 32ab3a4f3ed90216b95cc7f39b7f80b2-medium
 1 _OID aab2cdba-5f11-4d1d-b6d3-8936dc66f786
 1 _CREA 2026-04-12 17:20:07.334
-1 _USER qaOBRiPrTYHrzJoWJiFCK7PdeRmYj8Qv7yRlWxaJEW5BM73JSq7qa2o/qpgQO37pjDSCRopGrKDZIxCAq4xWKA==
+1 _USER 5PsjoinB49CZEjKWZkVjtj4M9NkdNP1GzCfPzsUJBHjLT6tiMdv/s/pWow7HHidJrvdh8lTTDt95qJomndEnVg==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL Y
@@ -7759,7 +7812,7 @@
 2 TITL Find a Grave Memorial page for Samuel Heasley, Memorial ID 80138676
 1 _OID ace68f5a-9f82-452d-ab58-166d2385e603
 1 _CREA 2026-04-12 15:35:08.958
-1 _USER 9wVgUV3O04uq6fZWA6vunto0f/1qysVm9aSvMVXeA+9bWHXgN5U6ILlC1fqP48OFxKKialIelfCV4681Vv/v/g==
+1 _USER JrwLPxA/YsjUEIwYqyi7oHtmOCdVCj23CBAx5ljIII6v8MFWXQd5i9KTAPXZtZ6To4b0KmzkYKcvn+QlYi75Og==
 2 _ENCR 1
 1 _ORIG acom
 2 _URL https://www.findagrave.com/memorial/80138676/samuel-heasley
@@ -7774,7 +7827,7 @@
 2 TITL Find a Grave Memorial page for Bertram Franklin “Bert” Cox, Memorial ID 32636950
 1 _OID b5da454b-010d-4cc4-a76c-ed7700eda95e
 1 _CREA 2026-04-12 15:57:24.275
-1 _USER Ts0Zkh+r43SBZCtiW441DoxTplLFJejVtXx29cK13qPrNfj9pL0Sojr67dBDDdirk0QCFMVkTHNwPWLPiegPQg==
+1 _USER ho7vozQ3du8LX/31VVE3yzV1feDB3Elh8IL4ssM3NxsXQFCc+T1WN9FehAaeqRoawmAcZK6D0BbP1EF1W2cY8Q==
 2 _ENCR 1
 1 _ORIG acom
 2 _URL https://www.findagrave.com/memorial/32636950/bertram_franklin-cox
@@ -7789,7 +7842,7 @@
 2 TITL Find a Grave Memorial page for Edith Heasley Klingensmith, Memorial ID 25129592
 1 _OID b64c0cc5-f3f4-4693-92de-102c73235b3c
 1 _CREA 2026-04-12 15:43:24.131
-1 _USER fBDVa6flt7HDPbHbk54cbTIi8Q5WUDZRSW2JGrzZWsQli5CKj34M1xkZEzZQ9MogWA+LOBHmNUJCcOMnwZEuEw==
+1 _USER zNLjGMlufgwR+gd2bG0et3mgmM6q5iH+IWUnn6cg09fvDX2zjHQU6vBrKLjXhLV3f4O+jlXpEMn7xyYA811+dQ==
 2 _ENCR 1
 1 _ORIG acom
 2 _URL https://www.findagrave.com/memorial/25129592/edith-klingensmith
@@ -7806,13 +7859,13 @@
 1 _OID ba53c24a-d457-4b94-bb43-48928e487606
 1 DATE 1913
 1 _CREA 2018-11-24 17:41:52.512
-1 _USER r5xWTetPp1wEsiYvkaK2Lvbc6pGRVmUageo7EESYn7YdUAWVpEQygpirKByTzv4ULixHQhi/PY73cQ6+EeFUeQ==
+1 _USER qgAUvjnCu8nAg7icLDiORYbPhj7U2PRlN7FFXgZarisJKYqb49JS9kLc9Oi+IfzZH5WfWhQo6GN8ueiGs1UY5g==
 2 _ENCR 1
 1 _CLON
 2 _TID 10045005
 2 _PID 210024119499
 2 _OID 2ff2a489-0678-41fb-9194-6ef308db6c88
-2 _USER yFkiZAnWVDujwf3ZDa8zU9Lnj4AH6KXxoGeAxpcGkA30Lqb918bMnZIuljrf+mPZyGNBq81M/WFFz2LXBtpSQw==
+2 _USER lSgUsTaSF7X+k5V2HeJb1EmjAbIvCa7f5Ba5nqE+I3vfjC1BWdptrChJIekDREBLp6wDJa3zNFUN/QQBly0o2Q==
 3 _ENCR 1
 2 _DATE 2016-08-17 01:22:47.000
 1 _ORIG u
@@ -7831,13 +7884,13 @@
 1 DATE 18 Jun 1947, Wed
 1 PLAC Pittsburgh, Pennsylvania
 1 _CREA 2021-01-22 18:54:37.000
-1 _USER HxUMa7ikvp783XlZz9I1XIYsCnxK3Z0rOWMoZi8/w89+uijdHh4qh+fF/YVjy0a0STiAfynC1Pfn7DMCIzMAtA==
+1 _USER TMZUyF3AxbIS/v3OVRNZ0Fwpfe8+4dMqAumpWbsNT7n3C5Ic5poD7hffO+k3tGqUmKd+/HhHafQQMibneaIxyA==
 2 _ENCR 1
 1 _CLON
 2 _TID 10045005
 2 _PID 210024682920
 2 _OID 5bbbf67c-3d42-45d3-92e2-c5d9f1c99a73
-2 _USER /V+9fey94GKF8v3SkBGHIyM1EQutFpl+zEalMxem1oGZLTzbA6C/eA2T4NGghkXrGd3bfReHtOiEvArdYF15TQ==
+2 _USER mb1XPYmjtN0LsVoGFMhrG6AuCgW/+NZvJbyR01jfeGqZgs+DlmMT6r34mpaqAd7zBxFAJsfpviY3LkaamWFJVg==
 3 _ENCR 1
 2 _DATE 2016-08-17 01:59:49.000
 1 _ORIG newspapers
@@ -7853,7 +7906,7 @@
 2 TITL Find a Grave Memorial page for Paul Dock Heasley Sr., Memorial ID 147186653
 1 _OID bb4cd36a-103f-4131-a599-c1f2f553ea3c
 1 _CREA 2026-04-12 15:51:08.634
-1 _USER Ez06ezMDkKqKIXi1ehlpPdMcelH86gy9VRRVfnZNepqHP9+riIsA7YB6e7HsLN92NR0Jsx4IBZ03y3CJ32Yh2g==
+1 _USER sBdVG48xk6MSb14cX3WbiMbZ7EpjKhSETv3M1po3lXOiyiUpY/Fg+eQ+0MYbSt8ouSsOI3KERERXd33I+VxMIA==
 2 _ENCR 1
 1 _ORIG acom
 2 _URL https://www.findagrave.com/memorial/147186653/paul_dock-heasley
@@ -7869,7 +7922,7 @@
 2 TITL 2025-09-22-13-17-0016
 1 _OID bca16ead-b337-414f-90d8-062a5f3ae851
 1 _CREA 2026-04-12 16:29:59.586
-1 _USER R4dl5AkvqBqhsRX0xYJcBgjdzhoN9WoD+vIjgrrP/iJz6+8D2YFktrGouJhjlCT3gekJt/QzqTpPXLK+ZUikzg==
+1 _USER nmFobV0zSkBCZNIoaS8TXAjDLInmi253NB+HBO2kBjfozuvxq/9AymqkI791Vl0tWWSKKZCeC9NyAOybOAp0NA==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -7888,7 +7941,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:27:14.734
-1 _USER iOFt/9LcNoUWa0rGs8pQWvuld18M/yiydcFkzR4RmRykbPnfX9tx6DLy82QFYU2/rIX50h/4pc+nltWcSBzinA==
+1 _USER lidvkzoqKldiFtMiYmWXEdWq7q3vLtOTtK4fcnLS0MYLVAJhUEe4Uh6Yii5ppY9U19CvInJHTzS3PH/HQ1GYtw==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -7902,7 +7955,7 @@
 2 TITL Find a Grave Memorial page for Michael Behun, Memorial ID 73144916
 1 _OID be938fd1-d572-4dd5-b127-75c488cb9e7a
 1 _CREA 2026-04-12 13:04:20.610
-1 _USER fBI/ov2nxu7IMXR4Ou9uLNmbnFyAcqCjViI5zLyvr/RRa2es6xOilj+hSTPHS1tEGir2zOwVLfDWOrIYtV/bAg==
+1 _USER onk4fL13VDjLt/pTG17rWoC7vgfBt6GQu8kXzeSd9E9fBQ9OG5Kc/ZMI5RxPu66dR6Iyr1E8VWomyZ+MRJ7acg==
 2 _ENCR 1
 1 _ORIG acom
 2 _URL https://www.findagrave.com/memorial/73144916/michael-behun
@@ -7917,7 +7970,7 @@
 2 TITL Find a Grave Memorial page for Edward Dziadosz, Memorial ID 23025759
 1 _OID c31df0b6-3737-4531-b565-5872915d657c
 1 _CREA 2026-04-12 12:42:19.362
-1 _USER sBhhziyaABlaDG+/L1iG+9vrIJOIB5KIsUaI/8vtbfkXFwHoBGb8JSF5YLepV8VZSVCWmI5Si7iMv1cvH1pTOA==
+1 _USER ilFP5ud/rJ7qmTyPwarwQaHmCBrxkj9UcdpRBRHVttPnN/Jq8csMXqosXqJfh2QqFJK7DmWCmPnC15DG324D1A==
 2 _ENCR 1
 1 _ORIG acom
 2 _URL https://www.findagrave.com/memorial/23025759/edward-dziadosz
@@ -7932,7 +7985,7 @@
 2 TITL Find a Grave Memorial page for Alice “Allie” Heasley Stough, Memorial ID 105899309
 1 _OID c3375b08-f8a2-4c20-a4de-078b38bf258c
 1 _CREA 2026-04-12 15:39:46.676
-1 _USER RtG7l27WxfLf7mem3JyRsRdPMd+/iWGX5TCKLwbw4frmuNZOXOJB4SIeN99Zkmfy0nfHNjNb4UkJibgbD72CJA==
+1 _USER o0PYHVIVAY7EWOFJHSqL5uqPjOWeUjkoQyMjpaPXNFnPrQn5nXboT2Ea5qyXptF1G4hL9z4IIzi87JHKJ2rWbA==
 2 _ENCR 1
 1 _ORIG acom
 2 _URL https://www.findagrave.com/memorial/105899309/alice-stough
@@ -7948,7 +8001,7 @@
 2 TITL IMG_2094.HEIC
 1 _OID c4ea94f8-422d-47fa-9eb5-97fc424f299a
 1 _CREA 2026-04-29 15:24:10.924
-1 _USER 9MWjC4nIyqySs1AIOtzcMgrhuymL4rCnzOg8XiqZrYh6I6L+x9+aVB0Vyj090FOR0KwtsOFG8N3IZJp4cOLP1Q==
+1 _USER M8UvEzleM7vfvHWoM69MJHHZTEh1pQaBYBn33zQsujBalFED4DkppQi6L1hJppBb2P0MhqStAZ1Jj6xi3dAzTQ==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL Y
@@ -7963,7 +8016,7 @@
 2 TITL IMG_20250328_070620
 1 _OID c624a365-5f03-4f20-93d7-df8a7d4ebdb0
 1 _CREA 2026-04-29 17:03:05.613
-1 _USER TqU3dj5k+72A085y0SDllZ5o3LWqxTXHYf4N1wfxc74UUVC5E04ghGrVOlDfVOkwItw6/s2U4GLLSTsRkbFRTA==
+1 _USER +JxOgYYR/U4NTey3EGR7WE9o4DTfVEGTxyR3xl2UpW5eg4ogRAaELpmT8huT0FwXS7YPplOBCeeTTtokEgFGYw==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL Y
@@ -7977,7 +8030,7 @@
 2 TITL Find a Grave Memorial page for Michael Behun Jr., Memorial ID 81759416
 1 _OID c675fe79-15ed-4ca2-8851-81dae75d5ded
 1 _CREA 2026-04-12 13:03:33.914
-1 _USER jilfmAlvO04uwp3ACNCwmZJXwklL3hRm8bmbo91wIa56Xga/NyqgrCaBosBnsLoIWi+9EeJzyPSQlog9aqIE6Q==
+1 _USER 5BPy5HtGfPKPuGpYlAVS7USIKgeaH1sFssMrxcTszhC68yizSnWf89ZPyuuaKHBW9lYQnx+6MRbuh8hqCAZc/w==
 2 _ENCR 1
 1 _ORIG acom
 2 _URL https://www.findagrave.com/memorial/81759416/michael-behun
@@ -7996,7 +8049,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:48.174
-1 _USER IAjd5VlgQr68Wg9pGe0nN+++xW3lgU2DRcdg5Ls6mn8SbK4z2nWMCKwP/QTdIzMqH2Q+GYlyb5fqLnTzZ4SW3A==
+1 _USER mkL9Ci/oU8U29kLc/xlIihKyOA3NSEDfset4t2IHZKt5vVHaSk+pS4GN2RPuAlWrIODUvRvHYp+U5Q8ReljSKw==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -8014,7 +8067,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:48.279
-1 _USER iKMXwbJLw0+9BHLhazmONHcId+7bQ3CVajWv9iWznfj1+Yks1HRtb+Xww7AzP+wYpFZZMIb47J1kwW5p05HqEA==
+1 _USER vYM0W+4RybLapK06pmo2D189cDU5vhf43es8TXYvlEptqX5Vt7/bBnVLIyAlejbT/jo/nRTlvB1bZCj83c/+CQ==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -8028,7 +8081,7 @@
 2 TITL Find a Grave Memorial page for Nicholas Behun, Memorial ID 85531861
 1 _OID ca0f68db-6429-46f1-aeae-3889424af754
 1 _CREA 2026-04-12 13:05:28.609
-1 _USER dpMHR4OcHpLFOhWGabunQjEznm/xi24f/eSjFMxTwohG4/xwz5EAk9X3W2k4mo3rivw3a1oVZLecI35SpLs0jw==
+1 _USER fyvuUeHeNXiJKbRRAwyTDi+lStFrJ50cM+56Mqu5Ek89H7qLHmtL7FeF1Wzv0kgPJggp8AkYsHO+Tzwq6Uj6Qg==
 2 _ENCR 1
 1 _ORIG acom
 2 _URL https://www.findagrave.com/memorial/85531861/nicholas-behun
@@ -8043,7 +8096,7 @@
 2 TITL Find a Grave Memorial page for Sarah E Beswick Heasley, Memorial ID 80138678
 1 _OID ca441845-8ca9-4a2f-b188-e1998c952833
 1 _CREA 2026-04-12 15:36:12.760
-1 _USER Zr+5dF8w9ntBZhslHbLyhEYHJBAEqFNZ6L1EUHozNWEVtIiY7UhS6D6m5nkN0jXfkcWqyRpKhHjeDcp90eL5Gw==
+1 _USER sBtcubma+Az4O/P5DHbuwJWRRNVdjpXzavgWYqvqOxEmub154neG8tgmhOxzfjOG1avGFtfxoYKUTDVngrhjLA==
 2 _ENCR 1
 1 _ORIG acom
 2 _URL https://www.findagrave.com/memorial/80138678/sarah_e-heasley
@@ -8062,7 +8115,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:48.374
-1 _USER tOxH1EjcpitUHgX0WRcruq6BFoQnMVD7p9gObPSfKaBwaKxPArU89io2KFolcSN4FSxnCIfaGZEfiDvAjhVItg==
+1 _USER ckzkWC0OyKTagAYe4MLQUZ0l/kLXjPpnr7fMSzL60lqGLVav4F9CbFJXURny/pSJ1HMymG+MR5+YgaFwsw8Y2g==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -8080,7 +8133,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:49.043
-1 _USER gxJlDhRGpASfKT1FJF27qBIKU8+yAFLyN1Q34XVWvRVB0deQ0hShv2SMBc9TK8nQ3USydVqsZ+RipPnWGev+Hw==
+1 _USER pKD+e/PkrYFOU7l6O5Jh5dLdssAgzXhj94ToqKmfE6GdvFF5+e0jxsEcmONrawNPT7SzH+vbKJIFNbKiATS7Rg==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -8097,10 +8150,10 @@
 1 _OID d4daa42c-b593-49f2-bf18-4620a847b2c2
 1 _META <metadataxml></metadataxml>
 1 _CREA 2026-04-07 16:36:06.641
-1 _USER 8vGmijsBHjqn42Z6u8IE05XFsOUfrhyG3Q+SsS1PZbDjUWwiYbIvAZraCe4x4uW+LwSk1MZWeqoCR6gPND2++w==
+1 _USER fquG7PznVCCdIRGShMI/4eWj4vJv+RbMHjkM5EznmLdWkb9BKmxbIO6oAdg/HuQRZBwDwmWdZeitLmOz04P6GQ==
 2 _ENCR 1
 1 _CLON
-2 _USER RuhwklZVtDu8Ni1mtK9qRGA8s1EeKz2ChZzDaXNHmByugKUPfuF03zPvxC85bX2kJd9Kstl++njtn95RzTCSxg==
+2 _USER 5kCyqF8yzaXM3BBYfIyA3CJk74teMr4Cc4rYf3tEqFsBV4lnQlq+rcZt8hmr5nVbWYIgw7iRycdDqfgLvVWG7Q==
 3 _ENCR 1
 2 _DATE 2026-04-07 16:32:20.469
 1 _ORIG acom
@@ -8117,7 +8170,7 @@
 2 TITL Find a Grave Memorial page for Samuel E. Heasley, Memorial ID 146345739
 1 _OID d4deb4f4-b392-4fcf-acf0-b84c68790e9b
 1 _CREA 2026-04-12 15:31:11.363
-1 _USER wSMnFBNQPfgJBWr7eqOsqMRmFylqXVlxGiJe0u30HE1y1PvFFLxDHs4fssI2Zvqt/yQdmeHtgeFUG8iStMC1Kg==
+1 _USER 9lHtWs6MxqJ7qWtoqimW3gTRjP5vNFgIUTufUo5kwV74hdHMEX52BwRTDGW5HI2OdRZza1QUyHaZDRFl0I/Q/w==
 2 _ENCR 1
 1 _ORIG acom
 2 _URL https://www.findagrave.com/memorial/146345739/samuel_e-heasley
@@ -8133,13 +8186,13 @@
 2 TITL Media0200
 1 _OID d54b2604-e558-4470-90f1-b589ef8c0bb4
 1 _CREA 2018-11-24 18:13:14.972
-1 _USER dr1AZvhFSDIIXd+KG1EHPbkn5gvioNNc3Nvw2lfHnctB+Ock7n/PbyZ/NuRIgvXmnj/J8lAyC+/c6ySeo7UfTw==
+1 _USER RMTx2NTv+8iAHXZsOIINf+zWxJ3AtuNkR1B+ovmnQJ8yWA/zb502sOZI0HADnTbvoBDi2dokswehGTQ0FfPTXw==
 2 _ENCR 1
 1 _CLON
 2 _TID 108278092
 2 _PID 360063857305
 2 _OID 3526f7d6-1b73-4d25-ae41-c83c67fdd807
-2 _USER jkWXCtOUJTbk0wjh1ggGqx+DRTb15GRf/SaWQlfZzQxb26OMwHx4egxG5HraFgFPwlb2OctvEHXGwmX9+lLCtA==
+2 _USER qPTDJnLA8uNftJHshlycvrf3tjbMLuCQif2m3s0bP7Ia80Gr1ub3fCeMp4IuSGsL4fxlIBPCEcfYLeossnnyaw==
 3 _ENCR 1
 2 _DATE 2017-02-04 00:29:35.000
 1 _ORIG u
@@ -8155,7 +8208,7 @@
 2 TITL PXL_20250827_115234889.PORTRAIT.ORIGINAL
 1 _OID d60f9741-fa88-42a1-af14-83ada6f84f56
 1 _CREA 2026-04-29 15:29:53.714
-1 _USER 8oEp31cbBnQqFEl0jPFJWwGyhZ0fWUc6wdYxYdZtgZWa4lonqcJuGJ9fRSzCbi9ewM8L98jvBi13reoU9DdOhw==
+1 _USER du7MiLMGVaGG8t1fHjrSMB+9XC/6gasr6O0JV32pIqySMxdUh5kYk0Uj4qd2ZdA3Kxa6Ey1tyKAzw8B3vB2qEw==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL Y
@@ -8170,7 +8223,7 @@
 2 TITL Ashlyn headshot
 1 _OID da05f8a3-b0ac-484b-ac70-b1cb0e7c31bd
 1 _CREA 2026-04-29 12:57:07.200
-1 _USER V2KSw97uJP5xtMkxUCy7BRlL3MKosjMNDUyhnpZtr0uy+LK8amsfL3fiBy2bZ4cmx4uNyOM+r+BYcwPZzOAkiw==
+1 _USER zdpFFuHlqPSSEpVwD1aqNKZWOM5caiB+rOSKkcCzGkbBOZb5E6U9mIZClkdljA8RyEWwoxjxEQwmCsxOcWestw==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL Y
@@ -8188,7 +8241,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-12 14:08:34.442
-1 _USER qJVaxdNeO5JW8XRMNV4OxxAGTmr5gJf8hV1QgwM4x8FjIA5uVqAurRr98midkWM/Z8DZ7tu9eRYeVsAz59pw7A==
+1 _USER Wk4QeoIX/vN8LtIy6nhvlUA76EFKgqEPf0OBuDrsFM4BAqgAB/0zsoAsdBFEgN2D3Ds4V1ALYR5GAXc2ldGW0A==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -8202,7 +8255,7 @@
 2 TITL Find a Grave Memorial page for William Peter Klingensmith, Memorial ID 25129593
 1 _OID ddb0e189-1397-4076-8bd5-a7a3de0b1636
 1 _CREA 2026-04-12 15:58:29.338
-1 _USER z67FVgQy7ycDjgTK616Vk82kZn72d70HRrb0RToNQvKF6flJStfe+1DCY2ok47c46eWlfDu3OTN/r6iNiZkkbg==
+1 _USER JnasLqJvd+guLXUQRFpMmUp/0LGAp4jv8DQqFmJKsvdStLRgfV6xR/7NgtEjrSmHYplkWkJx1P7ptiCjJyTcIA==
 2 _ENCR 1
 1 _ORIG acom
 2 _URL https://www.findagrave.com/memorial/25129593/william_peter-klingensmith
@@ -8220,13 +8273,13 @@
 1 _OID e3f53e27-4f15-43b8-a96d-3286799652da
 1 _META <metadataxml><cemetery /><transcription /></metadataxml>
 1 _CREA 2018-11-24 17:59:35.348
-1 _USER B6QvdbM+tN9oxWbakDerhnA0WYOWck8mxXD5HaZCXzo37OK193psR0goiEtRjH9I44pn811IR6wFOqyjI4Y7EA==
+1 _USER VU1N7EsIgl1SqJq+99jPdP+VIcSGAXGf1QNM5i4tvPcERCKZvxiHdNH3hROSd/3gM3h5L1P7KQowcW5KTrMjvA==
 2 _ENCR 1
 1 _CLON
 2 _TID 32576842
 2 _PID 18803225037
 2 _OID 3d181fb9-e6e8-4ebf-8ce2-c4d9bd6623e1
-2 _USER /9/GUR8pnyeIFPpqvKDNY2lii9BTx/1WZHTLruoxDEGkGb5KxmufWQm1F3g0s+wq/6RrwHclM9kDVrY1cMOKiw==
+2 _USER um/l61v/D2sEmgBz9apsjPfcQhZN05CP+0/8fktZNXdbbcKOGoXGKz+gi0IA5NXWX5UvtIMvJBMohwhfrvGqUw==
 3 _ENCR 1
 2 _DATE 2012-04-04 20:13:07.000
 1 _ORIG u
@@ -8244,13 +8297,13 @@
 1 _OID e48c856a-0277-4a00-be6b-18ea3043b1a5
 1 PLAC St Joseph Lucinda PA
 1 _CREA 2021-01-22 19:17:46.000
-1 _USER cyLlqQKjhq7kHi+lmPV400Nz7fCoAYftakFkqPVAjPsQYnQaIRR2kALBB/mAU/KRSYkICOFGXfA3a8O7AzNkVA==
+1 _USER 39nr+ohqP3AlwWq7HSYkLa9ERd1GPIbFu+o4Q2j99je4Tt3EQBeHYCgNsx8BS/wEFvB3aY74/7IZGcuUceZJFw==
 2 _ENCR 1
 1 _CLON
 2 _TID 6065188
 2 _PID 304118361
 2 _OID aaa0b0e5-97f7-4e87-9d4a-911fe3ddd092
-2 _USER HL7UkpX2k28NoePHuRFjzr11JIPTPAirc1o8cXO1ZZ+OGgP29IVtJN/d2as50GdwgBRMtVsMwfxG2m2MdW4q2Q==
+2 _USER BfjAchf03uP5t/Kr1bSkuISKC3q/KOu6oN3QQdrsBrJ6TR6vS+1LBNSyU6Opn49uOBkrM5zSwtwdTsXzliwn4w==
 3 _ENCR 1
 2 _DATE 2017-01-14 06:52:59.000
 1 _ORIG u
@@ -8266,7 +8319,7 @@
 2 TITL 1517516055120
 1 _OID e4bae0ba-9d51-412b-86c9-df1e219ec1ea
 1 _CREA 2026-04-29 15:51:20.937
-1 _USER d1TCdevvk3D3NZkXI/68th7N2JVQ92/yFP0S7PnjHr+yMSSM4wt2zS60zKlEhgsgNoKTZ7E2jfIi3A1cpoXhaw==
+1 _USER NINoQI59/QGh/4C9L8sF8nF+OQaIN0FU86QWl0PQlYQvYE7Rq2YVSsUZ9UCYUQGudDNwTMR4Q7ljsKD7KCP3jA==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL Y
@@ -8281,7 +8334,7 @@
 2 TITL JILLJERRY-59_Original.JPG
 1 _OID e4ef6f48-e9bd-4ac9-a36a-3e526c84ff9c
 1 _CREA 2026-04-29 16:28:56.023
-1 _USER gmiQ7HiFV72qbhPCJNhfZ+vOJ6yi+hWYYoG53t9MeiIcc5rq2TsREYPcCTA/CCkCD5icHWEokd1P1Cw8MRBEtg==
+1 _USER DVqfuNLsN23DZbJJK+HHOLpStK+sdcHcrB4neMzUgMY903LS/qHjlvocaZRQi05GdptIfiLLJR+aO3jYOpOSmA==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL Y
@@ -8296,7 +8349,7 @@
 2 TITL 5292323_web1_gtr-oa-blacktie8-080122
 1 _OID e630c073-81c9-4b14-a6ea-312d1587ba34
 1 _CREA 2026-04-29 15:54:06.429
-1 _USER BlTiAFfCyqxNewME+VTCD2VJ1BfIk/wnJIKNJNt7JILvkLqnoQp/BkK2F6QwT2Wv6CKXcPKO0n6tstFVdAxGnA==
+1 _USER hdH3f1ycNDML4Gnpkd8kH9sisEZ/c6QnybKWIQbKQS876MRGgVHlGnB8Y1hqBsOZhoddrL5rwCdCpFCyse8a3g==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL Y
@@ -8312,13 +8365,13 @@
 1 _OID e68acff8-003e-431e-a3bd-ef58e67cf7da
 1 DATE 6/5/2014 11:13:14 PM
 1 _CREA 2018-12-28 04:32:10.525
-1 _USER WKcRK7IujgM3hKL7Q4pdQvdmgjV+gyYeFO8PMvjtxNfci4sctZrG12ab5Nhlud9rLvD5nweFo+26L7eyD3WATQ==
+1 _USER 5n3h/5ypt9iBZWsjobfU/sZLDjYzdqCY7X+DH9FZbyGBwMhabc/yIrhJQzfj5HpSA/E1PW1s5i9O0gCnSu+D2w==
 2 _ENCR 1
 1 _CLON
 2 _TID 43572778
 2 _PID 13922357764
 2 _OID 3beb75a6-c243-434a-b58f-ea93f49b3a7f
-2 _USER BgM/QsnVrYlfFe/9Abh3FCl3B6ggFNzMl2ou0zbqikcd83wfAGUV5Zy2Ye2iRhLbdZCJ18IiIj7fcVxwKeVlFw==
+2 _USER ELAo4MXdVs089jCCSYh9z2vsSPouic4snSQswn7Is2hRRx+cZqQTkpX4GvCWGdin/fg82FrCZjHpXgp7dhZjvA==
 3 _ENCR 1
 2 _DATE 2014-06-06 04:29:42.000
 1 _ORIG u
@@ -8337,7 +8390,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:48.090
-1 _USER KiooT0FCYTW22W33b78i5LDS87yL8GziIUm1LIxnyX8D1m+jwurRYdcDRCuscIntyNfMp3kw+5IdrhMtk94I2w==
+1 _USER AgaYpHkzfNYglc2mvzWnRUpZEglAZqi/DLFl/DCn6uAv2EUY7GOSyUa1st4SH2GYc5GxcI12OkpxaddT3gYLrg==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -8352,7 +8405,7 @@
 2 TITL PXL_20250920_221154714_Original
 1 _OID eaca6cb4-6872-439c-ad98-b6dd017b0d65
 1 _CREA 2026-04-28 22:53:50.292
-1 _USER O4NeQj+cciOYjt8YJpr3HKtOAXFtqSawklH/Dm8pVnEUfFJmjFJppTsF37s3uYADalhGzkdUpH/o7zvPYD5AJA==
+1 _USER yfMR2OjW/HUWBQcL/a4iYVQ1cNFoaOhtwcTyZxVk1MiafN6p2oKWjAmRa6YUiiQDBWLe+1e8xN5ih/CcikJXhQ==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL Y
@@ -8370,7 +8423,7 @@
 1 _META <metadataxml><acountry></acountry><branch></branch><cemetery></cemetery><country></country><directions></directions><ingredients></ingredients><institution></institution><job></job><ocountry></ocountry><school></school><transcription></transcriptio
 2 CONC n><personas><persona><pname></pname><bdate></bdate><bplace></bplace><ddate></ddate><dplace></dplace></persona></personas></metadataxml>
 1 _CREA 2026-04-10 15:36:48.095
-1 _USER tJCaNKRFZ1ePsBW0ynFAIBbKK4Z/f8jIlcCISzrZ/RE1LPTIkLrhoITtYXl+15tUy9LXA6Ef0JHofqozIJTEJg==
+1 _USER QNfJQ/UJMibrGPfJZu1KSNsDlZMD/denJMGfScCSEFefaih6gK0B4FQB05v4egfUJaOrQ4fyQJMyb6pjJwN3CQ==
 2 _ENCR 1
 1 _ORIG acom
 1 _ATL N
@@ -8388,7 +8441,7 @@
 1 _DSCR "U.S., School Yearbooks, 1880-2012"; School Name: Penn Township High School; Year: 1950
 1 _META <metadataxml><record_source_gid>1308024950:1265</record_source_gid></metadataxml>
 1 _CREA 2020-08-10 04:03:19.000
-1 _USER EA77PwBolnMW7KWlJwW4R2tipX8y1OgK1KRILXwVUvw0SA4yAhbE4rA2U5m6ub9jg28myYJzINgxD4sQa86dlQ==
+1 _USER 8CYU4ibWhfb6GyqzdCghAw3fxDtzqjaqXGEHXIsfVf/nDvq7w+pNw4OJk5NdTwvvQMBl8aiJzy8OKZNU3n3clw==
 2 _ENCR 1
 1 _ORIG u
 1 _ATL Y
@@ -8402,7 +8455,7 @@
 2 TITL Find a Grave Memorial page for Maryanna Dziadosz, Memorial ID 23025745
 1 _OID f7e95f05-af4f-42b2-9baf-3e4dee3ffa19
 1 _CREA 2026-04-12 12:41:13.479
-1 _USER bdEq9xx3Nm6TPuv34CY9znbGCO5fVd9O/f8fA1c7sG5QFYDEyABVKYg7wml0XFsrtU5/ArdHUBSlVo98OYZH+Q==
+1 _USER nEq0tWdJAb+bOu7SZWBHoWReipC9LdCAx/ketbRho2R/trzGsNGOns4zvxkEiuuyIcUKD4Rcw2PUnfMPoStu4A==
 2 _ENCR 1
 1 _ORIG acom
 2 _URL https://www.findagrave.com/memorial/23025745/maryanna-dziadosz
@@ -8417,7 +8470,7 @@
 2 TITL Find a Grave Memorial page for William H Beswick, Memorial ID 99478712
 1 _OID f7fdd915-7e15-4016-a0e9-f02cafe75361
 1 _CREA 2026-04-12 16:09:51.306
-1 _USER QR9/Ipnwgc8q8d4MOoitzgZ+t8cVNdbZsIW9DUhz2C+HHM6R9BWvGmGEQNOtGOFM6Mkh92SM++VN/DB5trFoNQ==
+1 _USER xgLOpJGzj/j6wG1E/JevtTPfh7YNAuut7+3R5foxu6gNfD7PD7bgWPYvyLbaYDNyzKsgx2MUfAhHTURMg32xtQ==
 2 _ENCR 1
 1 _ORIG acom
 2 _URL https://www.findagrave.com/memorial/99478712/william_h-beswick
@@ -8436,13 +8489,13 @@
 1 DATE 23 Oct 1929, Wed
 1 PLAC Pittsburgh, Pennsylvania
 1 _CREA 2018-12-08 21:51:28.895
-1 _USER sr36N5WPH+3Mwc5GX7EtKNrsBiKb0YIoGNzZ2waLLtbaOINHahMZMQPcPHjareLWEToYh4COuyumlNaNVhXemQ==
+1 _USER d4ZH/PwGnjhLmv89C2ivmkeUCtQ/6BBrqrWbd1n3YZtjO8m/2XETZ3jCBCffWULR7ac2hU/wXzjNmBnwICaPIA==
 2 _ENCR 1
 1 _CLON
 2 _TID 10045005
 2 _PID 210024198232
 2 _OID e1f11d93-c3cc-4c1d-b326-9ef884a9aadb
-2 _USER O6R4eXQuAK56nawSGJS8yVn1HhV9ApV+Pn9gqFhY9OJ4PRnnDkvM499Dro9+a+AcR6yY7k08oti5/7uIoQu8Bg==
+2 _USER o8+XFAjAdRQDhDtHFEOapz6/zuIOLZUgS0fyOAOQL1yj3xPyBfrxtdm7zdlcvDpvpXXgVCNkrn7vYw0o1qV99Q==
 3 _ENCR 1
 2 _DATE 2016-08-14 01:12:21.000
 1 _ORIG newspapers
@@ -8458,7 +8511,7 @@
 2 TITL Find a Grave Memorial page for Peter “Pete” Sutyak, Memorial ID 218110268
 1 _OID fc03ff3f-dc15-4753-b000-b48f4c3ee7ac
 1 _CREA 2026-04-12 13:21:50.928
-1 _USER 4//9Z7Zc0XW+QsEkmD13C0UHzr9NkzJEgV3kT9q4XgTnGFyEcRXzJ/krX59B3MN3ofyP1m7Rm0PO29pB1SStdg==
+1 _USER YtgQ6uCsR8nttHBN6BLeaW2m15uEMjU+ff7m9UM5w4NeX6nHUAtyEMy48sPFk02aXY4pp/9KSiKTu6QBP9GVkA==
 2 _ENCR 1
 1 _ORIG acom
 2 _URL https://www.findagrave.com/memorial/218110268/peter-sutyak
@@ -8473,7 +8526,7 @@
 2 TITL Find a Grave Memorial page for Frank Edward Heasley, Memorial ID 75105936
 1 _OID fe56da85-1393-4dc6-bf7f-d3d51093e496
 1 _CREA 2026-04-12 15:37:43.074
-1 _USER ppt/6IY64jZACUFq6vIcQNzHTpGFe9cDlps2Z0neugxyy8JiDLJ1ve804Cddd1uoEu0bkri4JTQkk/UoNF6ZXA==
+1 _USER IO4goY4jxWQwUF4crTqvr8de3cd/v37zwo/3cHFQJ8+vZj1nw9y1xfx1OKI7J85oIbFl+AjIz2tWwVqmzAwtbA==
 2 _ENCR 1
 1 _ORIG acom
 2 _URL https://www.findagrave.com/memorial/75105936/frank_edward-heasley
