@@ -15,9 +15,19 @@ export default function PersonCard({ person, isRoot, isDimmed, onClick, onMouseE
     setImgError(false);
   }, [photoUrl]);
 
+  let genderClass = 'gender-unknown';
+  if (person.sex) {
+    const sexStr = person.sex.toUpperCase();
+    if (sexStr.startsWith('M')) {
+      genderClass = 'gender-male';
+    } else if (sexStr.startsWith('F')) {
+      genderClass = 'gender-female';
+    }
+  }
+
   return (
     <div 
-      className={`card ${isRoot ? 'selected' : ''} ${isDimmed ? 'dimmed' : ''} ${!imgError ? 'has-photo' : ''}`}
+      className={`card ${isRoot ? 'selected' : ''} ${isDimmed ? 'dimmed' : ''} ${!imgError ? 'has-photo' : ''} ${genderClass}`}
       style={{ left: person.x, top: person.y }}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}

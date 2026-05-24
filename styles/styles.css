@@ -319,6 +319,14 @@ svg#connectors.dimmed { opacity: 0.35; }
   box-shadow: 0 0 0 1px var(--card-border);
 }
 
+.card.gender-male .headshot-fallback {
+  color: var(--marriage-line);
+}
+
+.card.gender-female .headshot-fallback {
+  color: var(--accent);
+}
+
 /* Adjust card padding when there's a photo */
 .card.has-photo {
   padding-top: 12px;
