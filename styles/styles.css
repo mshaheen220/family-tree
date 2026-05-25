@@ -339,6 +339,7 @@ svg#connectors.dimmed { opacity: 0.35; }
   padding-top: 10px;
   border-top: 1px dashed var(--card-border);
   align-items: start;
+  clear: both;
 }
 .modal-columns .modal-section {
   margin-top: 0;
@@ -349,6 +350,7 @@ svg#connectors.dimmed { opacity: 0.35; }
   margin-top: 15px;
   padding-top: 10px;
   border-top: 1px dashed var(--card-border);
+  clear: both;
 }
 .modal-section h3 {
   font-family: 'Playfair Display', serif;

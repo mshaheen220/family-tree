@@ -22,6 +22,21 @@ export default function Header({
 }) {
   const fileInputRef = useRef(null);
 
+  const handleZoom = (delta) => {
+    setView(prev => {
+      const newScale = Math.max(0.1, Math.min(2, prev.scale + delta));
+      if (newScale === prev.scale) return prev;
+
+      const cx = window.innerWidth / 2;
+      const cy = window.innerHeight / 2;
+
+      const newTx = cx - ((cx - prev.tx) / prev.scale) * newScale;
+      const newTy = cy - ((cy - prev.ty) / prev.scale) * newScale;
+
+      return { scale: newScale, tx: newTx, ty: newTy };
+    });
+  };
+
   return (
     <header>
       <div>
@@ -100,11 +115,11 @@ export default function Header({
           </button>
         </Tooltip>
         <Tooltip text="Zoom Out">
-          <button className="btn" aria-label="Zoom out" onClick={() => setView(prev => ({ ...prev, scale: Math.max(0.1, prev.scale - 0.12) }))}>−</button>
+          <button className="btn" aria-label="Zoom out" onClick={() => handleZoom(-0.12)}>−</button>
         </Tooltip>
         <span className="zoom-label">{Math.round(view.scale * 100)}%</span>
         <Tooltip text="Zoom In">
-          <button className="btn" aria-label="Zoom in" onClick={() => setView(prev => ({ ...prev, scale: Math.min(2, prev.scale + 0.12) }))}>+</button>
+          <button className="btn" aria-label="Zoom in" onClick={() => handleZoom(0.12)}>+</button>
         </Tooltip>
         <div className="header-divider"></div>
         <Tooltip text="Recenter on current person">

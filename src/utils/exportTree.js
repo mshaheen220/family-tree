@@ -60,7 +60,7 @@ export async function exportTreeToPdf({ hideHeadshots = false } = {}) {
     pdf.addImage(imgData, 'JPEG', 0, 0, cropWidth, cropHeight);
 
     // 5. Capture Analytics Page
-    const analyticsElement = document.querySelector('.analytics-backdrop');
+    const analyticsElement = document.querySelector('#analytics-modal');
     if (analyticsElement) {
       const analyticsCanvas = await html2canvas(analyticsElement, {
         scale: 2,
