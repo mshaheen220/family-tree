@@ -1,10 +1,12 @@
-import React, { useState, useEffect, useRef, useMemo } from 'react';
+import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
 import './styles/css2.css';
+import './styles/themes.css';
 import './styles/styles.css';
-import { parseGedcom, CW } from './src/components/gedcomParser.js';
+import { parseGedcomBase, generateTreeLayout, CW } from './src/components/gedcomParser.js';
 import PersonCard from './src/components/PersonCard.jsx';
 import Legend from './src/components/Legend.jsx';
 import Header from './src/components/Header.jsx';
+import PersonModal from './src/components/PersonModal.jsx';
 import AnalyticsModal from './src/components/AnalyticsModal.jsx';
 
 // Use the ?raw suffix to import the file as a string directly!
@@ -20,9 +22,13 @@ export default function App() {
   const [showAnalytics, setShowAnalytics] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
   const [hoveredNodeId, setHoveredNodeId] = useState(null);
+  const [infoPerson, setInfoPerson] = useState(null);
   
   // Parse GEDCOM whenever the loaded file changes
-  const { nodes, connectors, maxGen, individuals, rootId, genBands, genLabels, indis, fams } = useMemo(() => parseGedcom(currentGedcom, selectedRootId), [currentGedcom, selectedRootId]);
+  const { indis, fams, individuals, rtNodes } = useMemo(() => parseGedcomBase(currentGedcom), [currentGedcom]);
+  
+  // Recalculate layout only when the root person or the base data changes
+  const { nodes, connectors, maxGen, rootId, genBands, genLabels } = useMemo(() => generateTreeLayout(indis, fams, individuals, rtNodes, selectedRootId), [indis, fams, individuals, rtNodes, selectedRootId]);
   const byId = useMemo(() => Object.fromEntries(nodes.map(n => [n.id, n])), [nodes]);
 
   // Filter individuals based on search term
@@ -123,6 +129,11 @@ export default function App() {
     reader.readAsText(file);
   };
 
+  // Memoized Handlers to prevent render-cascades
+  const handleNodeMouseEnter = useCallback((id) => setHoveredNodeId(id), []);
+  const handleNodeMouseLeave = useCallback(() => setHoveredNodeId(null), []);
+  const handleNodeClick = useCallback((id) => setSelectedRootId(id), []);
+
   // Drag / Zoom Handlers
   const handleMouseDown = (e) => {
     dragRef.current = { isDragging: true, startX: e.clientX, startY: e.clientY, startTx: view.tx, startTy: view.ty };
@@ -208,10 +219,11 @@ export default function App() {
             key={p.id} 
             person={p} 
             isRoot={p.id === rootId} 
-            isDimmed={highlightedIds && !highlightedIds.has(p.id)}
-            onMouseEnter={() => setHoveredNodeId(p.id)}
-            onMouseLeave={() => setHoveredNodeId(null)}
-            onClick={() => setSelectedRootId(p.id)} 
+            isDimmed={highlightedIds ? !highlightedIds.has(p.id) : false}
+            onMouseEnter={handleNodeMouseEnter}
+            onMouseLeave={handleNodeMouseLeave}
+            onClick={handleNodeClick} 
+            onInfoClick={setInfoPerson}
           />
         ))}
         
@@ -229,6 +241,7 @@ export default function App() {
 
       <Legend nodes={nodes} />
       
+      <PersonModal person={infoPerson} onClose={() => setInfoPerson(null)} indis={indis} fams={fams} />
       <AnalyticsModal show={showAnalytics} onClose={() => setShowAnalytics(false)} indis={indis} nodes={nodes} fams={fams} rootId={rootId} />
     </div>
   );

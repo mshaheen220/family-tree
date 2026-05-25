@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, memo } from 'react';
 import { originLabels } from '../utils/constants.js';
 
-export default function PersonCard({ person, isRoot, isDimmed, onClick, onMouseEnter, onMouseLeave }) {
+const PersonCard = memo(function PersonCard({ person, isRoot, isDimmed, onClick, onMouseEnter, onMouseLeave, onInfoClick }) {
   const [imgError, setImgError] = useState(false);
 
   // Remove '@' symbols and 'I' prefixes from the ID
@@ -29,22 +29,29 @@ export default function PersonCard({ person, isRoot, isDimmed, onClick, onMouseE
     <div 
       className={`card ${isRoot ? 'selected' : ''} ${isDimmed ? 'dimmed' : ''} ${!imgError ? 'has-photo' : ''} ${genderClass}`}
       style={{ left: person.x, top: person.y }}
-      onMouseEnter={onMouseEnter}
+      onMouseEnter={() => onMouseEnter(person.id)}
       onMouseLeave={onMouseLeave}
       onClick={(e) => {
         e.stopPropagation();
-        onClick();
+        onClick(person.id);
       }}
     >
+      <button 
+        className="info-btn" 
+        title="View Details"
+        onClick={(e) => {
+          e.stopPropagation();
+          if (onInfoClick) onInfoClick(person);
+        }}
+      >
+        <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+      </button>
       {!imgError ? (
         <img 
           src={photoUrl} 
           alt={`Portrait of ${person.name}`} 
           className="headshot" 
-          onError={(e) => {
-            console.error(`Failed to load image: ${e.target.src}`);
-            setImgError(true);
-          }} 
+          onError={() => setImgError(true)} 
         />
       ) : (
         <div className="headshot-fallback">
@@ -78,4 +85,6 @@ export default function PersonCard({ person, isRoot, isDimmed, onClick, onMouseE
       ) : null }
     </div>
   );
-}
+});
+
+export default PersonCard;

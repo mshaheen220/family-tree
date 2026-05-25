@@ -2,7 +2,9 @@ import calcTree from 'relatives-tree';
 
 export const CW = 192, PX = 80, PY = 80;
 
-export function parseGedcom(data, preferredRootId = null) {
+const getYear = (d) => d ? (d.match(/\d{4}/)?.[0] || '') : '';
+
+export function parseGedcomBase(data) {
   const lines = data.split(/\r?\n/);
   const indis = {};
   const fams = {};
@@ -42,25 +44,42 @@ export function parseGedcom(data, preferredRootId = null) {
           if (tag === 'FAMS') current.fams.push(val);
         } else if (lvl === '2') {
           if (tag === 'DATE') {
-            if (parsingTag === 'BIRT') current.birth = val;
-            if (parsingTag === 'DEAT') current.death = val;
+            if (parsingTag === 'BIRT') { current.birth = val; current.birthYear = getYear(val); }
+            if (parsingTag === 'DEAT') { current.death = val; current.deathYear = getYear(val); }
+            if (parsingTag === 'BURI') { current.burial = val; current.burialYear = getYear(val); }
           } else if (tag === 'PLAC') {
             if (parsingTag === 'BIRT') current.place = val;
             if (parsingTag === 'DEAT') current.deathPlace = val;
+            if (parsingTag === 'BURI') current.burialPlace = val;
           }
+        }
+        
+        // Sometimes URLs are nested at different levels under sources/facts
+        if (tag === 'WWW' || tag === 'URL') {
+          if (!current.sources) current.sources = [];
+          current.sources.push(val);
         }
       } else if (current.type === 'FAM') {
         if (lvl === '1') {
+          parsingTag = tag;
           if (tag === 'HUSB') current.husb = val;
           else if (tag === 'WIFE') current.wife = val;
           else if (tag === 'CHIL') current.chil.push(val);
+          else if (tag === 'DIV') { current.divDate = 'Unknown'; current.divYear = ''; }
+        } else if (lvl === '2') {
+          if (tag === 'DATE') {
+            if (parsingTag === 'MARR') { current.marrDate = val; current.marrYear = getYear(val); }
+            else if (parsingTag === 'DIV') { current.divDate = val; current.divYear = getYear(val); }
+          } else if (tag === 'PLAC') {
+            if (parsingTag === 'MARR') current.marrPlace = val;
+          }
         }
       }
     }
   }
 
   if (Object.keys(indis).length === 0) {
-    return { nodes: [], connectors: [], maxGen: 0, individuals: [], rootId: null, genBands: [], genLabels: [], indis: {}, fams: {} };
+    return { individuals: [], indis: {}, fams: {}, rtNodes: [] };
   }
 
   // --- GLOBAL DATA CLEANUP ---
@@ -247,8 +266,8 @@ export function parseGedcom(data, preferredRootId = null) {
   // Prepare sorted list of all people for the dropdown
   const individuals = Object.values(indis).filter(i => !i.isDummy).map(i => {
     let label = i.name || 'Unknown';
-    const bYear = i.birth ? (i.birth.match(/\d{4}/) || [''])[0] : '';
-    const dYear = i.death ? (i.death.match(/\d{4}/) || [''])[0] : '';
+    const bYear = i.birthYear || '';
+    const dYear = i.deathYear || '';
     if (bYear || dYear) label += ` (${bYear} - ${dYear})`;
     
     // Add a hint for phantom/duplicate records
@@ -262,6 +281,11 @@ export function parseGedcom(data, preferredRootId = null) {
     return b.connCount - a.connCount; // Put the fully connected duplicate first
   });
 
+  return { indis, fams, individuals, rtNodes };
+}
+
+export function generateTreeLayout(indis, fams, individuals, rtNodes, preferredRootId = null) {
+  if (Object.keys(indis).length === 0) return { nodes: [], connectors: [], maxGen: 0, rootId: null, genBands: [], genLabels: [] };
   const validRootId = preferredRootId && indis[preferredRootId] && !indis[preferredRootId].isDummy ? preferredRootId : Object.values(indis).find(i => !i.isDummy)?.id;
   let tree;
   try {
@@ -289,14 +313,14 @@ export function parseGedcom(data, preferredRootId = null) {
       }
     }
     if (!fallbackSuccess) {
-      return { nodes: [], connectors: [], maxGen: 0, individuals, rootId: validRootId, genBands: [], genLabels: [], indis, fams };
+      return { nodes: [], connectors: [], maxGen: 0, rootId: validRootId, genBands: [], genLabels: [] };
     }
   }
 
   // Calculate the layout grid using ONLY the real, visible cards
   const realNodes = tree.nodes.filter(n => indis[n.id] && !indis[n.id].isDummy);
   if (realNodes.length === 0) {
-    return { nodes: [], connectors: [], maxGen: 0, individuals, rootId: validRootId, genBands: [], genLabels: [], indis, fams };
+    return { nodes: [], connectors: [], maxGen: 0, rootId: validRootId, genBands: [], genLabels: [] };
   }
 
   const minTop = Math.min(...realNodes.map(n => n.top));
@@ -402,5 +426,5 @@ export function parseGedcom(data, preferredRootId = null) {
     }
   }
 
-  return { nodes, connectors, maxGen: rtMaxGen, individuals, rootId: validRootId, genBands, genLabels, indis, fams };
+  return { nodes, connectors, maxGen: rtMaxGen, rootId: validRootId, genBands, genLabels };
 }
