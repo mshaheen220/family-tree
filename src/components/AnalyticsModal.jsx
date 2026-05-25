@@ -13,19 +13,15 @@ export default function AnalyticsModal({ show, onClose, indis, nodes, fams, root
   const longevityData = useMemo(() => {
     const currentYear = new Date().getFullYear();
     const peopleWithLifespan = dataSource.map(p => {
-      if (!p.birth) return null;
-      // Extract 4 digit year from potentially messy GEDCOM date strings
-      const bMatch = p.birth.match(/\d{4}/);
-      
-      if (!bMatch) return null;
-      const bYear = parseInt(bMatch[0], 10);
+      if (!p.birthYear) return null;
+      const bYear = parseInt(p.birthYear, 10);
       
       let dYear;
       let isLiving = false;
-      if (p.death) {
-        const dMatch = p.death.match(/\d{4}/);
-        if (!dMatch) return null;
-        dYear = parseInt(dMatch[0], 10);
+      if (p.deathYear) {
+        dYear = parseInt(p.deathYear, 10);
+      } else if (p.death) {
+        return null;
       } else {
         dYear = currentYear;
         isLiving = true;
@@ -91,15 +87,11 @@ export default function AnalyticsModal({ show, onClose, indis, nodes, fams, root
       if (p.birth) withBirth++;
       if (p.place || p.deathPlace) withPlace++;
 
-      if (p.birth && p.death) {
-        const bMatch = p.birth.match(/\d{4}/);
-        const dMatch = p.death.match(/\d{4}/);
-        if (bMatch && dMatch) {
-          const age = parseInt(dMatch[0], 10) - parseInt(bMatch[0], 10);
-          if (age >= 0 && age <= 120) {
-            totalLifespan += age;
-            lifespanCount++;
-          }
+      if (p.birthYear && p.deathYear) {
+        const age = parseInt(p.deathYear, 10) - parseInt(p.birthYear, 10);
+        if (age >= 0 && age <= 120) {
+          totalLifespan += age;
+          lifespanCount++;
         }
       }
     });
@@ -177,16 +169,11 @@ export default function AnalyticsModal({ show, onClose, indis, nodes, fams, root
           largestFamily = { parents: parentsStr || 'Unknown', count: realChildren.length };
         }
 
-        const getYear = (dateStr) => {
-          const m = dateStr ? dateStr.match(/\d{4}/) : null;
-          return m ? parseInt(m[0], 10) : null;
-        };
-
-        const hBirth = fam.husb && indis[fam.husb] ? getYear(indis[fam.husb].birth) : null;
-        const wBirth = fam.wife && indis[fam.wife] ? getYear(indis[fam.wife].birth) : null;
+        const hBirth = fam.husb && indis[fam.husb] && indis[fam.husb].birthYear ? parseInt(indis[fam.husb].birthYear, 10) : null;
+        const wBirth = fam.wife && indis[fam.wife] && indis[fam.wife].birthYear ? parseInt(indis[fam.wife].birthYear, 10) : null;
         
         realChildren.forEach(cId => {
-          const cBirth = getYear(indis[cId]?.birth);
+          const cBirth = indis[cId] && indis[cId].birthYear ? parseInt(indis[cId].birthYear, 10) : null;
           if (cBirth) {
             if (hBirth && cBirth - hBirth >= 12 && cBirth - hBirth <= 80) { totalGenerationGap += (cBirth - hBirth); gapCount++; }
             if (wBirth && cBirth - wBirth >= 12 && cBirth - wBirth <= 60) { totalGenerationGap += (cBirth - wBirth); gapCount++; }
@@ -327,13 +314,13 @@ export default function AnalyticsModal({ show, onClose, indis, nodes, fams, root
   }, [indis, rootId]);
 
   return (
-    <div className={`analytics-backdrop ${show ? 'show' : ''}`} onClick={onClose} onWheel={e => e.stopPropagation()}>
-      <div className="analytics-modal" onClick={e => e.stopPropagation()}>
-        <div className="analytics-header">
+    <div id="analytics-modal" className={`modal-backdrop ${show ? 'show' : ''}`} onClick={onClose} onWheel={e => e.stopPropagation()}>
+      <div className="modal-content modal-large" onClick={e => e.stopPropagation()}>
+        <div className="modal-header">
           <h2>Tree Analytics</h2>
           <button className="close-btn" aria-label="Close" onClick={onClose}>✕</button>
         </div>
-        <div className="analytics-content">
+        <div className="modal-body flush-body">
           
           {rootHeritageData && (
             <section className="analytics-section">
