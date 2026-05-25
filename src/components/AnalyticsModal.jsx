@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import DonutChart from './DonutChart.jsx';
 import SegmentedBarChart from './SegmentedBarChart.jsx';
-import { originLabels, originColors } from '../utils/constants.js';
+import { originLabels, originColors, originDemonyms } from '../utils/constants.js';
 
 export default function AnalyticsModal({ show, onClose, indis, nodes, fams, rootId }) {
   const [isFullData, setIsFullData] = useState(false);
@@ -278,7 +278,7 @@ export default function AnalyticsModal({ show, onClose, indis, nodes, fams, root
     knownOrigins.forEach(([org, pct]) => totalKnown += pct);
 
     if (totalKnown === 0) {
-      return { person: rootPerson, slices: [], desc: "Not enough historical immigrant data in the family tree to calculate a heritage breakdown." };
+      return null;
     }
 
     const sorted = knownOrigins
@@ -296,21 +296,25 @@ export default function AnalyticsModal({ show, onClose, indis, nodes, fams, root
     });
 
     // Build a natural language summary
-    const primary = sorted.filter(o => o.exactPct >= 20).map(o => o.label);
-    const secondary = sorted.filter(o => o.exactPct > 0 && o.exactPct < 20).map(o => o.label);
+    const primary = sorted.filter(o => o.exactPct >= 20).map(o => originDemonyms[o.origin] || o.label);
+    const secondary = sorted.filter(o => o.exactPct > 0 && o.exactPct < 20).map(o => originDemonyms[o.origin] || o.label);
     let desc = '';
     const formatList = (list) => list.length > 1 ? list.slice(0, -1).join(', ') + ' and ' + list[list.length - 1] : list[0];
     const firstName = rootPerson.given ? rootPerson.given.split(/\s+/)[0] : rootPerson.name.split(' ')[0];
 
-    if (primary.length > 0) {
+    const is100Percent = sorted.length === 1 && sorted[0].exactPct === 100;
+
+    if (is100Percent) {
+      desc = `${firstName} is 100% ${originDemonyms[sorted[0].origin] || sorted[0].label}.`;
+    } else if (primary.length > 0) {
       desc += `${firstName} is mostly ${formatList(primary)}`;
       if (secondary.length > 0) desc += `, with ${formatList(secondary)} ancestry.`;
-      else desc += ` ancestry.`;
+      else desc += `.`;
     } else if (secondary.length > 0) {
       desc += `${firstName} has ${formatList(secondary)} ancestry.`;
     }
 
-    return { person: rootPerson, slices, desc };
+    return { person: rootPerson, slices, desc, is100Percent };
   }, [indis, rootId]);
 
   return (
@@ -327,7 +331,7 @@ export default function AnalyticsModal({ show, onClose, indis, nodes, fams, root
               <h3>🧬 {rootHeritageData.person.name}'s Heritage</h3>
               {rootHeritageData.desc && <p className="analytics-desc">{rootHeritageData.desc}</p>}
               
-              {rootHeritageData.slices.length > 0 && <SegmentedBarChart data={rootHeritageData.slices} colors={originColors} />}
+              {rootHeritageData.slices.length > 0 && !rootHeritageData.is100Percent && <SegmentedBarChart data={rootHeritageData.slices} colors={originColors} />}
             </section>
           )}
 

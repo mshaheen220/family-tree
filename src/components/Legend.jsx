@@ -1,5 +1,5 @@
 import React from 'react';
-import { originLabels } from '../utils/constants.js';
+import { originLabels, ORIGIN_CONFIG } from '../utils/constants.js';
 
 export default function Legend({ nodes }) {
   // Find all unique origins present in the current dataset
@@ -27,7 +27,7 @@ export default function Legend({ nodes }) {
           </div>
           {uniqueOrigins.map(origin => (
             <div className="legend-row" key={origin}>
-              <span className={`origin-tag origin-${origin}`}>
+              <span className="origin-tag" style={ORIGIN_CONFIG[origin]?.badge || {}}>
                 {originLabels[origin] || origin}
               </span>
             </div>

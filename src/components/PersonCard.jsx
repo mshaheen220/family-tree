@@ -1,5 +1,5 @@
 import React, { useState, useEffect, memo } from 'react';
-import { originLabels } from '../utils/constants.js';
+import { originLabels, ORIGIN_CONFIG } from '../utils/constants.js';
 
 const PersonCard = memo(function PersonCard({ person, isRoot, isDimmed, onClick, onMouseEnter, onMouseLeave, onInfoClick }) {
   const [imgError, setImgError] = useState(false);
@@ -22,6 +22,16 @@ const PersonCard = memo(function PersonCard({ person, isRoot, isDimmed, onClick,
       genderClass = 'gender-male';
     } else if (sexStr.startsWith('F')) {
       genderClass = 'gender-female';
+    }
+  }
+
+  let displayName = person.name;
+  if (person.aka && person.aka.length > 0) {
+    const alias = person.aka[0];
+    if (person.surname && alias.toLowerCase().includes(person.surname.toLowerCase())) {
+      displayName = alias;
+    } else {
+      displayName = person.surname ? `${alias} ${person.surname}` : alias;
     }
   }
 
@@ -66,7 +76,7 @@ const PersonCard = memo(function PersonCard({ person, isRoot, isDimmed, onClick,
           <svg viewBox="0 0 24 24" width="12" height="12" stroke="currentColor" strokeWidth="3" fill="none" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
         </div>
       )}
-      <div className="name">{person.name}</div>
+      <div className="name">{displayName}</div>
       { (person.birth || person.death) && (
         <div className="dates">
           {person.birth && `b. ${person.birth}`}<br />
@@ -77,11 +87,13 @@ const PersonCard = memo(function PersonCard({ person, isRoot, isDimmed, onClick,
       
       { person.origin === 'dual' ? (
         <div title="Geographic Origin (Birthplace / Residence)">
-          <span className="origin-tag origin-polish">Poland</span>
+          <span className="origin-tag" style={ORIGIN_CONFIG.polish.badge}>Poland</span>
           <span className="origin-note">subject of Austro-Hungarian Empire</span>
         </div>
       ) : person.origin ? (
-        <span className={`origin-tag origin-${person.origin}`} title="Geographic Origin (Birthplace / Residence)">{originLabels[person.origin] || person.origin}</span>
+        <span className="origin-tag" style={ORIGIN_CONFIG[person.origin]?.badge || ORIGIN_CONFIG.generic.badge} title="Geographic Origin (Birthplace / Residence)">
+          {originLabels[person.origin] || person.origin}
+        </span>
       ) : null }
     </div>
   );

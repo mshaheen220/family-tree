@@ -10,6 +10,7 @@ export function parseGedcomBase(data) {
   const fams = {};
   let current = null;
   let parsingTag = null;
+  let currentFactType = null;
 
   for (const line of lines) {
     if (!line.trim()) continue;
@@ -20,10 +21,12 @@ export function parseGedcomBase(data) {
       current = { id: matchIndi[1], type: 'INDI', name: '', given: '', surname: '', birth: '', death: '', place: '', deathPlace: '', famc: [], fams: [] };
       indis[current.id] = current;
       parsingTag = null;
+      currentFactType = null;
     } else if (matchFam) {
       current = { id: matchFam[1], type: 'FAM', husb: null, wife: null, chil: [] };
       fams[current.id] = current;
       parsingTag = null;
+      currentFactType = null;
     } else if (line.startsWith('0 ')) {
       current = null;
     } else if (current) {
@@ -33,24 +36,53 @@ export function parseGedcomBase(data) {
       if (current.type === 'INDI') {
         if (lvl === '1') {
           parsingTag = tag;
+          currentFactType = null;
           if (tag === 'NAME') {
-            current.name = val.replace(/\//g, '').trim();
-            const surMatch = val.match(/\/(.*?)\//);
-            current.surname = surMatch ? surMatch[1].trim() : '';
-            current.given = val.replace(/\/(.*?)\//g, '').replace(/[()"]/g, '').trim();
+            const cleanName = val.replace(/\//g, '').trim();
+            if (!current.name) {
+              current.name = cleanName;
+              const surMatch = val.match(/\/(.*?)\//);
+              current.surname = surMatch ? surMatch[1].trim() : '';
+              current.given = val.replace(/\/(.*?)\//g, '').replace(/[()"]/g, '').trim();
+            } else {
+              if (!current.aka) current.aka = [];
+              if (cleanName !== current.name && !current.aka.includes(cleanName)) {
+                current.aka.push(cleanName);
+              }
+            }
           }
           if (tag === 'SEX') current.sex = val;
           if (tag === 'FAMC') current.famc.push(val);
           if (tag === 'FAMS') current.fams.push(val);
+          if (tag === '_MILT' || tag === 'MILT') {
+            if (!current.military) current.military = [];
+            current.military.push(val || '');
+          }
         } else if (lvl === '2') {
+          if (tag === 'TYPE') currentFactType = val;
+          if (tag === 'NOTE' && parsingTag === 'FACT' && currentFactType === 'AKA') {
+            if (!current.aka) current.aka = [];
+            const cleanAka = val.trim();
+            if (cleanAka !== current.name && !current.aka.includes(cleanAka)) {
+              current.aka.unshift(cleanAka);
+            }
+          }
           if (tag === 'DATE') {
             if (parsingTag === 'BIRT') { current.birth = val; current.birthYear = getYear(val); }
             if (parsingTag === 'DEAT') { current.death = val; current.deathYear = getYear(val); }
             if (parsingTag === 'BURI') { current.burial = val; current.burialYear = getYear(val); }
+            if (parsingTag === '_MILT' || parsingTag === 'MILT') {
+              const idx = current.military.length - 1;
+              current.military[idx] = current.military[idx] ? `${val} (${current.military[idx]})` : val;
+            }
           } else if (tag === 'PLAC') {
             if (parsingTag === 'BIRT') current.place = val;
             if (parsingTag === 'DEAT') current.deathPlace = val;
             if (parsingTag === 'BURI') current.burialPlace = val;
+            if (parsingTag === '_MILT' || parsingTag === 'MILT') {
+              const idx = current.military.length - 1;
+              current.military[idx] = current.military[idx] ? `${current.military[idx]} - ${val}` : val;
+            }
           }
         }
         
@@ -106,6 +138,15 @@ export function parseGedcomBase(data) {
       indi.famc = [validFamc[0]]; // Keep only the primary family
       validFamc.slice(1).forEach(fId => fams[fId].chil = fams[fId].chil.filter(cId => cId !== indi.id));
     } else indi.famc = [];
+  });
+
+  // Clean up AKAs to remove redundant full-name versions of a nickname
+  Object.values(indis).forEach(indi => {
+    if (indi.aka && indi.surname) {
+      indi.aka = indi.aka.filter((alias, idx, arr) => {
+        return !arr.some(other => other !== alias && alias === `${other} ${indi.surname}`);
+      });
+    }
   });
 
   // --- FIX FOR RELATIVES-TREE EMPTY ARRAY CRASH ---

@@ -95,30 +95,6 @@ svg#connectors.dimmed { opacity: 0.35; }
   letter-spacing:.06em; text-transform:uppercase;
   font-style:normal; font-family:'Crimson Text',serif; font-weight:600;
 }
-.origin-polish   { background:#dc143c; color:#fff; }
-.origin-czech    { background:#d7141a; color:#fff; border-left:4px solid #11457e; }
-.origin-slovak   { background:#0b4ea2; color:#fff; border-left:4px solid #ee1c25; }
-.origin-austrian { background:#fff; color:#ed2939; border:1.5px solid #ed2939; border-left:4px solid #ed2939; border-right:4px solid #ed2939; }
-.origin-lebanese { background:#00a550; color:#fff; border-left:4px solid #f7192c; }
-.origin-american { background:#3c3b6e; color:#fff; border-left:4px solid #b22234; }
-.origin-german   { background:#dd0000; color:#fff; border-top:3px solid #000; border-bottom:3px solid #ffcc00; }
-.origin-french   { background:#fff; color:#0055a4; border-left:5px solid #0055a4; border-right:5px solid #ef4135; font-weight:700; }
-.origin-swiss    { background:#d52b1e; color:#fff; border:1.5px solid #d52b1e; }
-.origin-irish    { background:#fff; color:#0a5c36; border-left:5px solid #169b62; border-right:5px solid #ff883e; font-weight:700; }
-.origin-english  { background:#012169; color:#fff; border-bottom:3px solid #C8102E; }
-.origin-scottish { background:#005EB8; color:#fff; border-bottom:3px solid #fff; }
-.origin-italian  { background:#009246; color:#fff; border-right:6px solid #CE2B37; }
-.origin-spanish  { background:#AA151B; color:#fff; border-top:3px solid #F1BF00; border-bottom:3px solid #F1BF00; }
-.origin-canadian { background:#FF0000; color:#fff; }
-.origin-mexican  { background:#006847; color:#fff; border-right:6px solid #CE1126; border-bottom:2px solid #C8992A; }
-.origin-russian  { background:#1C3578; color:#fff; border-top:3px solid #fff; border-bottom:3px solid #E4181C; }
-.origin-ukrainian { background:#0057B7; color:#fff; border-bottom:5px solid #FFD500; }
-.origin-chinese  { background:#EE1C25; color:#FFFF00; }
-.origin-syrian   { background:#ce1126; color:#fff; border-bottom:3px solid #000; border-top:3px solid #007a3d; }
-.origin-hungarian { background:#ce2939; color:#fff; border-bottom:3px solid #477050; }
-.origin-turkish  { background:#e30a17; color:#fff; border-left:4px solid #fff; }
-.origin-rusyn    { background:#0033a0; color:#fff; border-bottom:3px solid #d52b1e; border-left:4px solid #fff; }
-.origin-generic  { background:#8b8378; color:#fff; }
 .origin-note {
   display:block; font-size:.62rem; font-style:italic; color:#6b5a3e;
   margin-top:2px; letter-spacing:.01em;
@@ -317,6 +293,7 @@ svg#connectors.dimmed { opacity: 0.35; }
   background: var(--header-bg-2); color: var(--gold); border-radius: 8px 8px 0 0;
 }
 .modal-header h2 { font-family: 'Playfair Display', serif; font-size: 1.3rem; margin: 0; }
+.aka-text { font-size: 0.9rem; color: var(--header-sub); font-style: italic; margin-top: 2px; }
 .modal-body { padding: 20px; overflow-y: auto; font-family: 'Crimson Text', serif; font-size: 1.05rem; }
 .modal-body.flush-body { padding: 20px 0; }
 .modal-body p { margin-bottom: 8px; }
@@ -392,7 +369,6 @@ svg#connectors.dimmed { opacity: 0.35; }
 }
 .marriage-date, .highlight-date {
   font-weight: 600;
-  color: var(--marriage-line);
   letter-spacing: 0.02em;
 }
 .modal-section a { color: var(--marriage-line); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s; }

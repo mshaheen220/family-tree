@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
+import SegmentedBarChart from './SegmentedBarChart.jsx';
+import { originLabels, originColors, originDemonyms } from '../utils/constants.js';
 
 const getSourceLabel = (url) => {
   try {
@@ -27,6 +29,54 @@ export default function PersonModal({ person, onClose, indis, fams }) {
   const [imgError, setImgError] = useState(false);
   useEffect(() => {
     setImgError(false);
+  }, [person]);
+
+  const heritageData = useMemo(() => {
+    if (!person || !person.heritage) return null;
+    
+    // Filter out the untraced noise to show only known immigrant heritage
+    let totalKnown = 0;
+    const knownOrigins = Object.entries(person.heritage).filter(([org, pct]) => org !== 'untraced' && pct > 0);
+    knownOrigins.forEach(([org, pct]) => totalKnown += pct);
+
+    if (totalKnown === 0) {
+      return { slices: [], desc: "Not enough historical immigrant data in the family tree to calculate a heritage breakdown." };
+    }
+
+    const sorted = knownOrigins
+      .map(([origin, pct]) => {
+        const exactPct = (pct / totalKnown) * 100; // Recalculate out of 100% known
+        return { origin, label: originLabels[origin] || origin, percentage: exactPct < 1 ? '<1' : Math.round(exactPct), exactPct };
+      })
+      .sort((a, b) => b.exactPct - a.exactPct);
+
+    let cumulative = 0;
+    const slices = sorted.map(o => {
+      const offset = cumulative;
+      cumulative += o.exactPct;
+      return { ...o, offset };
+    });
+
+    // Build a natural language summary
+    const primary = sorted.filter(o => o.exactPct >= 20).map(o => originDemonyms[o.origin] || o.label);
+    const secondary = sorted.filter(o => o.exactPct > 0 && o.exactPct < 20).map(o => originDemonyms[o.origin] || o.label);
+    let desc = '';
+    const formatList = (list) => list.length > 1 ? list.slice(0, -1).join(', ') + ' and ' + list[list.length - 1] : list[0];
+    const firstName = person.given ? person.given.split(/\s+/)[0] : person.name.split(' ')[0];
+
+    const is100Percent = sorted.length === 1 && sorted[0].exactPct === 100;
+
+    if (is100Percent) {
+      desc = `${firstName} is 100% ${originDemonyms[sorted[0].origin] || sorted[0].label}.`;
+    } else if (primary.length > 0) {
+      desc += `${firstName} is mostly ${formatList(primary)}`;
+      if (secondary.length > 0) desc += `, with ${formatList(secondary)} ancestry.`;
+      else desc += `.`;
+    } else if (secondary.length > 0) {
+      desc += `${firstName} has ${formatList(secondary)} ancestry.`;
+    }
+
+    return { slices, desc, is100Percent };
   }, [person]);
 
   if (!person) return null;
@@ -113,7 +163,12 @@ export default function PersonModal({ person, onClose, indis, fams }) {
     <div className="modal-backdrop show" onClick={onClose}>
       <div className={`modal-content ${sizeClass}`.trim()} onClick={e => e.stopPropagation()}>
         <div className="modal-header">
-          <h2>{person.name}</h2>
+          <div>
+            <h2>{person.name}</h2>
+            {person.aka && person.aka.length > 0 && (
+              <div className="aka-text">aka {person.aka.join(', ')}</div>
+            )}
+          </div>
           <button className="close-btn" onClick={onClose} title="Close">×</button>
         </div>
         
@@ -185,6 +240,14 @@ export default function PersonModal({ person, onClose, indis, fams }) {
                   ? person.immigration.map((imm, i) => <div key={i}>{formatDates(imm)}</div>) 
                   : <div>{formatDates(person.immigration)}</div>}
               </div>
+            </div>
+          )}
+
+          {heritageData && (
+            <div className="modal-section">
+              <h3>Heritage</h3>
+              {heritageData.desc && <p className="analytics-desc">{heritageData.desc}</p>}
+              {heritageData.slices.length > 0 && !heritageData.is100Percent && <SegmentedBarChart data={heritageData.slices} colors={originColors} />}
             </div>
           )}
 
@@ -294,7 +357,7 @@ export default function PersonModal({ person, onClose, indis, fams }) {
             </div>
           )}
 
-          {!person.birth && !person.death && !person.burial && !person.residence && spouses.length === 0 && children.length === 0 && grandchildren.length === 0 && greatGrandchildren.length === 0 && !person.military && uniqueSources.length === 0 && (
+          {!person.birth && !person.death && !person.burial && !person.residence && spouses.length === 0 && children.length === 0 && grandchildren.length === 0 && greatGrandchildren.length === 0 && !person.military && uniqueSources.length === 0 && !heritageData && (
             <p>No detailed records available for this person.</p>
           )}
         </div>
