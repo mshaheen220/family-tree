@@ -80,6 +80,7 @@ export default function Header({
             <option value="ocean">Ocean Theme</option>
             <option value="forest">Forest Theme</option>
             <option value="monochrome">Monochrome Theme</option>
+            <option value="amethyst-earth">Amethyst Earth</option>
           </select>
         </Tooltip>
         <input type="file" accept=".ged" className="hidden-file-input" ref={fileInputRef} onChange={handleFileUpload} />

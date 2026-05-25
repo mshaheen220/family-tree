@@ -11,6 +11,7 @@
   --label-bg: rgba(250, 246, 240, 0.95); --label-border: #8C2B2B;
   --band-line: rgba(44, 36, 27, 0.15);
   --tooltip-bg: #2C241B; --tooltip-text: #FAF6F0;
+  --gender-male: #4A7B9D; --gender-female: #B85C7D;
 }
 [data-theme="dark"] {
   --bg: #0F172A; --ink: #F8FAFC; --ink-light: #94A3B8;
@@ -25,6 +26,7 @@
   --label-bg: rgba(15, 23, 42, 0.95); --label-border: #F43F5E;
   --band-line: rgba(248, 250, 252, 0.1);
   --tooltip-bg: #F8FAFC; --tooltip-text: #0F172A;
+  --gender-male: #3B82F6; --gender-female: #EC4899;
 }
 [data-theme="ocean"] {
   --bg: #ECEFF4; --ink: #2E3440; --ink-light: #4C566A;
@@ -39,6 +41,7 @@
   --label-bg: rgba(236, 239, 244, 0.95); --label-border: #5E81AC;
   --band-line: rgba(46, 52, 64, 0.1);
   --tooltip-bg: #2E3440; --tooltip-text: #ECEFF4;
+  --gender-male: #81A1C1; --gender-female: #B48EAD;
 }
 [data-theme="forest"] {
   --bg: #F4F5F0; --ink: #2C3A29; --ink-light: #586954;
@@ -53,6 +56,7 @@
   --label-bg: rgba(244, 245, 240, 0.95); --label-border: #A65D37;
   --band-line: rgba(44, 58, 41, 0.15);
   --tooltip-bg: #2C3A29; --tooltip-text: #F4F5F0;
+  --gender-male: #5C7C8A; --gender-female: #C0797A;
 }
 [data-theme="monochrome"] {
   --bg: #FFFFFF; --ink: #111111; --ink-light: #666666;
@@ -67,6 +71,53 @@
   --label-bg: rgba(255, 255, 255, 0.95); --label-border: #111111;
   --band-line: rgba(0, 0, 0, 0.1);
   --tooltip-bg: #111111; --tooltip-text: #FFFFFF;
+  --gender-male: #6B8BA4; --gender-female: #A46B7D;
+}
+[data-theme="amethyst-earth"] {
+  /* Soft, neutral warm-gray background that reduces glare */
+  --bg: #F5F4F7; 
+  --ink: #2D2930; 
+  --ink-light: #655E6A;
+  
+  /* Primary Accent: Sophisticated, deep plum/amethyst instead of harsh red */
+  --accent: #5A4765; 
+  /* Secondary Accent: Clean sage green for positive actions/badges */
+  --accent2: #4A6B5D; 
+  --gold: #D0A34B;
+  
+  /* Soft structural borders that don't box the eye in */
+  --line: #E2E0E6; 
+  --card-bg: #FFFFFF; 
+  --card-border: #EBE9ED;
+  
+  /* Drop shadows that melt into the background */
+  --shadow: rgba(45, 41, 48, 0.05); 
+  --shadow-selected: rgba(90, 71, 101, 0.2);
+  
+  /* Headers that transition smoothly into the workspace rather than cutting it off */
+  --header-bg-1: #38313D; 
+  --header-bg-2: #463D4D; 
+  --header-sub: #D5D1D9;
+  
+  /* Domain specific paths: Soft slate-blue for marriage, muted dusty-rose for bloodline */
+  --marriage-line: #526E80; 
+  --blood-line: #A36B72;
+  
+  --legend-bg: rgba(245, 244, 247, 0.95);
+  --badge-bg: rgba(90, 71, 101, 0.06); 
+  --badge-border: rgba(90, 71, 101, 0.25);
+  
+  --btn-bg: rgba(255, 255, 255, 0.12); 
+  --btn-hover: rgba(255, 255, 255, 0.22);
+  
+  --label-bg: rgba(245, 244, 247, 0.95); 
+  --label-border: #5A4765;
+  --band-line: rgba(45, 41, 48, 0.1);
+  
+  --tooltip-bg: #2D2930; 
+  --tooltip-text: #F5F4F7;
+  
+  --gender-male: #526E80; --gender-female: #A36B72;
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: 'Crimson Text', Georgia, serif; background: var(--bg); color: var(--ink); min-height: 100vh; overflow: hidden; }
@@ -320,11 +371,11 @@ svg#connectors.dimmed { opacity: 0.35; }
 }
 
 .card.gender-male .headshot-fallback {
-  color: var(--marriage-line);
+  color: var(--gender-male);
 }
 
 .card.gender-female .headshot-fallback {
-  color: var(--accent);
+  color: var(--gender-female);
 }
 
 /* Adjust card padding when there's a photo */
