@@ -35,7 +35,10 @@ export default function App() {
   const filteredIndividuals = useMemo(() => {
     if (!searchTerm) return individuals;
     const lower = searchTerm.toLowerCase();
-    return individuals.filter(i => i.name.toLowerCase().includes(lower));
+    return individuals.filter(i => 
+      i.name.toLowerCase().includes(lower) || 
+      (i.aka && i.aka.some(alias => alias.toLowerCase().includes(lower)))
+    );
   }, [individuals, searchTerm]);
 
   // Trace lineage for hover highlighting

@@ -37,6 +37,10 @@ export default function Header({
     });
   };
 
+  const isSearching = searchTerm.length > 0;
+  const optionCount = filteredIndividuals.length > 0 ? filteredIndividuals.length + 1 : 1;
+  const selectSize = isSearching ? Math.max(2, Math.min(optionCount, 10)) : 1;
+
   return (
     <header>
       <div>
@@ -65,15 +69,22 @@ export default function Header({
             />
             <div className="search-divider"></div>
             <select 
-              className="person-select"
+              className={`person-select ${isSearching ? 'is-open' : ''}`}
               value={searchTerm ? 'search_prompt' : (rootId || '')} 
               aria-label="Select root person"
+              size={selectSize}
               onChange={(e) => { 
                 if (e.target.value !== 'search_prompt') {
                   setSelectedRootId(e.target.value); 
                   setSearchTerm(''); 
                 }
               }}
+            onClick={(e) => {
+              if (isSearching && e.target.tagName === 'OPTION' && e.target.value !== 'search_prompt') {
+                setSelectedRootId(e.target.value);
+                setSearchTerm('');
+              }
+            }}
             >
               {searchTerm && filteredIndividuals.length > 0 && <option value="search_prompt" disabled>Select from {filteredIndividuals.length} result(s)...</option>}
               {filteredIndividuals.length === 0 && <option value="search_prompt" disabled>No results...</option>}

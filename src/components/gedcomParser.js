@@ -315,7 +315,7 @@ export function parseGedcomBase(data) {
     const connCount = i.famc.length + i.fams.length;
     if (connCount === 0) label += ' [Disconnected]';
 
-    return { id: i.id, name: label, sortName: i.name || 'Unknown', connCount };
+    return { id: i.id, name: label, sortName: i.name || 'Unknown', connCount, aka: i.aka || [] };
   }).sort((a, b) => {
     const nameCmp = a.sortName.localeCompare(b.sortName);
     if (nameCmp !== 0) return nameCmp;
