@@ -96,7 +96,7 @@ export function parseGedcomBase(data) {
           parsingTag = tag;
           if (tag === 'HUSB') current.husb = val;
           else if (tag === 'WIFE') current.wife = val;
-          else if (tag === 'CHIL') current.chil.push(val);
+          else if (tag === 'CHIL') { current.chil.push(val); current.lastChild = val; }
           else if (tag === 'DIV') { current.divDate = 'Unknown'; current.divYear = ''; }
         } else if (lvl === '2') {
           if (tag === 'DATE') {
@@ -104,6 +104,18 @@ export function parseGedcomBase(data) {
             else if (parsingTag === 'DIV') { current.divDate = val; current.divYear = getYear(val); }
           } else if (tag === 'PLAC') {
             if (parsingTag === 'MARR') current.marrPlace = val;
+          } else if (tag === '_FREL') {
+            const rel = val.toLowerCase();
+            if (rel === 'step' || rel === 'adopted' || rel === 'foster') {
+              if (!current.stepFathers) current.stepFathers = [];
+              if (current.lastChild) current.stepFathers.push(current.lastChild);
+            }
+          } else if (tag === '_MREL') {
+            const rel = val.toLowerCase();
+            if (rel === 'step' || rel === 'adopted' || rel === 'foster') {
+              if (!current.stepMothers) current.stepMothers = [];
+              if (current.lastChild) current.stepMothers.push(current.lastChild);
+            }
           }
         }
       }
@@ -134,9 +146,15 @@ export function parseGedcomBase(data) {
   Object.values(indis).forEach(indi => {
     const validFamc = indi.famc.filter(fId => fams[fId] && fams[fId].chil.includes(indi.id));
     if (validFamc.length > 0) {
+      // Sort families so the biological one is primary (index 0) for drawing the tree
       validFamc.sort((a, b) => ((fams[b].husb?1:0)+(fams[b].wife?1:0)) - ((fams[a].husb?1:0)+(fams[a].wife?1:0)));
-      indi.famc = [validFamc[0]]; // Keep only the primary family
-      validFamc.slice(1).forEach(fId => fams[fId].chil = fams[fId].chil.filter(cId => cId !== indi.id));
+      validFamc.sort((a, b) => {
+        const aStep = (fams[a].stepFathers?.includes(indi.id) ? 1 : 0) + (fams[a].stepMothers?.includes(indi.id) ? 1 : 0);
+        const bStep = (fams[b].stepFathers?.includes(indi.id) ? 1 : 0) + (fams[b].stepMothers?.includes(indi.id) ? 1 : 0);
+        if (aStep !== bStep) return aStep - bStep;
+        return ((fams[b].husb?1:0)+(fams[b].wife?1:0)) - ((fams[a].husb?1:0)+(fams[a].wife?1:0));
+      });
+      indi.famc = validFamc; // We keep ALL families so they show up in the modals!
     } else indi.famc = [];
   });
 
@@ -214,9 +232,21 @@ export function parseGedcomBase(data) {
       return h;
     }
 
-    const fam = fams[person.famc[0]];
-    const dadH = fam && fam.husb ? getHeritage(fam.husb, depth + 1) : { untraced: 100 };
-    const momH = fam && fam.wife ? getHeritage(fam.wife, depth + 1) : { untraced: 100 };
+    let dadH = { untraced: 100 };
+    let momH = { untraced: 100 };
+    let foundDad = false;
+    let foundMom = false;
+
+    person.famc.forEach(fId => {
+      const fam = fams[fId];
+      if (!fam) return;
+      
+      const isFatherStep = fam.stepFathers && fam.stepFathers.includes(person.id);
+      const isMotherStep = fam.stepMothers && fam.stepMothers.includes(person.id);
+      
+      if (fam.husb && !isFatherStep && !foundDad) { dadH = getHeritage(fam.husb, depth + 1); foundDad = true; }
+      if (fam.wife && !isMotherStep && !foundMom) { momH = getHeritage(fam.wife, depth + 1); foundMom = true; }
+    });
 
     const combined = {};
     for (const [o, pct] of Object.entries(dadH)) combined[o] = (combined[o] || 0) + (pct / 2);
@@ -276,7 +306,7 @@ export function parseGedcomBase(data) {
         if (fam.husb) parents.push({ id: fam.husb, type: 'blood' });
         if (fam.wife) parents.push({ id: fam.wife, type: 'blood' });
         fam.chil.forEach(cId => {
-          if (cId !== i.id) siblings.push({ id: cId, type: 'blood' });
+          if (cId !== i.id && indis[cId] && indis[cId].famc[0] === i.famc[0]) siblings.push({ id: cId, type: 'blood' });
         });
       }
     }
@@ -288,7 +318,10 @@ export function parseGedcomBase(data) {
         const spouseId = fam.husb === i.id ? fam.wife : fam.husb;
         if (spouseId) spouses.push({ id: spouseId, type: 'married' });
         fam.chil.forEach(cId => {
-          children.push({ id: cId, type: 'blood' });
+          // Only build a rendering connector if THIS family is the child's primary (biological) family
+          if (indis[cId] && indis[cId].famc[0] === fId) {
+            children.push({ id: cId, type: 'blood' });
+          }
         });
       }
     });

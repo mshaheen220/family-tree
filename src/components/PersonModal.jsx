@@ -112,7 +112,9 @@ export default function PersonModal({ person, onClose, indis, fams }) {
         }
         if (fam.chil) {
           fam.chil.forEach(cId => {
-            if (indis[cId] && !indis[cId].isDummy) children.push(indis[cId]);
+            if (indis[cId] && !indis[cId].isDummy && !children.some(c => c.id === cId)) {
+              children.push(indis[cId]);
+            }
           });
         }
       }
@@ -126,7 +128,7 @@ export default function PersonModal({ person, onClose, indis, fams }) {
         const fam = fams[fId];
         if (fam && fam.chil) {
           fam.chil.forEach(gcId => {
-            if (indis[gcId] && !indis[gcId].isDummy) {
+            if (indis[gcId] && !indis[gcId].isDummy && !grandchildren.some(g => g.gc.id === gcId)) {
               grandchildren.push({ gc: indis[gcId], parent: child });
             }
           });
@@ -143,7 +145,7 @@ export default function PersonModal({ person, onClose, indis, fams }) {
         const fam = fams[fId];
         if (fam && fam.chil) {
           fam.chil.forEach(ggcId => {
-            if (indis[ggcId] && !indis[ggcId].isDummy) {
+            if (indis[ggcId] && !indis[ggcId].isDummy && !greatGrandchildren.some(g => g.ggc.id === ggcId)) {
               greatGrandchildren.push({ ggc: indis[ggcId], parent: gc });
             }
           });
