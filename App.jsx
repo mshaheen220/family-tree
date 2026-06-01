@@ -8,27 +8,60 @@ import Legend from './src/components/Legend.jsx';
 import Header from './src/components/Header.jsx';
 import PersonModal from './src/components/PersonModal.jsx';
 import AnalyticsModal from './src/components/AnalyticsModal.jsx';
-
-// Use the ?raw suffix to import the file as a string directly!
-import gedcomData from './data/tree.ged?raw';
+import ChatDrawer from './src/components/ChatDrawer.jsx';
 
 export default function App() {
   const [view, setView] = useState({ scale: 0.38, tx: 60, ty: 30 });
   const dragRef = useRef({ isDragging: false, startX: 0, startY: 0, startTx: 0, startTy: 0 });
   const [isDragging, setIsDragging] = useState(false);
-  const [currentGedcom, setCurrentGedcom] = useState(gedcomData);
+  
+  const [isLoading, setIsLoading] = useState(true);
+  const [currentGedcom, setCurrentGedcom] = useState(null);
   const [selectedRootId, setSelectedRootId] = useState(null);
+  const [defaultRootId, setDefaultRootId] = useState(null);
+  
   const [theme, setTheme] = useState('classic');
   const [showAnalytics, setShowAnalytics] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
   const [hoveredNodeId, setHoveredNodeId] = useState(null);
   const [infoPerson, setInfoPerson] = useState(null);
   
-  // Parse GEDCOM whenever the loaded file changes
-  const { indis, fams, individuals, rtNodes } = useMemo(() => parseGedcomBase(currentGedcom), [currentGedcom]);
+  useEffect(() => {
+    async function fetchInitialData() {
+      try {
+        const configRes = await fetch('/api/config');
+        const config = await configRes.json();
+        
+        const gedcomRes = await fetch('/api/gedcom');
+        if (gedcomRes.ok) {
+          const text = await gedcomRes.text();
+          setCurrentGedcom(text);
+          if (config.rootId) {
+            const cleanId = `@${config.rootId.replace(/@/g, '')}@`;
+            setDefaultRootId(cleanId);
+            setSelectedRootId(cleanId);
+          }
+        } else {
+          console.error("Failed to fetch GEDCOM file from backend.");
+        }
+      } catch (e) {
+        console.error("Error loading initial data:", e);
+      } finally {
+        setIsLoading(false);
+      }
+    }
+    fetchInitialData();
+  }, []);
   
-  // Recalculate layout only when the root person or the base data changes
-  const { nodes, connectors, maxGen, rootId, genBands, genLabels } = useMemo(() => generateTreeLayout(indis, fams, individuals, rtNodes, selectedRootId), [indis, fams, individuals, rtNodes, selectedRootId]);
+  const { indis, fams, individuals, rtNodes } = useMemo(() => {
+    if (!currentGedcom) return { indis: {}, fams: {}, individuals: [], rtNodes: [] };
+    return parseGedcomBase(currentGedcom);
+  }, [currentGedcom]);
+  
+  const { nodes, connectors, maxGen, rootId, genBands, genLabels } = useMemo(() => {
+    if (!currentGedcom) return { nodes: [], connectors: [], maxGen: 0, rootId: null, genBands: [], genLabels: [] };
+    return generateTreeLayout(indis, fams, individuals, rtNodes, selectedRootId);
+  }, [indis, fams, individuals, rtNodes, selectedRootId]);
   const byId = useMemo(() => Object.fromEntries(nodes.map(n => [n.id, n])), [nodes]);
 
   // Filter individuals based on search term
@@ -105,31 +138,14 @@ export default function App() {
   };
 
   const handleResetToDatasetDefault = () => {
-    setSelectedRootId(null);
-    // If it was already null, React skips the update effect, so we manually recenter
-    if (selectedRootId === null) {
+    setSelectedRootId(defaultRootId);
+    if (selectedRootId === defaultRootId) {
       handleResetView();
     }
   };
 
   const handleHardReset = () => {
-    setCurrentGedcom(gedcomData);
-    setSelectedRootId(null);
-    if (currentGedcom === gedcomData && selectedRootId === null) {
-      handleResetView();
-    }
-  };
-
-  // File Upload Handler
-  const handleFileUpload = (e) => {
-    const file = e.target.files[0];
-    if (!file) return;
-    const reader = new FileReader();
-    reader.onload = (evt) => {
-      setCurrentGedcom(evt.target.result);
-      setSelectedRootId(null); // Reset root person so it auto-calculates
-    };
-    reader.readAsText(file);
+    window.location.reload();
   };
 
   // Memoized Handlers to prevent render-cascades
@@ -164,6 +180,14 @@ export default function App() {
   const maxX = nodes.length > 0 ? Math.max(...nodes.map(p => p.x + CW)) + 140 : window.innerWidth;
   const maxY = nodes.length > 0 ? Math.max(...nodes.map(p => p.y + p.h)) + 140 : window.innerHeight;
 
+  if (isLoading || !currentGedcom) {
+    return (
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', fontFamily: 'sans-serif', color: 'var(--primary-color, #2a5298)' }}>
+        <h2>Loading Family Realm...</h2>
+      </div>
+    );
+  }
+
   return (
     <div 
       id="canvas-wrap" 
@@ -183,7 +207,6 @@ export default function App() {
         setSelectedRootId={setSelectedRootId}
         theme={theme}
         setTheme={setTheme}
-        handleFileUpload={handleFileUpload}
         setShowAnalytics={setShowAnalytics}
         view={view}
         setView={setView}
@@ -246,6 +269,8 @@ export default function App() {
       
       <PersonModal person={infoPerson} onClose={() => setInfoPerson(null)} indis={indis} fams={fams} />
       <AnalyticsModal show={showAnalytics} onClose={() => setShowAnalytics(false)} indis={indis} nodes={nodes} fams={fams} rootId={rootId} />
+      
+      <ChatDrawer rootId={rootId} />
     </div>
   );
 }

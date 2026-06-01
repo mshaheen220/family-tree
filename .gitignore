@@ -26,3 +26,6 @@ dist-ssr
 .DS_Store
 *.suo
 *.sln
+
+# Data directory containing sensitive family info
+data/

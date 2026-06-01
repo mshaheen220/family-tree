@@ -1,0 +1,148 @@
+.chat-toggle-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--primary-color, #2a5298);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 1000;
+  transition: transform 0.2s;
+}
+
+.chat-toggle-btn:hover {
+  transform: scale(1.05);
+}
+
+.chat-drawer {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 400px;
+  height: 100vh;
+  background: #fff;
+  box-shadow: -4px 0 15px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease-in-out;
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-drawer.open {
+  right: 0;
+}
+
+.chat-drawer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+}
+
+.chat-drawer-header h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--primary-color, #2a5298);
+}
+
+.header-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.tab-btn, .chat-drawer-header .close-btn {
+  background: none;
+  border: 1px solid #ccc;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.chat-drawer-content {
+  padding: 15px;
+  flex-grow: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.chat-message {
+  padding: 12px;
+  border-radius: 8px;
+  max-width: 90%;
+  line-height: 1.4;
+}
+
+.chat-message.user {
+  align-self: flex-end;
+  background-color: var(--primary-color, #2a5298);
+  color: white;
+}
+
+.chat-message.ai {
+  align-self: flex-start;
+  background-color: #f1f3f5;
+  color: #333;
+}
+
+.cleanup-suggestion, .answer-footer {
+  font-size: 0.85rem;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.cleanups-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cleanup-task {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #eee;
+}
+
+.cleanup-task.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.delete-task-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.empty-tasks {
+  color: #888;
+  text-align: center;
+  font-style: italic;
+}
+
+.chat-drawer-input {
+  display: flex;
+  padding: 15px;
+  border-top: 1px solid #ddd;
+  gap: 10px;
+}
+
+
+
+
+
+/* From Agent Project */

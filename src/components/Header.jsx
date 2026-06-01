@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import Tooltip from './Tooltip.jsx';
 import { exportTreeToPdf } from '../utils/exportTree.js';
 
@@ -12,7 +12,6 @@ export default function Header({
   setSelectedRootId,
   theme,
   setTheme,
-  handleFileUpload,
   setShowAnalytics,
   view,
   setView,
@@ -20,8 +19,6 @@ export default function Header({
   handleResetToDatasetDefault,
   handleHardReset
 }) {
-  const fileInputRef = useRef(null);
-
   const handleZoom = (delta) => {
     setView(prev => {
       const newScale = Math.max(0.1, Math.min(2, prev.scale + delta));
@@ -108,12 +105,6 @@ export default function Header({
             <option value="monochrome">Monochrome Theme</option>
             <option value="amethyst-earth">Amethyst Earth</option>
           </select>
-        </Tooltip>
-        <input type="file" accept=".ged" className="hidden-file-input" ref={fileInputRef} onChange={handleFileUpload} />
-        <Tooltip text="Upload GEDCOM file">
-          <button className="btn" aria-label="Upload GEDCOM file" onClick={() => fileInputRef.current?.click()}>
-            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
-          </button>
         </Tooltip>
         <Tooltip text="Export Tree to PDF">
           <button className="btn" aria-label="Export Tree to PDF" onClick={() => exportTreeToPdf()}>
