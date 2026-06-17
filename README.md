@@ -104,6 +104,21 @@ This project is built using **Vite**, **React**, a **Node.js** backend, a **Pyth
    ```
 7. Open your browser to `http://localhost:3000`.
 
+### Switching Between Pre-Processed Family Trees
+
+Once you run the pipeline (`./run_pipeline.sh`) for a specific `ROOT_ID`, the extracted tree data, profiles, and vector database are persistently saved into a dedicated directory under `data/`. 
+
+You do **not** need to re-run the pipeline for that person again unless your underlying source GEDCOM file is updated.
+
+If you have processed multiple IDs over time (resulting in multiple folders in your `data/` directory), you can instantly boot the application for any of them without re-running the heavy extraction process. Just pass the desired folder ID when starting the development server:
+
+```bash
+npm run dev -- <ROOT_ID>
+```
+*(Example: `npm run dev -- I412076094635`)*
+
+This will start both the frontend UI and the backend AI agent using the localized data specifically scoped to that root person.
+
 ### Technical Highlights
 
 Calculating family trees programmatically is notoriously difficult. This app includes a custom, highly-resilient GEDCOM parser to overcome common layout hurdles:

@@ -402,6 +402,10 @@ FAMILY TREE DATA:\n${contextText}`),
           if (!existing) {
             const insertStmt = dbSql.prepare("INSERT INTO cleanup_suggestions (timestamp, suggestion, task_id) VALUES (?, ?, ?)");
             insertStmt.run(new Date().toISOString(), cleanupText, cleanupTaskId);
+            
+            // Emit the updated list back to the client immediately
+            const rows = dbSql.prepare("SELECT * FROM cleanup_suggestions ORDER BY completed ASC, timestamp DESC").all();
+            socket.emit("cleanups-data", rows);
           }
         } catch (e) {
           console.error("Error saving cleanup suggestion to database:", e.message);
