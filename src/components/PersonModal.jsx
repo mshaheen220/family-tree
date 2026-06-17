@@ -94,17 +94,14 @@ export default function PersonModal({ person, onClose, indis, fams }) {
     return { slices, desc, is100Percent };
   }, [person]);
 
-  if (!person) return null;
-
-  const cleanId = person.id.replace(/[@I]/gi, '');
-  const photoUrl = `${import.meta.env.BASE_URL}headshots/${cleanId}.jpg`;
-
   // Parse Family Data
   const { spouses, children, grandchildren, greatGrandchildren, uniqueSources } = useMemo(() => {
     const sp = [];
     const ch = [];
     const gc = [];
     const ggc = [];
+
+    if (!person) return { spouses: sp, children: ch, grandchildren: gc, greatGrandchildren: ggc, uniqueSources: [] };
 
     if (person.fams && fams && indis) {
       person.fams.forEach(fId => {
@@ -158,6 +155,11 @@ export default function PersonModal({ person, onClose, indis, fams }) {
 
     return { spouses: sp, children: ch, grandchildren: gc, greatGrandchildren: ggc, uniqueSources: us };
   }, [person, fams, indis]);
+
+  if (!person) return null;
+
+  const cleanId = person.id.replace(/[@I]/gi, '');
+  const photoUrl = `${import.meta.env.BASE_URL}headshots/${cleanId}.jpg`;
 
   const colCount = (children.length > 0 ? 1 : 0) + 
                    (grandchildren.length > 0 ? 1 : 0) + 
