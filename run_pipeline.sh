@@ -4,7 +4,7 @@ set -e
 
 if [ "$#" -ne 2 ]; then
     echo "Usage: ./run_pipeline.sh <path/to/original.ged> <ROOT_ID>"
-    echo "Example: ./run_pipeline.sh data/source_trees/tree.ged I412076094635"
+    echo "Example: ./run_pipeline.sh data/tree.ged I412076094635"
     exit 1
 fi
 

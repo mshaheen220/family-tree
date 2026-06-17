@@ -1,13 +1,14 @@
-# Dynamic Interactive Family Tree
+# Dynamic Interactive Family Tree & AI Chat
 
-A browser-based, interactive family tree viewer built with React. This application dynamically parses standard GEDCOM (`.ged`) files and calculates complex, multi-generational family layouts on the fly. 
+A browser-based, interactive family tree viewer built with React, integrated with an AI-powered genealogy chat agent. This application processes standard GEDCOM (`.ged`) files to calculate complex, multi-generational family layouts on the fly, and uses an intelligent vector database to let you converse with an AI about your family history.
 
 Unlike static diagrams, this viewer allows you to "walk" through the family tree by clicking on any relative to instantly recalculate the grid and bring their extended ancestry into view.
 
 > **Note on Mobile Support:** This application is purposely not optimized for mobile phones. The expansive and intricate nature of these family tree layouts requires a larger display (desktop or tablet) to truly do the data justice!
 
 ## ✨ Features
-* **Direct GEDCOM Parsing:** Upload any `.ged` file directly in the browser—no server or database required.
+* **AI Genealogy Chat:** Integrated AI assistant powered by LangChain and Google Gemini to answer questions about your family history using RAG (Retrieval-Augmented Generation) and LanceDB.
+* **Automated Data Pipeline:** A full Python and Node.js data pipeline automates the processing of standard GEDCOM files, generating searchable vector databases and relational profiles.
 * **Dynamic Layout Engine:** Automatically handles pedigree collapse, multiple marriages, and half-siblings using a specialized Directed Acyclic Graph (DAG) algorithm.
 * **Interactive Traversal:** Click any person's card to re-center the universe on them and reveal their hidden ancestors/descendants.
 * **High-Resolution PDF Export:** Capture and download the current family tree view as a perfectly cropped, print-ready PDF document.
@@ -56,31 +57,52 @@ Click the **Printer** icon in the header to take a high-resolution snapshot of y
 **5. Quick Actions**
 Use the toolbar icons on the right side of the header to quickly recenter the camera on the current person, revert back to the primary person in your dataset, or completely restart and load the original default tree.
 
-**6. Uploading Your Own Tree**
-Click the **Upload .ged** button in the header to load your own family tree. You can export a `.ged` file from ancestry sites like Ancestry.com, FamilySearch, or MyHeritage. All data is processed locally in your browser and is never uploaded to a server.
+**6. Processing Your Own Tree**
+To load your own family tree, you must first export a `.ged` file from ancestry sites like Ancestry.com, FamilySearch, or MyHeritage. Then, you'll run the local data pipeline to prepare the database for the application (see Developer Instructions below for details).
 
 ---
 
 ## 💻 For Developers: Under the Hood
 
-This project is built using **Vite**, **React**, and **`relatives-tree`** (a specialized math engine for calculating family DAG coordinates).
+This project is built using **Vite**, **React**, a **Node.js** backend, a **Python** data pipeline, and **`relatives-tree`** (a specialized math engine for calculating family DAG coordinates).
 
 ### Getting Started
 
-**Prerequisites:** Ensure you have Node.js installed.
+**Prerequisites:** Ensure you have Node.js and Python 3 installed. You will also need a Google Gemini API Key for the AI Chat features.
 
-1. Clone the repository and navigate into the directory.
-2. Install dependencies:
+1. **Clone the repository** and navigate into the directory.
+   ```bash
+   git clone <repo-url>
+   cd family-tree
+   ```
+2. **Install frontend dependencies:**
    ```bash
    npm install
    ```
-3. Start the local Vite development server:
+3. **Install backend dependencies:**
    ```bash
-   npm run dev
+   cd server-node
+   npm install --legacy-peer-deps
+   cd ..
    ```
-4. Open your browser to `http://localhost:3000`.
-
-*Note: The app loads a default `.ged` file on startup. You can replace the file at `data/tree.ged` to change the default tree.*
+4. **Configure the AI:**
+   Create a `.env` file in the `server-node` directory and add your Google Gemini API key:
+   ```bash
+   echo "GOOGLE_API_KEY=your_gemini_api_key_here" > server-node/.env
+   ```
+5. **Run the Data Pipeline:**
+   Before running the application, you must process your GEDCOM file to generate the required databases and vector stores. You need a source `.ged` file and a Root ID (the person the tree should center on).
+   ```bash
+   # Usage: ./run_pipeline.sh <path_to_gedcom_file> <root_person_id>
+   ./run_pipeline.sh data/source_trees/tree.ged I412076094635
+   ```
+   *(The pipeline will automatically set up a Python virtual environment and install needed dependencies.)*
+6. **Start the Application:**
+   Run both the Vite frontend and Node.js backend simultaneously, specifying the Root ID you just built:
+   ```bash
+   npm run dev -- I412076094635
+   ```
+7. Open your browser to `http://localhost:3000`.
 
 ### Technical Highlights
 
@@ -92,8 +114,11 @@ Calculating family trees programmatically is notoriously difficult. This app inc
 * **Auto-Cropping & Centering:** The custom grid math perfectly maps the engine's 2x2 grid into custom CSS pixel dimensions, auto-crops phantom routing lines, and calculates SVG `<polyline>` corners for perfectly crisp, 90-degree orthogonal connectors.
 
 ### Project Structure
+* `start.js`: Concurrently starts the Vite frontend and the Node.js backend using the provided Root ID.
+* `run_pipeline.sh`: A shell script that automates the Python data processing and Node indexing steps.
 * `App.jsx`: The core application orchestrator. Manages state, camera controls, and the canvas.
+* `python-pipeline/`: Python scripts that parse GEDCOM files, generate AI profiles, and build the SQLite database.
+* `server-node/`: Node.js Express server that manages AI Chat via Socket.io, LanceDB vector queries, and LangChain RAG.
 * `src/components/gedcomParser.js`: The heavy-lifting data parser, sanitization engine, and layout math calculator.
 * `src/components/PersonCard.jsx`, `Legend.jsx`, `AnalyticsModal.jsx`, `Tooltip.jsx`: Modular, reusable UI components.
 * `styles/styles.css`: All application styling, including the custom flag badges and card flexbox logic.
-* `data/tree.ged`: The raw text database loaded via Vite's `?raw` import feature.

@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react'
 import './styles/css2.css';
 import './styles/themes.css';
 import './styles/styles.css';
+import './styles/ChatDrawer.css';
 import { parseGedcomBase, generateTreeLayout, CW } from './src/components/gedcomParser.js';
 import PersonCard from './src/components/PersonCard.jsx';
 import Legend from './src/components/Legend.jsx';

@@ -15,7 +15,10 @@ export default function Legend({ nodes }) {
   const uniqueOrigins = Array.from(presentOrigins).sort();
 
   return (
-    <div className="legend">
+    <div
+      className="legend"
+      onMouseDown={e => e.stopPropagation()}
+    >
       <h2>Legend</h2>
       <div className="legend-row"><div className="legend-line descent"></div><span>Descent</span></div>
       <div className="legend-row"><div className="legend-line marriage"></div><span>Marriage / Union</span></div>

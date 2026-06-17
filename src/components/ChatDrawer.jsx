@@ -69,15 +69,22 @@ export default function ChatDrawer({ rootId }) {
 
   return (
     <>
-      <button className="chat-toggle-btn" onClick={() => setIsOpen(true)}>
+      <button 
+        className="btn chat-toggle-btn" 
+        onClick={() => setIsOpen(true)}
+        onMouseDown={(e) => e.stopPropagation()}
+      >
         Ask AI 🤖
       </button>
 
-      <div className={`chat-drawer ${isOpen ? 'open' : ''}`}>
+      <div 
+        className={`chat-drawer ${isOpen ? 'open' : ''}`}
+        onMouseDown={(e) => e.stopPropagation()}
+      >
         <div className="chat-drawer-header">
           <h2>Genealogy Agent</h2>
           <div className="header-actions">
-            <button className="tab-btn" onClick={() => setShowCleanups(!showCleanups)}>
+            <button className="btn tab-btn" onClick={() => setShowCleanups(!showCleanups)}>
               {showCleanups ? '💬 Chat' : '🧹 Tasks'}
             </button>
             <button className="close-btn" onClick={() => setIsOpen(false)}>✕</button>
@@ -92,12 +99,16 @@ export default function ChatDrawer({ rootId }) {
                 <div key={c.id} className={`cleanup-task ${c.completed ? 'completed' : ''}`}>
                   <input type="checkbox" checked={!!c.completed} onChange={() => toggleCleanup(c.id, c.completed)} />
                   <span dangerouslySetInnerHTML={{ __html: c.suggestion }}></span>
-                  <button className="delete-task-btn" onClick={() => deleteCleanup(c.id)}>🗑️</button>
+                  <button className="btn delete-task-btn" onClick={() => deleteCleanup(c.id)}>🗑️</button>
                 </div>
               ))}
             </div>
           ) : (
             <>
+              <div className="welcome-message">
+                <p>👋 Welcome to the Genealogy Agent!</p>
+                <p>Ask me anything about your family tree, or ask me to check for missing data.</p>
+              </div>
               {messages.map((msg, i) => (
                 <div key={i} className={`chat-message ${msg.role}`}>
                   {msg.role === 'ai' ? (
@@ -114,12 +125,13 @@ export default function ChatDrawer({ rootId }) {
 
         <div className="chat-drawer-input">
           <input 
+            className="chat-input"
             value={input} 
             onChange={e => setInput(e.target.value)} 
             onKeyDown={e => e.key === 'Enter' && sendMessage()}
             placeholder={`Ask about ${rootId ? rootId.replace(/@/g, '') : 'your family'}...`} 
           />
-          <button onClick={sendMessage}>Send</button>
+          <button className="btn" onClick={sendMessage}>Send</button>
         </div>
       </div>
     </>
