@@ -16,6 +16,21 @@ const getSourceLabel = (url) => {
   }
 };
 
+// Helper to dynamically extract and format dates from inside GEDCOM strings
+const formatDates = (val) => {
+  if (!val) return null;
+  const str = Array.isArray(val) ? val.join(', ') : String(val);
+  // Matches 4-digit years and common GEDCOM date prefixes/months (e.g., 1881, 12 Jan 1881, ABT 1881)
+  const regex = /(\b(?:(?:ABT|BEF|AFT|EST|CAL)\s+)?(?:(?:\d{1,2}\s+)?[A-Za-z]{3,9}\s+)?\d{4}\b)/gi;
+  const parts = str.split(regex);
+  return parts.map((part, i) => {
+    if (/^(?:(?:ABT|BEF|AFT|EST|CAL)\s+)?(?:(?:\d{1,2}\s+)?[A-Za-z]{3,9}\s+)?\d{4}$/i.test(part)) {
+      return <span key={i} className="highlight-date">{part}</span>;
+    }
+    return part;
+  });
+};
+
 export default function PersonModal({ person, onClose, indis, fams }) {
   // Close modal on Escape key press
   useEffect(() => {
@@ -79,80 +94,72 @@ export default function PersonModal({ person, onClose, indis, fams }) {
     return { slices, desc, is100Percent };
   }, [person]);
 
-  if (!person) return null;
+  // Parse Family Data
+  const { spouses, children, grandchildren, greatGrandchildren, uniqueSources } = useMemo(() => {
+    const sp = [];
+    const ch = [];
+    const gc = [];
+    const ggc = [];
 
-  // Helper to dynamically extract and format dates from inside GEDCOM strings
-  const formatDates = (val) => {
-    if (!val) return null;
-    const str = Array.isArray(val) ? val.join(', ') : String(val);
-    // Matches 4-digit years and common GEDCOM date prefixes/months (e.g., 1881, 12 Jan 1881, ABT 1881)
-    const regex = /(\b(?:(?:ABT|BEF|AFT|EST|CAL)\s+)?(?:(?:\d{1,2}\s+)?[A-Za-z]{3,9}\s+)?\d{4}\b)/gi;
-    const parts = str.split(regex);
-    return parts.map((part, i) => {
-      if (/^(?:(?:ABT|BEF|AFT|EST|CAL)\s+)?(?:(?:\d{1,2}\s+)?[A-Za-z]{3,9}\s+)?\d{4}$/i.test(part)) {
-        return <span key={i} className="highlight-date">{part}</span>;
+    if (!person) return { spouses: sp, children: ch, grandchildren: gc, greatGrandchildren: ggc, uniqueSources: [] };
+
+    if (person.fams && fams && indis) {
+      person.fams.forEach(fId => {
+        const fam = fams[fId];
+        if (fam) {
+          const spouseId = person.sex === 'M' ? fam.wife : fam.husb;
+          if (spouseId && indis[spouseId]) {
+            sp.push({ spouse: indis[spouseId], fam });
+          }
+          if (fam.chil) {
+            fam.chil.forEach(cId => {
+              if (indis[cId] && !indis[cId].isDummy) ch.push(indis[cId]);
+            });
+          }
+        }
+      });
+    }
+
+    ch.forEach(child => {
+      if (child.fams && fams && indis) {
+        child.fams.forEach(fId => {
+          const fam = fams[fId];
+          if (fam && fam.chil) {
+            fam.chil.forEach(gcId => {
+              if (indis[gcId] && !indis[gcId].isDummy) {
+                gc.push({ gc: indis[gcId], parent: child });
+              }
+            });
+          }
+        });
       }
-      return part;
     });
-  };
+
+    gc.forEach(item => {
+      const grandc = item.gc;
+      if (grandc.fams && fams && indis) {
+        grandc.fams.forEach(fId => {
+          const fam = fams[fId];
+          if (fam && fam.chil) {
+            fam.chil.forEach(ggcId => {
+              if (indis[ggcId] && !indis[ggcId].isDummy) {
+                ggc.push({ ggc: indis[ggcId], parent: grandc });
+              }
+            });
+          }
+        });
+      }
+    });
+
+    const us = person.sources ? [...new Set(person.sources)] : [];
+
+    return { spouses: sp, children: ch, grandchildren: gc, greatGrandchildren: ggc, uniqueSources: us };
+  }, [person, fams, indis]);
+
+  if (!person) return null;
 
   const cleanId = person.id.replace(/[@I]/gi, '');
   const photoUrl = `${import.meta.env.BASE_URL}headshots/${cleanId}.jpg`;
-
-  // Parse Family Data
-  const spouses = [];
-  const children = [];
-  if (person.fams && fams && indis) {
-    person.fams.forEach(fId => {
-      const fam = fams[fId];
-      if (fam) {
-        const spouseId = person.sex === 'M' ? fam.wife : fam.husb;
-        if (spouseId && indis[spouseId]) {
-          spouses.push({ spouse: indis[spouseId], fam });
-        }
-        if (fam.chil) {
-          fam.chil.forEach(cId => {
-            if (indis[cId] && !indis[cId].isDummy) children.push(indis[cId]);
-          });
-        }
-      }
-    });
-  }
-
-  const grandchildren = [];
-  children.forEach(child => {
-    if (child.fams && fams && indis) {
-      child.fams.forEach(fId => {
-        const fam = fams[fId];
-        if (fam && fam.chil) {
-          fam.chil.forEach(gcId => {
-            if (indis[gcId] && !indis[gcId].isDummy) {
-              grandchildren.push({ gc: indis[gcId], parent: child });
-            }
-          });
-        }
-      });
-    }
-  });
-
-  const greatGrandchildren = [];
-  grandchildren.forEach(item => {
-    const gc = item.gc;
-    if (gc.fams && fams && indis) {
-      gc.fams.forEach(fId => {
-        const fam = fams[fId];
-        if (fam && fam.chil) {
-          fam.chil.forEach(ggcId => {
-            if (indis[ggcId] && !indis[ggcId].isDummy) {
-              greatGrandchildren.push({ ggc: indis[ggcId], parent: gc });
-            }
-          });
-        }
-      });
-    }
-  });
-
-  const uniqueSources = person.sources ? [...new Set(person.sources)] : [];
 
   const colCount = (children.length > 0 ? 1 : 0) + 
                    (grandchildren.length > 0 ? 1 : 0) + 

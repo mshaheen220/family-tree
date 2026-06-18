@@ -1,0 +1,184 @@
+.chat-toggle-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--header-bg-2);
+  color: var(--gold);
+  border: 1px solid var(--gold);
+  border-radius: 30px;
+  padding: 0 20px;
+  height: 44px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px var(--shadow);
+  z-index: 1000;
+  transition: all 0.2s;
+}
+
+.chat-toggle-btn:hover {
+  background: var(--header-bg-1);
+  transform: scale(1.05);
+}
+
+.chat-drawer {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 400px;
+  height: 100vh;
+  background: var(--bg);
+  box-shadow: -4px 0 15px var(--shadow);
+  transition: right 0.3s ease-in-out;
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  cursor: default;
+}
+
+.chat-drawer.open {
+  right: 0;
+}
+
+.chat-drawer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: var(--header-bg-2);
+  border-bottom: 1px solid var(--card-border);
+}
+
+.chat-drawer-header h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--gold);
+}
+
+.header-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.chat-drawer-header .close-btn {
+  background: transparent;
+  color: var(--gold);
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.chat-drawer-header .close-btn:hover {
+  opacity: 0.7;
+}
+
+.chat-drawer-content {
+  padding: 15px;
+  flex-grow: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.welcome-message {
+  padding: 15px;
+  border: 1px dashed var(--gold);
+  border-radius: 8px;
+  background: var(--card-bg);
+  color: var(--ink);
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.welcome-message p { margin-bottom: 5px; }
+.welcome-message p:last-child { 
+  margin-bottom: 0; 
+  color: var(--ink-light); 
+  font-style: italic; 
+  font-size: 0.85rem; 
+}
+
+.chat-message {
+  padding: 12px;
+  border-radius: 8px;
+  max-width: 90%;
+  line-height: 1.4;
+  font-size: 0.95rem;
+  color: var(--ink);
+}
+
+.chat-message.user {
+  align-self: flex-end;
+  background: var(--header-bg-2);
+  color: var(--gold);
+  border: 1px solid var(--card-border);
+}
+
+.chat-message.ai {
+  align-self: flex-start;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  box-shadow: 0 2px 4px var(--shadow);
+}
+
+.cleanup-suggestion, .answer-footer {
+  font-size: 0.85rem;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--card-border);
+  color: var(--ink-light);
+}
+
+.cleanups-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cleanup-task {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background: var(--card-bg);
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid var(--card-border);
+  color: var(--ink);
+  font-size: 0.95rem;
+}
+
+.cleanup-task.completed span {
+  text-decoration: line-through;
+  color: var(--ink-light);
+  opacity: 0.7;
+}
+
+.delete-task-btn {
+  margin-left: auto;
+  padding: 2px 6px;
+  min-width: 0;
+  height: 24px;
+  border: none;
+}
+
+.empty-tasks {
+  color: var(--ink-light);
+  text-align: center;
+  font-style: italic;
+}
+
+.chat-drawer-input {
+  display: flex;
+  padding: 15px;
+  border-top: 1px solid var(--card-border);
+  gap: 10px;
+  background: var(--bg);
+}
+
+
+
+
+
+/* From Agent Project */
