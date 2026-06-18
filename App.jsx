@@ -10,8 +10,88 @@ import Header from './src/components/Header.jsx';
 import PersonModal from './src/components/PersonModal.jsx';
 import AnalyticsModal from './src/components/AnalyticsModal.jsx';
 import ChatDrawer from './src/components/ChatDrawer.jsx';
+import packageJson from './package.json';
 
-export default function App() {
+function AppInfoModal({ show, onClose, version, rootPerson }) {
+  if (!show) return null;
+  return (
+    <div className={`modal-backdrop ${show ? 'show' : ''}`} onClick={onClose} onWheel={e => e.stopPropagation()}>
+      <div className="modal-content" style={{ maxWidth: '400px' }} onClick={e => e.stopPropagation()}>
+        <div className="modal-header">
+          <h2>App Info</h2>
+          <button className="close-btn" aria-label="Close" onClick={onClose}>✕</button>
+        </div>
+        <div className="modal-body flush-body" style={{ padding: '1.5rem' }}>
+          <ul className="stats-list">
+            <li><strong>Version</strong> <span>{version}</span></li>
+            {rootPerson ? (
+              <>
+                <li><strong>Root Person ID</strong> <span>{rootPerson.id}</span></li>
+                <li><strong>Name</strong> <span>{rootPerson.name}</span></li>
+                <li><strong>Birthdate</strong> <span>{rootPerson.birth || rootPerson.birthYear || 'Unknown'}</span></li>
+              </>
+            ) : (
+              <li><strong>Root Person</strong> <span>None Selected</span></li>
+            )}
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Login({ onLogin }) {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+
+  // Hardcoded users for demonstration
+  const MOCK_USERS = {
+    'editor': { password: 'familytree', role: 'editor' },
+    'viewer': { password: 'familytree', role: 'viewer' }
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const user = MOCK_USERS[username.toLowerCase().trim()];
+
+    if (user && user.password === password) {
+      onLogin({ username, role: user.role });
+    } else {
+      setError('Invalid username or password.');
+    }
+  };
+
+  return (
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', flexDirection: 'column', backgroundColor: 'var(--bg-color, #f4f4f9)', fontFamily: 'sans-serif' }}>
+      <div style={{ padding: '2.5rem', background: 'white', borderRadius: '12px', boxShadow: '0 4px 15px rgba(0,0,0,0.1)', textAlign: 'center', width: '100%', maxWidth: '400px' }}>
+        <h2 style={{ marginBottom: '1.5rem', color: '#333' }}>Welcome to Family Realm</h2>
+        <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+          <input
+            type="text"
+            placeholder="Enter username (editor or viewer)"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+            style={{ padding: '0.75rem', fontSize: '1rem', borderRadius: '6px', border: '1px solid #ccc' }}
+          />
+          <input
+            type="password"
+            placeholder="Enter password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            style={{ padding: '0.75rem', fontSize: '1rem', borderRadius: '6px', border: '1px solid #ccc' }}
+          />
+          <button type="submit" style={{ padding: '0.75rem', fontSize: '1rem', cursor: 'pointer', backgroundColor: 'var(--primary-color, #2a5298)', color: 'white', border: 'none', borderRadius: '6px', fontWeight: 'bold' }}>
+            Enter
+          </button>
+        </form>
+        {error && <p style={{ color: '#d9534f', marginTop: '1rem', fontSize: '0.9rem' }}>{error}</p>}
+      </div>
+    </div>
+  );
+}
+
+function MainApp({ user }) {
   const [view, setView] = useState({ scale: 0.38, tx: 60, ty: 30 });
   const dragRef = useRef({ isDragging: false, startX: 0, startY: 0, startTx: 0, startTy: 0 });
   const [isDragging, setIsDragging] = useState(false);
@@ -26,6 +106,7 @@ export default function App() {
   const [searchTerm, setSearchTerm] = useState('');
   const [hoveredNodeId, setHoveredNodeId] = useState(null);
   const [infoPerson, setInfoPerson] = useState(null);
+  const [showAppInfo, setShowAppInfo] = useState(false);
   
   useEffect(() => {
     async function fetchInitialData() {
@@ -270,8 +351,28 @@ export default function App() {
       
       <PersonModal person={infoPerson} onClose={() => setInfoPerson(null)} indis={indis} fams={fams} />
       <AnalyticsModal show={showAnalytics} onClose={() => setShowAnalytics(false)} indis={indis} nodes={nodes} fams={fams} rootId={rootId} />
+      <AppInfoModal show={showAppInfo} onClose={() => setShowAppInfo(false)} version={packageJson.version} rootPerson={indis?.[rootId]} />
       
-      <ChatDrawer rootId={rootId} />
+      <button 
+        className="btn" 
+        style={{ position: 'absolute', bottom: '20px', left: '20px', zIndex: 1000, borderRadius: '50%', width: '45px', height: '45px', display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: '1.2rem', boxShadow: '0 4px 10px rgba(0,0,0,0.2)' }}
+        onClick={() => setShowAppInfo(true)}
+        title="App Information"
+      >
+        ℹ️
+      </button>
+      
+      {user?.role === 'editor' && <ChatDrawer rootId={rootId} />}
     </div>
   );
+}
+
+export default function App() {
+  const [user, setUser] = useState(null);
+
+  if (!user) {
+    return <Login onLogin={setUser} />;
+  }
+
+  return <MainApp user={user} />;
 }

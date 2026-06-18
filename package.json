@@ -1,13 +1,14 @@
 {
   "name": "family-tree",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "scripts": {
     "dev": "node start.js",
     "server": "cd server-node && node server.js",
     "build": "vite build",
     "preview": "vite preview",
     "clean:data": "./clean_data.sh",
-    "pipeline": "./run_pipeline.sh"
+    "pipeline": "./run_pipeline.sh",
+    "gitpush": "./scripts/gitpush.sh"
   },
   "dependencies": {
     "html2canvas": "^1.4.1",
