@@ -290,6 +290,7 @@ function MainApp({ user }) {
         theme={theme}
         setTheme={setTheme}
         setShowAnalytics={setShowAnalytics}
+        setShowAppInfo={setShowAppInfo}
         view={view}
         setView={setView}
         handleRecenter={handleRecenter}
@@ -353,16 +354,7 @@ function MainApp({ user }) {
       <AnalyticsModal show={showAnalytics} onClose={() => setShowAnalytics(false)} indis={indis} nodes={nodes} fams={fams} rootId={rootId} />
       <AppInfoModal show={showAppInfo} onClose={() => setShowAppInfo(false)} version={packageJson.version} rootPerson={indis?.[rootId]} />
       
-      <button 
-        className="btn" 
-        style={{ position: 'absolute', bottom: '20px', left: '20px', zIndex: 1000, borderRadius: '50%', width: '45px', height: '45px', display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: '1.2rem', boxShadow: '0 4px 10px rgba(0,0,0,0.2)' }}
-        onClick={() => setShowAppInfo(true)}
-        title="App Information"
-      >
-        ℹ️
-      </button>
-      
-      {user?.role === 'editor' && <ChatDrawer rootId={rootId} />}
+      {user?.role === 'editor' && <ChatDrawer rootId={rootId} rootName={byId[rootId]?.name} />}
     </div>
   );
 }

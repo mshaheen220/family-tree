@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { io } from 'socket.io-client';
 import '../../styles/ChatDrawer.css';
 
-export default function ChatDrawer({ rootId }) {
+export default function ChatDrawer({ rootId, rootName }) {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState('');
@@ -129,7 +129,7 @@ export default function ChatDrawer({ rootId }) {
             value={input} 
             onChange={e => setInput(e.target.value)} 
             onKeyDown={e => e.key === 'Enter' && sendMessage()}
-            placeholder={`Ask about ${rootId ? rootId.replace(/@/g, '') : 'your family'}...`} 
+          placeholder={`Ask about ${rootName ? rootName.split(' ')[0] : 'your family'}...`} 
           />
           <button className="btn" onClick={sendMessage}>Send</button>
         </div>

@@ -1,6 +1,6 @@
 {
   "name": "family-tree",
-  "version": "1.2.0",
+  "version": "2.1.1",
   "scripts": {
     "dev": "node start.js",
     "server": "cd server-node && node server.js",

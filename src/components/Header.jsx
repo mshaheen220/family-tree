@@ -13,6 +13,7 @@ export default function Header({
   theme,
   setTheme,
   setShowAnalytics,
+  setShowAppInfo,
   view,
   setView,
   handleRecenter,
@@ -39,8 +40,12 @@ export default function Header({
   const selectSize = isSearching ? Math.max(2, Math.min(optionCount, 10)) : 1;
 
   return (
-    <header>
-      <div>
+    <header onMouseDown={(e) => e.stopPropagation()} style={{ cursor: 'default' }}>
+      <div 
+        onClick={() => setShowAppInfo(true)} 
+        style={{ cursor: 'pointer' }} 
+        title="View App Information"
+      >
         <h1>Family Tree</h1>
         <p>{maxGen} Generations of Ancestry {rootName ? `for ${rootName}` : ''}</p>
       </div>
